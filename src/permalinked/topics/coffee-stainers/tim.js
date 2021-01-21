@@ -15,10 +15,10 @@ module.exports = [
 					width: 726,
 					height: 428,
 				},
-			{
-				"name": "Tim's only known sighting whilst working at Coffee Stain.",
-				"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a7/Tim_Badylak.png/revision/latest?cb=20201201220500&format=original",
-			}
+				{
+					"name": "Tim's only known sighting whilst working at Coffee Stain.",
+					"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a7/Tim_Badylak.png/revision/latest?cb=20201201220500&format=original",
+				}
 			),
 		]
 	}

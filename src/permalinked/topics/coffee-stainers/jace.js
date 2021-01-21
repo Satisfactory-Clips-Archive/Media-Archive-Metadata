@@ -26,10 +26,10 @@ module.exports = [
 					width: 400,
 					height: 400,
 				},
-			{
-				"name": "our lord and savior Jace",
-				"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/51/Jace.jpg/revision/latest/scale-to-width-down/400?cb=20180706203523",
-			}
+				{
+					"name": "our lord and savior Jace",
+					"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/51/Jace.jpg/revision/latest/scale-to-width-down/400?cb=20180706203523",
+				}
 			),
 		],
 		"url": [

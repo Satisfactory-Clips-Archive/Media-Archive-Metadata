@@ -36,7 +36,7 @@ module.exports = {
 				`https://satisfactory.gamepedia.com/Template:${
 					licensetemplate
 				}`,
-				'https://www.fandom.com/licensing'
+				'https://www.fandom.com/licensing',
 			],
 			discussionUrl: `https://satisfactory.gamepedia.com/File_talk:${
 				wikiname

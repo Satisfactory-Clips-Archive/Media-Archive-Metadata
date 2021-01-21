@@ -1,0 +1,298 @@
+{
+	"$id": "https://clips.satisfactory.signpostmarv.name/schema.json",
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"required": [
+		"@context",
+		"@type",
+		"name"
+	],
+	"type": "object",
+	"properties": {
+		"@context": {
+			"$id": "#/properties/%40context",
+			"type": "string",
+			"const": "https://schema.org"
+		},
+		"@type": {
+			"$id": "#/properties/%40type",
+			"type": "string",
+			"enum": [
+				"Person",
+				"WebPage"
+			]
+		},
+		"name": {
+			"$id": "#/properties/name",
+			"type": "string"
+		},
+		"description": {
+			"$id": "#/properties/description",
+			"type": "string"
+		},
+		"jobTitle": {
+			"$id": "#/properties/jobTitle",
+			"type": "string"
+		},
+		"worksFor": {
+			"$id": "#/properties/worksFor",
+			"required": [
+				"@type",
+				"name",
+				"url"
+			],
+			"type": "object",
+			"properties": {
+				"@type": {
+					"$id": "#/properties/worksFor/properties/%40type",
+					"type": "string",
+					"const": "Organization"
+				},
+				"name": {
+					"$id": "#/properties/worksFor/properties/name",
+					"type": "string"
+				},
+				"url": {
+					"$id": "#/properties/worksFor/properties/url",
+					"type": "string"
+				}
+			},
+			"additionalProperties": false
+		},
+		"subjectOf": {
+			"$id": "#/properties/subjectOf",
+			"type": "array",
+			"additionalItems": false,
+			"minItems": 1,
+			"items": [{
+				"$id": "#/properties/subjectOf/items",
+				"anyOf": [
+					{
+						"$id": "#/properties/subjectOf/items/anyOf/0",
+						"type": "object",
+						"required": [
+							"@type",
+							"name",
+							"description",
+							"uploadDate",
+							"thumbnailUrl",
+							"url",
+							"embedUrl"
+						],
+						"properties": {
+							"@type": {
+								"$id": "#/properties/subjectOf/items/anyOf/VideoObject/properties/%40type",
+								"type": "string",
+								"const": "VideoObject"
+							},
+							"name": {
+								"$id": "#/properties/subjectOf/items/anyOf/0/properties/name",
+								"type": "string"
+							},
+							"description": {
+								"$id": "#/properties/subjectOf/items/anyOf/0/properties/description",
+								"type": "string"
+							},
+							"uploadDate": {
+								"$id": "#/properties/subjectOf/items/anyOf/0/properties/uploadDate",
+								"type": "string"
+							},
+							"thumbnailUrl": {
+								"$id": "#/properties/subjectOf/items/anyOf/0/properties/thumbnailUrl",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#/properties/subjectOf/items/anyOf/0/properties/url",
+								"type": "string"
+							},
+							"embedUrl": {
+								"$id": "#/properties/subjectOf/items/anyOf/0/properties/embedUrl",
+								"type": "string"
+							}
+						},
+						"additionalProperties": false
+					},
+					{
+						"$id": "#/properties/subjectOf/items/anyOf/1",
+						"type": "object",
+						"required": [
+							"@type",
+							"name",
+							"startDate",
+							"url"
+						],
+						"properties": {
+							"@type": {
+								"$id": "#/properties/subjectOf/items/anyOf/CreativeWorkSeries/properties/%40type",
+								"type": "string",
+								"const": "CreativeWorkSeries"
+							},
+							"name": {
+								"$id": "#/properties/subjectOf/items/anyOf/1/properties/name",
+								"type": "string"
+							},
+							"startDate": {
+								"$id": "#/properties/subjectOf/items/anyOf/1/properties/startDate",
+								"type": "string"
+							},
+							"endDate": {
+								"$id": "#/properties/subjectOf/items/anyOf/1/properties/endDate",
+								"type": "string"
+							},
+							"url": {
+								"$id": "#/properties/subjectOf/items/anyOf/1/properties/url",
+								"type": "string"
+							}
+						},
+						"additionalProperties": false
+					}
+				]
+			}]
+		},
+		"image": {
+			"$id": "#/properties/image",
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"required": [
+					"@type",
+					"name",
+					"contentUrl",
+					"encodingFormat",
+					"width",
+					"height",
+					"usageInfo",
+					"discussionUrl",
+					"url"
+				],
+				"type": "object",
+				"properties": {
+					"@type": {
+						"$id": "#/properties/image/%40type",
+						"const": "ImageObject",
+						"type": "string"
+					},
+					"name": {
+						"$id": "#/properties/image/name",
+						"type": "string"
+					},
+					"contentUrl": {
+						"$id": "#/properties/image/contentUrl",
+						"type": "string"
+					},
+					"encodingFormat": {
+						"$id": "#/properties/image/encodingFormat",
+						"enum": [
+							"image/jpeg",
+							"image/png"
+						],
+						"type": "string"
+					},
+					"width": {
+						"$id": "#/properties/image/width",
+						"required": [
+							"@type",
+							"value"
+						],
+						"type": "object",
+						"properties": {
+							"@type": {
+								"$id": "#/properties/image/width/properties/%40type",
+								"const": "QuantitativeValue",
+								"type": "string"
+							},
+							"value": {
+								"$id": "#/properties/image/width/properties/value",
+								"type": "integer"
+							}
+						},
+						"additionalProperties": false
+					},
+					"height": {
+						"$id": "#/properties/image/height",
+						"required": [
+							"@type",
+							"value"
+						],
+						"type": "object",
+						"properties": {
+							"@type": {
+								"$id": "#/properties/image/height/properties/%40type",
+								"const": "QuantitativeValue",
+								"type": "string"
+							},
+							"value": {
+								"$id": "#/properties/image/height/properties/value",
+								"type": "integer"
+							}
+						},
+						"additionalProperties": false
+					},
+					"usageInfo": {
+						"$id": "#/properties/image/usageInfo",
+						"type": "array",
+						"minItems": 2,
+						"items": {
+							"$id": "#/properties/image/usageInfo/items",
+							"enum": [
+								"https://www.fandom.com/licensing",
+								"https://satisfactory.gamepedia.com/Template:Copyright_first-party"
+							],
+							"type": "string"
+						}
+					},
+					"discussionUrl": {
+						"$id": "#/properties/image/discussionUrl",
+						"type": "string"
+					},
+					"url": {
+						"$id": "#/properties/image/url",
+						"type": "string"
+					}
+				},
+				"additionalProperties": false
+			}
+		},
+		"url": {
+			"$id": "#/properties/url",
+			"additionalItems": false,
+			"minItems": 1,
+			"type": "array",
+			"items": [{
+				"$id": "#/properties/url/items",
+				"type": "string"
+			}]
+		},
+		"about": {
+			"$id": "#/properties/about",
+			"type": "array",
+			"additionalItems": false,
+			"minItems": 1,
+            "items": [
+				{
+					"$id": "#/properties/about/items",
+					"anyOf": [
+						{
+							"$id": "#/properties/about/items/anyOf/0",
+							"const": {
+								"@type": "VideoGame",
+								"name": "Satisfactory",
+								"author": {
+									"@type": "Organization",
+									"name": "Coffee Stain Studios AB",
+									"url": "https://www.coffeestainstudios.com/"
+								},
+								"operatingSystem": "Windows",
+								"applicationCategory": [
+									"Game",
+									"Factory Construction"
+								]
+							},
+							"type": "object"
+						}
+					]
+				}
+			]
+		}
+	},
+	"additionalProperties": false
+}

@@ -1,8 +1,10 @@
 {
-	"scripts": {
-		"build": "node build.js"
-	},
+  "scripts": {
+    "test": "node test.js",
+    "build": "node build.js"
+  },
   "devDependencies": {
+    "ajv": "^7.0.3",
     "glob": "^7.1.6"
   }
 }

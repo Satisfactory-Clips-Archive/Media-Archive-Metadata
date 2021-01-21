@@ -223,9 +223,18 @@
 			],
 			"about": [
 				{
-					"@type": "Organization",
-					"name": "Coffee Stain Studios AB",
-					"url": "https://www.coffeestainstudios.com/"
+					"@type": "VideoGame",
+					"name": "Satisfactory",
+					"author": {
+						"@type": "Organization",
+						"name": "Coffee Stain Studios AB",
+						"url": "https://www.coffeestainstudios.com/"
+					},
+					"operatingSystem": "Windows",
+					"applicationCategory": [
+						"Game",
+						"Factory Construction"
+					]
 				}
 			]
 		}

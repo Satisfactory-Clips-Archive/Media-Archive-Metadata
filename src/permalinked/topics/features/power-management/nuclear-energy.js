@@ -1,4 +1,4 @@
-const satisfactory = require('../../../../common/coffee-stain.js');
+const satisfactory = require('../../../../common/satisfactory.js');
 const {
 	SatisfactoryWikiBuildingImage,
 	SatisfactoryWikiItemImage,

@@ -1,5 +1,8 @@
 const satisfactory = require('../../../../common/coffee-stain.js');
-const {SatisfactoryWikiImage} = require('../../../../utils');
+const {
+	SatisfactoryWikiBuildingImage,
+	SatisfactoryWikiItemImage,
+} = require('../../../../utils');
 
 module.exports = [
 	{
@@ -8,24 +11,18 @@ module.exports = [
 		"name": "Nuclear Energy",
 		"description": "Satisfactory Livestream clips about Nuclear Energy",
 		"image": [
-			SatisfactoryWikiImage(
+			SatisfactoryWikiBuildingImage(
 				{
 					wikiname: 'Nuclear_Power_Plant.png',
-					encodingFormat: 'image/png',
-					width: 512,
-					height: 512,
 				},
 			{
 				"name": "In-game building icon for the Nuclear Power Plant.",
 				"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/46/Nuclear_Power_Plant.png/revision/latest?cb=20200311145339&format=original",
 				}
 			),
-			SatisfactoryWikiImage(
+			SatisfactoryWikiItemImage(
 				{
 					wikiname: 'Nuclear_Waste.png',
-					encodingFormat: 'image/png',
-					width: 256,
-					height: 256,
 				},
 			{
 				"name": "In-game item icon for Nuclear Waste.",

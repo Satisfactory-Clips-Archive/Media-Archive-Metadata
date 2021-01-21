@@ -46,6 +46,46 @@ module.exports = {
 			}`
 		});
 	},
+	SatisfactoryWikiBuildingImage: (
+		required = {
+			wikiname,
+		},
+		data
+	) => {
+		const {
+			wikiname,
+		} = required;
+
+		return module.exports.SatisfactoryWikiImage(
+			{
+				wikiname,
+				encodingFormat: 'image/png',
+				width: 512,
+				height: 512,
+			},
+			data
+		);
+	},
+	SatisfactoryWikiItemImage: (
+		required = {
+			wikiname,
+		},
+		data
+	) => {
+		const {
+			wikiname,
+		} = required;
+
+		return module.exports.SatisfactoryWikiImage(
+			{
+				wikiname,
+				encodingFormat: 'image/png',
+				width: 256,
+				height: 256,
+			},
+			data
+		);
+	},
 	YouTubePlaylist: (playlistId, data) => {
 		return Object.assign({'@type': 'CreativeWorkSeries'}, data, {
 			url: `https://www.youtube.com/playlist?list=${playlistId}`,

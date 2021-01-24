@@ -1,7 +1,6 @@
-const coffee_stain = require('../../../common/coffee-stain.js');
-const {SatisfactoryWikiImage} = require('../../../utils');
+import {SatisfactoryWikiImage} from '../../../utils.js';
 
-module.exports = [
+export default [
 	{
 		"@context": "https://schema.org",
 		"@type": "Person",

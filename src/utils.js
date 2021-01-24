@@ -1,5 +1,4 @@
-module.exports = {
-	SatisfactoryWikiImage: (
+export function SatisfactoryWikiImage (
 		required = {
 			wikiname,
 			width,
@@ -8,7 +7,7 @@ module.exports = {
 			licensetemplate,
 		},
 		data
-	) => {
+) {
 		const {
 			wikiname,
 			width,
@@ -45,18 +44,19 @@ module.exports = {
 				wikiname
 			}`
 		});
-	},
-	SatisfactoryWikiBuildingImage: (
+};
+
+export function	SatisfactoryWikiBuildingImage (
 		required = {
 			wikiname,
 		},
 		data
-	) => {
+) {
 		const {
 			wikiname,
 		} = required;
 
-		return module.exports.SatisfactoryWikiImage(
+		return SatisfactoryWikiImage(
 			{
 				wikiname,
 				encodingFormat: 'image/png',
@@ -65,18 +65,19 @@ module.exports = {
 			},
 			data
 		);
-	},
-	SatisfactoryWikiItemImage: (
+};
+
+export function SatisfactoryWikiItemImage (
 		required = {
 			wikiname,
 		},
 		data
-	) => {
+) {
 		const {
 			wikiname,
 		} = required;
 
-		return module.exports.SatisfactoryWikiImage(
+		return SatisfactoryWikiImage(
 			{
 				wikiname,
 				encodingFormat: 'image/png',
@@ -85,17 +86,18 @@ module.exports = {
 			},
 			data
 		);
-	},
-	YouTubePlaylist: (playlistId, data) => {
+};
+
+export function YouTubePlaylist (playlistId, data) {
 		return Object.assign({'@type': 'CreativeWorkSeries'}, data, {
 			url: `https://www.youtube.com/playlist?list=${playlistId}`,
 		});
-	},
-	YouTubeVideo: (videoId, data) => {
+};
+
+export function YouTubeVideo (videoId, data) {
 		return Object.assign({'@type': 'VideoObject'}, data, {
 			thumbnailUrl: `http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg`,
 			url: `https://www.youtube.com/watch?v=${videoId}`,
 			embedUrl: `https://www.youtube.com/embed/${videoId}`
 		});
-	},
 };

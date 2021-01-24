@@ -1,7 +1,7 @@
-const coffee_stain = require('../../../common/coffee-stain.js');
-const { YouTubePlaylist } = require('../../../utils.js');
+import {default as coffee_stain} from '../../../common/coffee-stain.js';
+import {YouTubePlaylist} from '../../../utils.js';
 
-module.exports = [
+export default [
 	{
 		"@context": "https://schema.org",
 		"@type": "Person",

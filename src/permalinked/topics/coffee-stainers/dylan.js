@@ -1,6 +1,6 @@
-const coffee_stain = require('../../../common/coffee-stain.js');
+import {default as coffee_stain} from '../../../common/coffee-stain.js';
 
-module.exports = [
+export default [
 	{
 		"@context": "https://schema.org",
 		"@type": "Person",

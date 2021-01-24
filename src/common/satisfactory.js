@@ -1,6 +1,6 @@
-const coffee_stain = require('./coffee-stain.js');
+import {default as coffee_stain} from './coffee-stain.js';
 
-module.exports = {
+export default {
 	"@type": "VideoGame",
 	"name": "Satisfactory",
 	"author": coffee_stain,

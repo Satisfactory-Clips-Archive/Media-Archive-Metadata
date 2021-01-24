@@ -1,10 +1,10 @@
-const coffee_stain = require('../../../common/coffee-stain.js');
-const {
+import {default as coffee_stain} from '../../../common/coffee-stain.js';
+import {
 	YouTubeVideo,
 	SatisfactoryWikiImage,
-} = require('../../../utils');
+} from '../../../utils.js';
 
-module.exports = [
+export default [
 	{
 		"@context": "https://schema.org",
 		"@type": "Person",

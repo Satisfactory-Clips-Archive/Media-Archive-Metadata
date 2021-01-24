@@ -1,6 +1,7 @@
-const {default:Ajv} = require('ajv');
-const schema = require('./src/schema.json');
-const data = require('./index');
+import {default as schema} from './src/schema.js';
+import {default as data} from './index.js';
+import AjvModule from 'ajv';
+const {default:Ajv} = AjvModule;
 
 const validator = (new Ajv()).compile(schema);
 

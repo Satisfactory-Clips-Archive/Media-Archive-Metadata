@@ -1,13 +1,20 @@
-const {sync:glob} = require('glob');
+import glob from 'glob';
 
-module.exports = glob('./src/permalinked/**/*.js').reduce(
-	(out, current) => {
-		const path = current.replace(
+export default (await Promise.all(
+	glob.sync('./src/permalinked/**/*.js').map(async (path) => {
+		return [
+			path.replace(
 			/^\.\/src\/permalinked/,
 			''
-		).replace(/\.js$/, '/');
+			).replace(/\.js$/, '/'),
+			(await import(path)).default,
+		];
+	})
+)).reduce(
+	(out, current) => {
+		const [path, json] = current;
 
-		out[path] = require(current);
+		out[path] = json;
 
 		return out;
 	},

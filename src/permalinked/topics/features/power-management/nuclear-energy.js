@@ -1,10 +1,10 @@
-const satisfactory = require('../../../../common/satisfactory.js');
-const {
+import {default as satisfactory} from '../../../../common/satisfactory.js';
+import {
 	SatisfactoryWikiBuildingImage,
 	SatisfactoryWikiItemImage,
-} = require('../../../../utils');
+} from '../../../../utils.js';
 
-module.exports = [
+export default [
 	{
 		"@context": "https://schema.org",
 		"@type": "WebPage",

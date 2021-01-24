@@ -1,10 +1,12 @@
 {
 	"type": "module",
-  "scripts": {
-    "test": "node test.js"
-  },
-  "devDependencies": {
-    "ajv": "^7.0.3",
-    "glob": "^7.1.6"
-  }
+	"scripts": {
+		"test": "node test.js"
+	},
+	"devDependencies": {
+		"ajv": "^7.0.3"
+	},
+	"dependencies": {
+		"glob": "^7.1.6"
+	}
 }

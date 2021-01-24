@@ -1,5 +1,5 @@
 import glob from 'glob';
-import {dirname} from 'path';
+import {dirname, resolve} from 'path';
 import {fileURLToPath, pathToFileURL} from 'url';
 
 export default (await Promise.all(
@@ -12,9 +12,16 @@ export default (await Promise.all(
 		+ '/src/permalinked/**/*.js'
 	).map(async (path) => {
 		return [
-			path.replace(
-			/^\.\/src\/permalinked/,
+			resolve(path).replace(
+				dirname(
+					fileURLToPath(
+						import.meta.url
+					)
+				),
 			''
+			).replace(/[\/\\]/g, '/').replace(
+				/^\/src\/permalinked\//,
+				'/'
 			).replace(/\.js$/, '/'),
 			(await import(pathToFileURL(path))).default,
 		];

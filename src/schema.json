@@ -292,6 +292,16 @@
 					]
 				}
 			]
+		},
+		"relatedLink": {
+			"$id": "#/properties/relatedLink",
+			"type": "array",
+			"additionalItems": false,
+			"minItems": 1,
+			"items": [{
+				"$id": "#/properties/relatedLink/items",
+				"type": "string"
+			}]
 		}
 	},
 	"additionalProperties": false

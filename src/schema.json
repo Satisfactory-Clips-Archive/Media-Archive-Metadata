@@ -244,6 +244,15 @@
 						"$id": "#/properties/image/discussionUrl",
 						"type": "string"
 					},
+					"relatedLink": {
+						"$id": "#/properties/image/relatedLink",
+						"type": "array",
+						"minItems": 1,
+						"uniqueItems": true,
+						"items": {
+							"type": "string"
+						}
+					},
 					"url": {
 						"$id": "#/properties/image/url",
 						"type": "string"

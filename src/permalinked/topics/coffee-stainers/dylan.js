@@ -1,14 +1,12 @@
-import {default as coffee_stain} from '../../../common/coffee-stain.js';
+import {
+	CoffeeStainer,
+} from '../../../utils.js';
 
 export default [
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Dylan Kelly",
+	CoffeeStainer('Dylan Kelly', {
 		"jobTitle": "Programmer",
-		"worksFor": coffee_stain,
 		"url": [
 			"https://twitter.com/SnyggLich"
 		]
-	}
+	}),
 ];

@@ -1,13 +1,11 @@
-import {default as coffee_stain} from '../../../common/coffee-stain.js';
-import {YouTubeVideo} from '../../../utils.js';
+import {
+	YouTubeVideo,
+	CoffeeStainer,
+} from '../../../utils.js';
 
 export default [
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Snutt Treptow",
+	CoffeeStainer('Snutt Treptow', {
 		"jobTitle": "Community Manager",
-		"worksFor": coffee_stain,
 		"subjectOf": [
 			YouTubeVideo('N6yki_HwBNQ', {
 				"name": "I was a SPEAKER at a GAME DEV CONFERENCE",
@@ -18,5 +16,5 @@ export default [
 		"url": [
 			"https://twitter.com/BustaSnutt"
 		]
-	}
+	}),
 ];

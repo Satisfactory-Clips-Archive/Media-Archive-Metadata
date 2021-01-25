@@ -1,13 +1,10 @@
-import {default as satisfactory} from '../../../common/satisfactory.js';
 import {
 	SatisfactoryWikiImage,
+	WebPageAboutSatisfactory,
 } from '../../../utils.js';
 
 export default [
-	{
-		"@context": "https://schema.org",
-		"@type": "WebPage",
-		"name": "Satisfactory Wiki",
+	WebPageAboutSatisfactory('Satisfactory Wiki', {
 		"description": "Satisfactory Livestream clips about the Satisfactory Wiki",
 		"image": [
 			SatisfactoryWikiImage(
@@ -26,8 +23,5 @@ export default [
 				}
 			),
 		],
-		"about": [
-			satisfactory,
-		]
-	}
+	}),
 ];

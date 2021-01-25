@@ -1,13 +1,11 @@
-import {default as coffee_stain} from '../../../common/coffee-stain.js';
-import {YouTubePlaylist} from '../../../utils.js';
+import {
+	YouTubePlaylist,
+	CoffeeStainer,
+} from '../../../utils.js';
 
 export default [
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Simon Begby",
+	CoffeeStainer('Simon Begby', {
 		"jobTitle": "VFX Artist",
-		"worksFor": coffee_stain,
 		"subjectOf": [
 			YouTubePlaylist('PLzGEn7MzkWRsyTI-94PoqpuRh9a2YcKXK', {
 				"name": "Simon Saga",
@@ -18,5 +16,5 @@ export default [
 		"url": [
 			"https://twitter.com/SBegby"
 		]
-	}
+	}),
 ];

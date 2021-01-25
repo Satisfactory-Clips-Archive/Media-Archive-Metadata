@@ -1,13 +1,11 @@
-import {default as coffee_stain} from '../../../common/coffee-stain.js';
-import {YouTubeVideo} from '../../../utils.js';
+import {
+	YouTubeVideo,
+	CoffeeStainer,
+} from '../../../utils.js';
 
 export default [
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Ben de Hullu",
+	CoffeeStainer('Ben de Hullu', {
 		"jobTitle": "Tech Artist",
-		"worksFor": coffee_stain,
 		"subjectOf": [
 			YouTubeVideo('omjFqZQV9fI', {
 				"name": "Dev Vlog: Tech Art & Optimisation with Ben!",
@@ -18,5 +16,5 @@ export default [
 		"url": [
 			"https://twitter.com/BenHullu"
 		]
-	}
+	}),
 ];

@@ -1,10 +1,10 @@
-import {SatisfactoryWikiImage} from '../../../utils.js';
+import {
+	SatisfactoryWikiImage,
+	Person,
+} from '../../../utils.js';
 
 export default [
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Tim Badylak",
+	Person('Tim Badylak', {
 		"jobTitle": "Producer",
 		"image": [
 			SatisfactoryWikiImage(
@@ -20,5 +20,5 @@ export default [
 				}
 			),
 		]
-	}
+	}),
 ];

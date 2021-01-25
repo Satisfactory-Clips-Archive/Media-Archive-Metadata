@@ -1,16 +1,12 @@
-import {default as coffee_stain} from '../../../common/coffee-stain.js';
 import {
 	YouTubeVideo,
 	SatisfactoryWikiImage,
+	CoffeeStainer,
 } from '../../../utils.js';
 
 export default [
-	{
-		"@context": "https://schema.org",
-		"@type": "Person",
-		"name": "Jace Varlet",
+	CoffeeStainer('Jace Varlet', {
 		"jobTitle": "Community Manager",
-		"worksFor": coffee_stain,
 		"subjectOf": [
 			YouTubeVideo('v2JdPmTvQKg', {
 				"name": "Game Dev Circle - Episode 1 - Jace Varlet",
@@ -35,5 +31,5 @@ export default [
 		"url": [
 			"https://twitter.com/jembawls"
 		]
-	}
+	}),
 ];

@@ -1,3 +1,6 @@
+import {default as satisfactory} from './common/satisfactory.js';
+import {default as coffee_stain} from './common/coffee-stain.js';
+
 export function SatisfactoryWikiImage (
 		required = {
 			wikiname,
@@ -99,5 +102,45 @@ export function YouTubeVideo (videoId, data) {
 		thumbnailUrl: `http://i3.ytimg.com/vi/${videoId}/hqdefault.jpg`,
 		url: `https://www.youtube.com/watch?v=${videoId}`,
 		embedUrl: `https://www.youtube.com/embed/${videoId}`
+	});
+};
+
+export function WebPage(
+	name,
+	data
+) {
+	return Object.assign(
+		{},
+		data,
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			name,
+		}
+	);
+};
+
+export function WebPageAboutSatisfactory(
+	name,
+	data
+) {
+	const about = [...(data.about || [])];
+
+	data.about = [satisfactory, ...about];
+
+	return WebPage(name, data);
+}
+
+export function Person(name, data) {
+	return Object.assign({}, data, {
+		"@context": "https://schema.org",
+		"@type": "Person",
+		name,
+	});
+}
+
+export function CoffeeStainer(name, data) {
+	return Object.assign(Person(name, data), {
+		worksFor: coffee_stain,
 	});
 };

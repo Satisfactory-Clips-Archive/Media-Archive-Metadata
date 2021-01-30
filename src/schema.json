@@ -3,184 +3,182 @@
 	"$schema": "http://json-schema.org/draft-07/schema",
 	"required": [
 		"@context",
-		"@type",
-		"name"
+		"@type"
 	],
 	"type": "object",
-	"properties": {
-		"@context": {
-			"$id": "#/properties/%40context",
-			"type": "string",
-			"const": "https://schema.org"
+	"definitions": {
+		"uniquestrings": {
+			"minItems": 1,
+			"type": "array",
+			"uniqueItems": true,
+			"items": {
+				"type": "string"
+			}
 		},
-		"@type": {
-			"$id": "#/properties/%40type",
-			"type": "string",
-			"enum": [
-				"Person",
-				"WebPage"
+		"url": {
+			"oneOf": [
+				{"type": "string"},
+				{
+					"$ref": "#/definitions/uniquestrings"
+				}
 			]
 		},
-		"name": {
-			"$id": "#/properties/name",
-			"type": "string"
-		},
-		"description": {
-			"$id": "#/properties/description",
-			"type": "string"
-		},
-		"jobTitle": {
-			"$id": "#/properties/jobTitle",
-			"type": "string"
-		},
-		"worksFor": {
-			"$id": "#/properties/worksFor",
+		"person": {
+			"type": "object",
 			"required": [
 				"@type",
-				"name",
-				"url"
+				"name"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "Person"
+				},
+				"name": {
+					"type": "string"
+				},
+				"description": {
+					"type": "string"
+				},
+				"jobTitle": {
+					"type": "string"
+				},
+				"worksFor": {
+					"required": [
+						"@type",
+						"name",
+						"url"
+					],
+					"type": "object",
+					"properties": {
+						"@type": {
+							"type": "string",
+							"const": "Organization"
+						},
+						"name": {
+							"type": "string"
+						},
+						"url": {
+							"$ref": "#/definitions/url"
+						}
+					}
+				},
+				"subjectOf": {
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"oneOf": [
+							{"$ref": "#/definitions/image"},
+							{"$ref": "#/definitions/video"},
+							{"$ref": "#/definitions/playlist"},
+							{"$ref": "#/definitions/socialmediapost"}
+						]
+					}
+				},
+				"url": {
+					"$ref": "#/definitions/url"
+				},
+				"relatedLink": {
+					"$ref": "#/definitions/uniquestrings"
+				},
+				"alternateName": {
+					"$ref": "#/definitions/uniquestrings"
+				}
+			}
+		},
+		"webpage": {
+			"required": [
+				"@type",
+				"name"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "WebPage"
+				},
+				"name": {
+					"type": "string"
+				},
+				"url": {
+					"$ref": "#/definitions/url"
+				},
+				"about": {
+					"type": "array",
+					"additionalItems": false,
+					"minItems": 1,
+					"items": [
+						{
+							"oneOf": [
+								{
+									"const": {
+										"@type": "VideoGame",
+										"name": "Satisfactory",
+										"author": {
+											"@type": "Organization",
+											"name": "Coffee Stain Studios AB",
+											"url": "https://www.coffeestainstudios.com/"
+										},
+										"operatingSystem": "Windows",
+										"applicationCategory": [
+											"Game",
+											"Factory Construction"
+										]
+									},
+									"type": "object"
+								}
+							]
+						}
+					]
+				},
+				"relatedLink": {
+					"$ref": "#/definitions/uniquestrings"
+				},
+				"alternateName": {
+					"$ref": "#/definitions/uniquestrings"
+				}
+			}
+		},
+		"dimension": {
+			"required": [
+				"@type",
+				"value"
 			],
 			"type": "object",
 			"properties": {
 				"@type": {
-					"$id": "#/properties/worksFor/properties/%40type",
-					"type": "string",
-					"const": "Organization"
-				},
-				"name": {
-					"$id": "#/properties/worksFor/properties/name",
+					"const": "QuantitativeValue",
 					"type": "string"
 				},
-				"url": {
-					"$id": "#/properties/worksFor/properties/url",
-					"type": "string"
+				"value": {
+					"type": "integer"
 				}
 			},
 			"additionalProperties": false
 		},
-		"subjectOf": {
-			"$id": "#/properties/subjectOf",
-			"type": "array",
-			"additionalItems": false,
-			"minItems": 1,
-			"items": [{
-				"$id": "#/properties/subjectOf/items",
-				"anyOf": [
-					{
-						"$id": "#/properties/subjectOf/items/anyOf/0",
-						"type": "object",
-						"required": [
-							"@type",
-							"name",
-							"description",
-							"uploadDate",
-							"thumbnailUrl",
-							"url",
-							"embedUrl"
-						],
-						"properties": {
-							"@type": {
-								"$id": "#/properties/subjectOf/items/anyOf/VideoObject/properties/%40type",
-								"type": "string",
-								"const": "VideoObject"
-							},
-							"name": {
-								"$id": "#/properties/subjectOf/items/anyOf/0/properties/name",
-								"type": "string"
-							},
-							"description": {
-								"$id": "#/properties/subjectOf/items/anyOf/0/properties/description",
-								"type": "string"
-							},
-							"uploadDate": {
-								"$id": "#/properties/subjectOf/items/anyOf/0/properties/uploadDate",
-								"type": "string"
-							},
-							"thumbnailUrl": {
-								"$id": "#/properties/subjectOf/items/anyOf/0/properties/thumbnailUrl",
-								"type": "string"
-							},
-							"url": {
-								"$id": "#/properties/subjectOf/items/anyOf/0/properties/url",
-								"type": "string"
-							},
-							"embedUrl": {
-								"$id": "#/properties/subjectOf/items/anyOf/0/properties/embedUrl",
-								"type": "string"
-							}
-						},
-						"additionalProperties": false
-					},
-					{
-						"$id": "#/properties/subjectOf/items/anyOf/1",
-						"type": "object",
-						"required": [
-							"@type",
-							"name",
-							"startDate",
-							"url"
-						],
-						"properties": {
-							"@type": {
-								"$id": "#/properties/subjectOf/items/anyOf/CreativeWorkSeries/properties/%40type",
-								"type": "string",
-								"const": "CreativeWorkSeries"
-							},
-							"name": {
-								"$id": "#/properties/subjectOf/items/anyOf/1/properties/name",
-								"type": "string"
-							},
-							"startDate": {
-								"$id": "#/properties/subjectOf/items/anyOf/1/properties/startDate",
-								"type": "string"
-							},
-							"endDate": {
-								"$id": "#/properties/subjectOf/items/anyOf/1/properties/endDate",
-								"type": "string"
-							},
-							"url": {
-								"$id": "#/properties/subjectOf/items/anyOf/1/properties/url",
-								"type": "string"
-							}
-						},
-						"additionalProperties": false
-					}
-				]
-			}]
-		},
 		"image": {
-			"$id": "#/properties/image",
 			"type": "array",
 			"minItems": 1,
 			"items": {
 				"required": [
 					"@type",
-					"name",
 					"contentUrl",
 					"encodingFormat",
 					"width",
-					"height",
-					"usageInfo",
-					"discussionUrl",
-					"url"
+					"height"
 				],
 				"type": "object",
 				"properties": {
 					"@type": {
-						"$id": "#/properties/image/%40type",
 						"const": "ImageObject",
 						"type": "string"
 					},
 					"name": {
-						"$id": "#/properties/image/name",
 						"type": "string"
 					},
 					"contentUrl": {
-						"$id": "#/properties/image/contentUrl",
 						"type": "string"
 					},
 					"encodingFormat": {
-						"$id": "#/properties/image/encodingFormat",
 						"enum": [
 							"image/jpeg",
 							"image/png"
@@ -188,51 +186,23 @@
 						"type": "string"
 					},
 					"width": {
-						"$id": "#/properties/image/width",
-						"required": [
-							"@type",
-							"value"
-						],
-						"type": "object",
-						"properties": {
-							"@type": {
-								"$id": "#/properties/image/width/properties/%40type",
-								"const": "QuantitativeValue",
-								"type": "string"
-							},
-							"value": {
-								"$id": "#/properties/image/width/properties/value",
-								"type": "integer"
-							}
-						},
-						"additionalProperties": false
+						"$ref": "#/definitions/dimension"
 					},
 					"height": {
-						"$id": "#/properties/image/height",
-						"required": [
-							"@type",
-							"value"
-						],
-						"type": "object",
-						"properties": {
-							"@type": {
-								"$id": "#/properties/image/height/properties/%40type",
-								"const": "QuantitativeValue",
-								"type": "string"
-							},
-							"value": {
-								"$id": "#/properties/image/height/properties/value",
-								"type": "integer"
-							}
-						},
-						"additionalProperties": false
+						"$ref": "#/definitions/dimension"
+					},
+					"relatedLink": {
+						"type": "array",
+						"minItems": 1,
+						"uniqueItems": true,
+						"items": {
+							"type": "string"
+						}
 					},
 					"usageInfo": {
-						"$id": "#/properties/image/usageInfo",
 						"type": "array",
 						"minItems": 2,
 						"items": {
-							"$id": "#/properties/image/usageInfo/items",
 							"enum": [
 								"https://www.fandom.com/licensing",
 								"https://satisfactory.gamepedia.com/Template:Copyright_first-party"
@@ -241,84 +211,109 @@
 						}
 					},
 					"discussionUrl": {
-						"$id": "#/properties/image/discussionUrl",
-						"type": "string"
-					},
-					"relatedLink": {
-						"$id": "#/properties/image/relatedLink",
-						"type": "array",
-						"minItems": 1,
-						"uniqueItems": true,
-						"items": {
-							"type": "string"
-						}
+						"$ref": "#/definitions/url"
 					},
 					"url": {
-						"$id": "#/properties/image/url",
-						"type": "string"
+						"$ref": "#/definitions/url"
 					}
-				},
-				"additionalProperties": false
-			}
-		},
-		"url": {
-			"$id": "#/properties/url",
-			"minItems": 1,
-			"type": "array",
-			"uniqueItems": true,
-			"items": {
-				"type": "string"
-			}
-		},
-		"about": {
-			"$id": "#/properties/about",
-			"type": "array",
-			"additionalItems": false,
-			"minItems": 1,
-            "items": [
-				{
-					"$id": "#/properties/about/items",
-					"anyOf": [
-						{
-							"$id": "#/properties/about/items/anyOf/0",
-							"const": {
-								"@type": "VideoGame",
-								"name": "Satisfactory",
-								"author": {
-									"@type": "Organization",
-									"name": "Coffee Stain Studios AB",
-									"url": "https://www.coffeestainstudios.com/"
-								},
-								"operatingSystem": "Windows",
-								"applicationCategory": [
-									"Game",
-									"Factory Construction"
-								]
-							},
-							"type": "object"
-						}
-					]
 				}
-			]
-		},
-		"relatedLink": {
-			"$id": "#/properties/relatedLink",
-			"type": "array",
-			"minItems": 1,
-			"uniqueItems": true,
-			"items": {
-				"type": "string"
 			}
 		},
-		"alternateName": {
-			"$id": "#/properties/alternateName",
-			"type": "array",
-			"minItems": 1,
-			"uniqueItems": true,
-			"items": {
-				"type": "string"
+		"video": {
+			"type": "object",
+			"required": [
+				"@type",
+				"description",
+				"uploadDate",
+				"thumbnailUrl",
+				"url",
+				"embedUrl"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "VideoObject"
+				},
+				"name": {
+					"type": "string"
+				},
+				"description": {
+					"type": "string"
+				},
+				"uploadDate": {
+					"type": "string"
+				},
+				"thumbnailUrl": {
+					"type": "string"
+				},
+				"url": {
+					"$ref": "#/definitions/url"
+				},
+				"embedUrl": {
+					"type": "string"
+				}
+			}
+		},
+		"playlist": {
+			"type": "object",
+			"required": [
+				"@type",
+				"name",
+				"startDate",
+				"url"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "CreativeWorkSeries"
+				},
+				"name": {
+					"type": "string"
+				},
+				"startDate": {
+					"type": "string"
+				},
+				"endDate": {
+					"type": "string"
+				},
+				"url": {
+					"$ref": "#/definitions/url"
+				}
+			}
+		},
+		"socialmediapost": {
+			"type": "object",
+			"required": [
+				"@type",
+				"datePublished",
+				"url",
+				"author"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "SocialMediaPosting"
+				},
+				"name": {
+					"type": "string"
+				},
+				"datePublished": {
+					"type": "string"
+				},
+				"url": {
+					"$ref": "#/definitions/url"
+				},
+				"author": {
+					"$ref": "#/definitions/person"
+				},
+				"image": {
+					"$ref": "#/definitions/image"
+				}
 			}
 		}
 	},
-	"additionalProperties": false
+	"oneOf": [
+		{"$ref": "#/definitions/person"},
+		{"$ref": "#/definitions/webpage"}
+	]
 }

@@ -1,6 +1,37 @@
 import {default as satisfactory} from './common/satisfactory.js';
 import {default as coffee_stain} from './common/coffee-stain.js';
 
+export function ImageObject(
+	required = {
+		contentUrl,
+		width,
+		height,
+		encodingFormat
+	},
+	data
+) {
+	const {
+		contentUrl,
+		width,
+		height,
+		encodingFormat,
+	} = required;
+
+	return Object.assign({}, data, {
+		'@type': 'ImageObject',
+		contentUrl,
+		encodingFormat,
+		width: {
+			'@type': 'QuantitativeValue',
+			value: width,
+		},
+		height: {
+			'@type': 'QuantitativeValue',
+			value: height,
+		},
+	});
+}
+
 export function SatisfactoryWikiImage (
 		required = {
 			wikiname,
@@ -24,16 +55,20 @@ export function SatisfactoryWikiImage (
 		required
 	);
 
-	return Object.assign({'@type': 'ImageObject'}, data, {
-		encodingFormat,
-		width: {
-			'@type': 'QuantitativeValue',
-			value: width,
-		},
-		height: {
-			'@type': 'QuantitativeValue',
-			value: height,
-		},
+	return Object.assign(
+		{},
+		ImageObject(
+			{
+				encodingFormat,
+				width,
+				height,
+				url: `https://satisfactory.gamepedia.com/File:${
+					wikiname
+				}`,
+			},
+			data
+		),
+		{
 		'usageInfo': [
 			`https://satisfactory.gamepedia.com/Template:${
 				licensetemplate
@@ -43,10 +78,8 @@ export function SatisfactoryWikiImage (
 		discussionUrl: `https://satisfactory.gamepedia.com/File_talk:${
 			wikiname
 		}`,
-		url: `https://satisfactory.gamepedia.com/File:${
-			wikiname
-		}`
-	});
+		}
+	);
 };
 
 export function	SatisfactoryWikiBuildingImage (
@@ -144,3 +177,31 @@ export function CoffeeStainer(name, data) {
 		worksFor: coffee_stain,
 	});
 };
+
+export function SocialMediaPosting(url, data) {
+	return Object.assign({}, data, {
+		'@context': 'https://schema.org',
+		'@type': 'SocialMediaPosting',
+		url,
+	});
+};
+
+export function Tweet(from, id, data) {
+	return Object.assign(
+		SocialMediaPosting(
+			`https://twittter.com/${from}/status/${id}`,
+			data
+		),
+		{
+			author: Person(from, {
+				url: `https://twitter.com/${from}`,
+			}),
+		}
+	);
+}
+
+export function DuplicateValue(value, across) {
+	return Object.fromEntries(across.map((key => {
+		return [key, value];
+	})));
+}

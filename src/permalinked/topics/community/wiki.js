@@ -13,10 +13,10 @@ export default [
 					width: 811,
 					height: 315,
 					encodingFormat: 'image/png',
+					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/b/bc/Wiki.png/revision/latest?cb=20180618033349&format=original',
 				},
 				{
 					"name": "Logo for the Satisfactory Wiki.",
-					"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/b/bc/Wiki.png/revision/latest?cb=20180618033349&format=original",
 					usageInfo: [
 						'https://www.fandom.com/licensing',
 					]

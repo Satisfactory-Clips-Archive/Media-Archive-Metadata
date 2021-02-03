@@ -16,10 +16,10 @@ export default [
 					encodingFormat: 'image/png',
 					width: 257,
 					height: 257,
+					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/7a/Lizard_doggo.png/revision/latest?cb=20180322050525&format=original',
 				},
 				{
 					"name": "Lizard Doggo, cropped from the GDC 2018 Teaser Trailer.",
-					"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/7a/Lizard_doggo.png/revision/latest?cb=20180322050525&format=original",
 				}
 			),
 		],

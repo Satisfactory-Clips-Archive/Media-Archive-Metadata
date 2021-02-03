@@ -19,10 +19,10 @@ export default [
 					encodingFormat: 'image/jpeg',
 					width: 608,
 					height: 709,
+					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/d/d4/Resource_wells.jpg/revision/latest?cb=20210125115611&format=original',
 				},
 				{
 					"name": "Screengrab of Resource Wells concept art.",
-					"contentUrl": "https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/d/d4/Resource_wells.jpg/revision/latest?cb=20210125115611&format=original",
 				}
 			),
 		]

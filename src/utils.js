@@ -39,6 +39,7 @@ export function SatisfactoryWikiImage (
 			height,
 			encodingFormat,
 			licensetemplate,
+			contentUrl,
 		},
 		data
 ) {
@@ -48,6 +49,7 @@ export function SatisfactoryWikiImage (
 		height,
 		encodingFormat,
 		licensetemplate,
+		contentUrl,
 	} = Object.assign(
 		{
 			licensetemplate: 'Copyright_first-party',
@@ -59,6 +61,7 @@ export function SatisfactoryWikiImage (
 		{},
 		ImageObject(
 			{
+				contentUrl,
 				encodingFormat,
 				width,
 				height,

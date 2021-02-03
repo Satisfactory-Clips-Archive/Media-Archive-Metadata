@@ -1,9 +1,9 @@
 import {
-	Person,
+	CoffeeStainer,
 } from '../../../utils.js';
 
 export default [
-	Person('Linus', {
+	CoffeeStainer('Linus Sjöholm', {
 		jobTitle: 'Video Editor',
 	}),
 ];

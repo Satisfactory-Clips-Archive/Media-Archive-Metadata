@@ -72,15 +72,15 @@ export function SatisfactoryWikiImage (
 			data
 		),
 		{
-		'usageInfo': [
-			`https://satisfactory.gamepedia.com/Template:${
-				licensetemplate
+			'usageInfo': [
+				`https://satisfactory.gamepedia.com/Template:${
+					licensetemplate
+				}`,
+				'https://www.fandom.com/licensing',
+			],
+			discussionUrl: `https://satisfactory.gamepedia.com/File_talk:${
+				wikiname
 			}`,
-			'https://www.fandom.com/licensing',
-		],
-		discussionUrl: `https://satisfactory.gamepedia.com/File_talk:${
-			wikiname
-		}`,
 		}
 	);
 };

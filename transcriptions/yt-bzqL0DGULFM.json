@@ -18,6 +18,8 @@
 					"speaker": [
 						"Jace"
 					],
+					"position": 100,
+					"size": 45,
 					"align": "end"
 				}
 			},
@@ -33,6 +35,8 @@
 					"speaker": [
 						"Jace"
 					],
+					"position": 100,
+					"size": 45,
 					"align": "end"
 				}
 			},
@@ -48,6 +52,8 @@
 					"speaker": [
 						"Snutt"
 					],
+					"position": 0,
+					"size": 45,
 					"align": "start"
 				}
 			},
@@ -63,6 +69,8 @@
 					"speaker": [
 						"Jace"
 					],
+					"position": 100,
+					"size": 45,
 					"align": "end"
 				}
 			},
@@ -78,6 +86,8 @@
 					"speaker": [
 						"Snutt"
 					],
+					"position": 0,
+					"size": 45,
 					"align": "start"
 				}
 			},
@@ -93,6 +103,8 @@
 					"speaker": [
 						"Snutt"
 					],
+					"position": 0,
+					"size": 45,
 					"align": "start"
 				}
 			},
@@ -108,6 +120,8 @@
 					"speaker": [
 						"Snutt"
 					],
+					"position": 0,
+					"size": 45,
 					"align": "start"
 				}
 			}

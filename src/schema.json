@@ -113,6 +113,7 @@
 									"const": {
 										"@type": "VideoGame",
 										"name": "Satisfactory",
+										"url": "https://satisfactorygame.com/",
 										"author": {
 											"@type": "Organization",
 											"name": "Coffee Stain Studios AB",

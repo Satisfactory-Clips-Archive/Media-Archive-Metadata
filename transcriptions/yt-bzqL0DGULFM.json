@@ -10,7 +10,7 @@
 				"@type": "ListItem",
 				"position": 0,
 				"item": {
-					"line": "Any more music tracks coming?\nI think there's going to be more music-",
+					"text": "Any more music tracks coming?\nI think there's going to be more music-",
 					"time": {
 						"start": "PT0.08S",
 						"end": "PT2.56S"
@@ -27,7 +27,7 @@
 				"@type": "ListItem",
 				"position": 1,
 				"item": {
-					"line": "wait... I think there is new \nmusic in the Update 4- is there?",
+					"text": "wait... I think there is new \nmusic in the Update 4- is there?",
 					"time": {
 						"start": "PT2.56S",
 						"end": "PT5.84S"
@@ -44,7 +44,7 @@
 				"@type": "ListItem",
 				"position": 2,
 				"item": {
-					"line": "Yeah, I answered that before-",
+					"text": "Yeah, I answered that before-",
 					"time": {
 						"start": "PT5.84S",
 						"end": "PT7.68S"
@@ -61,7 +61,7 @@
 				"@type": "ListItem",
 				"position": 3,
 				"item": {
-					"line": "Yeah yeah yeah.",
+					"text": "Yeah yeah yeah.",
 					"time": {
 						"start": "PT5.84S",
 						"end": "PT7.68S"
@@ -78,7 +78,7 @@
 				"@type": "ListItem",
 				"position": 4,
 				"item": {
-					"line": "there's new music planned but\nI don't know-",
+					"text": "there's new music planned but\nI don't know-",
 					"time": {
 						"start": "PT7.68S",
 						"end": "PT9.36S"
@@ -95,7 +95,7 @@
 				"@type": "ListItem",
 				"position": 5,
 				"item": {
-					"line": "I don't think it's going to drop for Update 4...",
+					"text": "I don't think it's going to drop for Update 4...",
 					"time": {
 						"start": "PT9.36S",
 						"end": "PT11.04S"
@@ -112,7 +112,7 @@
 				"@type": "ListItem",
 				"position": 6,
 				"item": {
-					"line": "pretty sure it's not going to drop for Update 4\nit's going to be later.",
+					"text": "pretty sure it's not going to drop for Update 4\nit's going to be later.",
 					"time": {
 						"start": "PT12S",
 						"end": "PT14.56S"

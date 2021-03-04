@@ -1,24 +1,16 @@
 {
-	"@context": "https://schema.org",
-	"@type": "CreativeWork",
-	"inLanguage": "en",
-	"url": "https://youtu.be/-2hJ5_qMAoM",
-	"about": {
-		"@type": "ItemList",
-		"itemListElement": [
+	"about": "https://youtu.be/-2hJ5_qMAoM",
+	"language": "en",
+	"text": [
 			{
-				"@type": "ListItem",
-				"position": 0,
-				"item": {
 					"text": "[unintelligible]",
-					"time": {
-						"start": "PT0S",
-						"end": "PT1.75S"
-					},
+			"startTime": "PT0S",
+			"endTime": "PT1.75S",
 					"speaker": [
 						"Simon",
 						"Jace"
 					],
+			"webvtt": {
 					"position": 0,
 					"line": 0,
 					"size": 0,
@@ -26,17 +18,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 1,
-				"item": {
 					"text": "So this area's kinda cool,",
-					"time": {
-						"start": "PT2.35S",
-						"end": "PT3.59S"
-					},
+				"startTime": "PT2.35S",
+				"endTime": "PT3.59S",
 					"speaker": [
 						"Jace"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -44,17 +32,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 2,
-				"item": {
 					"text": "Yeah it's cool.",
-					"time": {
-						"start": "PT3.42S",
-						"end": "PT4.77S"
-					},
+				"startTime": "PT3.42S",
+				"endTime": "PT4.77S",
 					"speaker": [
 						"Simon"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 35,
 					"size": 45,
@@ -62,17 +46,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 3,
-				"item": {
 					"text": "maybe there's a way down- let's have a look.",
-					"time": {
-						"start": "PT3.59S",
-						"end": "PT6.77S"
-					},
+				"startTime": "PT3.59S",
+				"endTime": "PT6.77S",
 					"speaker": [
 						"Jace"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -80,17 +60,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 4,
-				"item": {
 					"text": "Scary...",
-					"time": {
-						"start": "PT6.54S",
-						"end": "PT7.48S"
-					},
+				"startTime": "PT6.54S",
+				"endTime": "PT7.48S",
 					"speaker": [
 						"Jace"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -98,17 +74,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 5,
-				"item": {
 					"text": "It's a lot of fog...",
-					"time": {
-						"start": "PT7.34S",
-						"end": "PT8.69S"
-					},
+				"startTime": "PT7.34S",
+				"endTime": "PT8.69S",
 					"speaker": [
 						"Snutt"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 15,
 					"size": 45,
@@ -116,17 +88,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 6,
-				"item": {
 					"text": "It's like the- It's like the...",
-					"time": {
-						"start": "PT9.2S",
-						"end": "PT10.93S"
-					},
+				"startTime": "PT9.2S",
+				"endTime": "PT10.93S",
 					"speaker": [
 						"Jace"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -134,17 +102,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 7,
-				"item": {
 					"text": "Oh!",
-					"time": {
-						"start": "PT10.52S",
-						"end": "PT11.48S"
-					},
+				"startTime": "PT10.52S",
+				"endTime": "PT11.48S",
 					"speaker": [
 						"Simon"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 35,
 					"size": 45,
@@ -152,17 +116,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 8,
-				"item": {
 					"text": "like this feels like more kind of like fantasyish",
-					"time": {
-						"start": "PT11.19S",
-						"end": "PT13.96S"
-					},
+				"startTime": "PT11.19S",
+				"endTime": "PT13.96S",
 					"speaker": [
 						"Jace"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -170,18 +130,14 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 9,
-				"item": {
 					"text": "and then the landscape even looks that way",
-					"time": {
-						"start": "PT13.08S",
-						"end": "PT15.53S"
-					},
+				"startTime": "PT13.08S",
+				"endTime": "PT15.53S",
 					"speaker": [
 						"Jace"
 					],
 					"followsOnFromPrevious": true,
+				"webvtt": {
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -189,18 +145,14 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 10,
-				"item": {
 					"text": "like the- the... the pathways and stuff-",
-					"time": {
-						"start": "PT15.53S",
-						"end": "PT19.22S"
-					},
+				"startTime": "PT15.53S",
+				"endTime": "PT19.22S",
 					"speaker": [
 						"Jace"
 					],
 					"followsOnFromPrevious": true,
+				"webvtt": {
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -208,17 +160,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 11,
-				"item": {
 					"text": "Yeah.",
-					"time": {
-						"start": "PT16.13S",
-						"end": "PT16.76S"
-					},
+				"startTime": "PT16.13S",
+				"endTime": "PT16.76S",
 					"speaker": [
 						"Snutt"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 15,
 					"size": 45,
@@ -226,17 +174,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 12,
-				"item": {
 					"text": "spiralling up to the top of that thing up there,",
-					"time": {
-						"start": "PT19.22S",
-						"end": "PT21.37S"
-					},
+				"startTime": "PT19.22S",
+				"endTime": "PT21.37S",
 					"speaker": [
 						"Jace"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -244,17 +188,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 13,
-				"item": {
 					"text": "Yeah.",
-					"time": {
-						"start": "PT20.69S",
-						"end": "PT21.42S"
-					},
+				"startTime": "PT20.69S",
+				"endTime": "PT21.42S",
 					"speaker": [
 						"Snutt"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 15,
 					"size": 45,
@@ -262,17 +202,13 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 14,
-				"item": {
 					"text": "it's so beautiful.",
-					"time": {
-						"start": "PT21.37S",
-						"end": "PT22.31S"
-					},
+				"startTime": "PT21.37S",
+				"endTime": "PT22.31S",
 					"speaker": [
 						"Jace"
 					],
+				"webvtt": {
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -280,18 +216,14 @@
 				}
 			},
 			{
-				"@type": "ListItem",
-				"position": 15,
-				"item": {
 					"text": "Ha- that's Hannah and Gustav's- they did that.",
-					"time": {
-						"start": "PT22.31S",
-						"end": "PT24.18S"
-					},
+				"startTime": "PT22.31S",
+				"endTime": "PT24.18S",
 					"speaker": [
 						"Jace"
 					],
 					"followsOnFromPrevious": true,
+				"webvtt": {
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -299,5 +231,4 @@
 				}
 			}
 		]
-	}
 }

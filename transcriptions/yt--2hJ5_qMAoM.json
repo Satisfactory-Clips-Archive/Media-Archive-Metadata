@@ -2,233 +2,233 @@
 	"about": "https://youtu.be/-2hJ5_qMAoM",
 	"language": "en",
 	"text": [
-			{
-					"text": "[unintelligible]",
+		{
+			"text": "[unintelligible]",
 			"startTime": "PT0S",
 			"endTime": "PT1.75S",
-					"speaker": [
-						"Simon",
-						"Jace"
-					],
+			"speaker": [
+				"Simon",
+				"Jace"
+			],
 			"webvtt": {
-					"position": 0,
-					"line": 0,
-					"size": 0,
-					"align": "middle"
-				}
-			},
-			{
-					"text": "So this area's kinda cool,",
-				"startTime": "PT2.35S",
-				"endTime": "PT3.59S",
-					"speaker": [
-						"Jace"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 60,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "Yeah it's cool.",
-				"startTime": "PT3.42S",
-				"endTime": "PT4.77S",
-					"speaker": [
-						"Simon"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 35,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "maybe there's a way down- let's have a look.",
-				"startTime": "PT3.59S",
-				"endTime": "PT6.77S",
-					"speaker": [
-						"Jace"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 60,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "Scary...",
-				"startTime": "PT6.54S",
-				"endTime": "PT7.48S",
-					"speaker": [
-						"Jace"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 60,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "It's a lot of fog...",
-				"startTime": "PT7.34S",
-				"endTime": "PT8.69S",
-					"speaker": [
-						"Snutt"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 15,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "It's like the- It's like the...",
-				"startTime": "PT9.2S",
-				"endTime": "PT10.93S",
-					"speaker": [
-						"Jace"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 60,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "Oh!",
-				"startTime": "PT10.52S",
-				"endTime": "PT11.48S",
-					"speaker": [
-						"Simon"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 35,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "like this feels like more kind of like fantasyish",
-				"startTime": "PT11.19S",
-				"endTime": "PT13.96S",
-					"speaker": [
-						"Jace"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 60,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "and then the landscape even looks that way",
-				"startTime": "PT13.08S",
-				"endTime": "PT15.53S",
-					"speaker": [
-						"Jace"
-					],
-					"followsOnFromPrevious": true,
-				"webvtt": {
-					"position": 75,
-					"line": 60,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "like the- the... the pathways and stuff-",
-				"startTime": "PT15.53S",
-				"endTime": "PT19.22S",
-					"speaker": [
-						"Jace"
-					],
-					"followsOnFromPrevious": true,
-				"webvtt": {
-					"position": 75,
-					"line": 60,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "Yeah.",
-				"startTime": "PT16.13S",
-				"endTime": "PT16.76S",
-					"speaker": [
-						"Snutt"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 15,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "spiralling up to the top of that thing up there,",
-				"startTime": "PT19.22S",
-				"endTime": "PT21.37S",
-					"speaker": [
-						"Jace"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 60,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "Yeah.",
-				"startTime": "PT20.69S",
-				"endTime": "PT21.42S",
-					"speaker": [
-						"Snutt"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 15,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "it's so beautiful.",
-				"startTime": "PT21.37S",
-				"endTime": "PT22.31S",
-					"speaker": [
-						"Jace"
-					],
-				"webvtt": {
-					"position": 75,
-					"line": 60,
-					"size": 45,
-					"align": "end"
-				}
-			},
-			{
-					"text": "Ha- that's Hannah and Gustav's- they did that.",
-				"startTime": "PT22.31S",
-				"endTime": "PT24.18S",
-					"speaker": [
-						"Jace"
-					],
-					"followsOnFromPrevious": true,
-				"webvtt": {
-					"position": 75,
-					"line": 60,
-					"size": 45,
-					"align": "end"
-				}
+				"position": 0,
+				"line": 0,
+				"size": 0,
+				"align": "middle"
 			}
-		]
+		},
+		{
+			"text": "So this area's kinda cool,",
+			"startTime": "PT2.35S",
+			"endTime": "PT3.59S",
+			"speaker": [
+				"Jace"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "Yeah it's cool.",
+			"startTime": "PT3.42S",
+			"endTime": "PT4.77S",
+			"speaker": [
+				"Simon"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "maybe there's a way down- let's have a look.",
+			"startTime": "PT3.59S",
+			"endTime": "PT6.77S",
+			"speaker": [
+				"Jace"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "Scary...",
+			"startTime": "PT6.54S",
+			"endTime": "PT7.48S",
+			"speaker": [
+				"Jace"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "It's a lot of fog...",
+			"startTime": "PT7.34S",
+			"endTime": "PT8.69S",
+			"speaker": [
+				"Snutt"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "It's like the- It's like the...",
+			"startTime": "PT9.2S",
+			"endTime": "PT10.93S",
+			"speaker": [
+				"Jace"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "Oh!",
+			"startTime": "PT10.52S",
+			"endTime": "PT11.48S",
+			"speaker": [
+				"Simon"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "like this feels like more kind of like fantasyish",
+			"startTime": "PT11.19S",
+			"endTime": "PT13.96S",
+			"speaker": [
+				"Jace"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "and then the landscape even looks that way",
+			"startTime": "PT13.08S",
+			"endTime": "PT15.53S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true,
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "like the- the... the pathways and stuff-",
+			"startTime": "PT15.53S",
+			"endTime": "PT19.22S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true,
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "Yeah.",
+			"startTime": "PT16.13S",
+			"endTime": "PT16.76S",
+			"speaker": [
+				"Snutt"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "spiralling up to the top of that thing up there,",
+			"startTime": "PT19.22S",
+			"endTime": "PT21.37S",
+			"speaker": [
+				"Jace"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "Yeah.",
+			"startTime": "PT20.69S",
+			"endTime": "PT21.42S",
+			"speaker": [
+				"Snutt"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "it's so beautiful.",
+			"startTime": "PT21.37S",
+			"endTime": "PT22.31S",
+			"speaker": [
+				"Jace"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			}
+		},
+		{
+			"text": "Ha- that's Hannah and Gustav's- they did that.",
+			"startTime": "PT22.31S",
+			"endTime": "PT24.18S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true,
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			}
+		}
+	]
 }

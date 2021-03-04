@@ -19,7 +19,6 @@
 						"Simon",
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
 					"position": 0,
 					"line": 0,
 					"size": 0,
@@ -38,7 +37,6 @@
 					"speaker": [
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -57,7 +55,6 @@
 					"speaker": [
 						"Simon"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 35,
 					"size": 45,
@@ -76,7 +73,6 @@
 					"speaker": [
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -95,7 +91,6 @@
 					"speaker": [
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -114,7 +109,6 @@
 					"speaker": [
 						"Snutt"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 15,
 					"size": 45,
@@ -133,7 +127,6 @@
 					"speaker": [
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -152,7 +145,6 @@
 					"speaker": [
 						"Simon"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 35,
 					"size": 45,
@@ -171,7 +163,6 @@
 					"speaker": [
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -190,7 +181,7 @@
 					"speaker": [
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
+					"followsOnFromPrevious": true,
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -209,7 +200,7 @@
 					"speaker": [
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
+					"followsOnFromPrevious": true,
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -228,7 +219,6 @@
 					"speaker": [
 						"Snutt"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 15,
 					"size": 45,
@@ -247,7 +237,6 @@
 					"speaker": [
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -266,7 +255,6 @@
 					"speaker": [
 						"Snutt"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 15,
 					"size": 45,
@@ -285,7 +273,6 @@
 					"speaker": [
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
 					"position": 75,
 					"line": 60,
 					"size": 45,
@@ -304,7 +291,7 @@
 					"speaker": [
 						"Jace"
 					],
-					"followsOnFromPrevious": false,
+					"followsOnFromPrevious": true,
 					"position": 75,
 					"line": 60,
 					"size": 45,

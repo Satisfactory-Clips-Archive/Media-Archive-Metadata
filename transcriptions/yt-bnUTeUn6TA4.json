@@ -1,0 +1,140 @@
+{
+	"about": "https://youtu.be/bnUTeUn6TA4",
+	"language": "en",
+	"text": [
+		{
+			"text": "Is some stuff that unfortunately..",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT1.58S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": [
+				"\"Is the ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				" version the same version ",
+				{
+					"text": "alpha testers",
+					"about": "/topics/satisfactory-updates/released/satisfactory-alpha/"
+				},
+				" have\""
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT2.56S",
+			"endTime": "PT5.94S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"Uhh if by ",
+				{
+					"text": "alpha testers",
+					"about": "/topics/satisfactory-updates/released/satisfactory-alpha/"
+				},
+				"-"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT6.13S",
+			"endTime": "PT7.20S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"so yeah ",
+				{
+					"text": "this weekend version",
+					"about": "/topics/satisfactory-updates/released/satisfactory-alpha/alpha-weekend/"
+				},
+				"-"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT7.26S",
+			"endTime": "PT8.89S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "limited to- three exactly-",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT9.19S",
+			"endTime": "PT10.77S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"uhh but ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				" is the same as those who have the alpha key,"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT10.79S",
+			"endTime": "PT14.11S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "uhh.. yes",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT14.61S",
+			"endTime": "PT15.81S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		}
+	]
+}

@@ -1,0 +1,91 @@
+{
+	"about": "https://youtu.be/H0HcDZTv_ts",
+	"language": "en",
+	"text": [
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT0.7S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "I'm [unintelligible]",
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0.95S",
+			"endTime": "PT2.37S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": "\"When is the official release?\"",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT1.28S",
+			"endTime": "PT2.54S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"Uhh... the ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				" is on the 19th of march,"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT2.66S",
+			"endTime": "PT5.36S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"the ",
+				{
+					"text": "final",
+					"about": "/topics/satisfactory-updates/pending/satisfactory-1-0/"
+				},
+				" is we have no idea"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT5.55S",
+			"endTime": "PT7.04S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		}
+	]
+}

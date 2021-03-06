@@ -1,0 +1,163 @@
+{
+	"about": "https://youtu.be/y51YDVf8VOI",
+	"language": "en",
+	"text": [
+		{
+			"text": "[laughs]",
+			"startTime": "PT0S",
+			"endTime": "PT1.16S",
+			"speaker": [
+				"Snutt",
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"Out of ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				"?"
+			],
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT1.59S",
+			"endTime": "PT2.96S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Uhm...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT2.96S",
+			"endTime": "PT3.81S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": [
+				"Uhh.. I guess you're asking when are we gonna be out of ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				"."
+			],
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT3.81S",
+			"endTime": "PT7.04S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Uh no- no idea yet.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT7.04S",
+			"endTime": "PT8.51S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT8.51S",
+			"endTime": "PT9.08S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Well we have some ideas but...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT9.08S",
+			"endTime": "PT10.97S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Our ideas are shit.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT11.61S",
+			"endTime": "PT13.46S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "That is super super fickle right now.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT11.66S",
+			"endTime": "PT14.64S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT14.64S",
+			"endTime": "PT15.04S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT15.04S",
+			"endTime": "PT15.96S",
+			"speaker": [
+				"Jace"
+			]
+		}
+	]
+}

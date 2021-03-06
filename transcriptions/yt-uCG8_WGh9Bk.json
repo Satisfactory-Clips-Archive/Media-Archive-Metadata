@@ -1,0 +1,253 @@
+{
+	"about": "https://youtu.be/uCG8_WGh9Bk",
+	"language": "en",
+	"text": [
+		{
+			"text": [
+				"\"Will these streams be a regular thing during ",
+				{
+					"text": "early access phase",
+					"about": "/topics/retail/early-access/"
+				},
+				""
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0.94S",
+			"endTime": "PT3.69S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"and we have planned release schedule for ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				"?\""
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT3.78S",
+			"endTime": "PT7.05S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Uhh...",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT7.23S",
+			"endTime": "PT7.69S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "We have a roadmap on our website",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT7.76S",
+			"endTime": "PT9.59S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "you can find that link to it in the panel down below,",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT9.64S",
+			"endTime": "PT12.60S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "umm...",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT12.96S",
+			"endTime": "PT13.36S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "and as for the streams,",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT13.55S",
+			"endTime": "PT14.64S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "uh- I've been trying to organize just more streams of some kind,",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT14.75S",
+			"endTime": "PT17.89S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "umm... recently as things are becoming a little less secret,",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT18.1S",
+			"endTime": "PT22.37S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "and now not secret at all,",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT22.4S",
+			"endTime": "PT24.29S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "so, uh, we've done a few.",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT24.52S",
+			"endTime": "PT26.03S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "So hopefully- hopefully we'll do more.",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT26.24S",
+			"endTime": "PT29.29S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "We try and do it here in YouTube but today we're just doing Twitch.",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT29.46S",
+			"endTime": "PT32.58S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Umm.",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT33.7S",
+			"endTime": "PT34.25S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Umm.. we've done both, like a few times.",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT34.67S",
+			"endTime": "PT36.79S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "We've done both.",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT36S",
+			"endTime": "PT37.15S",
+			"speaker": [
+				"Jace"
+			]
+		}
+	]
+}

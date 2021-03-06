@@ -1,0 +1,1193 @@
+{
+	"about": "https://youtu.be/4AWVapDrLQI",
+	"language": "en",
+	"text": [
+		{
+			"text": "Fuck.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT0.37S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Uhh...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT1.26S",
+			"endTime": "PT1.60S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"\"Having already been successful in both ",
+				{
+					"text": "Epic",
+					"about": "/topics/retail/epic-store/"
+				},
+				" and ",
+				{
+					"text": "Steam",
+					"about": "/topics/retail/steam-store/steam-release/"
+				},
+				" ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				" launches,"
+			],
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT1.60S",
+			"endTime": "PT5.12S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "what is-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT5.12S",
+			"endTime": "PT5.33S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": [
+				"what is your incentive for making to ",
+				{
+					"text": "1.0 release",
+					"about": "/topics/satisfactory-updates/pending/satisfactory-1-0/"
+				},
+				"..."
+			],
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT5.33S",
+			"endTime": "PT8.04S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "versus taking the money you already have and running?\"",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT8.04S",
+			"endTime": "PT10.05S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Uhh... the incentive is that we are making a game,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT10.05S",
+			"endTime": "PT13.45S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "and we want to finish it because we care about it.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT13.45S",
+			"endTime": "PT15.88S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Uhh...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT16.05S",
+			"endTime": "PT16.84S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Making something good is very important to us-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT18.23S",
+			"endTime": "PT20.81S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT20.81S",
+			"endTime": "PT21.51S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "-the- the- the art side the creation side of making games is very important to us.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT21.51S",
+			"endTime": "PT26.58S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Uhh...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT26.75S",
+			"endTime": "PT27.42S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "The fact that we made money because people liked it is great-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT27.42S",
+			"endTime": "PT30.65S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Uhh-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT31.07S",
+			"endTime": "PT31.77S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "but we still got a job to do.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT31.77S",
+			"endTime": "PT33.23S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Not like- not just for people who like-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT33.54S",
+			"endTime": "PT35.78S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "not just for people who bought the game;",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT36.09S",
+			"endTime": "PT37.79S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "First of all we- we sort of owe them-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT38.11S",
+			"endTime": "PT40.02S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "[laughing] a finished product-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT40.02S",
+			"endTime": "PT42.20S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "[smiling] Yeah, yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT41.68S",
+			"endTime": "PT42.56S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "-but- but also for us, we-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT42.56S",
+			"endTime": "PT44.13S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "we spent so much time doing this like why the hell would we just stop?",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT44.13S",
+			"endTime": "PT47.97S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "That's crazy, people- we'd riot I think everyone would just riot,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT48.25S",
+			"endTime": "PT52.25S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Hmm.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT49.08S",
+			"endTime": "PT50.05S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "if some reason whoever would take make that decision.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT52.25S",
+			"endTime": "PT55.97S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT56.2S",
+			"endTime": "PT56.91S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Uhm..",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT56.57S",
+			"endTime": "PT57.18S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "But it's also like you know even the the boring like...",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT58.18S",
+			"endTime": "PT61.43S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "I would riot.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT58.74S",
+			"endTime": "PT59.33S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"aspect of- ",
+				"like there are a lot of people that wouldn't-"
+			],
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT61.51S",
+			"endTime": "PT63.24S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "-don't want to play early access games,",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT63.24S",
+			"endTime": "PT64.98S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": [
+				"or like waiting for ",
+				{
+					"text": "1.0",
+					"about": "/topics/satisfactory-updates/pending/satisfactory-1-0/"
+				},
+				" to come out before they even start diving into it,"
+			],
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT64.98S",
+			"endTime": "PT69.63S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Hmmhm.",
+			"webvtt": {
+				"position": 100,
+				"size": 45
+			},
+			"startTime": "PT68.22S",
+			"endTime": "PT68.97S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"and I- I'm one of those people like I didn't play ",
+				{
+					"text": "Factorio",
+					"about": "/topics/off-topic/factorio/"
+				},
+				" until it was 1.0."
+			],
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT69.63S",
+			"endTime": "PT74.37S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT72.05S",
+			"endTime": "PT72.64S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Uhm... so there's also that aspect,",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT75.1S",
+			"endTime": "PT77.5S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "but yeah the- the bigger as-",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT77.5S",
+			"endTime": "PT78.88S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "believe it or not like the bigger aspect is for us that we just want to finish it,",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT79.08S",
+			"endTime": "PT82.3S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "like... it's...",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT82.3S",
+			"endTime": "PT85.02S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "It's important to finish it.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT84.47S",
+			"endTime": "PT85.49S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "And I- you know like back when we started and decided to do early access,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT85.69S",
+			"endTime": "PT88.78S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"we didn't want to do ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				"-"
+			],
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT88.78S",
+			"endTime": "PT89.89S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "-there was like a lot of pushback,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT89.89S",
+			"endTime": "PT90.95S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "we were like:",
+			"webvtt": {
+				"position": 100,
+				"size": 45
+			},
+			"startTime": "PT90.95S",
+			"endTime": "PT91.29S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "\"we don't want to be one of those games stuck in early access\"",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT91.29S",
+			"endTime": "PT94.40S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "and we still don't, like it's so important to not be stuck here,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT94.40S",
+			"endTime": "PT97.52S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "like I- I don't know- like I don't want to- I don't want to throw shade,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT98.56S",
+			"endTime": "PT102.09S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "but I think I'm just going to end up throwing shade,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT102.09S",
+			"endTime": "PT103.7S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "but.. uhmm- but it's just like... I feel like this for me,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT103.7S",
+			"endTime": "PT109.5S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT103.88S",
+			"endTime": "PT105.56S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "and I- and I think it's a shared sentiment,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT109.5S",
+			"endTime": "PT111.4S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "we just don't want to be one of those games.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT111.56S",
+			"endTime": "PT113.50S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "That's the thing.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT113.6S",
+			"endTime": "PT114.55S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "There are a lot of early access games out there who stay early access for a long time,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT114.7S",
+			"endTime": "PT118.67S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "and they're awesome-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT118.67S",
+			"endTime": "PT119.69S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "-they're actively developing,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT119.91S",
+			"endTime": "PT122.01S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "they're engaging with the community and that's fantastic.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT122.01S",
+			"endTime": "PT124.56S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Uhm... but there are too many that just don't.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT124.56S",
+			"endTime": "PT127.46S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT127.46S",
+			"endTime": "PT128.13S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT127.99S",
+			"endTime": "PT128.13S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "And we don't want to be that so-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT128.64S",
+			"endTime": "PT130.35S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "And we also- yeah we don't want to be stuck there for a long time either,",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT130.37S",
+			"endTime": "PT134.45S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "like I think at some point we're gonna-",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT134.45S",
+			"endTime": "PT136.07S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "-even though we have like so many ideas for Satisfactory",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT136.07S",
+			"endTime": "PT138.48S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "I think at one point we're just gonna be like-",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT138.48S",
+			"endTime": "PT139.63S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "\"all right we got just gotta finish it at this point\"",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT139.63S",
+			"endTime": "PT141.68S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Yeah, yeah.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT141.68S",
+			"endTime": "PT142.67S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "fuck it- because I don't think uh we want us-",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT142.67S",
+			"endTime": "PT145.08S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT143.66S",
+			"endTime": "PT144.46S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"-because like Wube was in was in early access for eight years with ",
+				{
+					"text": "Factorio",
+					"about": "/topics/off-topic/factorio/"
+				},
+				","
+			],
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT145.08S",
+			"endTime": "PT149.29S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "and- and when we see that we're like",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT149.73S",
+			"endTime": "PT152.15S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "[Shakes head]",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT152.63S",
+			"endTime": "PT154.94S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "\"whoa that's so long we don't want to do that\"",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT152.27S",
+			"endTime": "PT155.06S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "I don't want to be in early access for 8 years.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT155.31S",
+			"endTime": "PT157.61S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah, yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT156.55S",
+			"endTime": "PT158.06S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "I don't want to work on an early access game for eight years-",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT158.43S",
+			"endTime": "PT161.25S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT160.55S",
+			"endTime": "PT161.3S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": [
+				"-because there's no reason why we can't update it after ",
+				{
+					"text": "1.0",
+					"about": "/topics/satisfactory-updates/pending/satisfactory-1-0/"
+				}
+			],
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT161.73S",
+			"endTime": "PT165.35S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "[shrugs] Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT165.17S",
+			"endTime": "PT165.96S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Like...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT166.33S",
+			"endTime": "PT167.31S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "So it's like it doesn't really change much,",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT169.06S",
+			"endTime": "PT170.99S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Hmm.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT170.47S",
+			"endTime": "PT171.80S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "but we do want to say that we've got a finished game.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT171.09S",
+			"endTime": "PT173.33S",
+			"speaker": [
+				"Jace"
+			]
+		}
+	]
+}

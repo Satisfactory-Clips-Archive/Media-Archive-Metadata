@@ -1,0 +1,67 @@
+{
+	"about": "https://youtu.be/Z0yYtiR__Nk",
+	"language": "en",
+	"text": [
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT1.54S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"When will the game be released from ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				"?"
+			],
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT2.23S",
+			"endTime": "PT4.25S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "No idea.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT4.25S",
+			"endTime": "PT4.85S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "No idea, still got some time left.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT4.85S",
+			"endTime": "PT7.15S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		}
+	]
+}

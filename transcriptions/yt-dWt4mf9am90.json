@@ -1,0 +1,152 @@
+{
+	"about": "https://youtu.be/dWt4mf9am90",
+	"language": "en",
+	"text": [
+		{
+			"text": [
+				"\"",
+				{
+					"text": "Tier 4",
+					"about": "/topics/features/tiers/tier-4/"
+				},
+				" open ",
+				{
+					"text": "now",
+					"about": "/topics/satisfactory-updates/released/satisfactory-alpha/alpha-weekend/"
+				},
+				"?\""
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT1.27S",
+			"endTime": "PT2.10S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"No no- we're not going to open any more ",
+				{
+					"text": "tiers",
+					"about": "/topics/features/tiers/"
+				},
+				"."
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT2.12S",
+			"endTime": "PT4.13S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"Uhm... well like until ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				","
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT4.56S",
+			"endTime": "PT6.77S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"when you get ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				" it'll be-"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT6.85S",
+			"endTime": "PT8.14S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "oh man... it'll be uh...",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT8.31S",
+			"endTime": "PT10.91S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"",
+				{
+					"text": "Tier 6",
+					"about": "/topics/features/tiers/tier-6/"
+				},
+				"."
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT10.03S",
+			"endTime": "PT10.54S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": [
+				"",
+				{
+					"text": "Tier 6",
+					"about": "/topics/features/tiers/tier-6/"
+				},
+				"."
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT10.85S",
+			"endTime": "PT11.42S",
+			"speaker": [
+				"Jace",
+				"Snutt"
+			]
+		}
+	]
+}

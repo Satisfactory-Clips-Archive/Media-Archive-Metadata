@@ -1,0 +1,67 @@
+{
+	"about": "https://youtu.be/zHYxze67E28",
+	"language": "en",
+	"text": [
+		{
+			"text": "yeah another in place",
+			"startTime": "PT0S",
+			"endTime": "PT1.45S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"\"does the time for ",
+				{
+					"text": "epic suc- [tongue tied] the exclusivity",
+					"about": "/topics/retail/epic-store/epic-store-exclusivity/"
+				},
+				""
+			],
+			"startTime": "PT1.63S",
+			"endTime": "PT5.05S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"uh run when the game comes out or ",
+				{
+					"text": "early access phase",
+					"about": "/topics/retail/early-access/"
+				},
+				"?\""
+			],
+			"startTime": "PT5.66S",
+			"endTime": "PT8.30S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"when uhh.. on ",
+				{
+					"text": "early access phase",
+					"about": "/topics/retail/early-access/"
+				},
+				"."
+			],
+			"startTime": "PT8.35S",
+			"endTime": "PT10.37S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "So it begins on the 19th of March when early access comes up.",
+			"startTime": "PT10.42S",
+			"endTime": "PT14.05S",
+			"speaker": [
+				"Jace"
+			]
+		}
+	]
+}

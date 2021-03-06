@@ -1,0 +1,369 @@
+{
+	"about": "https://youtu.be/spm2R0VhMV8",
+	"language": "en",
+	"text": [
+		{
+			"text": "I have some idea like-",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT1.86S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "\"Five years- what is this, an early access logistics game?\"",
+			"webvtt": {
+				"position": 80,
+				"line": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT1.74S",
+			"endTime": "PT4.73S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Oh shit.",
+			"webvtt": {
+				"position": 80,
+				"line": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT4.73S",
+			"endTime": "PT5.37S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "[snigger]",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT5.37S",
+			"endTime": "PT5.91S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"Uh... ",
+				{
+					"text": "Factorio",
+					"about": "/topics/off-topic/factorio/"
+				},
+				" wasn't released early access for eight years,"
+			],
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT5.43S",
+			"endTime": "PT10.22S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "uhm...",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT10.22S",
+			"endTime": "PT11.57S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "we are... closing in on two years?",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT11.67S",
+			"endTime": "PT15.09S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "In early access?",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT15.71S",
+			"endTime": "PT17.01S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "I think?",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT17.01S",
+			"endTime": "PT17.5S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Yeah something like that I don't remember.",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT17.79S",
+			"endTime": "PT19.68S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Shit.",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT19.37S",
+			"endTime": "PT20.07S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Time-",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT20.07S",
+			"endTime": "PT20.64S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Time- time flies.",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT20.54S",
+			"endTime": "PT21.72S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "-flies.",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT21.29S",
+			"endTime": "PT21.72S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT21.72S",
+			"endTime": "PT22.40S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": [
+				"I don't know how long they worked on ",
+				{
+					"text": "Factorio",
+					"about": "/topics/off-topic/factorio/"
+				},
+				" before they released it"
+			],
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT23.65S",
+			"endTime": "PT26.38S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "maybe they released a pretty early on,",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT26.38S",
+			"endTime": "PT27.57S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "but eight years in early access is a long time.",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT27.60S",
+			"endTime": "PT30.48S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT31.26S",
+			"endTime": "PT31.72S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"Man you're getting there ",
+				{
+					"text": "Jace",
+					"about": "/topics/coffee-stainers/jace/"
+				},
+				"."
+			],
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT31.53S",
+			"endTime": "PT32.58S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Long time!",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT31.72S",
+			"endTime": "PT32.99S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Long time!",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT33.0S",
+			"endTime": "PT33.94S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "That's a- too damn long.",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT33.85S",
+			"endTime": "PT35.86S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "[Chuckles]",
+			"webvtt": {
+				"position": 80,
+				"line": 90,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT36.13S",
+			"endTime": "PT37.3S",
+			"speaker": [
+				"Snutt"
+			]
+		}
+	]
+}

@@ -1,0 +1,205 @@
+{
+	"about": "https://youtu.be/PBkvqmyjADM",
+	"language": "en",
+	"text": [
+		{
+			"text": "yep",
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT0.78S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": [
+				"\"how often will you release ",
+				{
+					"text": "updates",
+					"about": "/topics/satisfactory-updates/"
+				},
+				"?\""
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT2.28S",
+			"endTime": "PT3.84S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "[unintelligble]",
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT2.28S",
+			"endTime": "PT3.55S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": [
+				"",
+				{
+					"text": "Early access",
+					"about": "/topics/retail/early-access/"
+				},
+				"?"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT4.02S",
+			"endTime": "PT4.74S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "I don't know like maybe every month or something?",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT4.76S",
+			"endTime": "PT6.82S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "will be aimed for?",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT6.89S",
+			"endTime": "PT7.59S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "something like that?",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT7.69S",
+			"endTime": "PT8.60S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Ohh!",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT8.61S",
+			"endTime": "PT9.04S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah?",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT9.42S",
+			"endTime": "PT9.67S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "There's like the road map that you can take a look at.",
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT9.84S",
+			"endTime": "PT12.0S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT11.8S",
+			"endTime": "PT12.03S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "There's the roadmap link below the video in the panels.",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT12.20S",
+			"endTime": "PT15.31S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT13.3S",
+			"endTime": "PT13.93S",
+			"speaker": [
+				"Simon"
+			]
+		}
+	]
+}

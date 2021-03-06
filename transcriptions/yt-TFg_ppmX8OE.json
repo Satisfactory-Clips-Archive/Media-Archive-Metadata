@@ -1,0 +1,178 @@
+{
+	"about": "https://youtu.be/TFg_ppmX8OE",
+	"language": "en",
+	"text": [
+		{
+			"text": "Go for it.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT0.44S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Yeah,",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT0.44S",
+			"endTime": "PT0.73S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "uhh...",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT1.1S",
+			"endTime": "PT1.49S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": [
+				"\"Will the price go up after ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				" ends?\""
+			],
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT1.5S",
+			"endTime": "PT3.17S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "I'm actually not sure,",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT3.17S",
+			"endTime": "PT4.26S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "uhh..",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT4.26S",
+			"endTime": "PT5.02S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "I think we sort of thought that,",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT5.79S",
+			"endTime": "PT7.2S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "maybe as the game gets more complete it would go up,",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT7.2S",
+			"endTime": "PT9.26S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "but...",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT9.26S",
+			"endTime": "PT9.9S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "that was ugh, over a year ago that-",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT9.96S",
+			"endTime": "PT12.45S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "that we thought of that and-",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT12.45S",
+			"endTime": "PT13.78S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "don't know basically, don- don't know.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT13.78S",
+			"endTime": "PT16.72S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		}
+	]
+}

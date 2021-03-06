@@ -1,0 +1,488 @@
+{
+	"about": "https://youtu.be/RsI9XqjI0fk",
+	"language": "en",
+	"text": [
+		{
+			"text": "Hmm",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT0.65S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"\"Game looks amazing can't wait till ",
+				{
+					"text": "the 19th",
+					"about": "/topics/retail/early-access/"
+				},
+				"\""
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT1.69S",
+			"endTime": "PT3.66S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": [
+				"Thank you, thank you very much I'm super hyped for ",
+				{
+					"text": "the night",
+					"about": "/topics/retail/early-access/"
+				},
+				""
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT3.85S",
+			"endTime": "PT7.279S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": "me too",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT7.06S",
+			"endTime": "PT7.97S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "[clears throat]",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT8.16S",
+			"endTime": "PT8.8S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "yeah man it's gonna be wild",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT8.17S",
+			"endTime": "PT10S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "I can't wait to to lose more sleep",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT9.599S",
+			"endTime": "PT10.85S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT10.91S",
+			"endTime": "PT11.64S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "yeah it's worth it",
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT11.759S",
+			"endTime": "PT13.42S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": "I can't wait to log out of twitter and leave the country",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT13.64S",
+			"endTime": "PT16.08S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT13.91S",
+			"endTime": "PT14.78S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Oh yeah...",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT16.55S",
+			"endTime": "PT17.15S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT16.95S",
+			"endTime": "PT17.88S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": "Going to Brasil!",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT18.86S",
+			"endTime": "PT20.28S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "I love everyone that's the main problem.",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT18.77S",
+			"endTime": "PT21.69S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"Jace should have- Should have a ",
+				"smurf account!"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT20.27S",
+			"endTime": "PT22.6S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": [
+				"[Laughing] ",
+				"The smurf ac-"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT23.02S",
+			"endTime": "PT24.93S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"The smurf account on twitter!",
+				""
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT23.32S",
+			"endTime": "PT25.52S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Smurf accounts on twitter, yeah!",
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT25.46S",
+			"endTime": "PT26.97S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": "Pfft- Twitter's so easy I just got a smurf account you know",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT25.83S",
+			"endTime": "PT29.26S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Yeah whatever... 2k mmr smurf account yeah",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT28.91S",
+			"endTime": "PT32.13S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "yeah yeah",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT32.13S",
+			"endTime": "PT32.91S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Um I know I, I- I love answering all the",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT32.239S",
+			"endTime": "PT35.19S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "questions to help everyone",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT35.2S",
+			"endTime": "PT36.09S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "and I respond to every single dm that's",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT36.719S",
+			"endTime": "PT39.35S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "the thing but then",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT39.37S",
+			"endTime": "PT40.29S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "when big events like this happen it just",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT40.64S",
+			"endTime": "PT42.5S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "one person can't do it so I have to like",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT42.55S",
+			"endTime": "PT45.17S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": [
+				"stop my dms and stuff but I like ",
+				"doing it okay."
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT45.28S",
+			"endTime": "PT47.81S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Yeah",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT46.62S",
+			"endTime": "PT47.19S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "No. Simon?",
+			"webvtt": {
+				"position": 75,
+				"line": 15,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT48.31S",
+			"endTime": "PT49.47S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Alright you ready for this?",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT48.32S",
+			"endTime": "PT51.84S",
+			"speaker": [
+				"Jace"
+			]
+		}
+	]
+}

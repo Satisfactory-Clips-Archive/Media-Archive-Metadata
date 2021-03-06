@@ -1,0 +1,190 @@
+{
+	"about": "https://youtu.be/LSx6aBL0q3Q",
+	"language": "en",
+	"text": [
+		{
+			"text": "Maybe.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT0.4S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Uhm...",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT0.69S",
+			"endTime": "PT2.11S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Umm...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT1.49S",
+			"endTime": "PT2.89S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Uhh...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT3.0S",
+			"endTime": "PT4.71S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"\"Do you ever get the feeling the game will be put aside for other projects and never leave ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				"?\""
+			],
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT4.71S",
+			"endTime": "PT8.09S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "That is I think there's a zero percent chance of that.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT8.09S",
+			"endTime": "PT10.37S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT10.19S",
+			"endTime": "PT11.16S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": [
+				"Satisfactory will leave ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				","
+			],
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT11.16S",
+			"endTime": "PT12.84S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "and we're not gonna do another game until it does.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT12.84S",
+			"endTime": "PT14.75S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "You can be... you can be sure that",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT17.01S",
+			"endTime": "PT18.9S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT18.86S",
+			"endTime": "PT19.42S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "I'm quite sure of that I would be very surprised if that didn't happen.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT18.90S",
+			"endTime": "PT22.25S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT20.52S",
+			"endTime": "PT21.83S",
+			"speaker": [
+				"Snutt"
+			]
+		}
+	]
+}

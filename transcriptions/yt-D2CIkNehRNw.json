@@ -1,0 +1,379 @@
+{
+	"about": "https://youtu.be/D2CIkNehRNw",
+	"language": "en",
+	"text": [
+		{
+			"text": "\"When will Update 5 be?\"",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT1.76S",
+			"endTime": "PT2.9S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "😐",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT3.67S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Come on we haven't",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT2.95S",
+			"endTime": "PT3.5S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "even released Update 4, you're",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT3.52S",
+			"endTime": "PT5.92S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "😊",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT3.7S",
+			"endTime": "PT8.9S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "already asking for Update 5 what is",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT4.56S",
+			"endTime": "PT7.32S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "this come on",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT5.92S",
+			"endTime": "PT6.33S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "😏",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT9.04S",
+			"endTime": "PT10.45S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "[mock outrage winding up]",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT6.35S",
+			"endTime": "PT8.9S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "😊",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT10.5S",
+			"endTime": "PT16.5S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "we're- we're doing our best here okay 🤏 we can't",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT9.01S",
+			"endTime": "PT12.559S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "fucking... we can't",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT11.28S",
+			"endTime": "PT12.51S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "we can't win them all we gotta get out",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT12.559S",
+			"endTime": "PT15.599S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "the first we gotta get the Update 4",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT14.32S",
+			"endTime": "PT17.039S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "out first and then we gonna go",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT15.599S",
+			"endTime": "PT18.23S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "🤔",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT16.7S",
+			"endTime": "PT19.5S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Update 5 you know what I mean?",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT17.039S",
+			"endTime": "PT21.35S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "👀",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT19.62S",
+			"endTime": "PT23.0S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT18.23S",
+			"endTime": "PT21.35S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "You said it Snutt.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT21.439S",
+			"endTime": "PT22.43S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Wow!",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT23.74S",
+			"endTime": "PT24.02S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "[Laughs]",
+			"startTime": "PT24.30S",
+			"endTime": "PT26.26S",
+			"speaker": [
+				"Jace",
+				"Snutt"
+			]
+		},
+		{
+			"text": "Could someone like uhh, put some subtitles",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT26.4S",
+			"endTime": "PT29.08S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT29.85S",
+			"endTime": "PT32.49S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "on that like I don't- make a clip",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT29.119S",
+			"endTime": "PT30.73S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "add some subtitles some- some 100%",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT30.83S",
+			"endTime": "PT33.73S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "accurate subtitles.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT33.84S",
+			"endTime": "PT34.98S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT35.35S",
+			"endTime": "PT36.04S",
+			"speaker": [
+				"Snutt"
+			]
+		}
+	]
+}

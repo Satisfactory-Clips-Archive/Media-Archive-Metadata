@@ -1,0 +1,443 @@
+{
+	"about": "https://youtu.be/iV-D3TFuaIU",
+	"language": "en",
+	"text": [
+		{
+			"text": "\"How come so many Dutch developers?\"",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT0.96S",
+			"endTime": "PT5.68S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": [
+				"Yeah ",
+				"we have a lot of Dutch people at Coffee Stain"
+			],
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT2.72S",
+			"endTime": "PT5.17S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "I don't know why there are so many Dutch...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT3.37S",
+			"endTime": "PT5.55S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "it...",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT5.35S",
+			"endTime": "PT6.08S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT5.45S",
+			"endTime": "PT5.9S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT5.9S",
+			"endTime": "PT6.41S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT6.38S",
+			"endTime": "PT7.58S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Dutch apparently have...",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT7.77S",
+			"endTime": "PT9.28S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "We're- how many are we?",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT7.89S",
+			"endTime": "PT9.08S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Like 30 or 35 or something?",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT9.36S",
+			"endTime": "PT11.16S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT11.22S",
+			"endTime": "PT11.79S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "I'm not sure, something like that.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT11.19S",
+			"endTime": "PT12.39S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "And there's like how many?",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT12.719S",
+			"endTime": "PT14.1S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Seven Dutch people?",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT14.14S",
+			"endTime": "PT16.71S",
+			"speaker": [
+				"Snutt"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "Seven Dutch people? Umm...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT16.3S",
+			"endTime": "PT18.83S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah?",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT17.6S",
+			"endTime": "PT18.1S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "No?",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT19.02S",
+			"endTime": "PT19.64S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Yeah it's like someth- Five? I thought it",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT19.039S",
+			"endTime": "PT22.24S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "was like five or six or something.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT21.039S",
+			"endTime": "PT22.6S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Wait wait wait, I can't count.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT21.64S",
+			"endTime": "PT23.12S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT23.5S",
+			"endTime": "PT23.98S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "That's why I'm a programmer.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT23.79S",
+			"endTime": "PT25.01S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "They all look the same.",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT24.40S",
+			"endTime": "PT25.79S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT25.76S",
+			"endTime": "PT25.95S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "[Laughing]",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT25.98S",
+			"endTime": "PT28.31S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": [
+				"What",
+				"‽"
+			],
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT26.38S",
+			"endTime": "PT27.51S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "[Laughing]",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT27.13S",
+			"endTime": "PT30.28S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "[Shakes head]",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT28.08S",
+			"endTime": "PT29.18S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "Uh...",
+			"webvtt": {
+				"position": 100,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT30.31S",
+			"endTime": "PT31.22S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "all right anyway moving on so uh",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT30.64S",
+			"endTime": "PT32.28S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "[Laughs]",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT32.35S",
+			"endTime": "PT33.85S",
+			"speaker": [
+				"Snutt"
+			]
+		},
+		{
+			"text": "yeah.",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT33.78S",
+			"endTime": "PT34.16S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "So do you want to talk a little bit-",
+			"webvtt": {
+				"position": 0,
+				"size": 45,
+				"align": "start"
+			},
+			"startTime": "PT34.01S",
+			"endTime": "PT36.8S",
+			"speaker": [
+				"Snutt"
+			]
+		}
+	]
+}

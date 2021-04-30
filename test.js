@@ -17,6 +17,7 @@ Object.entries(data).forEach((entry) => {
 			console.log(`${permalink} item ${i} is valid!`);
 		} else {
 			validator.errors.forEach((err) => {
+				console.error('problem with ', JSON.stringify(row));
 				console.error(err);
 				console.error(
 

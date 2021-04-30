@@ -1,5 +1,6 @@
 import {
 	YouTubeVideo,
+	YouTubePlaylist,
 } from '../utils.js';
 
 export const yt_UT9iNA3WGT4 = YouTubeVideo('UT9iNA3WGT4', {
@@ -11,4 +12,10 @@ export const yt_UT9iNA3WGT4 = YouTubeVideo('UT9iNA3WGT4', {
 		'https://www.youtube.com/channel/UCFq1IPfyTFFeyKOnsdI40ew'
 	].join(' '),
 	'uploadDate': '2020-11-16',
+});
+
+export const Simon_Saga = YouTubePlaylist('PLzGEn7MzkWRsyTI-94PoqpuRh9a2YcKXK', {
+	"name": "Simon Saga",
+	"startDate": "2018-10-17",
+	"endDate": "2019-03-04",
 });

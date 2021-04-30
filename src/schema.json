@@ -7,6 +7,32 @@
 	],
 	"type": "object",
 	"definitions": {
+		"coffeestain": {
+			"const": {
+				"@type": "Organization",
+				"name": "Coffee Stain Studios AB",
+				"url": "https://www.coffeestainstudios.com/"
+			},
+			"type": "object"
+		},
+		"satisfactory": {
+			"const": {
+				"@type": "VideoGame",
+				"name": "Satisfactory",
+				"url": "https://satisfactorygame.com/",
+				"author": {
+					"@type": "Organization",
+					"name": "Coffee Stain Studios AB",
+					"url": "https://www.coffeestainstudios.com/"
+				},
+				"operatingSystem": "Windows",
+				"applicationCategory": [
+					"Game",
+					"Factory Construction"
+				]
+			},
+			"type": "object"
+		},
 		"uniquestrings": {
 			"minItems": 1,
 			"type": "array",
@@ -99,6 +125,9 @@
 				"name": {
 					"type": "string"
 				},
+				"description": {
+					"type": "string"
+				},
 				"url": {
 					"$ref": "#/definitions/url"
 				},
@@ -110,22 +139,10 @@
 						{
 							"oneOf": [
 								{
-									"const": {
-										"@type": "VideoGame",
-										"name": "Satisfactory",
-										"url": "https://satisfactorygame.com/",
-										"author": {
-											"@type": "Organization",
-											"name": "Coffee Stain Studios AB",
-											"url": "https://www.coffeestainstudios.com/"
-										},
-										"operatingSystem": "Windows",
-										"applicationCategory": [
-											"Game",
-											"Factory Construction"
-										]
-									},
-									"type": "object"
+									"$ref": "#/definitions/satisfactory"
+								},
+								{
+									"$ref": "#/definitions/coffeestain"
 								}
 							]
 						}
@@ -314,6 +331,7 @@
 		}
 	},
 	"oneOf": [
+		{"$ref": "#/definitions/playlist"},
 		{"$ref": "#/definitions/person"},
 		{"$ref": "#/definitions/webpage"}
 	]

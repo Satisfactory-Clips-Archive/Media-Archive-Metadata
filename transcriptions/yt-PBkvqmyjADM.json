@@ -146,7 +146,14 @@
 			]
 		},
 		{
-			"text": "There's like the road map that you can take a look at.",
+			"text": [
+				"There's like the ",
+				{
+					"text": "road map",
+					"about": "/topics/features/roadmap/"
+				},
+				" that you can take a look at."
+			],
 			"webvtt": {
 				"position": 75,
 				"line": 35,
@@ -174,7 +181,14 @@
 			]
 		},
 		{
-			"text": "There's the roadmap link below the video in the panels.",
+			"text": [
+				"There's the ",
+				{
+					"text": "roadmap",
+					"about": "/topics/features/roadmap/"
+				},
+				" link below the video in the panels."
+			],
 			"webvtt": {
 				"position": 75,
 				"line": 60,

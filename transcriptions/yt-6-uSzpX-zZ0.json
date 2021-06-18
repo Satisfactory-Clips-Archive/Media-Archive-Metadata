@@ -1,0 +1,250 @@
+{
+	"about": "https://youtu.be/6-uSzpX-zZ0",
+	"language": "en",
+	"text": [
+		{
+			"text": "[unintelligible] red",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT0S",
+			"endTime": "PT0.51S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "uhh... let's see;",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT1.43S",
+			"endTime": "PT2.39S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "What do you think about the future mod support",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT2.55S",
+			"endTime": "PT4.22S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "- it's secondary or in your first task list?",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT4.25S",
+			"endTime": "PT7.14S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "I've had so many, um, ideas for months",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT7.18S",
+			"endTime": "PT9.38S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "- I I don't quite remember when we're going to be doing it",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT9.6S",
+			"endTime": "PT12.75S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "but it is quite high.",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT12.8S",
+			"endTime": "PT14.75S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "I d- I don't know how high it is on priority but",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT14.78S",
+			"endTime": "PT17.22S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "- but we really want to do it",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT17.25S",
+			"endTime": "PT19.06S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": [
+				"it's it's on the ",
+				{
+					"text": "road map",
+					"about": "/topics/features/roadmap/"
+				},
+				""
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 35,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT19.44S",
+			"endTime": "PT20.61S",
+			"speaker": [
+				"Simon"
+			]
+		},
+		{
+			"text": [
+				"it is on the ",
+				{
+					"text": "road map",
+					"about": "/topics/features/roadmap/"
+				},
+				" yeah yeah"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT20.75S",
+			"endTime": "PT22.1S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": "you check satisfactorygame.com",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT22.62S",
+			"endTime": "PT24.1S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "uh in fact there's a link in the the panels",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT24.51S",
+			"endTime": "PT26.57S",
+			"speaker": [
+				"Jace"
+			]
+		},
+		{
+			"text": [
+				"it says ",
+				{
+					"text": "early access",
+					"about": "/topics/retail/early-access/"
+				},
+				" ",
+				{
+					"text": "roadmap",
+					"about": "/topics/features/roadmap/"
+				},
+				" click that"
+			],
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT26.59S",
+			"endTime": "PT28.25S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		},
+		{
+			"text": "and there's information on all the things we plan on doing and when",
+			"webvtt": {
+				"position": 75,
+				"line": 60,
+				"size": 45,
+				"align": "end"
+			},
+			"startTime": "PT28.53S",
+			"endTime": "PT31.19S",
+			"speaker": [
+				"Jace"
+			],
+			"followsOnFromPrevious": true
+		}
+	]
+}

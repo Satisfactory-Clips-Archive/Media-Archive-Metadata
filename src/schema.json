@@ -67,7 +67,12 @@
 					"type": "string"
 				},
 				"jobTitle": {
-					"type": "string"
+					"oneOf": [
+						{"type": "string"},
+						{
+							"$ref": "#/definitions/uniquestrings"
+						}
+					]
 				},
 				"worksFor": {
 					"required": [

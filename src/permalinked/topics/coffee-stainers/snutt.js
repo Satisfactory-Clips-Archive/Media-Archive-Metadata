@@ -5,7 +5,10 @@ import {
 
 export default [
 	CoffeeStainer('Snutt Treptow', {
-		"jobTitle": "Community Manager",
+		"jobTitle": [
+			"Community Manager",
+			"Joshie Wrangler"
+		],
 		"subjectOf": [
 			YouTubeVideo('N6yki_HwBNQ', {
 				"name": "I was a SPEAKER at a GAME DEV CONFERENCE",

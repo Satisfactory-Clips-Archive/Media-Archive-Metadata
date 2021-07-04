@@ -4,7 +4,7 @@ export default [
 	WebPage('Crab Boss', {
 		description: 'Satisfactory Livestream clips about the Crab Boss',
 		relatedLink: [
-			'https://satisfactory.gamepedia.com/Crab_Boss',
+			'https://satisfactory.fandom.com/Crab_Boss',
 		],
 		image: [
 			SatisfactoryWikiImage(

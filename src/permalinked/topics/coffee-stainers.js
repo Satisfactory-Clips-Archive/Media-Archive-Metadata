@@ -11,7 +11,7 @@ export default [
 		about: [
 			coffee_stain,
 		],
-		url: [
+		relatedLink: [
 			'https://satisfactory.fandom.com/wiki/Coffee_Stain_Studios',
 		],
 	}),

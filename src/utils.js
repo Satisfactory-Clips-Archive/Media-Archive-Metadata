@@ -88,16 +88,19 @@ export function SatisfactoryWikiImage (
 export function	SatisfactoryWikiBuildingImage (
 	required = {
 		wikiname,
+		contentUrl,
 	},
 	data
 ) {
 	const {
 		wikiname,
+		contentUrl,
 	} = required;
 
 	return SatisfactoryWikiImage(
 		{
 			wikiname,
+			contentUrl,
 			encodingFormat: 'image/png',
 			width: 512,
 			height: 512,
@@ -109,16 +112,19 @@ export function	SatisfactoryWikiBuildingImage (
 export function SatisfactoryWikiItemImage (
 	required = {
 		wikiname,
+		contentUrl,
 	},
 	data
 ) {
 	const {
 		wikiname,
+		contentUrl,
 	} = required;
 
 	return SatisfactoryWikiImage(
 		{
 			wikiname,
+			contentUrl,
 			encodingFormat: 'image/png',
 			width: 256,
 			height: 256,

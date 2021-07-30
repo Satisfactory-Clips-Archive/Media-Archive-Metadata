@@ -16,20 +16,47 @@
 			"type": "object"
 		},
 		"satisfactory": {
-			"const": {
-				"@type": "VideoGame",
-				"name": "Satisfactory",
-				"url": "https://satisfactorygame.com/",
-				"author": {
-					"@type": "Organization",
-					"name": "Coffee Stain Studios AB",
-					"url": "https://www.coffeestainstudios.com/"
+			"required": [
+				"@type",
+				"name",
+				"url",
+				"author",
+				"operatingSystem",
+				"applicationCategory"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "VideoGame"
 				},
-				"operatingSystem": "Windows",
-				"applicationCategory": [
-					"Game",
-					"Factory Construction"
-				]
+				"name": {
+					"type": "string",
+					"const": "Satisfactory"
+				},
+				"url": {
+					"type": "string",
+					"const": "https://satisfactorygame.com/"
+				},
+				"author": {
+					"$ref": "#/definitions/coffeestain"
+				},
+				"operatingSystem": {
+					"type": "string",
+					"const": "Windows"
+				},
+				"applicationCategory": {
+					"type": "array",
+					"const": [
+						"Game",
+						"Factory Construction"
+					]
+				},
+				"subjectOf": {
+					"$ref": "#/definitions/subjectOf"
+				},
+				"softwareVersion": {
+					"type": "string"
+				}
 			},
 			"type": "object"
 		},
@@ -48,6 +75,18 @@
 					"$ref": "#/definitions/uniquestrings"
 				}
 			]
+		},
+		"subjectOf": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"oneOf": [
+					{"$ref": "#/definitions/image"},
+					{"$ref": "#/definitions/video"},
+					{"$ref": "#/definitions/playlist"},
+					{"$ref": "#/definitions/socialmediapost"}
+				]
+			}
 		},
 		"person": {
 			"type": "object",
@@ -95,16 +134,7 @@
 					}
 				},
 				"subjectOf": {
-					"type": "array",
-					"minItems": 1,
-					"items": {
-						"oneOf": [
-							{"$ref": "#/definitions/image"},
-							{"$ref": "#/definitions/video"},
-							{"$ref": "#/definitions/playlist"},
-							{"$ref": "#/definitions/socialmediapost"}
-						]
-					}
+					"$ref": "#/definitions/subjectOf"
 				},
 				"url": {
 					"$ref": "#/definitions/url"
@@ -336,6 +366,7 @@
 		}
 	},
 	"oneOf": [
+		{"$ref": "#/definitions/satisfactory"},
 		{"$ref": "#/definitions/playlist"},
 		{"$ref": "#/definitions/person"},
 		{"$ref": "#/definitions/webpage"}

@@ -4,10 +4,10 @@ import {
 } from '../../../../utils.js';
 
 export default [
-	WebPage('Lizard Doggo', {
-		description: 'Satisfactory Livestream clips about the Lizard Doggo',
+	WebPage('Space Giraffe-Tick-Penguin-Whale Thing', {
+		description: 'Satisfactory Livestream clips about the Space Giraffe-Tick-Penguin-Whale Thing',
 		relatedLink: [
-			'https://satisfactory.gamepedia.com/Space_Giraffe-Tick-Penguin-Whale_Thing',
+			'https://satisfactory.fandom.com/wiki/Space_Giraffe-Tick-Penguin-Whale_Thing',
 		],
 		alternateName: [
 			'Land Whale',

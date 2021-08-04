@@ -7,7 +7,10 @@ export default [
 	WebPage('Lizard Doggo', {
 		description: 'Satisfactory Livestream clips about the Lizard Doggo',
 		relatedLink: [
-			'https://satisfactory.gamepedia.com/Lizard_Doggo',
+			'https://satisfactory.fandom.com/wiki/Lizard_Doggo',
+		],
+		alternateName: [
+			'Space Rabbit',
 		],
 		image: [
 			SatisfactoryWikiImage(

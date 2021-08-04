@@ -258,7 +258,7 @@
 						"items": {
 							"enum": [
 								"https://www.fandom.com/licensing",
-								"https://satisfactory.gamepedia.com/Template:Copyright_first-party"
+								"https://satisfactory.fandom.com/wiki/Template:Copyright_first-party"
 							],
 							"type": "string"
 						}

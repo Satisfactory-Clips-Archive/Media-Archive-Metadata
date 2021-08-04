@@ -4,7 +4,7 @@ export default [
 	WebPage('Creatures', {
 		description: 'Satisfactory Livestream clips about Creatures',
 		relatedLink: [
-			'https://satisfactory.gamepedia.com/Category:Fauna',
+			'https://satisfactory.fandom.com/wiki/Category:Fauna',
 		],
 	}),
 ];

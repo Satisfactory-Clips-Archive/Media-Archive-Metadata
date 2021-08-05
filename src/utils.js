@@ -147,6 +147,22 @@ export function YouTubeVideo (videoId, data) {
 	});
 };
 
+export function YouTubeClip (videoId, clipId, start, finish, data) {
+	return Object.assign(YouTubeVideo(videoId, data), {
+		'@type': 'Clip',
+		startOffset: start,
+		endOffset: finish,
+		url: `https://www.youtube.com/clip/${clipId}`,
+		embedUrl: `https://www.youtube.com/embed/${
+				videoId
+			}?loop=1&start=${
+				Math.floor(start)
+			}&end=${
+				Math.ceil(finish)
+			}`,
+	});
+};
+
 export function WebPage(
 	name,
 	data

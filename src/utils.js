@@ -152,7 +152,13 @@ export function YouTubeClip (videoId, clipId, start, finish, data) {
 		'@type': 'Clip',
 		startOffset: start,
 		endOffset: finish,
-		url: `https://www.youtube.com/clip/${clipId}`,
+		url: (
+			clipId !== undefined
+				? `https://www.youtube.com/clip/${clipId}`
+				: `https://www.youtube.com/watch?v=${videoId}&t=${
+					Math.floor(start)
+				}`
+		),
 		embedUrl: `https://www.youtube.com/embed/${
 				videoId
 			}?loop=1&start=${

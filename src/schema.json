@@ -88,6 +88,37 @@
 				]
 			}
 		},
+		"organization": {
+			"type": "object",
+			"required": [
+				"@type",
+				"name"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "Organization"
+				},
+				"name": {
+					"type": "string"
+				},
+				"description": {
+					"type": "string"
+				},
+				"subjectOf": {
+					"$ref": "#/definitions/subjectOf"
+				},
+				"url": {
+					"$ref": "#/definitions/url"
+				},
+				"relatedLink": {
+					"$ref": "#/definitions/uniquestrings"
+				},
+				"alternateName": {
+					"$ref": "#/definitions/uniquestrings"
+				}
+			}
+		},
 		"person": {
 			"type": "object",
 			"required": [
@@ -114,24 +145,7 @@
 					]
 				},
 				"worksFor": {
-					"required": [
-						"@type",
-						"name",
-						"url"
-					],
-					"type": "object",
-					"properties": {
-						"@type": {
-							"type": "string",
-							"const": "Organization"
-						},
-						"name": {
-							"type": "string"
-						},
-						"url": {
-							"$ref": "#/definitions/url"
-						}
-					}
+					"$ref": "#/definitions/organization"
 				},
 				"subjectOf": {
 					"$ref": "#/definitions/subjectOf"
@@ -144,6 +158,72 @@
 				},
 				"alternateName": {
 					"$ref": "#/definitions/uniquestrings"
+				}
+			}
+		},
+		"videogame": {
+			"required": [
+				"@type",
+				"name",
+				"url",
+				"author",
+				"operatingSystem",
+				"applicationCategory"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "VideoGame"
+				},
+				"name": {
+					"type": "string"
+				},
+				"url": {
+					"$ref": "#/definitions/url"
+				},
+				"author": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/organization"
+						},
+						{
+							"$ref": "#/definitions/person"
+						}
+					]
+				},
+				"operatingSystem": {
+					"oneOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "#/definitions/uniquestrings"
+						}
+					]
+				},
+				"applicationCategory": {
+					"$ref": "#/definitions/uniquestrings"
+				},
+				"alternateName": {
+					"$ref": "#/definitions/uniquestrings"
+				},
+				"image": {
+					"$ref": "#/definitions/image"
+				},
+				"subjectOf": {
+					"$ref": "#/definitions/subjectOf"
+				},
+				"softwareVersion": {
+					"type": "string"
+				},
+				"trailer": {
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"oneOf": [
+							{"$ref": "#/definitions/video"}
+						]
+					}
 				}
 			}
 		},
@@ -366,7 +446,7 @@
 		}
 	},
 	"oneOf": [
-		{"$ref": "#/definitions/satisfactory"},
+		{"$ref": "#/definitions/videogame"},
 		{"$ref": "#/definitions/playlist"},
 		{"$ref": "#/definitions/person"},
 		{"$ref": "#/definitions/webpage"}

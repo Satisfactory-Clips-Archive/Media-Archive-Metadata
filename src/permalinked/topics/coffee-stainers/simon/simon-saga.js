@@ -3,7 +3,7 @@ import {
 } from '../../../../common/youtube.js';
 
 export default [
-	Object.assign(Simon_Saga, {
+	Object.assign({}, Simon_Saga, {
 		'@context': 'https://schema.org',
 	}),
 ];

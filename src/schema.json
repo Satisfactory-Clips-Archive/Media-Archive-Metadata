@@ -258,6 +258,9 @@
 								},
 								{
 									"$ref": "#/definitions/coffeestain"
+								},
+								{
+									"$ref": "#/definitions/person"
 								}
 							]
 						}

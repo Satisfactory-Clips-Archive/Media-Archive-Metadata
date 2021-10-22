@@ -227,6 +227,71 @@
 				}
 			}
 		},
+		"software": {
+			"required": [
+				"@type",
+				"name",
+				"url",
+				"author",
+				"applicationCategory"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "Software"
+				},
+				"name": {
+					"type": "string"
+				},
+				"url": {
+					"$ref": "#/definitions/url"
+				},
+				"author": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/organization"
+						},
+						{
+							"$ref": "#/definitions/person"
+						}
+					]
+				},
+				"operatingSystem": {
+					"oneOf": [
+						{
+							"type": "string"
+						},
+						{
+							"$ref": "#/definitions/uniquestrings"
+						}
+					]
+				},
+				"applicationCategory": {
+					"$ref": "#/definitions/uniquestrings"
+				},
+				"alternateName": {
+					"$ref": "#/definitions/uniquestrings"
+				},
+				"image": {
+					"$ref": "#/definitions/image"
+				},
+				"subjectOf": {
+					"$ref": "#/definitions/subjectOf"
+				},
+				"softwareVersion": {
+					"type": "string"
+				},
+				"trailer": {
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"oneOf": [
+							{"$ref": "#/definitions/video"}
+						]
+					}
+				}
+			}
+		},
 		"webpage": {
 			"required": [
 				"@type",
@@ -316,6 +381,7 @@
 					},
 					"encodingFormat": {
 						"enum": [
+							"image/webp",
 							"image/jpeg",
 							"image/png"
 						],
@@ -449,6 +515,7 @@
 		}
 	},
 	"oneOf": [
+		{"$ref": "#/definitions/software"},
 		{"$ref": "#/definitions/videogame"},
 		{"$ref": "#/definitions/playlist"},
 		{"$ref": "#/definitions/person"},

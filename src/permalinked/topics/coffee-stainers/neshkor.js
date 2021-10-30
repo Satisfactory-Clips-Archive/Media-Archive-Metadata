@@ -4,5 +4,7 @@ import {
 
 export default [
 	CoffeeStainer('Neshkor', {
+		alternateName: 'Michiel Werring',
+		jobTitle: 'World Designer',
 	}),
 ];

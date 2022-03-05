@@ -156,6 +156,15 @@
 				"relatedLink": {
 					"$ref": "#/definitions/uniquestrings"
 				},
+				"character": {
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"oneOf": [
+							{"$ref": "#/definitions/person"}
+						]
+					}
+				},
 				"alternateName": {
 					"$ref": "#/definitions/uniquestrings"
 				}

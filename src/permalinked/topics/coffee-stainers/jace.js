@@ -4,6 +4,14 @@ import {
 	CoffeeStainer,
 } from '../../../utils.js';
 
+import {
+	default as JuiceVelvet,
+} from './jace/juice-velvet.js';
+
+import {
+	default as RoboJace,
+} from './jace/robo-jace.js';
+
 export default [
 	CoffeeStainer('Jace Varlet', {
 		"jobTitle": "Community Manager",
@@ -32,6 +40,10 @@ export default [
 					"name": "our lord and savior Jace",
 				}
 			),
+		],
+		character: [
+			JuiceVelvet[0],
+			RoboJace[0],
 		],
 		"url": [
 			"https://twitter.com/jembawls"

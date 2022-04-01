@@ -236,6 +236,43 @@
 				}
 			}
 		},
+		"videogameseries": {
+			"required": [
+				"@type",
+				"name"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "VideoGameSeries"
+				},
+				"name": {
+					"type": "string"
+				},
+				"url": {
+					"$ref": "#/definitions/url"
+				},
+				"author": {
+					"oneOf": [
+						{
+							"$ref": "#/definitions/organization"
+						},
+						{
+							"$ref": "#/definitions/person"
+						}
+					]
+				},
+				"alternateName": {
+					"$ref": "#/definitions/uniquestrings"
+				},
+				"image": {
+					"$ref": "#/definitions/image"
+				},
+				"subjectOf": {
+					"$ref": "#/definitions/subjectOf"
+				}
+			}
+		},
 		"software": {
 			"required": [
 				"@type",
@@ -526,6 +563,7 @@
 	"oneOf": [
 		{"$ref": "#/definitions/software"},
 		{"$ref": "#/definitions/videogame"},
+		{"$ref": "#/definitions/videogameseries"},
 		{"$ref": "#/definitions/playlist"},
 		{"$ref": "#/definitions/person"},
 		{"$ref": "#/definitions/webpage"}

@@ -499,6 +499,9 @@
 				},
 				"embedUrl": {
 					"type": "string"
+				},
+				"image": {
+					"$ref": "#/definitions/image"
 				}
 			}
 		},
@@ -566,6 +569,7 @@
 		{"$ref": "#/definitions/videogameseries"},
 		{"$ref": "#/definitions/playlist"},
 		{"$ref": "#/definitions/person"},
+		{"$ref": "#/definitions/video"},
 		{"$ref": "#/definitions/webpage"}
 	]
 }

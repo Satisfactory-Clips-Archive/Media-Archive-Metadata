@@ -32,9 +32,9 @@ export default [
 				{
 					wikiname: 'Jace.jpg',
 					encodingFormat: 'image/jpeg',
-					width: 400,
-					height: 400,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/51/Jace.jpg/revision/latest/scale-to-width-down/400?cb=20180706203523',
+					width: 1080,
+					height: 809,
+					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/51/Jace.jpg/revision/latest?cb=20220925091658',
 				},
 				{
 					"name": "our lord and savior Jace",

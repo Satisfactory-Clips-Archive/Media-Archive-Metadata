@@ -16,6 +16,11 @@ export default [
 	CoffeeStainer('Jace Varlet', {
 		"jobTitle": "Community Manager",
 		"subjectOf": [
+			YouTubeVideo('6HZzPbgw3pg', {
+				name: 'Community Manager Introduction - Coffee Stain Studios',
+				description: '',
+				uploadDate: '2017-11-17',
+			}),
 			YouTubeVideo('PTjtfAKNC9A', {
 				name: 'The ups and downs of a bipolar streamer',
 				description: 'Content warning: This video contains discussions about mental health and suicide. Jace Varlet is a popular community manager at Coffee Stain Studios, reaching thousands each week in his streams. But once the camera is off, another reality awaits. Jace suffers from bipolar II disorder, a chronic mental illness, characterized by periods of severe depression and hypomania.',

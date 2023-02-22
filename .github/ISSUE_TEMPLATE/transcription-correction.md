@@ -11,7 +11,7 @@ assignees: SignpostMarv
 
 
 # Topics
-Topics should be listed either from [the existing topics](https://github.com/Satisfactory-Clips-Archive/video-clip-notes/blob/main/docs/topics.md), or with a new set of preferred topics.
+Topics should be listed either from [the existing topics](https://archive.satisfactory.video/topics/), or with a new set of preferred topics.
 Topics govern what YouTube playlists a video is added to and while playlists on YouTube can't be nested, topics can be manually nested for archival.
 
 # Transcription

@@ -359,11 +359,17 @@
 				},
 				"about": {
 					"type": "array",
-					"additionalItems": false,
+					"additionalItems": true,
 					"minItems": 1,
 					"items": [
 						{
 							"oneOf": [
+								{
+									"$ref": "#/definitions/video"
+								},
+								{
+									"$ref": "#/definitions/playlist"
+								},
 								{
 									"$ref": "#/definitions/satisfactory"
 								},

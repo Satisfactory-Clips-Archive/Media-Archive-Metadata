@@ -34,3 +34,17 @@ export const yt_2_dash_JM_JP8RNc = YouTubeVideo(
 		uploadDate: '2021-07-30',
 	}
 );
+
+export const yt_ST6V_dash_a4u8Qs = YouTubeVideo('ST6V-a4u8Qs', {
+	name: 'Satisfactory Update 7 Patch Notes // Jace\'s Dark Secret [CC]',
+	description: [
+		'Satisfactory Update 7 is finally here! For a full list of patch notes, please go to:',
+		'https://www.satisfactorygame.com/updates/update-7',
+	].join(' '),
+	uploadDate: '2022-12-06',
+	creditText: [
+		'Dennis Filatov - sound design, audio mix',
+		'Mason Lindblad - editing, music seleciton, b-roll',
+		'Linus Sjöholm - on set camera & sound + b-roll capture',
+	].join('\n'),
+});

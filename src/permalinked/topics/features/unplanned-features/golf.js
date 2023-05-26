@@ -10,7 +10,7 @@ export default [
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep', {
 				name: 'Golf',
-				startDae: '2021-04-27',
+				startDate: '2021-04-27',
 			}),
 		],
 		relatedLink: [

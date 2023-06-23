@@ -15,7 +15,7 @@ export default [
 		image: [
 			ImageObject(
 				{
-					contentUrl: 'https://i.img.archive.satisfactory.video/content/topics/off-topic/final-fantasy--bg.webp',
+					contentUrl: 'https://i-img-archive.satisfactory.video/content/topics/off-topic/final-fantasy--bg.webp',
 					width: 504,
 					height: 284,
 					encodingFormat: 'image/webp',

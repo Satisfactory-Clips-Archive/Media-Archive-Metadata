@@ -19,7 +19,7 @@ export default [
 		image: [
 			ImageObject(
 				{
-					contentUrl: 'https://i.img.archive.satisfactory.video/content/topics/features/requested-features/golf--bg.webp',
+					contentUrl: 'https://i-img-archive.satisfactory.video/content/topics/features/requested-features/golf--bg.webp',
 					width: 336,
 					height: 504,
 					encodingFormat: 'image/webp',

@@ -16,7 +16,7 @@ export default [
 		image: [
 			ImageObject(
 				{
-					contentUrl: 'https://i.img.archive.satisfactory.video/content/topics/coffee-stainers/snutt/snutt-burger-time--bg.png',
+					contentUrl: 'https://i-img-archive.satisfactory.video/content/topics/coffee-stainers/snutt/snutt-burger-time--bg.png',
 					width: 598,
 					height: 476,
 					encodingFormat: 'image/png',

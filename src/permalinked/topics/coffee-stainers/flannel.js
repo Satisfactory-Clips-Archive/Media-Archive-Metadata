@@ -28,7 +28,7 @@ export default [
 		image: [
 			ImageObject(
 				{
-					contentUrl: 'https://i.img.archive.satisfactory.video/content/topics/coffee-stainers/flannel--bg.webp',
+					contentUrl: 'https://i-img-archive.satisfactory.video/content/topics/coffee-stainers/flannel--bg.webp',
 					width: 504,
 					height: 504,
 					encodingFormat: 'image/webp',

@@ -4,7 +4,7 @@ export default [
 	WebPage('Giant Flying Manta', {
 		description: 'Satisfactory Livestream clips about the Giant Flying Manta',
 		relatedLink: [
-			'https://satisfactory.fandom.com/Giant_Flying_Manta',
+			'https://satisfactory.wiki.gg/Giant_Flying_Manta',
 		],
 		image: [
 			SatisfactoryWikiImage(

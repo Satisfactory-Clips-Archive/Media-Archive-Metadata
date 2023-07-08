@@ -10,7 +10,7 @@ export default [
 	WebPage('Northern_Forest', {
 		description: 'Satisfactory Livestream clips about the Northern Forest biome in the playable area of MASSAGE-2(A-B)b',
 		relatedLink: [
-			'https://satisfactory.fandom.com/wiki/Northern_Forest',
+			'https://satisfactory.wiki.gg/wiki/Northern_Forest',
 		],
 		subjectOf: [
 			yt_2_dash_JM_JP8RNc,

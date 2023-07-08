@@ -11,7 +11,7 @@ export default [
 		jobTitle: 'CEO',
 		worksFor: FICSIT,
 		url: [
-			'https://satisfactory.fandom.com/wiki/Caterina_Parks',
+			'https://satisfactory.wiki.gg/wiki/Caterina_Parks',
 		],
 		image: [
 			SatisfactoryWikiImage(

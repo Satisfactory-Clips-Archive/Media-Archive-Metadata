@@ -4,7 +4,7 @@ export default [
 	WebPage('Non Flying Bird', {
 		description: 'Satisfactory Livestream clips about the Non Flying Bird',
 		relatedLink: [
-			'https://satisfactory.fandom.com/Non_Flying_Bird',
+			'https://satisfactory.wiki.gg/Non_Flying_Bird',
 		],
 		image: [
 			SatisfactoryWikiImage(

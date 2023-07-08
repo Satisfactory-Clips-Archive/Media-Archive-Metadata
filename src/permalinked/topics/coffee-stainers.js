@@ -12,7 +12,7 @@ export default [
 			coffee_stain,
 		],
 		relatedLink: [
-			'https://satisfactory.fandom.com/wiki/Coffee_Stain_Studios',
+			'https://satisfactory.wiki.gg/wiki/Coffee_Stain_Studios',
 		],
 	}),
 ];

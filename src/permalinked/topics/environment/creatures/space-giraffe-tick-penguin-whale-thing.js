@@ -7,7 +7,7 @@ export default [
 	WebPage('Space Giraffe-Tick-Penguin-Whale Thing', {
 		description: 'Satisfactory Livestream clips about the Space Giraffe-Tick-Penguin-Whale Thing',
 		relatedLink: [
-			'https://satisfactory.fandom.com/wiki/Space_Giraffe-Tick-Penguin-Whale_Thing',
+			'https://satisfactory.wiki.gg/wiki/Space_Giraffe-Tick-Penguin-Whale_Thing',
 		],
 		alternateName: [
 			'Land Whale',

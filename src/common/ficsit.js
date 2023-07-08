@@ -1,5 +1,5 @@
 export default {
 	'@type': 'Organization',
 	'name': 'FICSIT Incorporated',
-	'url': 'https://satisfactory.fandom.com/wiki/FICSIT_Inc.',
+	'url': 'https://satisfactory.wiki.gg/wiki/FICSIT_Inc.',
 };

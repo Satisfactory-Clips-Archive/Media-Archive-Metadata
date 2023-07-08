@@ -17,9 +17,6 @@ export default [
 				},
 				{
 					"name": "Logo for the Satisfactory Wiki.",
-					usageInfo: [
-						'https://www.fandom.com/licensing',
-					]
 				}
 			),
 		],

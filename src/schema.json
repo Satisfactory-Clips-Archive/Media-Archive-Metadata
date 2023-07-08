@@ -458,8 +458,7 @@
 						"minItems": 2,
 						"items": {
 							"enum": [
-								"https://www.fandom.com/licensing",
-								"https://satisfactory.fandom.com/wiki/Template:Copyright_first-party"
+								"https://satisfactory.wiki.gg/wiki/Template:Copyright_first-party"
 							],
 							"type": "string"
 						}

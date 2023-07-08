@@ -11,7 +11,7 @@ export default [
 		jobTitle: 'Personal Assistant',
 		worksFor: FICSIT,
 		url: [
-			'https://satisfactory.fandom.com/wiki/Steve',
+			'https://satisfactory.wiki.gg/wiki/Steve',
 		],
 		image: [
 			SatisfactoryWikiImage(

@@ -65,7 +65,7 @@ export function SatisfactoryWikiImage (
 				encodingFormat,
 				width,
 				height,
-				url: `https://satisfactory.fandom.com/wiki/File:${
+				url: `https://satisfactory.wiki.gg/wiki/File:${
 					wikiname
 				}`,
 			},
@@ -73,12 +73,11 @@ export function SatisfactoryWikiImage (
 		),
 		{
 			'usageInfo': [
-				`https://satisfactory.fandom.com/wiki/Template:${
+				`https://satisfactory.wiki.gg/wiki/Template:${
 					licensetemplate
 				}`,
-				'https://www.fandom.com/licensing',
 			],
-			discussionUrl: `https://satisfactory.fandom.com/wiki/File_talk:${
+			discussionUrl: `https://satisfactory.wiki.gg/wiki/File_talk:${
 				wikiname
 			}`,
 		}

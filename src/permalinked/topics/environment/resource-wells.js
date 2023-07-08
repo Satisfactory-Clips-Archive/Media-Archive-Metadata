@@ -7,7 +7,7 @@ export default [
 	WebPage('Resource Wells', {
 		description: 'Satisfactory Livestream clips about Resource Wells',
 		relatedLink: [
-			'https://satisfactory.fandom.com/wiki/Resource_Well',
+			'https://satisfactory.wiki.gg/wiki/Resource_Well',
 			'https://archive.satisfactory.video/topics/features/buildings/resource-well-extractor/',
 			'https://archive.satisfactory.video/topics/features/buildings/resource-well-pressurizer/',
 			'https://archive.satisfactory.video/topics/features/gases/',

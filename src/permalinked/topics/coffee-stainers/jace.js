@@ -39,7 +39,7 @@ export default [
 					encodingFormat: 'image/jpeg',
 					width: 1080,
 					height: 809,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/5/51/Jace.jpg/revision/latest?cb=20220925091658',
+					contentUrl: 'https://satisfactory.wiki.gg/images/5/51/Jace.jpg',
 				},
 				{
 					"name": "our lord and savior Jace",

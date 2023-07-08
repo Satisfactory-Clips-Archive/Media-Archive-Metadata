@@ -1,20 +1,14 @@
 import {
-	SatisfactoryWikiItemImage,
 	WebPageAboutSatisfactory,
 } from '../../../../../utils.js';
+import {
+	Uranium_Waste,
+} from '../../../../../common/wiki-images.js';
 
 export default [
 	WebPageAboutSatisfactory('Nuclear Waste', {
 		"image": [
-			SatisfactoryWikiItemImage(
-				{
-					wikiname: 'Nuclear_Waste.png',
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a1/Nuclear_Waste.png/revision/latest?cb=20190626163606&format=original',
-				},
-				{
-					"name": "In-game item icon for Nuclear Waste.",
-				}
-			),
+			Uranium_Waste,
 		],
 	}),
 ];

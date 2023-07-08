@@ -20,7 +20,7 @@ export default [
 					encodingFormat: 'image/png',
 					width: 1037,
 					height: 1080,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/a/a5/Caterina_Parks.png/revision/latest?cb=20180815211613&format=original',
+					contentUrl: 'https://satisfactory.wiki.gg/images/a/a5/Caterina_Parks.png',
 				},
 				{
 					'name': 'Concept Art for Caterina Parks',

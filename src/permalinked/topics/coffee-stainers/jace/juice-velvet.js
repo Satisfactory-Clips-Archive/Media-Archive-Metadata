@@ -20,7 +20,7 @@ export default [
 					encodingFormat: 'image/png',
 					width: 354,
 					height: 360,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/8/88/Juice_Velvet.png/revision/latest/scale-to-width-down/354?cb=20211118193054',
+					contentUrl: 'https://satisfactory.wiki.gg/images/8/88/Juice_Velvet.png',
 				},
 				{
 					name: 'Image of Jace Varlet, Community Manager at Coffee Stain, as his salesman persona Juice Velvet.',

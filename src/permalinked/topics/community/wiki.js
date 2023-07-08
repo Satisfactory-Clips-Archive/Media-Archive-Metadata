@@ -13,7 +13,7 @@ export default [
 					width: 811,
 					height: 315,
 					encodingFormat: 'image/png',
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/b/bc/Wiki.png/revision/latest?cb=20180618033349&format=original',
+					contentUrl: 'https://satisfactory.wiki.gg/images/e/e6/Site-logo.png',
 				},
 				{
 					"name": "Logo for the Satisfactory Wiki.",

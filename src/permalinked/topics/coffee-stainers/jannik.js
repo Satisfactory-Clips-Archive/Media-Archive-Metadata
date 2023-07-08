@@ -18,7 +18,7 @@ export default [
 					encodingFormat: 'image/jpeg',
 					width: 500,
 					height: 500,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/c/c6/Sleeper%27s_Delight_Soundcloud.jpg/revision/latest?cb=20180819085921&format=original',
+					contentUrl: 'https://satisfactory.wiki.gg/images/c/c6/Sleeper%27s_Delight_Soundcloud.jpg',
 				},
 				{
 					'name': 'Jannik Reuterberg',

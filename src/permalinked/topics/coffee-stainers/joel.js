@@ -24,7 +24,7 @@ export default [
 					encodingFormat: 'image/png',
 					width: 1456,
 					height: 966,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/d/db/Joel_adjusting_collar.png/revision/latest?cb=20201212125850&format=original',
+					contentUrl: 'https://satisfactory.wiki.gg/images/d/db/Joel_adjusting_collar.png',
 				},
 				{
 					name: 'Joel Rydholm, adjusting his collar while wearing an orange beanie.',

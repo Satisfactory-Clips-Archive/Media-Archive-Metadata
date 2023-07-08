@@ -13,7 +13,7 @@ export default [
 					width: 1200,
 					height: 1200,
 					encodingFormat: 'image/png',
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/4/45/Non_Flying_Bird.png/revision/latest?cb=20210202075728',
+					contentUrl: 'https://satisfactory.wiki.gg/images/4/45/Non_Flying_Bird.png',
 				}
 			),
 		],

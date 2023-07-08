@@ -14,7 +14,7 @@ export default [
 					encodingFormat: 'image/png',
 					width: 1048,
 					height: 934,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/e/ea/Sofi_about_to_suddenly_say_Jace_in_a_deep_voice.png/revision/latest?cb=20201212120620&format=original',
+					contentUrl: 'https://satisfactory.wiki.gg/images/e/ea/Sofi_about_to_suddenly_say_Jace_in_a_deep_voice.png',
 				},
 				{
 					name: 'Sofi Sprangers, laughing on camera during the filming for a Developer Highlights episode.',

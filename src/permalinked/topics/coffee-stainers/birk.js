@@ -20,7 +20,7 @@ export default [
 					encodingFormat: 'image/png',
 					width: 888,
 					height: 718,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/9/9c/Captain_Birk_of_the_SS_Chillax.png/revision/latest?cb=20201211170804&format=original',
+					contentUrl: 'https://satisfactory.wiki.gg/images/9/9c/Captain_Birk_of_the_SS_Chillax.png',
 				},
 				{
 					name: 'Screengrab from Shifting Focus to 1.0, Update 4 in Q1 (maybe) + more w/ Producer Birk',

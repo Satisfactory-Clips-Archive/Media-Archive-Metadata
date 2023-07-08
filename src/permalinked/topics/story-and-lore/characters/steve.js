@@ -20,7 +20,7 @@ export default [
 					encodingFormat: 'image/png',
 					width: 1113,
 					height: 1080,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/f/f3/Steve.png/revision/latest?cb=20180815211730',
+					contentUrl: 'https://satisfactory.wiki.gg/images/f/f3/Steve.png',
 				},
 				{
 					'name': 'Concept Art for Steve',

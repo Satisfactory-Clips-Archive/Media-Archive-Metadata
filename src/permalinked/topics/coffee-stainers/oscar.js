@@ -17,7 +17,7 @@ export default [
 					encodingFormat: 'image/png',
 					width: 822,
 					height: 778,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/2/28/Oscar_Jils%C3%A9n_stares_at_you.png/revision/latest?cb=20201212114402&format=original',
+					contentUrl: 'https://satisfactory.wiki.gg/images/2/28/Oscar_Jils%C3%A9n_stares_at_you.png',
 				},
 				{
 					name: 'Oscar Jilsén, deliberately staring into camera during the filming for a Developer Highlights episode.',

@@ -20,7 +20,7 @@ export default [
 					encodingFormat: 'image/webp',
 					width: 1920,
 					height: 1080,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/f/fc/Update_5_Teaser_Cave.webp/revision/latest?cb=20210807135805',
+					contentUrl: 'https://satisfactory.wiki.gg/images/f/fc/Update_5_Teaser_Cave.webp',
 				},
 				{
 					name: 'Update 5 Teaser Cave',

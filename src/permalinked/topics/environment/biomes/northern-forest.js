@@ -22,7 +22,7 @@ export default [
 					encodingFormat: 'image/png',
 					width: 808,
 					height: 858,
-					contentUrl: 'https://static.wikia.nocookie.net/satisfactory_gamepedia_en/images/7/75/Northern_Forest_Area.png/revision/latest?cb=20200319100639',
+					contentUrl: 'https://satisfactory.wiki.gg/images/7/75/Northern_Forest_Area.png',
 				},
 				{
 					name: 'Northern Forest Area from the starting location screen',

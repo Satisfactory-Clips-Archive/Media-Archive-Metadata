@@ -209,7 +209,7 @@ declare type YouTubeClipReturn = SchemaObject<'Clip'> & YouTubeData;
 
 export function YouTubeClip (
 	videoId:string,
-	clipId:string,
+	clipId:string|undefined,
 	start:number,
 	finish:number,
 	data: YouTubeData,

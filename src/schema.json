@@ -171,6 +171,7 @@
 			}
 		},
 		"videogame": {
+			"type": "object",
 			"required": [
 				"@type",
 				"name",
@@ -237,6 +238,7 @@
 			}
 		},
 		"videogameseries": {
+			"type": "object",
 			"required": [
 				"@type",
 				"name"
@@ -274,6 +276,7 @@
 			}
 		},
 		"software": {
+			"type": "object",
 			"required": [
 				"@type",
 				"name",
@@ -339,6 +342,7 @@
 			}
 		},
 		"webpage": {
+			"type": "object",
 			"required": [
 				"@type",
 				"name"
@@ -359,10 +363,8 @@
 				},
 				"about": {
 					"type": "array",
-					"additionalItems": true,
 					"minItems": 1,
-					"items": [
-						{
+					"items": {
 							"oneOf": [
 								{
 									"$ref": "#/definitions/video"
@@ -380,8 +382,7 @@
 									"$ref": "#/definitions/person"
 								}
 							]
-						}
-					]
+					}
 				},
 				"relatedLink": {
 					"$ref": "#/definitions/uniquestrings"
@@ -455,7 +456,6 @@
 					},
 					"usageInfo": {
 						"type": "array",
-						"minItems": 2,
 						"items": {
 							"enum": [
 								"https://satisfactory.wiki.gg/wiki/Template:Copyright_first-party"

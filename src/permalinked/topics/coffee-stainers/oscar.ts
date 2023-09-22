@@ -12,13 +12,11 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Oscar Jilsén stares at you.png',
-					encodingFormat: 'image/png',
-					width: 822,
-					height: 778,
-					contentUrl: 'https://satisfactory.wiki.gg/images/2/28/Oscar_Jils%C3%A9n_stares_at_you.png',
-				},
+				'https://satisfactory.wiki.gg/images/2/28/Oscar_Jils%C3%A9n_stares_at_you.png',
+				822,
+				778,
+				'image/png',
+				'Oscar Jilsén stares at you.png',
 				{
 					name: 'Oscar Jilsén, deliberately staring into camera during the filming for a Developer Highlights episode.',
 				}

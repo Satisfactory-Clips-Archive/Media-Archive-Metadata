@@ -13,13 +13,11 @@ export default [
 		'jobTitle': 'Composer',
 		"image": [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Sleeper\'s Delight Soundcloud.jpg',
-					encodingFormat: 'image/jpeg',
-					width: 500,
-					height: 500,
-					contentUrl: 'https://satisfactory.wiki.gg/images/c/c6/Sleeper%27s_Delight_Soundcloud.jpg',
-				},
+				'https://satisfactory.wiki.gg/images/c/c6/Sleeper%27s_Delight_Soundcloud.jpg',
+				500,
+				500,
+				'image/jpeg',
+				'Sleeper\'s Delight Soundcloud.jpg',
 				{
 					'name': 'Jannik Reuterberg',
 				}

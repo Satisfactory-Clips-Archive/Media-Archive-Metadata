@@ -15,13 +15,11 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Snutty_Mays.png',
-					encodingFormat: 'image/png',
-					width: 354,
-					height: 360,
-					contentUrl: 'https://satisfactory.wiki.gg/images/6/60/Snutty_Mays.png',
-				},
+				'https://satisfactory.wiki.gg/images/6/60/Snutty_Mays.png',
+				354,
+				360,
+				'image/png',
+				'Snutty_Mays.png',
 				{
 					name: 'Image of Snutt Treptow, Community Manager at Coffee Stain, as his salesman persona Snutty Mays.',
 				}

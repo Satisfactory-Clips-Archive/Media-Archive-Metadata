@@ -7,6 +7,7 @@ import {
 
 export default [
 	WebPage('Coffee Stainers', {
+		'@context': 'https://schema.org',
 		description: 'Satisfactory clips about past & present employees of Coffee Stain',
 		about: [
 			coffee_stain,

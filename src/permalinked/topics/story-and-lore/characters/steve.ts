@@ -15,13 +15,11 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Steve.png',
-					encodingFormat: 'image/png',
-					width: 1113,
-					height: 1080,
-					contentUrl: 'https://satisfactory.wiki.gg/images/f/f3/Steve.png',
-				},
+				'https://satisfactory.wiki.gg/images/f/f3/Steve.png',
+				1113,
+				1080,
+				'image/png',
+				'Steve.png',
 				{
 					'name': 'Concept Art for Steve',
 				}

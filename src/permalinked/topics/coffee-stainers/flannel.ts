@@ -27,20 +27,16 @@ export default [
 		],
 		image: [
 			ImageObject(
-				{
-					contentUrl: 'https://i-img-archive.satisfactory.video/content/topics/coffee-stainers/flannel--bg.webp',
-					width: 504,
-					height: 504,
-					encodingFormat: 'image/webp',
-				},
+				'https://i-img-archive.satisfactory.video/content/topics/coffee-stainers/flannel--bg.webp',
+				504,
+				504,
+				'image/webp',
 				{
 					exampleOfWork: ImageObject(
-						{
-							contentUrl: 'https://live.staticflickr.com/7309/12951396883_d05fb22ed8_o_d.jpg',
-							width: 2200,
-							height: 2200,
-							encodingFormat: 'image/jpeg',
-						},
+						'https://live.staticflickr.com/7309/12951396883_d05fb22ed8_o_d.jpg',
+						2200,
+						2200,
+						'image/jpeg',
 						{
 							license: 'https://creativecommons.org/licenses/by/2.0/',
 							url: 'https://www.flickr.com/photos/48013511@N07/12951396883',

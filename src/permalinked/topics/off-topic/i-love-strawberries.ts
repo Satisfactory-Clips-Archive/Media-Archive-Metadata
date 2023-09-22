@@ -24,12 +24,10 @@ export default [
 		],
 		image: [
 			ImageObject(
-				{
-					contentUrl: 'https://www.coffeestainstudios.com/media/1277/ils-square-module-2.jpg',
-					width: 768,
-					height: 768,
-					encodingFormat: 'image/jpeg',
-				},
+				'https://www.coffeestainstudios.com/media/1277/ils-square-module-2.jpg',
+				768,
+				768,
+				'image/jpeg',
 				{
 					name: 'I <3 Strawberries logo',
 				}

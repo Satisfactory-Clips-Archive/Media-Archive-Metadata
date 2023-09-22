@@ -14,13 +14,11 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Resource wells.jpg',
-					encodingFormat: 'image/jpeg',
-					width: 608,
-					height: 709,
-					contentUrl: 'https://satisfactory.wiki.gg/images/d/d4/Resource_wells.jpg',
-				},
+				'https://satisfactory.wiki.gg/images/d/d4/Resource_wells.jpg',
+				608,
+				709,
+				'image/jpeg',
+				'Resource wells.jpg',
 				{
 					"name": "Screengrab of Resource Wells concept art.",
 				}

@@ -7,12 +7,10 @@ import {
 } from '../../../../../utils.js';
 
 const img = ImageObject(
-	{
-		contentUrl: 'https://pbs.twimg.com/media/E789bICX0AgK0Ph?format=webp&name=large',
-		width: 1920,
-		height: 1080,
-		encodingFormat: 'image/webp',
-	},
+	'https://pbs.twimg.com/media/E789bICX0AgK0Ph?format=webp&name=large',
+	1920,
+	1080,
+	'image/webp',
 	{
 		description: 'Willow tree atop grassy cliff edge in left of frame, in front of a cloudy blue sky (3/4 of top of frame) and various rock formations (1/4 of bottom of frame, 5/6 of right of frame).'
 	}
@@ -20,6 +18,7 @@ const img = ImageObject(
 
 export default [
 	WebPage('#SaveTheWillows', {
+		'@context': 'https://schema.org',
 		description: 'Satisfactory Livestream clips relating to the removal of willow trees in Update 5',
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEqNe4SQNEAvhKRLQX39g9Ix', {
@@ -61,12 +60,12 @@ export default [
 					'#SaveTheWillows',
 				],
 				image: [
-					ImageObject({
-						contentUrl: 'https://pbs.twimg.com/media/E789bICX0AgK0Ph?format=jpg&name=large',
-						encodingFormat: 'image/jpeg',
-						width: 1920,
-						height: 1080,
-					}),
+					ImageObject(
+						'https://pbs.twimg.com/media/E789bICX0AgK0Ph?format=jpg&name=large',
+						1920,
+						1080,
+						'image/jpeg',
+					),
 				],
 			}),
 		],

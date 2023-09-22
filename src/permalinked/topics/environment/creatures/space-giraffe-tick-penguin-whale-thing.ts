@@ -18,13 +18,11 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'File:Space Giraffe-Tick-Penguin-Whale Thing.png',
-					encodingFormat: 'image/png',
-					width: 608,
-					height: 709,
-					contentUrl: 'https://satisfactory.wiki.gg/images/7/73/Space_Giraffe-Tick-Penguin-Whale_Thing.png',
-				},
+				'https://satisfactory.wiki.gg/images/7/73/Space_Giraffe-Tick-Penguin-Whale_Thing.png',
+				608,
+				709,
+				'image/png',
+				'File:Space Giraffe-Tick-Penguin-Whale Thing.png',
 				{
 					"name": "The Space Giraffe-Tick-Penguin-Whale Thing (sometimes referred to as Land Whale, chonky boy, mr. Bean, etc.) is a passive land creature found throughout the world.",
 				}

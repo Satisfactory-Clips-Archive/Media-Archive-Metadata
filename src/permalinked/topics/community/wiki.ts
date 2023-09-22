@@ -8,13 +8,11 @@ export default [
 		"description": "Satisfactory Livestream clips about the Satisfactory Wiki",
 		"image": [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Wiki.png',
-					width: 811,
-					height: 315,
-					encodingFormat: 'image/png',
-					contentUrl: 'https://satisfactory.wiki.gg/images/e/e6/Site-logo.png',
-				},
+				'https://satisfactory.wiki.gg/images/e/e6/Site-logo.png',
+				811,
+				315,
+				'image/png',
+				'Wiki.png',
 				{
 					"name": "Logo for the Satisfactory Wiki.",
 				}

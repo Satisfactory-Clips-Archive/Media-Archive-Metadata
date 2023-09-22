@@ -15,13 +15,11 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Caterina Parks.png',
-					encodingFormat: 'image/png',
-					width: 1037,
-					height: 1080,
-					contentUrl: 'https://satisfactory.wiki.gg/images/a/a5/Caterina_Parks.png',
-				},
+				'https://satisfactory.wiki.gg/images/a/a5/Caterina_Parks.png',
+				1037,
+				1080,
+				'image/png',
+				'Caterina Parks.png',
 				{
 					'name': 'Concept Art for Caterina Parks',
 				}

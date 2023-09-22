@@ -34,13 +34,11 @@ export default [
 		],
 		"image": [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Jace.jpg',
-					encodingFormat: 'image/jpeg',
-					width: 1080,
-					height: 809,
-					contentUrl: 'https://satisfactory.wiki.gg/images/5/51/Jace.jpg',
-				},
+				'https://satisfactory.wiki.gg/images/5/51/Jace.jpg',
+				1080,
+				809,
+				'image/jpeg',
+				'Jace.jpg',
 				{
 					"name": "our lord and savior Jace",
 				}

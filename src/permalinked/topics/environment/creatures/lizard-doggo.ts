@@ -14,13 +14,11 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Lizard Doggo.png',
-					encodingFormat: 'image/png',
-					width: 257,
-					height: 257,
-					contentUrl: 'https://satisfactory.wiki.gg/images/7/79/Lizard_Doggo.png',
-				},
+				'https://satisfactory.wiki.gg/images/7/79/Lizard_Doggo.png',
+				257,
+				257,
+				'image/png',
+				'Lizard Doggo.png',
 				{
 					"name": "Lizard Doggo, cropped from the GDC 2018 Teaser Trailer.",
 				}

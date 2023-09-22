@@ -19,12 +19,10 @@ export default [
 		},
 		image: [
 			ImageObject(
-				{
-					contentUrl: 'https://i-img-archive.satisfactory.video/content/topics/technology/vulkan--bg.webp',
-					width: 504,
-					height: 504,
-					encodingFormat: 'image/webp',
-				},
+				'https://i-img-archive.satisfactory.video/content/topics/technology/vulkan--bg.webp',
+				504,
+				504,
+				'image/webp',
 				{
 					name: '🖖',
 				}

@@ -19,13 +19,11 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Joel adjusting collar.png',
-					encodingFormat: 'image/png',
-					width: 1456,
-					height: 966,
-					contentUrl: 'https://satisfactory.wiki.gg/images/d/db/Joel_adjusting_collar.png',
-				},
+				'https://satisfactory.wiki.gg/images/d/db/Joel_adjusting_collar.png',
+				1456,
+				966,
+				'image/png',
+				'Joel adjusting collar.png',
 				{
 					name: 'Joel Rydholm, adjusting his collar while wearing an orange beanie.',
 				}

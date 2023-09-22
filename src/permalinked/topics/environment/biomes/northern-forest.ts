@@ -17,13 +17,11 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Northern_Forest_Area.png',
-					encodingFormat: 'image/png',
-					width: 808,
-					height: 858,
-					contentUrl: 'https://satisfactory.wiki.gg/images/7/75/Northern_Forest_Area.png',
-				},
+				'https://satisfactory.wiki.gg/images/7/75/Northern_Forest_Area.png',
+				808,
+				858,
+				'image/png',
+				'Northern_Forest_Area.png',
 				{
 					name: 'Northern Forest Area from the starting location screen',
 				}

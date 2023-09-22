@@ -15,13 +15,11 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Captain Birk of the SS Chillax.png',
-					encodingFormat: 'image/png',
-					width: 888,
-					height: 718,
-					contentUrl: 'https://satisfactory.wiki.gg/images/9/9c/Captain_Birk_of_the_SS_Chillax.png',
-				},
+				'https://satisfactory.wiki.gg/images/9/9c/Captain_Birk_of_the_SS_Chillax.png',
+				888,
+				718,
+				'image/png',
+				'Captain Birk of the SS Chillax.png',
 				{
 					name: 'Screengrab from Shifting Focus to 1.0, Update 4 in Q1 (maybe) + more w/ Producer Birk',
 				},

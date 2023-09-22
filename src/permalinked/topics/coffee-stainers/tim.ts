@@ -8,13 +8,11 @@ export default [
 		"jobTitle": "Producer",
 		"image": [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Tim_Badylak.png',
-					encodingFormat: 'image/png',
-					width: 726,
-					height: 428,
-					contentUrl: 'https://satisfactory.wiki.gg/images/a/a7/Tim_Badylak.png',
-				},
+				'https://satisfactory.wiki.gg/images/a/a7/Tim_Badylak.png',
+				726,
+				428,
+				'image/png',
+				'Tim_Badylak.png',
 				{
 					"name": "Tim's only known sighting whilst working at Coffee Stain.",
 				}

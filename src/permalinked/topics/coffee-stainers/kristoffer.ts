@@ -19,12 +19,10 @@ export default [
 				datePublished: '2020-03-08T14:32ZGMT',
 				image: [
 					ImageObject(
-						{
-							contentUrl: 'https://pbs.twimg.com/ext_tw_video_thumb/1104027053807071232/pu/img/SpTA9Ef4eommxPaw.jpg',
-							width: 675,
-							height: 1200,
-							encodingFormat: 'image/jpeg',
-						},
+						'https://pbs.twimg.com/ext_tw_video_thumb/1104027053807071232/pu/img/SpTA9Ef4eommxPaw.jpg',
+						675,
+						1200,
+						'image/jpeg',
 						{
 							description: 'Video poster for tweet',
 						}

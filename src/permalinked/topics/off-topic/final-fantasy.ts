@@ -10,12 +10,10 @@ export default [
 		name: 'Final Fantasy',
 		image: [
 			ImageObject(
-				{
-					contentUrl: 'https://i-img-archive.satisfactory.video/content/topics/off-topic/final-fantasy--bg.webp',
-					width: 504,
-					height: 284,
-					encodingFormat: 'image/webp',
-				},
+				'https://i-img-archive.satisfactory.video/content/topics/off-topic/final-fantasy--bg.webp',
+				504,
+				284,
+				'image/webp',
 				{
 					name: 'Final Fantasy 7 Remake Podcast',
 				}

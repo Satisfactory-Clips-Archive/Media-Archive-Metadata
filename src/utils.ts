@@ -3,103 +3,169 @@ import {default as coffee_stain} from './common/coffee-stain.js';
 
 declare type mime_type = 'image/png'|'image/jpeg'|'image/webp'|'image/avif'|'image/svg+xml';
 
-declare type ImageObjectRequired = {
-	contentUrl: string,
-	width: number,
-	height: number,
-	encodingFormat: mime_type,
-};
-
-export type SchemaObject<T extends string> = object & {
+declare type SchemaObject<T extends string> = {
 	'@context'?: 'https://schema.org',
 	'@type': T,
 };
+
+namespace SchemaProperties
+{
+	export type QuantitativeValue = SchemaObject<'QuantitativeValue'> & {
+		value: number,
+	};
+
+	export type has_url = {
+		url?: [string, ...string[]]|string,
+	};
+
+	export type ImageObjectOptional = has_url & {
+		name?: string,
+		description?: string,
+		exampleOfWork?: SocialMediaPostingReturn|Schema.ImageObject<ImageObject>,
+		license?: string,
+		author?: PersonReturn,
+		relatedLink?: [string, ...string[]],
+	};
+
+	export type ImageObject = ImageObjectOptional & {
+		contentUrl: string,
+		encodingFormat: mime_type,
+		width: QuantitativeValue,
+		height: QuantitativeValue,
+	};
+
+	export type CreativeWorkSeries = has_url & {
+		name: string,
+		description?: string,
+		startDate: string,
+		endDate?: string,
+	};
+
+	export type VideoObject = {
+		name: string,
+		uploadDate: string,
+		description?: string,
+		creditText?: string,
+	};
+
+	export type ClipObject = {
+		startOffset: number,
+		endOffset: number,
+		url: string,
+		embedUrl: string,
+	};
+
+	export type WebPage = {
+		alternateName?: string[]|string,
+		description?: string,
+		relatedLink?: string[]|string,
+		about?: SchemaObject<string>[],
+	};
+}
+
+namespace Schema
+{
+	declare type QuantitativeValue = SchemaObject<'QuantitativeValue'> & {
+		value: number,
+	};
+
+	export type ImageObject<T extends SchemaProperties.ImageObject> = SchemaObject<'ImageObject'> & T;
+
+	export type has_image<T extends SchemaProperties.ImageObject> = {
+		image?: ImageObject<T>[]|ImageObject<T>,
+	};
+
+	export type Organization = SchemaObject<'Organization'> & SchemaProperties.has_url & {
+		name: string,
+	};
+
+	export type CreativeWorkSeries<T extends SchemaProperties.CreativeWorkSeries> = SchemaObject<'CreativeWorkSeries'> & T;
+
+	export type VideoObject<
+		T1 extends SchemaProperties.VideoObject,
+		T2 extends SchemaProperties.ImageObject,
+	> = SchemaObject<'VideoObject'> & has_image<T2> & T1;
+
+	export type ClipObject<
+		T1 extends SchemaProperties.ClipObject,
+		T2 extends SchemaProperties.VideoObject,
+		T3 extends SchemaProperties.ImageObject,
+	> = SchemaObject<'Clip'> & has_image<T3> & T2 & T1;
+
+	export type WebPage<
+		T1 extends SchemaProperties.ImageObject
+	> = SchemaObject<'WebPage'> & SubjectOf & Schema.has_image<T1> & SchemaProperties.WebPage;
+
+	export function generate_SchemaObject<
+		T1 extends string,
+		T2 extends object
+	>(
+		type: T1,
+		data: T2,
+	): SchemaObject<T1> & T2 & {
+		'@context': 'https://schema.org',
+	} {
+		return Object.assign({}, data, {
+			'@context': 'https://schema.org',
+			'@type': type as T1,
+		}) as (SchemaObject<T1> & T2 & {
+			'@context': 'https://schema.org',
+		});
+	}
+
+	export function generate_QuantitativeValue(value: number): QuantitativeValue
+	{
+		return {
+			'@type': 'QuantitativeValue',
+			value,
+		};
+	}
+}
 
 export type Organization = SchemaObject<'Organization'> & {
 	name: string,
 	url: string,
 };
 
-declare type QuantitativeValue = {
-	'@type': 'QuantitativeValue',
-	value: number,
-};
-
-declare type ImageObjectReturn = SchemaObject<'ImageObject'> & {
+export function ImageObject<T extends Schema.ImageObject<SchemaProperties.ImageObject>> (
 	contentUrl: string,
+	width: number,
+	height: number,
 	encodingFormat: mime_type,
-	width: QuantitativeValue,
-	height: QuantitativeValue,
-};
-
-export function ImageObject (
-	required: ImageObjectRequired,
-	data?: object
-) : ImageObjectReturn {
-	const {
-		contentUrl,
-		width,
-		height,
-		encodingFormat,
-	} = required;
-
-	const from_required:ImageObjectReturn = {
-		'@type': 'ImageObject',
-		contentUrl,
-		encodingFormat,
-		width: {
-			'@type': 'QuantitativeValue',
-			value: width,
-		},
-		height: {
-			'@type': 'QuantitativeValue',
-			value: height,
-		},
-	};
-
-	return Object.assign({}, data, from_required);
+	data?: SchemaProperties.ImageObjectOptional,
+) : T {
+	return Schema.generate_SchemaObject<'ImageObject', T>(
+		'ImageObject',
+		Object.assign({}, data, {
+			contentUrl,
+			encodingFormat,
+			width: Schema.generate_QuantitativeValue(width),
+			height: Schema.generate_QuantitativeValue(height),
+		}) as T
+	);
 }
 
-declare type SatisfactoryWikiImageObjectRequired = ImageObjectRequired & {
-	wikiname: string,
-	licensetemplate?: string,
-};
-
-declare type SatisfactoryWikiImageObjectReturn = ImageObjectReturn & {
+declare type SatisfactoryWikiImageProperties = SchemaProperties.ImageObject & {
 	url: string,
 	discussionUrl: string,
+	usageInfo: [string],
 };
 
-export function SatisfactoryWikiImage (
-	required : SatisfactoryWikiImageObjectRequired,
-	data?: object
-) : SatisfactoryWikiImageObjectReturn {
-	const {
-		wikiname,
+export function SatisfactoryWikiImage<T extends SatisfactoryWikiImageProperties> (
+	contentUrl: string,
+	width: number,
+	height: number,
+	encodingFormat: mime_type,
+	wikiname: string,
+	data?: SchemaProperties.ImageObjectOptional,
+	licensetemplate: string = 'Copyright_first-party',
+) : Schema.ImageObject<T> {
+	return ImageObject<Schema.ImageObject<T>>(
+		contentUrl,
 		width,
 		height,
 		encodingFormat,
-		licensetemplate,
-		contentUrl,
-	} = Object.assign(
-		{
-			licensetemplate: 'Copyright_first-party',
-		},
-		required
-	);
-
-	return Object.assign(
-		{},
-		ImageObject(
-			{
-				contentUrl,
-				encodingFormat,
-				width,
-				height,
-			},
-			data
-		),
-		{
+		Object.assign({}, data, {
 			url: `https://satisfactory.wiki.gg/wiki/File:${
 				wikiname
 			}`,
@@ -111,110 +177,84 @@ export function SatisfactoryWikiImage (
 			discussionUrl: `https://satisfactory.wiki.gg/wiki/File_talk:${
 				wikiname
 			}`,
-		}
+		})
 	);
 }
 
-export function	SatisfactoryWikiBuildingImage (
-	required: {
-		wikiname: string,
-		contentUrl: string,
-	},
-	data:object
-) : SatisfactoryWikiImageObjectReturn {
-	const {
-		wikiname,
+export function	SatisfactoryWikiBuildingImage<T extends SatisfactoryWikiImageProperties> (
+	contentUrl: string,
+	wikiname: string,
+	data?: SchemaProperties.ImageObjectOptional,
+) : Schema.ImageObject<T> {
+	return SatisfactoryWikiImage<T>(
 		contentUrl,
-	} = required;
-
-	return SatisfactoryWikiImage(
-		{
-			wikiname,
-			contentUrl,
-			encodingFormat: 'image/png',
-			width: 512,
-			height: 512,
-		},
+		512,
+		512,
+		'image/png',
+		wikiname,
 		data
 	);
 }
 
-export function SatisfactoryWikiItemImage (
-	required: {
-		wikiname: string,
-		contentUrl: string,
-	},
-	data: object & {name: string}
-) {
-	const {
-		wikiname,
+export function SatisfactoryWikiItemImage<T extends SatisfactoryWikiImageProperties> (
+	contentUrl: string,
+	wikiname: string,
+	data?: SchemaProperties.ImageObjectOptional,
+) : Schema.ImageObject<T> {
+	return SatisfactoryWikiImage<T>(
 		contentUrl,
-	} = required;
-
-	return SatisfactoryWikiImage(
-		{
-			wikiname,
-			contentUrl,
-			encodingFormat: 'image/png',
-			width: 256,
-			height: 256,
-		},
+		256,
+		256,
+		'image/png',
+		wikiname,
 		data
 	);
 }
 
-export type CreativeWorkSeriesData = {
-	name: string,
-	description?: string,
-	startDate: string,
-	endDate?: string,
-};
-
-export type CreativeWorkSeries = SchemaObject<'CreativeWorkSeries'> & CreativeWorkSeriesData & {
+export function YouTubePlaylist<T extends (SchemaProperties.CreativeWorkSeries & {
 	url: string,
-};
-
-export function YouTubePlaylist (
+})> (
 	playlistId:string,
-	data: CreativeWorkSeriesData,
-) : CreativeWorkSeries {
-	return Object.assign({'@type': 'CreativeWorkSeries'} as SchemaObject<'CreativeWorkSeries'>, data, {
-		url: `https://www.youtube.com/playlist?list=${playlistId}`,
-	});
+	data: SchemaProperties.CreativeWorkSeries,
+) : Schema.CreativeWorkSeries<T> {
+	return Schema.generate_SchemaObject<'CreativeWorkSeries', T>(
+		'CreativeWorkSeries',
+		Object.assign({}, data, {
+			url: `https://www.youtube.com/playlist?list=${playlistId}`,
+		}) as T
+	);
 }
 
-declare type YouTubeData = object & {
-	'@context'?: 'https://schema.org',
-	name: string,
-	uploadDate: string,
-	description?: string,
-	creditText?: string,
-	image?: ImageObjectReturn[]|ImageObjectReturn,
-}
-
-declare type YouTubeVideoReturn = SchemaObject<'VideoObject'> & YouTubeData;
-
-export function YouTubeVideo (
+export function YouTubeVideo<
+	T1 extends SchemaProperties.VideoObject,
+	T2 extends  SchemaProperties.ImageObject,
+> (
 	videoId: string,
-	data: YouTubeData,
-) : YouTubeVideoReturn {
-	return Object.assign({'@type': 'VideoObject'} as SchemaObject<'VideoObject'>, data, {
-		thumbnailUrl: `https://i3.ytimg.com/vi/${videoId}/hqdefault.jpg`,
-		url: `https://www.youtube.com/watch?v=${videoId}`,
-		embedUrl: `https://www.youtube.com/embed/${videoId}`
-	});
+	data: T1 & Schema.has_image<T2>,
+) : Schema.VideoObject<T1, T2> {
+	return Schema.generate_SchemaObject<'VideoObject', T1>(
+		'VideoObject',
+		Object.assign({}, data, {
+			thumbnailUrl: `https://i3.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+			url: `https://www.youtube.com/watch?v=${videoId}`,
+			embedUrl: `https://www.youtube.com/embed/${videoId}`
+		})
+	);
 }
 
-declare type YouTubeClipReturn = SchemaObject<'Clip'> & YouTubeData;
-
-export function YouTubeClip (
+export function YouTubeClip<
+	T1 extends SchemaProperties.ClipObject,
+	T2 extends SchemaProperties.VideoObject,
+	T3 extends SchemaProperties.ImageObject,
+> (
 	videoId:string,
 	clipId:string|undefined,
 	start:number,
 	finish:number,
-	data: YouTubeData,
-) : YouTubeClipReturn {
-	return Object.assign(YouTubeVideo(videoId, data), {'@type': 'Clip'} as SchemaObject<'Clip'>, {
+	data: T2 & Schema.has_image<T3>,
+) : Schema.ClipObject<T1, T2, T3> {
+	const video: Schema.VideoObject<T2, T3> = YouTubeVideo<T2, T3>(videoId, data);
+	const clip_properties:T1 = {
 		startOffset: start,
 		endOffset: finish,
 		url: (
@@ -231,42 +271,42 @@ export function YouTubeClip (
 		}&end=${
 			Math.ceil(finish)
 		}`,
-	});
+	} as T1;
+
+	return Schema.generate_SchemaObject<'Clip', Schema.has_image<T3> & T2 & T1>(
+		'Clip',
+		Object.assign({}, video, clip_properties)
+	);
 }
 
-declare type SubjectOfSubtypes = CreativeWorkSeries | YouTubeVideoReturn | YouTubeClipReturn | SocialMediaPostingReturn;
+declare type SubjectOfSubtypes = Schema.CreativeWorkSeries<any> | Schema.VideoObject<any, any> | Schema.ClipObject<any, any, any> | SocialMediaPostingReturn;
 
 declare type SubjectOf = {
 	subjectOf?: SubjectOfSubtypes[]|SubjectOfSubtypes,
 };
 
-declare type WebPageData = object & SubjectOf & {
-	alternateName?: string[]|string,
-	description?: string,
-	relatedLink?: string[]|string,
-	about?: SchemaObject<string>[],
-	image?: ImageObjectReturn[]|ImageObjectReturn,
-};
-
-export function WebPage(
+export function WebPage<
+	T1 extends SchemaProperties.WebPage,
+	T2 extends SchemaProperties.ImageObject,
+>(
 	name: string,
-	data: WebPageData,
-) {
-	return Object.assign(
-		{},
-		data,
-		{
-			"@context": "https://schema.org",
-			"@type": "WebPage",
+	data: SubjectOf & Schema.has_image<T2> & T1,
+) : Schema.WebPage<T2> {
+	return Schema.generate_SchemaObject<'WebPage', T1>(
+		'WebPage',
+		Object.assign({}, data, {
 			name,
-		}
+		})
 	);
 }
 
-export function WebPageAboutSatisfactory(
-	name:string,
-	data: WebPageData,
-) {
+export function WebPageAboutSatisfactory<
+	T1 extends SchemaProperties.WebPage,
+	T2 extends SchemaProperties.ImageObject,
+>(
+	name: string,
+	data: SubjectOf & Schema.has_image<T2> & T1,
+) : Schema.WebPage<T2> {
 	const about = [...(data.about || [])];
 
 	data.about = [satisfactory, ...about];
@@ -274,13 +314,11 @@ export function WebPageAboutSatisfactory(
 	return WebPage(name, data);
 }
 
-declare type PersonData = object & SubjectOf & {
+declare type PersonData = SubjectOf & SchemaProperties.has_url & Schema.has_image<SchemaProperties.ImageObject> & {
 	alternateName?: string[]|string,
 	description?: string,
 	jobTitle?: string[]|string,
 	worksFor?: Organization[]|Organization,
-	url?: [string, ...string[]]|string,
-	image?: ImageObjectReturn[]|ImageObjectReturn,
 	character?: PersonReturn[]|PersonReturn,
 };
 
@@ -307,10 +345,9 @@ export function CoffeeStainer(
 	});
 }
 
-declare type SocialMediaPostingData = object & {
+declare type SocialMediaPostingData = Schema.has_image<SchemaProperties.ImageObject> & {
 	headline: string,
 	datePublished: string,
-	image?: ImageObjectReturn[]|ImageObjectReturn,
 	keywords?: [string, ...string[]],
 	potentialAction?: {
 		'@type': 'VoteAction',

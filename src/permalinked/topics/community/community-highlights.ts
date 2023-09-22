@@ -11,12 +11,10 @@ export default [
 		],
 		"image": [
 			ImageObject(
-				{
-					width: 800,
-					height: 800,
-					encodingFormat: 'image/png',
-					contentUrl: 'https://communityhighlights.satisfactory.video/logo-square.png',
-				},
+				'https://communityhighlights.satisfactory.video/logo-square.png',
+				800,
+				800,
+				'image/png',
 				{
 					"name": "Logo for the Satisfactory Community Highlights Archive."
 				}

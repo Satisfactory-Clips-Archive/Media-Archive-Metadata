@@ -6,6 +6,7 @@ import {
 
 export default [
 	WebPage('Golf', {
+		'@context': 'https://schema.org',
 		description: 'Satisfactory Livestream clips relating to the Golf feature request created during the April 27th, 2021 Livestream',
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep', {
@@ -18,12 +19,10 @@ export default [
 		],
 		image: [
 			ImageObject(
-				{
-					contentUrl: 'https://i-img-archive.satisfactory.video/content/topics/features/requested-features/golf--bg.webp',
-					width: 336,
-					height: 504,
-					encodingFormat: 'image/webp',
-				}
+				'https://i-img-archive.satisfactory.video/content/topics/features/requested-features/golf--bg.webp',
+				336,
+				504,
+				'image/webp',
 			),
 		]
 	}),

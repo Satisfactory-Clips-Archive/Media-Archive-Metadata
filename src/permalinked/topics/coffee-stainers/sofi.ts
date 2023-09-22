@@ -9,13 +9,11 @@ export default [
 		jobTitle: 'Concept Artist',
 		image: [
 			SatisfactoryWikiImage(
-				{
-					wikiname: 'Sofi about to suddenly say Jace in a deep voice.png',
-					encodingFormat: 'image/png',
-					width: 1048,
-					height: 934,
-					contentUrl: 'https://satisfactory.wiki.gg/images/e/ea/Sofi_about_to_suddenly_say_Jace_in_a_deep_voice.png',
-				},
+				'https://satisfactory.wiki.gg/images/e/ea/Sofi_about_to_suddenly_say_Jace_in_a_deep_voice.png',
+				1048,
+				934,
+				'image/png',
+				'Sofi about to suddenly say Jace in a deep voice.png',
 				{
 					name: 'Sofi Sprangers, laughing on camera during the filming for a Developer Highlights episode.',
 				}

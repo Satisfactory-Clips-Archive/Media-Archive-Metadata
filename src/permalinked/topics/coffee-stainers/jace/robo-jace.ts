@@ -16,32 +16,26 @@ export default [
 		],
 		image: [
 			ImageObject(
-				{
-					contentUrl: 'https://pbs.twimg.com/media/FMRR2wUXEAM3_Vs?format=jpg&name=medium',
-					width: 976,
-					height: 1080,
-					encodingFormat: 'image/jpeg',
-				},
+				'https://pbs.twimg.com/media/FMRR2wUXEAM3_Vs?format=jpg&name=medium',
+				976,
+				1080,
+				'image/jpeg',
 				{
 					exampleOfWork: Tweet('SatisfactoryAF', '1496469900965163013', {
 						headline: 'how it started vs how its going',
 						datePublished: '2022-02-23T13:00:02.000Z',
 						image: [
 							ImageObject(
-								{
-									contentUrl: 'https://pbs.twimg.com/media/FMRRj3NX0AAy1L1?format=png&name=small',
-									width: 593,
-									height: 233,
-									encodingFormat: 'image/png',
-								}
+								'https://pbs.twimg.com/media/FMRRj3NX0AAy1L1?format=png&name=small',
+								593,
+								233,
+								'image/png',
 							),
 							ImageObject(
-								{
-									contentUrl: 'https://pbs.twimg.com/media/FMRR2wUXEAM3_Vs?format=jpg&name=medium',
-									width: 976,
-									height: 1080,
-									encodingFormat: 'image/jpeg',
-								}
+								'https://pbs.twimg.com/media/FMRR2wUXEAM3_Vs?format=jpg&name=medium',
+								976,
+								1080,
+								'image/jpeg',
 							),
 						]
 					}),

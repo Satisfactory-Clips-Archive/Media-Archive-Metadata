@@ -10,10 +10,8 @@ export default [
 	WebPageAboutSatisfactory('Nuclear Energy', {
 		"image": [
 			SatisfactoryWikiBuildingImage(
-				{
-					wikiname: 'Nuclear_Power_Plant.png',
-					contentUrl: 'https://satisfactory.wiki.gg/images/4/46/Nuclear_Power_Plant.png',
-				},
+				'https://satisfactory.wiki.gg/images/4/46/Nuclear_Power_Plant.png',
+				'Nuclear_Power_Plant.png',
 				{
 					"name": "In-game building icon for the Nuclear Power Plant.",
 				}

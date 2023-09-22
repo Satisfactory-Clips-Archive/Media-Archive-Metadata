@@ -70,7 +70,9 @@
 		},
 		"url": {
 			"oneOf": [
-				{"type": "string"},
+				{
+					"type": "string"
+				},
 				{
 					"$ref": "#/definitions/uniquestrings"
 				}
@@ -81,10 +83,18 @@
 			"minItems": 1,
 			"items": {
 				"oneOf": [
-					{"$ref": "#/definitions/image"},
-					{"$ref": "#/definitions/video"},
-					{"$ref": "#/definitions/playlist"},
-					{"$ref": "#/definitions/socialmediapost"}
+					{
+						"$ref": "#/definitions/image"
+					},
+					{
+						"$ref": "#/definitions/video"
+					},
+					{
+						"$ref": "#/definitions/playlist"
+					},
+					{
+						"$ref": "#/definitions/socialmediapost"
+					}
 				]
 			}
 		},
@@ -138,7 +148,9 @@
 				},
 				"jobTitle": {
 					"oneOf": [
-						{"type": "string"},
+						{
+							"type": "string"
+						},
 						{
 							"$ref": "#/definitions/uniquestrings"
 						}
@@ -161,7 +173,9 @@
 					"minItems": 1,
 					"items": {
 						"oneOf": [
-							{"$ref": "#/definitions/person"}
+							{
+								"$ref": "#/definitions/person"
+							}
 						]
 					}
 				},
@@ -231,7 +245,9 @@
 					"minItems": 1,
 					"items": {
 						"oneOf": [
-							{"$ref": "#/definitions/video"}
+							{
+								"$ref": "#/definitions/video"
+							}
 						]
 					}
 				}
@@ -335,7 +351,9 @@
 					"minItems": 1,
 					"items": {
 						"oneOf": [
-							{"$ref": "#/definitions/video"}
+							{
+								"$ref": "#/definitions/video"
+							}
 						]
 					}
 				}
@@ -365,23 +383,23 @@
 					"type": "array",
 					"minItems": 1,
 					"items": {
-							"oneOf": [
-								{
-									"$ref": "#/definitions/video"
-								},
-								{
-									"$ref": "#/definitions/playlist"
-								},
-								{
-									"$ref": "#/definitions/satisfactory"
-								},
-								{
-									"$ref": "#/definitions/coffeestain"
-								},
-								{
-									"$ref": "#/definitions/person"
-								}
-							]
+						"oneOf": [
+							{
+								"$ref": "#/definitions/video"
+							},
+							{
+								"$ref": "#/definitions/playlist"
+							},
+							{
+								"$ref": "#/definitions/satisfactory"
+							},
+							{
+								"$ref": "#/definitions/coffeestain"
+							},
+							{
+								"$ref": "#/definitions/person"
+							}
+						]
 					}
 				},
 				"relatedLink": {
@@ -569,12 +587,26 @@
 		}
 	},
 	"oneOf": [
-		{"$ref": "#/definitions/software"},
-		{"$ref": "#/definitions/videogame"},
-		{"$ref": "#/definitions/videogameseries"},
-		{"$ref": "#/definitions/playlist"},
-		{"$ref": "#/definitions/person"},
-		{"$ref": "#/definitions/video"},
-		{"$ref": "#/definitions/webpage"}
+		{
+			"$ref": "#/definitions/software"
+		},
+		{
+			"$ref": "#/definitions/videogame"
+		},
+		{
+			"$ref": "#/definitions/videogameseries"
+		},
+		{
+			"$ref": "#/definitions/playlist"
+		},
+		{
+			"$ref": "#/definitions/person"
+		},
+		{
+			"$ref": "#/definitions/video"
+		},
+		{
+			"$ref": "#/definitions/webpage"
+		}
 	]
 }

@@ -1,4 +1,4 @@
-import glob from 'glob';
+import {glob} from 'glob';
 import {dirname, resolve} from 'path';
 import {fileURLToPath, pathToFileURL} from 'url';
 

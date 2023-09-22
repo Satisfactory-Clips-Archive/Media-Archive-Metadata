@@ -32,7 +32,7 @@ export default [
 				127.4273,
 				272.4388333333333,
 				{
-					title: 'Jace Talk: Northern Forest feedback',
+					name: 'Jace Talk: Northern Forest feedback',
 					uploadDate: '2021-08-06',
 				}
 			),
@@ -51,6 +51,7 @@ export default [
 				],
 			}),
 			Tweet('SatisfactoryAF', '1422923637561102342', {
+				datePublished: '2021-08-04T14:13:26.000Z',
 				headline: [
 					'It holds a vigil',
 					'dropping branches as it mourns',
@@ -60,9 +61,11 @@ export default [
 					'#SaveTheWillows',
 				],
 				image: [
-					Object.assign({}, img, {
+					ImageObject({
 						contentUrl: 'https://pbs.twimg.com/media/E789bICX0AgK0Ph?format=jpg&name=large',
 						encodingFormat: 'image/jpeg',
+						width: 1920,
+						height: 1080,
 					}),
 				],
 			}),

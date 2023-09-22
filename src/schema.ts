@@ -12,5 +12,5 @@ export default JSON.parse(
 			)
 			+ '/schema.json'
 		)
-	)
+	) + ''
 );

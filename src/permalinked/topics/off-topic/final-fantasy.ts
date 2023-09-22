@@ -1,10 +1,6 @@
 import {
-	default as coffee_stain
-} from '../../../common/coffee-stain.js';
-import {
 	ImageObject,
 	YouTubePlaylist,
-	YouTubeVideo,
 } from '../../../utils.js';
 
 export default [

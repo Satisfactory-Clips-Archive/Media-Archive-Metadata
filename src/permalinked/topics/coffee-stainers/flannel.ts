@@ -16,7 +16,7 @@ export default [
 				963.214202,
 				979.01642,
 				{
-					title: 'Q&A: Can we get your shirts in-game?',
+					name: 'Q&A: Can we get your shirts in-game?',
 					uploadDate: '2019-02-06',
 				}
 			),

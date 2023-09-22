@@ -1,5 +1,4 @@
 import {
-	DuplicateValue,
 	ImageObject,
 	YouTubeVideo,
 	Tweet,

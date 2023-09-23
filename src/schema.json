@@ -68,6 +68,29 @@
 				"type": "string"
 			}
 		},
+		"about": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"oneOf": [
+					{
+						"$ref": "#/definitions/video"
+					},
+					{
+						"$ref": "#/definitions/playlist"
+					},
+					{
+						"$ref": "#/definitions/satisfactory"
+					},
+					{
+						"$ref": "#/definitions/coffeestain"
+					},
+					{
+						"$ref": "#/definitions/person"
+					}
+				]
+			}
+		},
 		"url": {
 			"oneOf": [
 				{
@@ -359,6 +382,52 @@
 				}
 			}
 		},
+		"website": {
+			"type": "object",
+			"required": [
+				"@type",
+				"name",
+				"url"
+			],
+			"properties": {
+				"@type": {
+					"type": "string",
+					"const": "WebSite"
+				},
+				"name": {
+					"type": "string"
+				},
+				"url": {
+					"type": "string"
+				},
+				"potentialAction": {
+					"type": "object",
+					"required": [
+						"@type",
+						"target",
+						"query-input"
+					],
+					"properties": {
+						"@type": {
+							"type": "string",
+							"const": "SearchAction"
+						},
+						"target": {
+							"type": "string"
+						},
+						"query-input": {
+							"type": "string"
+						}
+					}
+				},
+				"author": {
+					"$ref": "#/definitions/person"
+				},
+				"about": {
+					"$ref": "#/definitions/about"
+				}
+			}
+		},
 		"webpage": {
 			"type": "object",
 			"required": [
@@ -380,27 +449,7 @@
 					"$ref": "#/definitions/url"
 				},
 				"about": {
-					"type": "array",
-					"minItems": 1,
-					"items": {
-						"oneOf": [
-							{
-								"$ref": "#/definitions/video"
-							},
-							{
-								"$ref": "#/definitions/playlist"
-							},
-							{
-								"$ref": "#/definitions/satisfactory"
-							},
-							{
-								"$ref": "#/definitions/coffeestain"
-							},
-							{
-								"$ref": "#/definitions/person"
-							}
-						]
-					}
+					"$ref": "#/definitions/about"
 				},
 				"relatedLink": {
 					"$ref": "#/definitions/uniquestrings"
@@ -604,6 +653,9 @@
 		},
 		{
 			"$ref": "#/definitions/video"
+		},
+		{
+			"$ref": "#/definitions/website"
 		},
 		{
 			"$ref": "#/definitions/webpage"

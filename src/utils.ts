@@ -1,9 +1,12 @@
-import {default as satisfactory} from './common/satisfactory.js';
+import {
+	default as satisfactory,
+	knowsAbout_satisfactory,
+} from './common/satisfactory.js';
 import {default as coffee_stain} from './common/coffee-stain.js';
 import {
 	SchemaProperties,
 	Schema,
-	SchemaGenerators,
+	SchemaGenerators, SchemaObject,
 } from './SchemaTypes.js';
 
 declare type SatisfactoryWikiImageProperties = SchemaProperties.ImageObject & {
@@ -159,6 +162,20 @@ export function WebPageRelatingToSatisfactoryWikiArticles<
 	}))
 }
 
+export function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
+	data:T1
+) : Schema.WebSite<
+	T1 & {about: [SchemaObject<'VideoGame'>, ...SchemaObject<any>[]]}
+>{
+	return SchemaGenerators.WebSite<T1 & {about: [SchemaObject<'VideoGame'>, ...SchemaObject<any>[]]}>(Object.assign(
+		{},
+		data,
+		{
+			about: [satisfactory].concat(...(data?.about || [])),
+		}
+	));
+}
+
 export function WebPageAboutSatisfactory<
 	T1 extends SchemaProperties.WebPage,
 >(
@@ -178,16 +195,17 @@ export function CoffeeStainer<
 	name: string,
 	data?: T1,
 ) : Schema.Person<
-	T1 & {
+	T1 & knowsAbout_satisfactory & {
 		worksFor: Schema.Organization<any>,
 	}
 > {
-	return SchemaGenerators.Person<T1 & {
+	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory & {
 		worksFor: Schema.Organization<any>,
 	}>(
 		name,
 		Object.assign({}, data, {
 			worksFor: coffee_stain,
+			knowsAbout: [satisfactory].concat([...(data?.knowsAbout || [])]),
 		}),
 	);
 }
@@ -196,20 +214,30 @@ export function FormerCoffeeStainer<
 	T1 extends SchemaProperties.Person
 > (
 	name: string,
-	data?: T1 & {alumni?: Schema.Organization<any>[]},
+	data?: T1,
 ) : Schema.Person<
-	T1 & {
-		alumni: Schema.Organization<any>[],
+	T1 & knowsAbout_satisfactory & {
+		alumni: [Schema.Organization<any>, ...Schema.Organization<any>[]],
 	}
 > {
-	return SchemaGenerators.Person<T1 & {
-		alumni: Schema.Organization<any>[],
+	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory & {
+		alumni: [Schema.Organization<any>, ...Schema.Organization<any>[]],
 	}>(
 		name,
 		Object.assign({}, data, {
-			alumni: [...data?.alumni || []].concat(coffee_stain),
+			knowsAbout: [satisfactory].concat([...(data?.knowsAbout || [])]),
+			alumni: [coffee_stain].concat([...data?.alumni || []]),
 		}),
 	);
+}
+
+export function SatisfactoryCommunityMember<T1 extends SchemaProperties.Person> (
+	name: string,
+	data?: T1
+) : Schema.Person<T1 & knowsAbout_satisfactory> {
+	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory>(name, Object.assign({}, data, {
+		knowsAbout: [satisfactory].concat([...(data?.knowsAbout || [])]),
+	}));
 }
 
 export function Tweet<

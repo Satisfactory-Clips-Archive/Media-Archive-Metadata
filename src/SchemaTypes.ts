@@ -59,11 +59,25 @@ export namespace SchemaProperties
         url: string,
     };
 
+    export type SearchAction = {
+        target: string,
+        'query-input': string,
+    };
+
+    export type WebSite = {
+        name: string,
+        url: string,
+        potentialAction?: Schema.SearchAction<any>,
+        author?: Schema.Person<any>,
+        about?: [SchemaObject<any>, ...SchemaObject<any>[]],
+    };
+
     export type WebPage = Schema.SubjectOf & Schema.has_image<any> & {
-        alternateName?: string[]|string,
+        alternateName?: [string, ...string[]]|string,
         description?: string,
-        relatedLink?: string[]|string,
+        relatedLink?: [string, ...string[]]|string,
         about?: SchemaObject<string>[],
+        url?: string,
     };
 
     export type Organization = {
@@ -72,11 +86,15 @@ export namespace SchemaProperties
     };
 
     export type Person = Schema.SubjectOf & Schema.has_image<any> & {
-        alternateName?: string[]|string,
+        alternateName?: [string, ...string[]]|string,
+        honorificPrefix?: string,
         description?: string,
-        jobTitle?: string[]|string,
+        jobTitle?: [string, ...string[]]|string,
         worksFor?: Schema.Organization<any>[]|Schema.Organization<any>,
         character?: Schema.Person<any>[]|Schema.Person<any>,
+        knowsAbout?: [SchemaObject<any>, ...SchemaObject<any>[]],
+        alumni?: [Schema.Organization<any>, ...Schema.Organization<any>[]],
+        url?: [string, ...string[]]|string,
     };
 
     export type VoteAction = {
@@ -140,6 +158,10 @@ export namespace Schema
     export type ClipObject<
         T1 extends SchemaProperties.ClipObject,
     > = SchemaObject<'Clip'> & T1;
+
+    export type SearchAction<T1 extends SchemaProperties.SearchAction> = SchemaObject<'SearchAction'> & T1;
+
+    export type WebSite<T1 extends SchemaProperties.WebSite> = SchemaObject<'WebSite'> & T1;
 
     export type WebPage<
         T1 extends SchemaProperties.WebPage
@@ -223,6 +245,10 @@ export namespace SchemaGenerators
                 height: SchemaGenerators.QuantitativeValue(height),
             }) as T
         );
+    }
+
+    export function WebSite<T1 extends SchemaProperties.WebSite>(data:T1) {
+        return SchemaGenerators.generate('WebSite', data);
     }
 
     export function WebPage<

@@ -1,7 +1,7 @@
 import {
 	YouTubeVideo,
 	SatisfactoryWikiImage,
-	CoffeeStainer,
+	FormerCoffeeStainer,
 } from '../../../utils.js';
 
 import {
@@ -13,7 +13,7 @@ import {
 } from './jace/robo-jace.js';
 
 export default [
-	CoffeeStainer('Jace Varlet', {
+	FormerCoffeeStainer('Jace Varlet', {
 		"jobTitle": "Community Manager",
 		"subjectOf": [
 			YouTubeVideo('6HZzPbgw3pg', {

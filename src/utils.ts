@@ -176,12 +176,18 @@ export function WebPageAboutSatisfactory<
 }
 
 export function CoffeeStainer<
-	T1 extends SchemaProperties.Person<any, any>
+	T1 extends SchemaProperties.Person
 >(
 	name: string,
 	data: T1,
-) : Schema.Person<T1, any> {
-	return SchemaGenerators.Person<T1>(
+) : Schema.Person<
+	T1 & {
+		worksFor: Schema.Organization<any>,
+	}
+> {
+	return SchemaGenerators.Person<T1 & {
+		worksFor: Schema.Organization<any>,
+	}>(
 		name,
 		Object.assign({}, data, {
 			worksFor: coffee_stain,
@@ -189,16 +195,36 @@ export function CoffeeStainer<
 	);
 }
 
+export function FormerCoffeeStainer<
+	T1 extends SchemaProperties.Person
+> (
+	name: string,
+	data?: T1 & {alumni?: Schema.Organization<any>[]},
+) : Schema.Person<
+	T1 & {
+		alumni: Schema.Organization<any>[],
+	}
+> {
+	return SchemaGenerators.Person<T1 & {
+		alumni: Schema.Organization<any>[],
+	}>(
+		name,
+		Object.assign({}, data, {
+			alumni: [...data?.alumni || []].concat(coffee_stain),
+		}),
+	);
+}
+
 export function Tweet<
 	T1 extends SchemaProperties.SocialMediaPosting<any, any>,
 >(from:string, id:string, data:T1): Schema.SocialMediaPosting<T1> & {
-	author: Schema.Person<any, any> & {url: string},
+	author: Schema.Person<any> & {url: string},
 } {
 	const author = SchemaGenerators.Person<any & {url: string}>(from, {
 		url: `https://twitter.com/${from}`,
 	});
 
-	return SchemaGenerators.SocialMediaPosting<T1 & {author: Schema.Person<SchemaProperties.Person<any, any> & {url: string}, any>}>(
+	return SchemaGenerators.SocialMediaPosting<T1 & {author: Schema.Person<SchemaProperties.Person & {url: string}>}>(
 		`https://twittter.com/${from}/status/${id}`,
 		Object.assign({}, data, {
 			author,

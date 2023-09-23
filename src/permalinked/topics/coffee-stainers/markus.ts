@@ -1,8 +1,7 @@
 import {
-	SchemaGenerators,
-} from '../../../SchemaTypes.js';
+	FormerCoffeeStainer,
+} from '../../../utils.js';
 
 export default [
-	SchemaGenerators.Person('Markus Rännare', {
-	}),
+	FormerCoffeeStainer('Markus Rännare'),
 ];

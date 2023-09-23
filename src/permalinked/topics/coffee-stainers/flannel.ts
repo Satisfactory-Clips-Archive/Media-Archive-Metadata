@@ -41,7 +41,7 @@ export default [
 						{
 							license: 'https://creativecommons.org/licenses/by/2.0/',
 							url: 'https://www.flickr.com/photos/48013511@N07/12951396883',
-							author: SchemaGenerators.Person<SchemaProperties.Person<any, any> & {url: string}>('Mike McDonald', {
+							author: SchemaGenerators.Person<SchemaProperties.Person & {url: string}>('Mike McDonald', {
 								url: 'https://www.flickr.com/photos/emberstudio/',
 							}),
 						}

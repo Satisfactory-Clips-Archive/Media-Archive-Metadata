@@ -1,14 +1,14 @@
 import {
 	YouTubeVideo,
 	Tweet,
+	FormerCoffeeStainer,
 } from '../../../utils.js';
 import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.js';
 
 export default [
-	SchemaGenerators.Person('Kristoffer Anderson', {
-		jobTitle: 'Animator',
+	FormerCoffeeStainer('Kristoffer Anderson', {
 		subjectOf: [
 			YouTubeVideo('fI7gnbG4Omk', {
 				name: 'Developer Highlight - Animation',

@@ -1,13 +1,10 @@
 import {
 	SatisfactoryWikiImage,
+	FormerCoffeeStainer,
 } from '../../../utils.js';
-import {
-	SchemaGenerators,
-} from '../../../SchemaTypes.js';
 
 export default [
-	SchemaGenerators.Person('Tim Badylak', {
-		"jobTitle": "Producer",
+	FormerCoffeeStainer('Tim Badylak', {
 		"image": [
 			SatisfactoryWikiImage(
 				'https://satisfactory.wiki.gg/images/a/a7/Tim_Badylak.png',

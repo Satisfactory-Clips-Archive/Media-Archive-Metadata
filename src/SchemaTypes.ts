@@ -23,7 +23,7 @@ export namespace SchemaProperties
         description?: string,
         exampleOfWork?: Schema.SocialMediaPosting<any>|Schema.ImageObject<any>,
         license?: string,
-        author?: Schema.Person<any, any>,
+        author?: Schema.Person<any>,
         relatedLink?: [string, ...string[]],
     };
 
@@ -67,20 +67,17 @@ export namespace SchemaProperties
         url: string,
     };
 
-    export type Person<
-        T1 extends Schema.Organization<any>,
-        T2 extends Schema.Person<any, any>
-    > = Schema.SubjectOf & {
+    export type Person = Schema.SubjectOf & Schema.has_image<any> & {
         alternateName?: string[]|string,
         description?: string,
         jobTitle?: string[]|string,
-        worksFor?: T1[]|T1,
-        character?: T2[]|T2,
+        worksFor?: Schema.Organization<any>[]|Schema.Organization<any>,
+        character?: Schema.Person<any>[]|Schema.Person<any>,
     };
 
     export type SocialMediaPosting<
         T1 extends SchemaProperties.ImageObject,
-		T2 extends SchemaProperties.Person<any, any>,
+		T2 extends SchemaProperties.Person,
     > = Schema.has_image<T1> & has_url & {
         headline: string,
         datePublished: string,
@@ -132,9 +129,8 @@ export namespace Schema
     export type Organization<T extends SchemaProperties.Organization> = SchemaObject<'Organization'> & T;
 
     export type Person<
-        T1 extends SchemaProperties.Person<Organization<any>, Person<any, any>>,
-        T2 extends SchemaProperties.ImageObject,
-    > = SchemaObject<'Person'> & T1 & SubjectOf & SchemaProperties.has_url & Schema.has_image<T2>;
+        T1 extends SchemaProperties.Person,
+    > = SchemaObject<'Person'> & T1 & SubjectOf & SchemaProperties.has_url & Schema.has_image<any>;
 
 	export type SocialMediaPosting<
 		T1 extends SchemaProperties.SocialMediaPosting<any, any>,
@@ -201,11 +197,11 @@ export namespace SchemaGenerators
     }
 
     export function Person<
-        T1 extends SchemaProperties.Person<any, any>,
+        T1 extends SchemaProperties.Person,
     >(
         name: string,
         data: T1,
-    ) : Schema.Person<T1, any> {
+    ) : Schema.Person<T1> {
         return SchemaGenerators.generate<
             'Person',
             T1

@@ -10,7 +10,7 @@ export namespace SchemaProperties
 {
     export type mime_type = 'image/png'|'image/jpeg'|'image/webp'|'image/avif'|'image/svg+xml';
 
-    export type QuantitativeValue = SchemaObject<'QuantitativeValue'> & {
+    export type QuantitativeValue = {
         value: number,
     };
 
@@ -30,8 +30,8 @@ export namespace SchemaProperties
     export type ImageObject = ImageObjectOptional & {
         contentUrl: string,
         encodingFormat: mime_type,
-        width: QuantitativeValue,
-        height: QuantitativeValue,
+        width: Schema.QuantitativeValue,
+        height: Schema.QuantitativeValue,
     };
 
     export type CreativeWorkSeries = has_url & {
@@ -41,18 +41,22 @@ export namespace SchemaProperties
         endDate?: string,
     };
 
-    export type VideoObject = {
+    export type VideoObjectSpecifyUrlLater = Schema.has_image<any> & Exclude<{
         name: string,
         uploadDate: string,
         description?: string,
         creditText?: string,
+    }, {url: string}>;
+
+    export type VideoObject = VideoObjectSpecifyUrlLater & {
+        url: string,
     };
 
-    export type ClipObject = {
+    export type ClipObject = SchemaProperties.VideoObjectSpecifyUrlLater & {
         startOffset: number,
         endOffset: number,
-        url: string,
         embedUrl: string,
+        url: string,
     };
 
     export type WebPage = Schema.SubjectOf & Schema.has_image<any> & {
@@ -103,7 +107,7 @@ export namespace Schema
         image?: ImageObject<T>[]|ImageObject<T>,
     };
 
-    export type SubjectOfSubtypes = Schema.CreativeWorkSeries<any> | Schema.VideoObject<any, any> | Schema.ClipObject<any, any, any> | Schema.SocialMediaPosting<any>;
+    export type SubjectOfSubtypes = Schema.CreativeWorkSeries<any> | Schema.VideoObject<any> | Schema.ClipObject<any> | Schema.SocialMediaPosting<any>;
 
     export type SubjectOf = {
         subjectOf?: SubjectOfSubtypes[]|SubjectOfSubtypes,
@@ -113,14 +117,11 @@ export namespace Schema
 
     export type VideoObject<
         T1 extends SchemaProperties.VideoObject,
-        T2 extends SchemaProperties.ImageObject,
-    > = SchemaObject<'VideoObject'> & has_image<T2> & T1;
+    > = SchemaObject<'VideoObject'> & T1;
 
     export type ClipObject<
         T1 extends SchemaProperties.ClipObject,
-        T2 extends SchemaProperties.VideoObject,
-        T3 extends SchemaProperties.ImageObject,
-    > = SchemaObject<'Clip'> & has_image<T3> & T2 & T1;
+    > = SchemaObject<'Clip'> & T1;
 
     export type WebPage<
         T1 extends SchemaProperties.WebPage
@@ -145,23 +146,17 @@ export namespace SchemaGenerators
     >(
         type: T1,
         data: T2,
-    ): SchemaObject<T1> & T2 & {
-        '@context': 'https://schema.org',
-    } {
+    ): SchemaObject<T1> & T2 {
         return Object.assign({}, data, {
-            '@context': 'https://schema.org',
             '@type': type as T1,
-        }) as (SchemaObject<T1> & T2 & {
-            '@context': 'https://schema.org',
-        });
+        }) as (SchemaObject<T1> & T2);
     }
 
     export function QuantitativeValue(value: number): Schema.QuantitativeValue
     {
-        return {
-            '@type': 'QuantitativeValue',
+        return generate<'QuantitativeValue', SchemaProperties.QuantitativeValue>('QuantitativeValue', {
             value,
-        };
+        });
     }
 
     export function ImageObject<T extends Schema.ImageObject<SchemaProperties.ImageObject>> (

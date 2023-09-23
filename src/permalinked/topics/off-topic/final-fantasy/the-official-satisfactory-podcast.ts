@@ -7,7 +7,6 @@ import {
 
 export default [
 	YouTubeVideo('', {
-		'@context': 'https://schema.org',
 		name: 'The Official Satisfactory PODCAST Episode 001',
 		description: [
 			'We\'re very excited to share the first episode of the official Satisfactory podcast!',

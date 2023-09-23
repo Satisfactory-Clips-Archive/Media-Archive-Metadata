@@ -87,13 +87,12 @@ export function YouTubePlaylist<T extends (SchemaProperties.CreativeWorkSeries &
 }
 
 export function YouTubeVideo<
-	T1 extends SchemaProperties.VideoObject,
-	T2 extends  SchemaProperties.ImageObject,
+	T1 extends SchemaProperties.VideoObjectSpecifyUrlLater,
 > (
 	videoId: string,
-	data: T1 & Schema.has_image<T2>,
-) : Schema.VideoObject<T1, T2> {
-	return SchemaGenerators.generate<'VideoObject', T1>(
+	data: T1,
+) : Schema.VideoObject<T1 & {url: string}> {
+	return SchemaGenerators.generate<'VideoObject', T1 & {url: string}>(
 		'VideoObject',
 		Object.assign({}, data, {
 			thumbnailUrl: `https://i3.ytimg.com/vi/${videoId}/hqdefault.jpg`,
@@ -105,38 +104,36 @@ export function YouTubeVideo<
 
 export function YouTubeClip<
 	T1 extends SchemaProperties.ClipObject,
-	T2 extends SchemaProperties.VideoObject,
-	T3 extends SchemaProperties.ImageObject,
+	T2 extends SchemaProperties.VideoObjectSpecifyUrlLater,
 > (
 	videoId:string,
 	clipId:string|undefined,
 	start:number,
 	finish:number,
-	data: T2 & Schema.has_image<T3>,
-) : Schema.ClipObject<T1, T2, T3> {
-	const video: Schema.VideoObject<T2, T3> = YouTubeVideo<T2, T3>(videoId, data);
-	const clip_properties:T1 = {
-		startOffset: start,
-		endOffset: finish,
-		url: (
-			clipId !== undefined
-				? `https://www.youtube.com/clip/${clipId}`
-				: `https://www.youtube.com/watch?v=${videoId}&t=${
-					Math.floor(start)
-				}`
-		),
-		embedUrl: `https://www.youtube.com/embed/${
-			videoId
-		}?loop=1&start=${
-			Math.floor(start)
-		}&end=${
-			Math.ceil(finish)
-		}`,
-	} as T1;
+	data: T2,
+) : Schema.ClipObject<T1> {
+	const video:T2 = YouTubeVideo<T2>(videoId, data);
 
-	return SchemaGenerators.generate<'Clip', Schema.has_image<T3> & T2 & T1>(
+	return SchemaGenerators.generate<'Clip', T1>(
 		'Clip',
-		Object.assign({}, video, clip_properties)
+		Object.assign(video, {
+			startOffset: start,
+			endOffset: finish,
+			url: (
+				clipId !== undefined
+					? `https://www.youtube.com/clip/${clipId}`
+					: `https://www.youtube.com/watch?v=${videoId}&t=${
+						Math.floor(start)
+					}`
+			),
+			embedUrl: `https://www.youtube.com/embed/${
+				videoId
+			}?loop=1&start=${
+				Math.floor(start)
+			}&end=${
+				Math.ceil(finish)
+			}`,
+		}) as T1&T2
 	);
 }
 

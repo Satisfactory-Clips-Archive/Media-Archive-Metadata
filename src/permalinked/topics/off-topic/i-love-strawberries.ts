@@ -2,10 +2,12 @@ import {
 	default as coffee_stain
 } from '../../../common/coffee-stain.js';
 import {
-	ImageObject,
 	YouTubePlaylist,
 	YouTubeVideo,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
 	{
@@ -23,7 +25,7 @@ export default [
 			'Puzzle Platformer',
 		],
 		image: [
-			ImageObject(
+			SchemaGenerators.ImageObject(
 				'https://www.coffeestainstudios.com/media/1277/ils-square-module-2.jpg',
 				768,
 				768,

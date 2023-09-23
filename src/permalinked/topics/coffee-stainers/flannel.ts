@@ -1,13 +1,14 @@
 import {
-	WebPage,
 	YouTubePlaylist,
 	YouTubeClip,
-	ImageObject,
-	Person,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+	SchemaProperties,
+} from '../../../SchemaTypes.js';
 
 export default [
-	WebPage('Flannel', {
+	SchemaGenerators.WebPage('Flannel', {
 		description: 'Satisfactory Livestream clips about Coffee Stainers wearing Flannel shirts.',
 		subjectOf: [
 			YouTubeClip(
@@ -26,13 +27,13 @@ export default [
 			}),
 		],
 		image: [
-			ImageObject(
+			SchemaGenerators.ImageObject(
 				'https://i-img-archive.satisfactory.video/content/topics/coffee-stainers/flannel--bg.webp',
 				504,
 				504,
 				'image/webp',
 				{
-					exampleOfWork: ImageObject(
+					exampleOfWork: SchemaGenerators.ImageObject(
 						'https://live.staticflickr.com/7309/12951396883_d05fb22ed8_o_d.jpg',
 						2200,
 						2200,
@@ -40,7 +41,7 @@ export default [
 						{
 							license: 'https://creativecommons.org/licenses/by/2.0/',
 							url: 'https://www.flickr.com/photos/48013511@N07/12951396883',
-							author: Person('Mike McDonald', {
+							author: SchemaGenerators.Person<SchemaProperties.Person<any, any> & {url: string}>('Mike McDonald', {
 								url: 'https://www.flickr.com/photos/emberstudio/',
 							}),
 						}

@@ -1,10 +1,13 @@
-import {WebPage} from '../../../utils.js';
+import {
+	WebPageRelatingToSatisfactoryWikiArticles,
+} from '../../../utils.js';
 
 export default [
-	WebPage('Creatures', {
-		description: 'Satisfactory Livestream clips about Creatures',
-		relatedLink: [
-			'https://satisfactory.wiki.gg/wiki/Category:Fauna',
+	WebPageRelatingToSatisfactoryWikiArticles(
+		'Creatures',
+		'Satisfactory Livestream clips about Creatures',
+		[
+			'Category:Fauna',
 		],
-	}),
+	),
 ];

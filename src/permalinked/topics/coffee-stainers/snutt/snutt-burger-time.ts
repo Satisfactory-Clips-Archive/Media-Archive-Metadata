@@ -1,20 +1,21 @@
 import {
-	WebPage,
-	ImageObject,
 	Tweet,
 } from '../../../../utils.js';
 import {
 	default as Snutt,
 } from '../snutt.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	WebPage('Snutt Burger Time', {
+	SchemaGenerators.WebPage('Snutt Burger Time', {
 		description: 'Satisfactory Livestream clips regarding Snutt\'s post-stream Burger time',
 		about: [
 			Snutt[0],
 		],
 		image: [
-			ImageObject(
+			SchemaGenerators.ImageObject(
 				'https://i-img-archive.satisfactory.video/content/topics/coffee-stainers/snutt/snutt-burger-time--bg.png',
 				598,
 				476,
@@ -24,7 +25,7 @@ export default [
 						headline: 'BURGER TIME!',
 						datePublished: '2021-08-24T19:06ZGMT',
 						image: [
-							ImageObject(
+							SchemaGenerators.ImageObject(
 								'https://pbs.twimg.com/media/E9kyrhsXsAQskjT?format=jpg',
 								1024,
 								461,

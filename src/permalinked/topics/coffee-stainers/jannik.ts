@@ -1,11 +1,13 @@
 import {
 	YouTubeVideo,
 	SatisfactoryWikiImage,
-	Person,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	Person('Jannik Reuterberg', {
+	SchemaGenerators.Person('Jannik Reuterberg', {
 		'alternateName': [
 			'Sleeper\'s Delight',
 			'Dream Thing',

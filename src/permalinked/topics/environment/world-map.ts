@@ -1,10 +1,11 @@
-import {WebPage} from '../../../utils.js';
+import {
+	WebPageRelatingToSatisfactoryWikiArticles,
+} from '../../../utils.js';
 
 export default [
-	WebPage('World Map', {
-		description: 'Satisfactory Livestream clips about the Satisfactory World Map',
-		relatedLink: [
-			'https://satisfactory.wiki.gg/wiki/Map',
-		],
-	}),
+	WebPageRelatingToSatisfactoryWikiArticles(
+		'World Map',
+		'Satisfactory clips about the Satisfactory World Map',
+		['Map']
+	),
 ];

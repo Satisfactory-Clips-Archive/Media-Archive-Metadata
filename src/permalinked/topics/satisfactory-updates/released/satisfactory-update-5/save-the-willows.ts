@@ -1,12 +1,13 @@
 import {
-	WebPage,
 	YouTubePlaylist,
 	Tweet,
-	ImageObject,
 	YouTubeClip,
 } from '../../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../../SchemaTypes.js';
 
-const img = ImageObject(
+const img = SchemaGenerators.ImageObject(
 	'https://pbs.twimg.com/media/E789bICX0AgK0Ph?format=webp&name=large',
 	1920,
 	1080,
@@ -17,7 +18,7 @@ const img = ImageObject(
 );
 
 export default [
-	WebPage('#SaveTheWillows', {
+	SchemaGenerators.WebPage('#SaveTheWillows', {
 		'@context': 'https://schema.org',
 		description: 'Satisfactory Livestream clips relating to the removal of willow trees in Update 5',
 		subjectOf: [
@@ -60,7 +61,7 @@ export default [
 					'#SaveTheWillows',
 				],
 				image: [
-					ImageObject(
+					SchemaGenerators.ImageObject(
 						'https://pbs.twimg.com/media/E789bICX0AgK0Ph?format=jpg&name=large',
 						1920,
 						1080,

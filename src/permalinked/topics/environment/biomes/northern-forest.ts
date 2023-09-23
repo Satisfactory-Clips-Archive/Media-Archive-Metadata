@@ -1,17 +1,19 @@
 import {
 	SatisfactoryWikiImage,
-	WebPage,
+	WebPageRelatingToSatisfactoryWikiArticles,
 } from '../../../../utils.js';
 import {
 	yt_2_dash_JM_JP8RNc,
 } from '../../../../common/youtube.js';
 
 export default [
-	WebPage('Northern_Forest', {
-		description: 'Satisfactory Livestream clips about the Northern Forest biome in the playable area of MASSAGE-2(A-B)b',
-		relatedLink: [
-			'https://satisfactory.wiki.gg/wiki/Northern_Forest',
+	WebPageRelatingToSatisfactoryWikiArticles(
+		'Northern_Forest',
+		'Satisfactory Livestream clips about the Northern Forest biome in the playable area of MASSAGE-2(A-B)b',
+		[
+			'Northern_Forest',
 		],
+		{
 		subjectOf: [
 			yt_2_dash_JM_JP8RNc,
 		],
@@ -27,5 +29,6 @@ export default [
 				}
 			),
 		]
-	}),
+		}
+	),
 ];

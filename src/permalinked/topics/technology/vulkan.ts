@@ -1,7 +1,9 @@
 import {
-	ImageObject,
 	YouTubePlaylist,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
 	{
@@ -18,7 +20,7 @@ export default [
 			url: 'https://www.khronos.org/',
 		},
 		image: [
-			ImageObject(
+			SchemaGenerators.ImageObject(
 				'https://i-img-archive.satisfactory.video/content/topics/technology/vulkan--bg.webp',
 				504,
 				504,

@@ -1,7 +1,9 @@
 import {
 	YouTubeVideo,
-	ImageObject,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
 	YouTubeVideo('', {
@@ -13,7 +15,7 @@ export default [
 		].join(' '),
 		uploadDate: '2022-04-01',
 		image: [
-			ImageObject(
+			SchemaGenerators.ImageObject(
 				'https://i-img-archive.satisfactory.video/content/topics/off-topic/final-fantasy--bg.webp',
 				504,
 				284,

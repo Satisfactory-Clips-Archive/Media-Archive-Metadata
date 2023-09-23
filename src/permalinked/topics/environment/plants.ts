@@ -1,10 +1,11 @@
-import {WebPage} from '../../../utils.js';
+import {
+	WebPageRelatingToSatisfactoryWikiArticles,
+} from '../../../utils.js';
 
 export default [
-	WebPage('Plants', {
-		description: 'Satisfactory Livestream clips about Plants',
-		relatedLink: [
-			'https://satisfactory.wiki.gg/wiki/Category:Flora',
-		],
-	}),
+	WebPageRelatingToSatisfactoryWikiArticles(
+		'Plants',
+		'Satisfactory Livestream clips about Plants',
+		['Category:Flora'],
+	),
 ];

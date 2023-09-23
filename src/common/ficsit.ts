@@ -1,9 +1,7 @@
-import {
-	Organization,
-} from '../utils.js';
+import {Schema} from '../SchemaTypes.js';
 
 export default {
 	'@type': 'Organization',
 	'name': 'FICSIT Incorporated',
 	'url': 'https://satisfactory.wiki.gg/wiki/FICSIT_Inc.',
-} as Organization;
+} as Schema.Organization<any>;

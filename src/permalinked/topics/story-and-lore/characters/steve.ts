@@ -2,12 +2,14 @@ import {
 	default as FICSIT,
 } from '../../../../common/ficsit.js';
 import {
-	Person,
 	SatisfactoryWikiImage,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	Person('Steve', {
+	SchemaGenerators.Person('Steve', {
 		jobTitle: 'Personal Assistant',
 		worksFor: FICSIT,
 		url: [

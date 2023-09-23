@@ -1,7 +1,9 @@
 import {
-	ImageObject,
 	YouTubePlaylist,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
 	{
@@ -9,7 +11,7 @@ export default [
 		'@type': 'VideoGameSeries',
 		name: 'Final Fantasy',
 		image: [
-			ImageObject(
+			SchemaGenerators.ImageObject(
 				'https://i-img-archive.satisfactory.video/content/topics/off-topic/final-fantasy--bg.webp',
 				504,
 				284,

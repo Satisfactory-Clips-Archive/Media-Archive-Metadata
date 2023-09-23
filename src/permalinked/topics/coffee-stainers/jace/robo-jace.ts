@@ -1,12 +1,13 @@
 import {
 	YouTubePlaylist,
-	Person,
-	ImageObject,
 	Tweet,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	Person('Robo Jace', {
+	SchemaGenerators.Person('Robo Jace', {
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiErdTAJdeOIHMN2m3pR245LA', {
 				name: 'Robo Jace',
@@ -15,7 +16,7 @@ export default [
 			}),
 		],
 		image: [
-			ImageObject(
+			SchemaGenerators.ImageObject(
 				'https://pbs.twimg.com/media/FMRR2wUXEAM3_Vs?format=jpg&name=medium',
 				976,
 				1080,
@@ -25,13 +26,13 @@ export default [
 						headline: 'how it started vs how its going',
 						datePublished: '2022-02-23T13:00:02.000Z',
 						image: [
-							ImageObject(
+							SchemaGenerators.ImageObject(
 								'https://pbs.twimg.com/media/FMRRj3NX0AAy1L1?format=png&name=small',
 								593,
 								233,
 								'image/png',
 							),
-							ImageObject(
+							SchemaGenerators.ImageObject(
 								'https://pbs.twimg.com/media/FMRR2wUXEAM3_Vs?format=jpg&name=medium',
 								976,
 								1080,

@@ -2,18 +2,18 @@ import {
 	default as coffee_stain
 } from '../../common/coffee-stain.js';
 import {
-	WebPage,
+	WebPageRelatingToSatisfactoryWikiArticles,
 } from '../../utils.js';
 
 export default [
-	WebPage('Coffee Stainers', {
-		'@context': 'https://schema.org',
-		description: 'Satisfactory clips about past & present employees of Coffee Stain',
+	WebPageRelatingToSatisfactoryWikiArticles(
+		'Coffee Stainers',
+		'Satisfactory clips about past & present employees of Coffee Stain',
+		['Coffee_Stain_Studios'],
+		{
 		about: [
 			coffee_stain,
 		],
-		relatedLink: [
-			'https://satisfactory.wiki.gg/wiki/Coffee_Stain_Studios',
-		],
-	}),
+		}
+	),
 ];

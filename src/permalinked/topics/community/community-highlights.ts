@@ -1,7 +1,9 @@
 import {
-	ImageObject,
 	WebPageAboutSatisfactory,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
 	WebPageAboutSatisfactory('Community Highlights', {
@@ -10,7 +12,7 @@ export default [
 			"https://communityhighlights.satisfactory.video/"
 		],
 		"image": [
-			ImageObject(
+			SchemaGenerators.ImageObject(
 				'https://communityhighlights.satisfactory.video/logo-square.png',
 				800,
 				800,

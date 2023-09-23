@@ -1,11 +1,13 @@
 import {
 	YouTubePlaylist,
-	Person,
 	SatisfactoryWikiImage,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	Person('Snutty Mays', {
+	SchemaGenerators.Person('Snutty Mays', {
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiErPJIX0NWiekKXFIrs8d4mO', {
 				name: 'Snutty Mays',

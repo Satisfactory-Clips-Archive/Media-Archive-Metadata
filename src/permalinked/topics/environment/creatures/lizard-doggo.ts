@@ -1,14 +1,16 @@
 import {
-	WebPage,
+	WebPageRelatingToSatisfactoryWikiArticles,
 	SatisfactoryWikiImage,
 } from '../../../../utils.js';
 
 export default [
-	WebPage('Lizard Doggo', {
-		description: 'Satisfactory Livestream clips about the Lizard Doggo',
-		relatedLink: [
-			'https://satisfactory.wiki.gg/wiki/Lizard_Doggo',
+	WebPageRelatingToSatisfactoryWikiArticles(
+		'Lizard Doggo',
+		'Satisfactory Livestream clips about the Lizard Doggo',
+		[
+			'Lizard_Doggo',
 		],
+		{
 		alternateName: [
 			'Space Rabbit',
 		],
@@ -24,5 +26,6 @@ export default [
 				}
 			),
 		],
-	}),
+		}
+	),
 ];

@@ -1,11 +1,13 @@
 import {
 	YouTubePlaylist,
-	Person,
 	SatisfactoryWikiImage,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	Person('Juice Velvet', {
+	SchemaGenerators.Person('Juice Velvet', {
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEosygjoYTHIREXy9ZtlTDfQ', {
 				name: 'Juice Velvet',

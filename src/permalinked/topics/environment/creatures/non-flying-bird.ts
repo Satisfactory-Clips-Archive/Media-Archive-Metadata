@@ -1,11 +1,14 @@
-import {SatisfactoryWikiImage, WebPage} from '../../../../utils.js';
+import {
+	SatisfactoryWikiImage,
+	WebPageRelatingToSatisfactoryWikiArticles,
+} from '../../../../utils.js';
 
 export default [
-	WebPage('Non Flying Bird', {
-		description: 'Satisfactory Livestream clips about the Non Flying Bird',
-		relatedLink: [
-			'https://satisfactory.wiki.gg/Non_Flying_Bird',
-		],
+	WebPageRelatingToSatisfactoryWikiArticles(
+		'Non Flying Bird',
+		'Satisfactory Livestream clips about the Non Flying Bird',
+		['Non_Flying_Bird'],
+		{
 		image: [
 			SatisfactoryWikiImage(
 				'https://satisfactory.wiki.gg/images/4/45/Non_Flying_Bird.png',
@@ -15,5 +18,6 @@ export default [
 				'Non Flying Bird.png',
 			),
 		],
-	}),
+		}
+	),
 ];

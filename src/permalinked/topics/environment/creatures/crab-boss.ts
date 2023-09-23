@@ -1,11 +1,16 @@
-import {SatisfactoryWikiImage, WebPage} from '../../../../utils.js';
+import {
+	SatisfactoryWikiImage,
+	WebPageRelatingToSatisfactoryWikiArticles,
+} from '../../../../utils.js';
 
 export default [
-	WebPage('Crab Boss', {
-		description: 'Satisfactory Livestream clips about the Crab Boss',
-		relatedLink: [
-			'https://satisfactory.wiki.gg/Crab_Boss',
+	WebPageRelatingToSatisfactoryWikiArticles(
+		'Crab Boss',
+		'Satisfactory Livestream clips about the Crab Boss',
+		[
+			'Crab_Boss',
 		],
+		{
 		image: [
 			SatisfactoryWikiImage(
 				'https://satisfactory.wiki.gg/images/c/ce/Crab_Boss.png',
@@ -21,5 +26,6 @@ export default [
 				}
 			),
 		],
-	}),
+		}
+	),
 ];

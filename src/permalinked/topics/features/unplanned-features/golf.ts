@@ -1,12 +1,12 @@
 import {
-	WebPage,
-	ImageObject,
 	YouTubePlaylist,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	WebPage('Golf', {
-		'@context': 'https://schema.org',
+	SchemaGenerators.WebPage('Golf', {
 		description: 'Satisfactory Livestream clips relating to the Golf feature request created during the April 27th, 2021 Livestream',
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep', {
@@ -18,7 +18,7 @@ export default [
 			'https://questions.satisfactorygame.com/post/60882899aa0ba107e325b301',
 		],
 		image: [
-			ImageObject(
+			SchemaGenerators.ImageObject(
 				'https://i-img-archive.satisfactory.video/content/topics/features/requested-features/golf--bg.webp',
 				336,
 				504,

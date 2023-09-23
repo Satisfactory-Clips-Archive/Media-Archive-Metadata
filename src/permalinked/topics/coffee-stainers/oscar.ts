@@ -1,11 +1,13 @@
 import {
 	SatisfactoryWikiImage,
 	YouTubeVideo,
-	Person,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	Person('Oscar Jilsén', {
+	SchemaGenerators.Person('Oscar Jilsén', {
 		description: 'Co-founder of Coffee Stain Studios, former Game Director of Satisfactory.',
 		url: [
 			'https://twitter.com/ockeffs',

@@ -1,12 +1,13 @@
 import {
-	ImageObject,
 	YouTubeVideo,
 	Tweet,
-	Person,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	Person('Kristoffer Anderson', {
+	SchemaGenerators.Person('Kristoffer Anderson', {
 		jobTitle: 'Animator',
 		subjectOf: [
 			YouTubeVideo('fI7gnbG4Omk', {
@@ -18,7 +19,7 @@ export default [
 				headline: 'We are working hard to get @SatisfactoryAF out there for you today!',
 				datePublished: '2020-03-08T14:32ZGMT',
 				image: [
-					ImageObject(
+					SchemaGenerators.ImageObject(
 						'https://pbs.twimg.com/ext_tw_video_thumb/1104027053807071232/pu/img/SpTA9Ef4eommxPaw.jpg',
 						675,
 						1200,

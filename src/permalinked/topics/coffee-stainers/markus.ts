@@ -1,8 +1,8 @@
 import {
-	Person,
-} from '../../../utils.js';
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	Person('Markus Rännare', {
+	SchemaGenerators.Person('Markus Rännare', {
 	}),
 ];

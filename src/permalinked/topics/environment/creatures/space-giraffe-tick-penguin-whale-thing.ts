@@ -1,14 +1,14 @@
 import {
-	WebPage,
 	SatisfactoryWikiImage,
+	WebPageRelatingToSatisfactoryWikiArticles,
 } from '../../../../utils.js';
 
 export default [
-	WebPage('Space Giraffe-Tick-Penguin-Whale Thing', {
-		description: 'Satisfactory Livestream clips about the Space Giraffe-Tick-Penguin-Whale Thing',
-		relatedLink: [
-			'https://satisfactory.wiki.gg/wiki/Space_Giraffe-Tick-Penguin-Whale_Thing',
-		],
+	WebPageRelatingToSatisfactoryWikiArticles(
+		'Space Giraffe-Tick-Penguin-Whale Thing',
+		'Satisfactory Livestream clips about the Space Giraffe-Tick-Penguin-Whale Thing',
+		['Space_Giraffe-Tick-Penguin-Whale_Thing'],
+		{
 		alternateName: [
 			'Land Whale',
 			'Chonky Boy',
@@ -28,5 +28,6 @@ export default [
 				}
 			),
 		]
-	}),
+		}
+	),
 ];

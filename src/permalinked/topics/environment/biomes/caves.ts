@@ -1,11 +1,13 @@
 import {
-	WebPage,
 	YouTubePlaylist,
 	SatisfactoryWikiImage,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	WebPage('Caves', {
+	SchemaGenerators.WebPage('Caves', {
 		description: 'Satisfactory Livestream clips about the Caves of MASSAGE-2(A-B)b',
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEqK9nRVDCg0Z3bb47I6gPod', {

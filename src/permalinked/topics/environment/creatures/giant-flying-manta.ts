@@ -1,11 +1,16 @@
-import {SatisfactoryWikiImage, WebPage} from '../../../../utils.js';
+import {
+	SatisfactoryWikiImage,
+	WebPageRelatingToSatisfactoryWikiArticles,
+} from '../../../../utils.js';
 
 export default [
-	WebPage('Giant Flying Manta', {
-		description: 'Satisfactory Livestream clips about the Giant Flying Manta',
-		relatedLink: [
-			'https://satisfactory.wiki.gg/Giant_Flying_Manta',
+	WebPageRelatingToSatisfactoryWikiArticles(
+		'Giant Flying Manta',
+		'Satisfactory Livestream clips about the Giant Flying Manta',
+		[
+			'Giant_Flying_Manta',
 		],
+		{
 		image: [
 			SatisfactoryWikiImage(
 				'https://satisfactory.wiki.gg/images/5/54/Giant_Flying_Manta.png',
@@ -15,5 +20,6 @@ export default [
 				'Giant Flying Manta.png',
 			),
 		],
-	}),
+		}
+	),
 ];

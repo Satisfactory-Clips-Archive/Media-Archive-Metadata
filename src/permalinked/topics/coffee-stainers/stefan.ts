@@ -1,9 +1,12 @@
 import {
 	CoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Stefan Hanna', {
+	SchemaGenerators.withContext(CoffeeStainer('Stefan Hanna', {
 		jobTitle: [
 			'CEO',
 			'Co-founder'
@@ -11,5 +14,5 @@ export default [
 		url: [
 			'https://twitter.com/stefan_hanna',
 		],
-	}),
+	})),
 ];

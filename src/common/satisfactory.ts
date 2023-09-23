@@ -1,7 +1,10 @@
 import {default as coffee_stain} from './coffee-stain.js';
+import {
+	SchemaGenerators,
+	SchemaProperties,
+} from '../SchemaTypes.js';
 
-export default {
-	"@type": "VideoGame",
+export const satisfactory:SchemaProperties.VideoGame = {
 	"name": "Satisfactory",
 	'url': 'https://satisfactorygame.com/',
 	"author": coffee_stain,
@@ -11,3 +14,5 @@ export default {
 		"Factory Construction"
 	]
 };
+
+export default SchemaGenerators.VideoGame<any>(Object.assign({}, satisfactory));

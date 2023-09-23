@@ -6,7 +6,7 @@ import {
 } from '../../../../SchemaTypes.js';
 
 export default [
-	SchemaGenerators.WebPage('Golf', {
+	SchemaGenerators.withContext(SchemaGenerators.WebPage('Golf', {
 		description: 'Satisfactory Livestream clips relating to the Golf feature request created during the April 27th, 2021 Livestream',
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEqUEBB3kU_ZkkEp6YBvweep', {
@@ -25,5 +25,5 @@ export default [
 				'image/webp',
 			),
 		]
-	}),
+	})),
 ];

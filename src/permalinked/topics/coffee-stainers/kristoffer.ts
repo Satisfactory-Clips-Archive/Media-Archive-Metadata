@@ -8,7 +8,7 @@ import {
 } from '../../../SchemaTypes.js';
 
 export default [
-	FormerCoffeeStainer('Kristoffer Anderson', {
+	SchemaGenerators.withContext(FormerCoffeeStainer('Kristoffer Anderson', {
 		subjectOf: [
 			YouTubeVideo('fI7gnbG4Omk', {
 				name: 'Developer Highlight - Animation',
@@ -31,5 +31,5 @@ export default [
 				],
 			}),
 		],
-	}),
+	})),
 ];

@@ -3,6 +3,9 @@ import {
 	SatisfactoryWikiImage,
 	FormerCoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 import {
 	default as JuiceVelvet,
@@ -13,7 +16,7 @@ import {
 } from './jace/robo-jace.js';
 
 export default [
-	FormerCoffeeStainer('Jace Varlet', {
+	SchemaGenerators.withContext(FormerCoffeeStainer('Jace Varlet', {
 		"jobTitle": "Community Manager",
 		"subjectOf": [
 			YouTubeVideo('6HZzPbgw3pg', {
@@ -45,11 +48,11 @@ export default [
 			),
 		],
 		character: [
-			JuiceVelvet[0],
-			RoboJace[0],
+			SchemaGenerators.withoutContext(JuiceVelvet[0]),
+			SchemaGenerators.withoutContext(RoboJace[0]),
 		],
 		"url": [
 			"https://twitter.com/jembawls"
 		]
-	}),
+	})),
 ];

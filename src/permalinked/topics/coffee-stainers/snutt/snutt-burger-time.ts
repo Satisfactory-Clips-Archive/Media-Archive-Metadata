@@ -9,7 +9,7 @@ import {
 } from '../../../../SchemaTypes.js';
 
 export default [
-	SchemaGenerators.WebPage('Snutt Burger Time', {
+	SchemaGenerators.withContext(SchemaGenerators.WebPage('Snutt Burger Time', {
 		description: 'Satisfactory Livestream clips regarding Snutt\'s post-stream Burger time',
 		about: [
 			Snutt[0],
@@ -39,5 +39,5 @@ export default [
 				}
 			)
 		],
-	}),
+	})),
 ];

@@ -6,7 +6,7 @@ import {
 } from '../../../../SchemaTypes.js';
 
 export default [
-	YouTubeVideo('', {
+	SchemaGenerators.withContext(YouTubeVideo('', {
 		name: 'The Official Satisfactory PODCAST Episode 001',
 		description: [
 			'We\'re very excited to share the first episode of the official Satisfactory podcast!',
@@ -24,5 +24,5 @@ export default [
 				}
 			),
 		],
-	}),
+	})),
 ];

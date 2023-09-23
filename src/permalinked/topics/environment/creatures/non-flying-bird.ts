@@ -2,9 +2,12 @@ import {
 	SatisfactoryWikiImage,
 	WebPageRelatingToSatisfactoryWikiArticles,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	WebPageRelatingToSatisfactoryWikiArticles(
+	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Non Flying Bird',
 		'Satisfactory Livestream clips about the Non Flying Bird',
 		['Non_Flying_Bird'],
@@ -19,5 +22,5 @@ export default [
 			),
 		],
 		}
-	),
+	)),
 ];

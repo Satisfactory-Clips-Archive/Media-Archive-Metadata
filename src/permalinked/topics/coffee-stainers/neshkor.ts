@@ -1,12 +1,15 @@
 import {
 	CoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Neshkor', {
+	SchemaGenerators.withContext(CoffeeStainer('Neshkor', {
 		alternateName: [
 			'Michiel Werring',
 		],
 		jobTitle: 'World Designer',
-	}),
+	})),
 ];

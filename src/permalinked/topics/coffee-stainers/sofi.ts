@@ -3,9 +3,12 @@ import {
 	YouTubeVideo,
 	CoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Sofi Sprangers', {
+	SchemaGenerators.withContext(CoffeeStainer('Sofi Sprangers', {
 		jobTitle: 'Concept Artist',
 		image: [
 			SatisfactoryWikiImage(
@@ -26,5 +29,5 @@ export default [
 				'uploadDate': '2018-08-15',
 			}),
 		],
-	}),
+	})),
 ];

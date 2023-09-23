@@ -2,9 +2,12 @@ import {
 	SatisfactoryWikiImage,
 	WebPageRelatingToSatisfactoryWikiArticles,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	WebPageRelatingToSatisfactoryWikiArticles(
+	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Space Giraffe-Tick-Penguin-Whale Thing',
 		'Satisfactory Livestream clips about the Space Giraffe-Tick-Penguin-Whale Thing',
 		['Space_Giraffe-Tick-Penguin-Whale_Thing'],
@@ -29,5 +32,5 @@ export default [
 			),
 		]
 		}
-	),
+	)),
 ];

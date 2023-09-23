@@ -5,9 +5,12 @@ import {
 import {
 	yt_UT9iNA3WGT4,
 } from '../../../common/youtube.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Nathalie Verweij', {
+	SchemaGenerators.withContext(CoffeeStainer('Nathalie Verweij', {
 		jobTitle: 'UI/UX Designer',
 		subjectOf: [
 			YouTubeVideo('SslJr_Fv6qw', {
@@ -20,5 +23,5 @@ export default [
 		url: [
 			'https://twitter.com/_ninyn',
 		],
-	}),
+	})),
 ];

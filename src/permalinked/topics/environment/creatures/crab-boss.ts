@@ -2,9 +2,12 @@ import {
 	SatisfactoryWikiImage,
 	WebPageRelatingToSatisfactoryWikiArticles,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	WebPageRelatingToSatisfactoryWikiArticles(
+	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Crab Boss',
 		'Satisfactory Livestream clips about the Crab Boss',
 		[
@@ -27,5 +30,5 @@ export default [
 			),
 		],
 		}
-	),
+	)),
 ];

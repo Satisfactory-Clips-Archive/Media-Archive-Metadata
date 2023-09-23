@@ -2,9 +2,12 @@ import {
 	WebPageRelatingToSatisfactoryWikiArticles,
 	SatisfactoryWikiImage,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	WebPageRelatingToSatisfactoryWikiArticles(
+	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Resource Wells',
 		'Satisfactory Livestream clips about Resource Wells',
 		[
@@ -29,5 +32,5 @@ export default [
 			),
 		]
 		}
-	),
+	)),
 ];

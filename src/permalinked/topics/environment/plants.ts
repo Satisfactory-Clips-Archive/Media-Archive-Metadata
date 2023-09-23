@@ -1,11 +1,14 @@
 import {
 	WebPageRelatingToSatisfactoryWikiArticles,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	WebPageRelatingToSatisfactoryWikiArticles(
+	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Plants',
 		'Satisfactory Livestream clips about Plants',
 		['Category:Flora'],
-	),
+	)),
 ];

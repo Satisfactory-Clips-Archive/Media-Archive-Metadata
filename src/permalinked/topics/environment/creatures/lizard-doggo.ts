@@ -2,9 +2,12 @@ import {
 	WebPageRelatingToSatisfactoryWikiArticles,
 	SatisfactoryWikiImage,
 } from '../../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	WebPageRelatingToSatisfactoryWikiArticles(
+	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Lizard Doggo',
 		'Satisfactory Livestream clips about the Lizard Doggo',
 		[
@@ -27,5 +30,5 @@ export default [
 			),
 		],
 		}
-	),
+	)),
 ];

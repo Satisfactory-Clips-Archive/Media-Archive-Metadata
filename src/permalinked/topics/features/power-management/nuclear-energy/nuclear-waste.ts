@@ -4,11 +4,14 @@ import {
 import {
 	Uranium_Waste,
 } from '../../../../../common/wiki-images.js';
+import {
+	SchemaGenerators,
+} from '../../../../../SchemaTypes.js';
 
 export default [
-	WebPageAboutSatisfactory('Nuclear Waste', {
+	SchemaGenerators.withContext(WebPageAboutSatisfactory('Nuclear Waste', {
 		"image": [
 			Uranium_Waste,
 		],
-	}),
+	})),
 ];

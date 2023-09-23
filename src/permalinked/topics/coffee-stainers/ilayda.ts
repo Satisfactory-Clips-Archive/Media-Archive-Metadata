@@ -1,10 +1,13 @@
 import {
 	YouTubeVideo,
-	CoffeeStainer,
+	FormerCoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('İlayda Ertuğrul', {
+	SchemaGenerators.withContext(FormerCoffeeStainer('İlayda Ertuğrul', {
 		jobTitle: 'Community Manager',
 		subjectOf: [
 			YouTubeVideo('4acDdsEM1Uc', {
@@ -13,5 +16,5 @@ export default [
 				uploadDate: '2023-02-10',
 			}),
 		],
-	}),
+	})),
 ]

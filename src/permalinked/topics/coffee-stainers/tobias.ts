@@ -2,9 +2,12 @@ import {
 	YouTubeVideo,
 	CoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Tobias Carlsson', {
+	SchemaGenerators.withContext(CoffeeStainer('Tobias Carlsson', {
 		jobTitle: 'Programmer',
 		subjectOf: [
 			YouTubeVideo('FyOHDcxtEUA', {
@@ -13,5 +16,5 @@ export default [
 				uploadDate: '2021-07-23',
 			}),
 		],
-	}),
+	})),
 ];

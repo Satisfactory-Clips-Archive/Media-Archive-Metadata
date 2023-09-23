@@ -79,19 +79,37 @@ export namespace SchemaProperties
         character?: Schema.Person<any>[]|Schema.Person<any>,
     };
 
-    export type SocialMediaPosting<
-        T1 extends SchemaProperties.ImageObject,
-		T2 extends SchemaProperties.Person,
-    > = Schema.has_image<T1> & has_url & {
+    export type VoteAction = {
+        actionOption: [string, ...string[]],
+        endTime: string,
+    };
+
+    export type SocialMediaPosting = Schema.has_image<any> & has_url & {
         headline: string,
         datePublished: string,
         keywords?: [string, ...string[]],
-        potentialAction?: {
-            '@type': 'VoteAction',
-            actionOption: [string, ...string[]],
-            endTime: string,
-        }[],
-		author?: T2[]|T2,
+        potentialAction?: Schema.VoteAction<any>[],
+		author?: Schema.Person<any>[]|Schema.Person<any>,
+    };
+
+    export type VideoGame = Schema.SubjectOf & {
+        name: string,
+        url: [string, ...string[]]|string,
+        author: Schema.Person<any>|Schema.Organization<any>,
+        operatingSystem: string,
+        applicationCategory: [string, ...string[]],
+        softwareVersion?: string,
+    };
+
+    export type VideoGameSeries = Schema.SubjectOf & Schema.has_image<any> & {
+        name: string,
+    };
+
+    export type Software = Schema.SubjectOf & Schema.has_image<any> & {
+        name: string,
+        url: [string, ...string[]]|string,
+        applicationCategory: [string, ...string[]],
+        author: Schema.Person<any>|Schema.Organization<any>,
     };
 }
 
@@ -133,9 +151,17 @@ export namespace Schema
         T1 extends SchemaProperties.Person,
     > = SchemaObject<'Person'> & T1 & SubjectOf & SchemaProperties.has_url & Schema.has_image<any>;
 
+    export type VoteAction<T1 extends SchemaProperties.VoteAction> = SchemaObject<'VoteAction'> & T1;
+
 	export type SocialMediaPosting<
-		T1 extends SchemaProperties.SocialMediaPosting<any, any>,
+		T1 extends SchemaProperties.SocialMediaPosting,
 	> = SchemaObject<'SocialMediaPosting'> & T1;
+
+    export type VideoGame<T1 extends SchemaProperties.VideoGame> = SchemaObject<'VideoGame'> & T1;
+
+    export type VideoGameSeries<T1 extends SchemaProperties.VideoGameSeries> = SchemaObject<'VideoGameSeries'> & T1;
+
+    export type Software<T1 extends SchemaProperties.Software> = SchemaObject<'Software'> & T1;
 }
 
 export namespace SchemaGenerators
@@ -150,6 +176,28 @@ export namespace SchemaGenerators
         return Object.assign({}, data, {
             '@type': type as T1,
         }) as (SchemaObject<T1> & T2);
+    }
+
+    export function withContext<
+        T1 extends SchemaObject<any>,
+        T2 extends string,
+    >(
+        data:Exclude<T1, {'@context': string}>,
+        context:T2 = 'https://schema.org' as T2,
+    ) : T1 & {'@context': T2} {
+        return Object.assign({}, data, {
+            '@context': context,
+        });
+    }
+
+    export function withoutContext<T1 extends SchemaObject<any>>(
+        data: T1 & {'@context': string}
+    ) : T1 {
+        const cloned:T1 & {'@context'?: string} = Object.assign({}, data);
+
+        delete cloned['@context'];
+
+        return cloned;
     }
 
     export function QuantitativeValue(value: number): Schema.QuantitativeValue
@@ -208,8 +256,16 @@ export namespace SchemaGenerators
         );
     }
 
+    export function Organization<T1 extends SchemaProperties.Organization>(data: T1) {
+        return SchemaGenerators.generate('Organization', data);
+    }
+
+    export function VoteAction<T1 extends SchemaProperties.VoteAction>(data:T1) {
+        return SchemaGenerators.generate('VoteAction', data);
+    }
+
     export function SocialMediaPosting<
-        T1 extends SchemaProperties.SocialMediaPosting<any, any>,
+        T1 extends SchemaProperties.SocialMediaPosting,
     >(url:string, data:T1): Schema.SocialMediaPosting<T1> {
         return SchemaGenerators.generate<'SocialMediaPosting', T1>(
             'SocialMediaPosting',
@@ -217,5 +273,23 @@ export namespace SchemaGenerators
                 url,
             })
         );
+    }
+
+    export function VideoGame<T1 extends SchemaProperties.VideoGame> (
+        data: T1,
+    ): Schema.VideoGame<T1> {
+        return SchemaGenerators.generate('VideoGame', data);
+    }
+
+    export function VideoGameSeries<T1 extends SchemaProperties.VideoGameSeries> (
+        data:T1,
+    ): Schema.VideoGameSeries<T1> {
+        return SchemaGenerators.generate('VideoGameSeries', data);
+    }
+
+    export function Software<T1 extends SchemaProperties.Software> (
+        data:T1,
+    ): Schema.Software<T1> {
+        return SchemaGenerators.generate('Software', data);
     }
 }

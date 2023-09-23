@@ -8,7 +8,7 @@ import {
 } from '../../../SchemaTypes.js';
 
 export default [
-	SchemaGenerators.WebPage('Flannel', {
+	SchemaGenerators.withContext(SchemaGenerators.WebPage('Flannel', {
 		description: 'Satisfactory Livestream clips about Coffee Stainers wearing Flannel shirts.',
 		subjectOf: [
 			YouTubeClip(
@@ -49,5 +49,5 @@ export default [
 				}
 			),
 		]
-	})
+	}))
 ];

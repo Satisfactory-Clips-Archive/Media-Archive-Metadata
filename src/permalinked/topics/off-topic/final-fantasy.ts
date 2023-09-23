@@ -6,9 +6,7 @@ import {
 } from '../../../SchemaTypes.js';
 
 export default [
-	{
-		'@context': 'https://schema.org',
-		'@type': 'VideoGameSeries',
+	SchemaGenerators.withContext(SchemaGenerators.VideoGameSeries<any>({
 		name: 'Final Fantasy',
 		image: [
 			SchemaGenerators.ImageObject(
@@ -27,5 +25,5 @@ export default [
 				startDate: '2021-07-13',
 			}),
 		],
-	},
+	})),
 ];

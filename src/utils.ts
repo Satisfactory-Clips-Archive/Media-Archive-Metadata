@@ -176,7 +176,7 @@ export function CoffeeStainer<
 	T1 extends SchemaProperties.Person
 >(
 	name: string,
-	data: T1,
+	data?: T1,
 ) : Schema.Person<
 	T1 & {
 		worksFor: Schema.Organization<any>,
@@ -213,7 +213,7 @@ export function FormerCoffeeStainer<
 }
 
 export function Tweet<
-	T1 extends SchemaProperties.SocialMediaPosting<any, any>,
+	T1 extends SchemaProperties.SocialMediaPosting,
 >(from:string, id:string, data:T1): Schema.SocialMediaPosting<T1> & {
 	author: Schema.Person<any> & {url: string},
 } {

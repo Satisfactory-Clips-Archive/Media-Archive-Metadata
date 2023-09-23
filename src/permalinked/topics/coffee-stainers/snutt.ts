@@ -2,13 +2,16 @@ import {
 	YouTubeVideo,
 	CoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 import {
 	default as SnuttyMays,
 } from './snutt/snutty-mays.js';
 
 export default [
-	CoffeeStainer('Snutt Treptow', {
+	SchemaGenerators.withContext(CoffeeStainer('Snutt Treptow', {
 		"jobTitle": [
 			"Community Manager",
 			"Joshie Wrangler"
@@ -26,10 +29,10 @@ export default [
 			}),
 		],
 		character: [
-			SnuttyMays[0],
+			SchemaGenerators.withoutContext(SnuttyMays[0]),
 		],
 		"url": [
 			"https://twitter.com/BustaSnutt"
 		]
-	}),
+	})),
 ];

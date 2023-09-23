@@ -3,9 +3,12 @@ import {
 	SatisfactoryWikiImage,
 	FormerCoffeeStainer
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	FormerCoffeeStainer('Jannik Reuterberg', {
+	SchemaGenerators.withContext(FormerCoffeeStainer('Jannik Reuterberg', {
 		'alternateName': [
 			'Sleeper\'s Delight',
 			'Dream Thing',
@@ -34,5 +37,5 @@ export default [
 			'https://soundcloud.com/dreamthing',
 			'https://open.spotify.com/artist/6qQp5Aa4nLgLNEkpA3eUDr',
 		],
-	}),
+	})),
 ];

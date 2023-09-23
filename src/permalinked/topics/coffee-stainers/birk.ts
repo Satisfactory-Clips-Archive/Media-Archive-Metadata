@@ -3,9 +3,12 @@ import {
 	SatisfactoryWikiImage,
 	CoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Birk Denecke', {
+	SchemaGenerators.withContext(CoffeeStainer('Birk Denecke', {
 		jobTitle: 'Producer',
 		alternateName: [
 			'Captain Birk of the S.S. Chillax',
@@ -32,5 +35,5 @@ export default [
 				uploadDate: '2020-11-12',
 			}),
 		],
-	}),
+	})),
 ];

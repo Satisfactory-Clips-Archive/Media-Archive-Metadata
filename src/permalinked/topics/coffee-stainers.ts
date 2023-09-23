@@ -4,9 +4,12 @@ import {
 import {
 	WebPageRelatingToSatisfactoryWikiArticles,
 } from '../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../SchemaTypes.js';
 
 export default [
-	WebPageRelatingToSatisfactoryWikiArticles(
+	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Coffee Stainers',
 		'Satisfactory clips about past & present employees of Coffee Stain',
 		['Coffee_Stain_Studios'],
@@ -15,5 +18,5 @@ export default [
 			coffee_stain,
 		],
 		}
-	),
+	)),
 ];

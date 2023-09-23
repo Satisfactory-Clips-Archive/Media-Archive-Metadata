@@ -18,8 +18,7 @@ const img = SchemaGenerators.ImageObject(
 );
 
 export default [
-	SchemaGenerators.WebPage('#SaveTheWillows', {
-		'@context': 'https://schema.org',
+	SchemaGenerators.withContext(SchemaGenerators.WebPage('#SaveTheWillows', {
 		description: 'Satisfactory Livestream clips relating to the removal of willow trees in Update 5',
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEqNe4SQNEAvhKRLQX39g9Ix', {
@@ -40,14 +39,13 @@ export default [
 				headline: 'Choose wisely',
 				datePublished: '2021-08-04T15:31ZGMT',
 				potentialAction: [
-					{
-						'@type': 'VoteAction',
+					SchemaGenerators.VoteAction({
 						actionOption: [
 							'Save The Willows',
 							'Add More Penis Rocks',
 						],
 						endTime: '2021-08-11T15:31ZGMT',
-					},
+					}),
 				],
 			}),
 			Tweet('SatisfactoryAF', '1422923637561102342', {
@@ -73,5 +71,5 @@ export default [
 		image: [
 			img,
 		],
-	}),
+	})),
 ];

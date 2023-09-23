@@ -7,7 +7,7 @@ import {
 } from '../../../../SchemaTypes.js';
 
 export default [
-	SchemaGenerators.Person('Snutty Mays', {
+	SchemaGenerators.withContext(SchemaGenerators.Person('Snutty Mays', {
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiErPJIX0NWiekKXFIrs8d4mO', {
 				name: 'Snutty Mays',
@@ -27,5 +27,5 @@ export default [
 				}
 			),
 		],
-	}),
+	})),
 ];

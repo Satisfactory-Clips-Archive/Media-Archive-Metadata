@@ -3,9 +3,12 @@ import {
 	YouTubeVideo,
 	CoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Joel Rydholm', {
+	SchemaGenerators.withContext(CoffeeStainer('Joel Rydholm', {
 		jobTitle: 'Producer',
 		subjectOf: [
 			YouTubeVideo('LDbnPHbnba0', {
@@ -29,5 +32,5 @@ export default [
 				}
 			),
 		],
-	}),
+	})),
 ];

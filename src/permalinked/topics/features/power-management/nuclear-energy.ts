@@ -5,9 +5,12 @@ import {
 import {
 	Uranium_Waste,
 } from '../../../../common/wiki-images.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	WebPageAboutSatisfactory('Nuclear Energy', {
+	SchemaGenerators.withContext(WebPageAboutSatisfactory('Nuclear Energy', {
 		"image": [
 			SatisfactoryWikiBuildingImage(
 				'https://satisfactory.wiki.gg/images/4/46/Nuclear_Power_Plant.png',
@@ -18,5 +21,5 @@ export default [
 			),
 			Uranium_Waste,
 		],
-	}),
+	})),
 ];

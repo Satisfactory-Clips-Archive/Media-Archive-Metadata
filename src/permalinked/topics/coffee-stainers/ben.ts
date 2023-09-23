@@ -2,9 +2,12 @@ import {
 	YouTubeVideo,
 	CoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Ben de Hullu', {
+	SchemaGenerators.withContext(CoffeeStainer('Ben de Hullu', {
 		"jobTitle": "Tech Artist",
 		"subjectOf": [
 			YouTubeVideo('omjFqZQV9fI', {
@@ -16,5 +19,5 @@ export default [
 		"url": [
 			"https://twitter.com/BenHullu"
 		]
-	}),
+	})),
 ];

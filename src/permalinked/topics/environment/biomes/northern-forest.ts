@@ -5,9 +5,10 @@ import {
 import {
 	yt_2_dash_JM_JP8RNc,
 } from '../../../../common/youtube.js';
+import {SchemaGenerators} from "../../../../SchemaTypes.js";
 
 export default [
-	WebPageRelatingToSatisfactoryWikiArticles(
+	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Northern_Forest',
 		'Satisfactory Livestream clips about the Northern Forest biome in the playable area of MASSAGE-2(A-B)b',
 		[
@@ -30,5 +31,5 @@ export default [
 			),
 		]
 		}
-	),
+	)),
 ];

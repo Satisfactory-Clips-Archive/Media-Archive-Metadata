@@ -9,7 +9,7 @@ import {
 } from '../../../../SchemaTypes.js';
 
 export default [
-	SchemaGenerators.Person('Steve', {
+	SchemaGenerators.withContext(SchemaGenerators.Person('Steve', {
 		jobTitle: 'Personal Assistant',
 		worksFor: FICSIT,
 		url: [
@@ -27,5 +27,5 @@ export default [
 				}
 			),
 		],
-	}),
+	})),
 ];

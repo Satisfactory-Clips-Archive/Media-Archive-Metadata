@@ -6,7 +6,7 @@ import {
 } from '../../../SchemaTypes.js';
 
 export default [
-	WebPageAboutSatisfactory('Community Highlights', {
+	SchemaGenerators.withContext(WebPageAboutSatisfactory('Community Highlights', {
 		"description": "Satisfactory Livestream clips about the Satisfactory Community Highlights",
 		"relatedLink": [
 			"https://communityhighlights.satisfactory.video/"
@@ -22,5 +22,5 @@ export default [
 				}
 			),
 		],
-	}),
+	})),
 ];

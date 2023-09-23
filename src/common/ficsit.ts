@@ -1,7 +1,15 @@
-import {Schema} from '../SchemaTypes.js';
+import {
+	SchemaProperties,
+	SchemaGenerators,
+} from '../SchemaTypes.js';
 
-export default {
-	'@type': 'Organization',
+declare type FICSIT = SchemaProperties.Organization & {
+	url: string,
+};
+
+export const FICSIT:FICSIT = {
 	'name': 'FICSIT Incorporated',
 	'url': 'https://satisfactory.wiki.gg/wiki/FICSIT_Inc.',
-} as Schema.Organization<any>;
+};
+
+export default SchemaGenerators.Organization(Object.assign({}, FICSIT));

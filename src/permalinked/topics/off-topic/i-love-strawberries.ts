@@ -10,9 +10,7 @@ import {
 } from '../../../SchemaTypes.js';
 
 export default [
-	{
-		'@context': 'https://schema.org',
-		'@type': 'VideoGame',
+	SchemaGenerators.withContext(SchemaGenerators.VideoGame<any>({
 		name: 'I <3 Strawberries',
 		alternateName: [
 			'I Love Strawberries',
@@ -60,5 +58,5 @@ export default [
 				uploadDate: '2014-02-25',
 			}),
 		],
-	},
+	})),
 ];

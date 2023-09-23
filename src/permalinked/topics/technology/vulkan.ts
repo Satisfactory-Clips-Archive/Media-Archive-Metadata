@@ -6,19 +6,16 @@ import {
 } from '../../../SchemaTypes.js';
 
 export default [
-	{
-		'@context': 'https://schema.org',
-		'@type': 'Software',
+	SchemaGenerators.withContext(SchemaGenerators.Software({
 		name: 'Vulkan',
 		url: 'https://www.vulkan.org/',
 		applicationCategory: [
 			'Graphics API',
 		],
-		author: {
-			'@type': 'Organization',
+		author: SchemaGenerators.Organization({
 			'name': 'Khronos Group',
 			url: 'https://www.khronos.org/',
-		},
+		}),
 		image: [
 			SchemaGenerators.ImageObject(
 				'https://i-img-archive.satisfactory.video/content/topics/technology/vulkan--bg.webp',
@@ -36,5 +33,5 @@ export default [
 				startDate: '2021-02-04'
 			}),
 		],
-	},
+	})),
 ];

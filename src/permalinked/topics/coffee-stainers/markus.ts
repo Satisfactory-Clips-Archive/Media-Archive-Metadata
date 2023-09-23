@@ -1,7 +1,10 @@
 import {
 	FormerCoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	FormerCoffeeStainer('Markus Rännare'),
+	SchemaGenerators.withContext(FormerCoffeeStainer('Markus Rännare')),
 ];

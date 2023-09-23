@@ -7,7 +7,7 @@ import {
 } from '../../../../SchemaTypes.js';
 
 export default [
-	SchemaGenerators.WebPage('Caves', {
+	SchemaGenerators.withContext(SchemaGenerators.WebPage('Caves', {
 		description: 'Satisfactory Livestream clips about the Caves of MASSAGE-2(A-B)b',
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEqK9nRVDCg0Z3bb47I6gPod', {
@@ -31,5 +31,5 @@ export default [
 				}
 			),
 		],
-	}),
+	})),
 ]

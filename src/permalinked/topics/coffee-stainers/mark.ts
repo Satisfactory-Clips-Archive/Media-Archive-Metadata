@@ -1,9 +1,12 @@
 import {
 	CoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Mark Hofma', {
+	SchemaGenerators.withContext(CoffeeStainer('Mark Hofma', {
 		jobTitle: 'Game Designer',
-	}),
+	})),
 ];

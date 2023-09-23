@@ -7,7 +7,7 @@ import {
 } from '../../../../SchemaTypes.js';
 
 export default [
-	SchemaGenerators.Person('Juice Velvet', {
+	SchemaGenerators.withContext(SchemaGenerators.Person('Juice Velvet', {
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEosygjoYTHIREXy9ZtlTDfQ', {
 				name: 'Juice Velvet',
@@ -27,5 +27,5 @@ export default [
 				}
 			),
 		],
-	}),
+	})),
 ];

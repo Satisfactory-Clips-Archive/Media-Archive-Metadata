@@ -5,9 +5,12 @@ import {
 import {
 	yt_UT9iNA3WGT4,
 } from '../../../common/youtube.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Hannah Beuger', {
+	SchemaGenerators.withContext(CoffeeStainer('Hannah Beuger', {
 		jobTitle: 'Level Designer',
 		subjectOf: [
 			YouTubeVideo('8WYNwGDLYNE', {
@@ -20,5 +23,5 @@ export default [
 		url: [
 			'https://twitter.com/HannahBeuger'
 		],
-	}),
+	})),
 ];

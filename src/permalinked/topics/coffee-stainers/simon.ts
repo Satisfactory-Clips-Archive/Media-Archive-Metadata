@@ -4,9 +4,12 @@ import {
 import {
 	Simon_Saga,
 } from '../../../common/youtube.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Simon Begby', {
+	SchemaGenerators.withContext(CoffeeStainer('Simon Begby', {
 		"jobTitle": "VFX Artist",
 		"subjectOf": [
 			Simon_Saga,
@@ -14,5 +17,5 @@ export default [
 		"url": [
 			"https://twitter.com/SBegby"
 		]
-	}),
+	})),
 ];

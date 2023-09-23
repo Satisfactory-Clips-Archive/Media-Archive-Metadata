@@ -3,9 +3,12 @@ import {
 	YouTubeVideo,
 	FormerCoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	FormerCoffeeStainer('Oscar Jilsén', {
+	SchemaGenerators.withContext(FormerCoffeeStainer('Oscar Jilsén', {
 		description: 'Co-founder of Coffee Stain Studios, former Game Director of Satisfactory.',
 		url: [
 			'https://twitter.com/ockeffs',
@@ -29,5 +32,5 @@ export default [
 				'uploadDate': '2018-07-04',
 			}),
 		],
-	}),
+	})),
 ];

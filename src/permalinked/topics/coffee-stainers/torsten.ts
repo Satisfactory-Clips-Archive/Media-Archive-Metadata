@@ -2,9 +2,12 @@ import {
 	YouTubeVideo,
 	CoffeeStainer,
 } from '../../../utils.js';
+import {
+	SchemaGenerators,
+} from '../../../SchemaTypes.js';
 
 export default [
-	CoffeeStainer('Torsten Gunst', {
+	SchemaGenerators.withContext(CoffeeStainer('Torsten Gunst', {
 		jobTitle: 'Concept Artist',
 		subjectOf: [
 			YouTubeVideo('CG-63B4g11U', {
@@ -13,5 +16,5 @@ export default [
 				'uploadDate': '2020-04-10',
 			}),
 		],
-	}),
+	})),
 ];

@@ -1,9 +1,10 @@
 import {
 	Simon_Saga,
 } from '../../../../common/youtube.js';
+import {
+	SchemaGenerators,
+} from '../../../../SchemaTypes.js';
 
 export default [
-	Object.assign({}, Simon_Saga, {
-		'@context': 'https://schema.org',
-	}),
+	SchemaGenerators.withContext(Simon_Saga),
 ];

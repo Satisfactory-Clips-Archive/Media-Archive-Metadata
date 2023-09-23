@@ -7,7 +7,7 @@ import {
 } from '../../../../SchemaTypes.js';
 
 export default [
-	SchemaGenerators.Person('Robo Jace', {
+	SchemaGenerators.withContext(SchemaGenerators.Person('Robo Jace', {
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiErdTAJdeOIHMN2m3pR245LA', {
 				name: 'Robo Jace',
@@ -43,5 +43,5 @@ export default [
 				}
 			),
 		],
-	}),
+	})),
 ];

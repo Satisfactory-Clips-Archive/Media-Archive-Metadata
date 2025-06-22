@@ -8,6 +8,9 @@ import {
 
 export default [
 	SchemaGenerators.withContext(CoffeeStainer('Tobias Carlsson', {
+		alternateName: [
+			'Lym'
+		],
 		jobTitle: 'Programmer',
 		subjectOf: [
 			YouTubeVideo('FyOHDcxtEUA', {

@@ -10,6 +10,8 @@ export const SignpostMarv = SatisfactoryCommunityMember('Marv', {
     honorificPrefix: 'Signpost',
     url: [
         'https://signpostmarv.name/',
+		'https://bsky.app/profile/signpostmarv.name',
+		// I rarely use twitter any more
         'https://twitter.com/SignpostMarv',
         'https://mastodon.social/@SignpostMarv',
         'https://steamcommunity.com/id/SignpostMarv/',

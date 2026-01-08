@@ -1,6 +1,3 @@
-
-
-
 export declare type SchemaObject<T extends string> = {
     '@context'?: 'https://schema.org',
     '@type': T,

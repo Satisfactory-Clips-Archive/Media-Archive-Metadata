@@ -1,0 +1,139 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "satisfactory-clips-archive--media-archive-metadata--transcription-json",
+	"$defs": {
+		"text_string": {
+			"type": "string",
+			"minLength": 1
+		},
+		"PTS": {
+			"type": "string",
+			"pattern": "^PT\\d+(?:\\.\\d+)?S$"
+		},
+		"text_entry": {
+			"oneOf": [
+				{
+					"$ref": "#/$defs/text_string"
+				},
+				{
+					"type": "object",
+					"$ref": "#/$defs/text_entry_object",
+					"unevaluatedProperties": false
+				},
+				{
+					"$ref": "#/$defs/text_entry_with_times"
+				}
+			]
+		},
+		"text_entry_object": {
+			"type": "object",
+			"required": ["text"],
+			"properties": {
+				"text": {
+					"oneOf": [
+						{
+							"$ref": "#/$defs/text_string"
+						},
+						{
+							"type": "object",
+							"required": ["text"],
+							"additionalProperties": false,
+							"properties": {
+								"text": {
+									"$ref": "#/$defs/text_string"
+								},
+								"about": {
+									"type": "string",
+									"pattern": "^\\/topics\\/([a-z0-9_-]+\\/)+$"
+								}
+							}
+						}
+					]
+				},
+				"speaker": {
+					"type": "array",
+					"minItems": 1,
+					"items": {
+						"type": "string",
+						"minLength": 1
+					}
+				},
+				"followsOnFromPrevious": {
+					"type": "boolean"
+				},
+				"webvtt": {
+					"type": "object",
+					"required": [
+						"position",
+						"line",
+						"size",
+						"align"
+					],
+					"properties": {
+						"position": {
+							"type": "number"
+						},
+						"line": {
+							"type": "number",
+							"minimum": 0
+						},
+						"size": {
+							"type": "number",
+							"minimum": 1
+						},
+						"align": {
+							"type": "string",
+							"enum": [
+								"start",
+								"middle",
+								"end"
+							]
+						}
+					}
+				}
+			}
+		},
+		"text_entry_with_times": {
+			"type": "object",
+			"$ref": "#/$defs/text_entry_object",
+			"required": ["startTime", "endTime"],
+			"unevaluatedProperties": false,
+			"properties": {
+				"startTime": {
+					"$ref": "#/$defs/PTS"
+				},
+				"endTime": {
+					"$ref": "#/$defs/PTS"
+				}
+			}
+		}
+	},
+	"type": "object",
+	"required": [
+		"language",
+		"about",
+		"text"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"language": {
+			"type": "string",
+			"enum": [
+				"en",
+				"en-US",
+				"en-GB"
+			]
+		},
+		"about": {
+			"type": "string",
+			"pattern": "^https:\\/\\/.+"
+		},
+		"text": {
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$ref": "#/$defs/text_entry"
+			}
+		}
+	}
+}

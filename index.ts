@@ -4,7 +4,7 @@ import {
 
 import {
 	resolve,
-} from 'path';
+} from 'node:path';
 
 import type {
 	SchemaObject,

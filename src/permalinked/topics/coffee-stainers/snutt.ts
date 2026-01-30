@@ -2,8 +2,8 @@
 import SnuttyMays from './snutt/snutty-mays.ts';
 
 import {
-	YouTubeVideo,
 	CoffeeStainer,
+	YouTubeVideo,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../utils.ts';
 

@@ -8,9 +8,9 @@ import {
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../utils.ts';
 import {
+	Schema,
 	SchemaGenerators,
 	SchemaProperties,
-	Schema,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../SchemaTypes.ts';
 

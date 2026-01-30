@@ -1,6 +1,6 @@
 import {
-	SchemaProperties,
 	SchemaGenerators,
+	SchemaProperties,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../SchemaTypes.ts';
 

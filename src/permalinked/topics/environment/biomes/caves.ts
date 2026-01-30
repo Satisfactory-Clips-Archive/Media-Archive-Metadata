@@ -1,6 +1,6 @@
 import {
-	YouTubePlaylist,
 	SatisfactoryWikiImage,
+	YouTubePlaylist,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../utils.ts';
 import {

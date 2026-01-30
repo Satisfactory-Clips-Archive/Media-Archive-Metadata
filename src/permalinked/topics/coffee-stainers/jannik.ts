@@ -1,7 +1,7 @@
 import {
-	YouTubeVideo,
-	SatisfactoryWikiImage,
 	FormerCoffeeStainer,
+	SatisfactoryWikiImage,
+	YouTubeVideo,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../utils.ts';
 import {

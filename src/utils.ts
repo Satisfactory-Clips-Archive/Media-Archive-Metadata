@@ -10,9 +10,9 @@ import satisfactory from './common/satisfactory.ts';
 import coffee_stain from './common/coffee-stain.ts';
 
 import type {
-	SchemaProperties,
 	Schema,
 	SchemaObject,
+	SchemaProperties,
 } from './SchemaTypes.ts';
 import {
 	SchemaGenerators,

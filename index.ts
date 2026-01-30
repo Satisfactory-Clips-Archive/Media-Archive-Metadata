@@ -1,6 +1,16 @@
-import {glob} from 'glob';
-import {dirname, resolve} from 'path';
-import {fileURLToPath, pathToFileURL} from 'url';
+import {
+	glob,
+} from 'glob';
+
+import {
+	dirname,
+	resolve,
+} from 'path';
+
+import {
+	fileURLToPath,
+	pathToFileURL,
+} from 'url';
 
 export default (await Promise.all(
 	glob.sync(

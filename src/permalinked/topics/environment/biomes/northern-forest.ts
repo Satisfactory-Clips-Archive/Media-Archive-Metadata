@@ -8,7 +8,7 @@ import {
 } from '../../../../common/youtube.ts';
 import {SchemaGenerators} from '../../../../SchemaTypes.ts';
 
-export default [
+export const Northern_Forest = [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Northern_Forest',
 		// eslint-disable-next-line @stylistic/max-len

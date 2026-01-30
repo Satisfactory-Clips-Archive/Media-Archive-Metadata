@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+export const Caves = [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage('Caves', {
 		// eslint-disable-next-line @stylistic/max-len
 		description: 'Satisfactory Livestream clips about the Caves of MASSAGE-2(A-B)b',

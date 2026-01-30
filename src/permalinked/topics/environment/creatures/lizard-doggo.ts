@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+export const Lizard_Doggo = [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Lizard Doggo',
 		'Satisfactory Livestream clips about the Lizard Doggo',

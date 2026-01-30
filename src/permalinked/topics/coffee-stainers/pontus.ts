@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+export const Pontus = [
 	SchemaGenerators.withContext(CoffeeStainer('Pontus Lundén', {
 		jobTitle: 'UI Graphics',
 	})),

@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+export const Robo_Jace = [
 	SchemaGenerators.withContext(SchemaGenerators.Person('Robo Jace', {
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiErdTAJdeOIHMN2m3pR245LA', {

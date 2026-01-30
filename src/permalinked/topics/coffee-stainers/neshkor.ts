@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+export const Neshkor = [
 	SchemaGenerators.withContext(CoffeeStainer('Neshkor', {
 		alternateName: [
 			'Michiel Werring',

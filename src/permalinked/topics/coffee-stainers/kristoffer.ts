@@ -7,7 +7,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+export const Kristoffer = [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Kristoffer Anderson', {
 		subjectOf: [
 			YouTubeVideo('fI7gnbG4Omk', {

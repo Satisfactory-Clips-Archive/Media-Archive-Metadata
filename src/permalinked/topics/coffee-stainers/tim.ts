@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+export const Tim = [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Tim Badylak', {
 		"image": [
 			SatisfactoryWikiImage(

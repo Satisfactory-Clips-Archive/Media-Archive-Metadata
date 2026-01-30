@@ -2,7 +2,7 @@ import {
 	Tweet,
 } from '../../../../utils.ts';
 import {
-	default as Snutt,
+	Snutt,
 } from '../snutt.ts';
 import {
 	SchemaGenerators,
@@ -24,7 +24,7 @@ const burger_time = Tweet('BustaSnutt', '1430230082270937090', {
 	]
 });
 
-export default [
+export const Snutt_Burger_Time = [
 	// eslint-disable-next-line @stylistic/max-len
 	SchemaGenerators.withContext(SchemaGenerators.WebPage('Snutt Burger Time', {
 		// eslint-disable-next-line @stylistic/max-len

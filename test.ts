@@ -1,6 +1,10 @@
 // eslint-disable-next-line imports/no-internal-modules
 import schema from './src/schema.json' with {type: 'json'};
-import data from './index.ts';
+
+import {
+	data,
+} from './index.ts';
+
 import Ajv from 'ajv';
 
 const validator = (new Ajv()).compile(schema);

@@ -10,7 +10,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+export const Nathalie = [
 	SchemaGenerators.withContext(CoffeeStainer('Nathalie Verweij', {
 		jobTitle: 'UI/UX Designer',
 		subjectOf: [

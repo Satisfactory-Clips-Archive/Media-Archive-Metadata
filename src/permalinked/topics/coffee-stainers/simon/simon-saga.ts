@@ -1,11 +1,11 @@
 import {
-	Simon_Saga,
+	Simon_Saga as Playlist,
 // eslint-disable-next-line imports/no-internal-modules
 } from '../../../../common/youtube.ts';
 import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
-	SchemaGenerators.withContext(Simon_Saga),
+export const Simon_Saga = [
+	SchemaGenerators.withContext(Playlist),
 ];

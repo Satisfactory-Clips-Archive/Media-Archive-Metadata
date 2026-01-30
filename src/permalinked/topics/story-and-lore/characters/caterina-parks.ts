@@ -1,5 +1,5 @@
 import {
-	default as FICSIT,
+	FICSIT,
 // eslint-disable-next-line imports/no-internal-modules
 } from '../../../../common/ficsit.ts';
 import {
@@ -9,7 +9,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+export const Caterina_Parks = [
 	SchemaGenerators.withContext(SchemaGenerators.Person('Caterina Parks', {
 		jobTitle: 'CEO',
 		worksFor: FICSIT,

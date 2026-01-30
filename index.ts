@@ -37,4 +37,6 @@ for await (
 	);
 }
 
-export default data;
+export {
+	data,
+};

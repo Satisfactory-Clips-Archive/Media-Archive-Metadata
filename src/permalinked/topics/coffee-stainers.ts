@@ -9,7 +9,7 @@ import {
 	SchemaGenerators,
 } from '../../SchemaTypes.ts';
 
-export default [
+export const Coffee_Stainers = [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Coffee Stainers',
 		'Satisfactory clips about past & present employees of Coffee Stain',

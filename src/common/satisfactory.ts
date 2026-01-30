@@ -1,6 +1,4 @@
-import {
-	CSS as coffee_stain,
-} from './coffee-stain.ts';
+import {default as coffee_stain} from './coffee-stain.ts';
 import type {
 	SchemaObject,
 	SchemaProperties,
@@ -24,9 +22,7 @@ export const satisfactory:SchemaProperties.VideoGame = {
 	]
 };
 
-export const FactoryGame = SchemaGenerators.VideoGame<
-	typeof satisfactory
->(Object.assign(
+export default SchemaGenerators.VideoGame<any>(Object.assign(
 	{},
 	satisfactory,
 ));

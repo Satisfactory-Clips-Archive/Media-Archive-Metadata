@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const İlayda = [
+export default [
 	SchemaGenerators.withContext(FormerCoffeeStainer('İlayda Ertuğrul', {
 		jobTitle: 'Community Manager',
 		subjectOf: [

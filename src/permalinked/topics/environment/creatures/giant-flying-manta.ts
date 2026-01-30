@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export const Manta = [
+export default [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Giant Flying Manta',
 		'Satisfactory Livestream clips about the Giant Flying Manta',

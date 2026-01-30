@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const FinalFantasy = [
+export default [
 	SchemaGenerators.withContext(SchemaGenerators.VideoGameSeries<any>({
 		name: 'Final Fantasy',
 		image: [

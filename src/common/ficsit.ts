@@ -12,7 +12,4 @@ export const FICSIT:FICSIT = {
 	'url': 'https://satisfactory.wiki.gg/wiki/FICSIT_Inc.',
 };
 
-export const FICSIT_ORG = SchemaGenerators.Organization(Object.assign(
-	{},
-	FICSIT,
-));
+export default SchemaGenerators.Organization(Object.assign({}, FICSIT));

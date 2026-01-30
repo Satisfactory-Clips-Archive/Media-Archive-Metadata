@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export const Birb = [
+export default [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Non Flying Bird',
 		'Satisfactory Livestream clips about the Non Flying Bird',

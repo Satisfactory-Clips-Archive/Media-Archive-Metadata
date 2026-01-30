@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const vulkan = [
+export default [
 	SchemaGenerators.withContext(SchemaGenerators.Software({
 		name: 'Vulkan',
 		url: 'https://www.vulkan.org/',

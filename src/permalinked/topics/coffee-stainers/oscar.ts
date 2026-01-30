@@ -7,7 +7,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Oscar = [
+export default [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Oscar Jilsén', {
 		// eslint-disable-next-line @stylistic/max-len
 		description: 'Co-founder of Coffee Stain Studios, former Game Director of Satisfactory.',

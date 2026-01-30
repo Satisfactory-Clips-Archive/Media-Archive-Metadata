@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Lym = [
+export default [
 	SchemaGenerators.withContext(CoffeeStainer('Tobias Carlsson', {
 		alternateName: [
 			'Lym'

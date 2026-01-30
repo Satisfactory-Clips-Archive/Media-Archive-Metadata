@@ -7,7 +7,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Birk = [
+export default [
 	SchemaGenerators.withContext(CoffeeStainer('Birk Denecke', {
 		jobTitle: 'Producer',
 		alternateName: [

@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Biomes = [
+export default [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Biomes',
 		// eslint-disable-next-line @stylistic/max-len

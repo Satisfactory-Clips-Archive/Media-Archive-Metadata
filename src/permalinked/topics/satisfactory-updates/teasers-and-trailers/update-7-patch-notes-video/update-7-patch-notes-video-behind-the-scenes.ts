@@ -4,7 +4,7 @@ import {
 } from '../../../../../common/youtube.ts';
 import {SchemaGenerators} from '../../../../../SchemaTypes.ts';
 
-export const Update7_Patch_Notes_Video__Behind_the_scenes = [
+export default [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage(
 		'Update 7 Patch Notes Video - Behind the Scenes',
 		{

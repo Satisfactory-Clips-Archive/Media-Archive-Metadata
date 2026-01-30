@@ -7,7 +7,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Sofi = [
+export default [
 	SchemaGenerators.withContext(CoffeeStainer('Sofi Sprangers', {
 		jobTitle: 'Concept Artist',
 		image: [

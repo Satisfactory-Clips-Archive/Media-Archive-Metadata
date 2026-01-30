@@ -7,11 +7,11 @@ import {
 } from '../../../SchemaTypes.ts';
 
 import {
-	Snutty_Mays as SnuttyMays,
+	default as SnuttyMays,
 // eslint-disable-next-line imports/no-internal-modules
 } from './snutt/snutty-mays.ts';
 
-export const Snutt = [
+export default [
 	SchemaGenerators.withContext(CoffeeStainer('Snutt Treptow', {
 		"jobTitle": [
 			"Community Manager",

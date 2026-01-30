@@ -1,5 +1,5 @@
 import {
-	CSS as coffee_stain,
+	default as coffee_stain
 // eslint-disable-next-line imports/no-internal-modules
 } from '../../../common/coffee-stain.ts';
 import {
@@ -10,7 +10,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const I_Love_Strawberries = [
+export default [
 	SchemaGenerators.withContext(SchemaGenerators.VideoGame<any>({
 		name: 'I <3 Strawberries',
 		alternateName: [

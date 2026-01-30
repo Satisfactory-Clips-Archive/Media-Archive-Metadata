@@ -9,7 +9,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Simon = [
+export default [
 	SchemaGenerators.withContext(CoffeeStainer('Simon Begby', {
 		"jobTitle": "VFX Artist",
 		"subjectOf": [

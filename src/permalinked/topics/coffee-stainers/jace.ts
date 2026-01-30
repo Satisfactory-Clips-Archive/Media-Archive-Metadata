@@ -8,16 +8,16 @@ import {
 } from '../../../SchemaTypes.ts';
 
 import {
-	Juice_Velvet,
+	default as JuiceVelvet,
 // eslint-disable-next-line imports/no-internal-modules
 } from './jace/juice-velvet.ts';
 
 import {
-	Robo_Jace,
+	default as RoboJace,
 // eslint-disable-next-line imports/no-internal-modules
 } from './jace/robo-jace.ts';
 
-export const Jace = [
+export default [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Jace Varlet', {
 		"jobTitle": "Community Manager",
 		"subjectOf": [
@@ -52,8 +52,8 @@ export const Jace = [
 			),
 		],
 		character: [
-			SchemaGenerators.withoutContext(Juice_Velvet[0]),
-			SchemaGenerators.withoutContext(Robo_Jace[0]),
+			SchemaGenerators.withoutContext(JuiceVelvet[0]),
+			SchemaGenerators.withoutContext(RoboJace[0]),
 		],
 		"url": [
 			"https://twitter.com/jembawls"

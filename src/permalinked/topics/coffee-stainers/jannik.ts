@@ -7,7 +7,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Jannik = [
+export default [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Jannik Reuterberg', {
 		'alternateName': [
 			'Sleeper\'s Delight',

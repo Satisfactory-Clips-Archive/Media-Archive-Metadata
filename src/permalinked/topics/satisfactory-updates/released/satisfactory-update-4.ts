@@ -35,7 +35,7 @@ export const Update4:Update4 = Object.assign({}, satisfactory, {
 	],
 });
 
-export const Version_Update4 = [
+export default [
 	SchemaGenerators.withContext(
 		SchemaGenerators.VideoGame<Update4>(Object.assign({}, Update4)),
 	),

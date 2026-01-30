@@ -3,15 +3,11 @@ import type {
 // eslint-disable-next-line imports/no-internal-modules
 } from './common/satisfactory.ts';
 
-import {
-	satisfactory,
 // eslint-disable-next-line imports/no-internal-modules
-} from './common/satisfactory.ts';
+import satisfactory from './common/satisfactory.ts';
 
-import {
-	CSS as coffee_stain,
 // eslint-disable-next-line imports/no-internal-modules
-} from './common/coffee-stain.ts';
+import coffee_stain from './common/coffee-stain.ts';
 
 import type {
 	SchemaProperties,

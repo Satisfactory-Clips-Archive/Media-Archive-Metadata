@@ -10,7 +10,7 @@ import {
 	SchemaGenerators,
 } from '../../../../../SchemaTypes.ts';
 
-export const Nuclear_Waste = [
+export default [
 	SchemaGenerators.withContext(WebPageAboutSatisfactory('Nuclear Waste', {
 		"image": [
 			Uranium_Waste,

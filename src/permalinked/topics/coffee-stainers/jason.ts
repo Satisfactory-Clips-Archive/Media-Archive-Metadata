@@ -1,7 +1,7 @@
 import {SchemaGenerators} from '../../../SchemaTypes.ts';
 import {CoffeeStainer, YouTubeVideo} from '../../../utils.ts';
 
-export const Jason = [
+export default [
 	SchemaGenerators.withContext(CoffeeStainer('Jason Edwards', {
 		jobTitle: [
 			'Community Manager',

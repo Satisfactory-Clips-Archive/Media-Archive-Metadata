@@ -20,6 +20,6 @@ export const SignpostMarv = SatisfactoryCommunityMember('Marv', {
     ],
 });
 
-export const SignpostMarv_Person = [
+export default [
     SchemaGenerators.withContext(Object.assign({}, SignpostMarv)),
 ];

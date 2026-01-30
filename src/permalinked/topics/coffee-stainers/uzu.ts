@@ -5,6 +5,6 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Uzu = [
+export default [
 	SchemaGenerators.withContext(CoffeeStainer('Uzu')),
 ];

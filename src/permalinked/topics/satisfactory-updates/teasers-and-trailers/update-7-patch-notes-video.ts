@@ -6,16 +6,14 @@ import {
 // eslint-disable-next-line imports/no-internal-modules
 } from '../../../../common/youtube.ts';
 
-import {
-	Update7,
 // eslint-disable-next-line imports/no-internal-modules
-} from '../released/satisfactory-update-7.ts';
+import Update7 from '../released/satisfactory-update-7.ts';
 
 import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export const Update7_Patch_Notes_Video = [
+export default [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage(
 		'Update 7 Patch Notes Video - Behind the Scenes',
 		{

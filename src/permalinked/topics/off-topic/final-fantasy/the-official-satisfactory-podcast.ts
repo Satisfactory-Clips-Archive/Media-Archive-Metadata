@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export const SatisPod_001 = [
+export default [
 	SchemaGenerators.withContext(YouTubeVideo('', {
 		name: 'The Official Satisfactory PODCAST Episode 001',
 		description: [

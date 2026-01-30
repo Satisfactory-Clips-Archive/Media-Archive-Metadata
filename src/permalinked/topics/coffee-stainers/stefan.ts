@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Stefan = [
+export default [
 	SchemaGenerators.withContext(CoffeeStainer('Stefan Hanna', {
 		jobTitle: [
 			'CEO',

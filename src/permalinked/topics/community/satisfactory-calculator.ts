@@ -8,7 +8,7 @@ import {
 
 export const Anthor = SatisfactoryCommunityMember('Anthor');
 
-export const SCIM = [
+export default [
     SchemaGenerators.withContext(WebSiteAboutSatisfactory( {
         name: 'Satisfactory Calculator',
         url: 'https://satisfactory-calculator.com/',

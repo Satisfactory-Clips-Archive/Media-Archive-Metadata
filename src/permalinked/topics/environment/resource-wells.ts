@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Resource_wells = [
+export default [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Resource Wells',
 		'Satisfactory Livestream clips about Resource Wells',

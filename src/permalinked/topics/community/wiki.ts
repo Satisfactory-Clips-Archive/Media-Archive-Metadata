@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const Wiki = [
+export default [
 	// eslint-disable-next-line @stylistic/max-len
 	SchemaGenerators.withContext(WebPageAboutSatisfactory('Satisfactory Wiki', {
 		// eslint-disable-next-line @stylistic/max-len

@@ -16,16 +16,16 @@ const Manta = [
 			'Giant_Flying_Manta',
 		],
 		{
-		image: [
-			SatisfactoryWikiImage(
-				// eslint-disable-next-line @stylistic/max-len
-				'https://satisfactory.wiki.gg/images/5/54/Giant_Flying_Manta.png',
-				1200,
-				1200,
-				'image/png',
-				'Giant Flying Manta.png',
-			),
-		],
+			image: [
+				SatisfactoryWikiImage(
+					// eslint-disable-next-line @stylistic/max-len
+					'https://satisfactory.wiki.gg/images/5/54/Giant_Flying_Manta.png',
+					1200,
+					1200,
+					'image/png',
+					'Giant Flying Manta.png',
+				),
+			],
 		}
 	)),
 ];

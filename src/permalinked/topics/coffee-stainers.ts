@@ -17,9 +17,9 @@ const Page = [
 		'Satisfactory clips about past & present employees of Coffee Stain',
 		['Coffee_Stain_Studios'],
 		{
-		about: [
-			coffee_stain,
-		],
+			about: [
+				coffee_stain,
+			],
 		}
 	)),
 ];

@@ -1,22 +1,22 @@
 import {
-    SchemaGenerators,
+	SchemaGenerators,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../SchemaTypes.ts';
 import {
-    SatisfactoryCommunityMember,
-    WebSiteAboutSatisfactory,
+	SatisfactoryCommunityMember,
+	WebSiteAboutSatisfactory,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../utils.ts';
 
 const Anthor = SatisfactoryCommunityMember('Anthor');
 
 const SCIM = [
-    SchemaGenerators.withContext(WebSiteAboutSatisfactory( {
-        name: 'Satisfactory Calculator',
-        url: 'https://satisfactory-calculator.com/',
-        author: Anthor,
-        alternateName: 'SCIM',
-    })),
+	SchemaGenerators.withContext(WebSiteAboutSatisfactory( {
+		name: 'Satisfactory Calculator',
+		url: 'https://satisfactory-calculator.com/',
+		author: Anthor,
+		alternateName: 'SCIM',
+	})),
 ];
 
 export {

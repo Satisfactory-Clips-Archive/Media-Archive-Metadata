@@ -16,22 +16,23 @@ const Lizard_Doggo = [
 			'Lizard_Doggo',
 		],
 		{
-		alternateName: [
-			'Space Rabbit',
-		],
-		image: [
-			SatisfactoryWikiImage(
-				'https://satisfactory.wiki.gg/images/7/79/Lizard_Doggo.png',
-				257,
-				257,
-				'image/png',
-				'Lizard Doggo.png',
-				{
+			alternateName: [
+				'Space Rabbit',
+			],
+			image: [
+				SatisfactoryWikiImage(
 					// eslint-disable-next-line @stylistic/max-len
-					"name": "Lizard Doggo, cropped from the GDC 2018 Teaser Trailer.",
-				}
-			),
-		],
+					'https://satisfactory.wiki.gg/images/7/79/Lizard_Doggo.png',
+					257,
+					257,
+					'image/png',
+					'Lizard Doggo.png',
+					{
+						// eslint-disable-next-line @stylistic/max-len
+						"name": "Lizard Doggo, cropped from the GDC 2018 Teaser Trailer.",
+					}
+				),
+			],
 		}
 	)),
 ];

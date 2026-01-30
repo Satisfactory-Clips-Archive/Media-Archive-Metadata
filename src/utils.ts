@@ -21,9 +21,9 @@ import {
 declare type SatisfactoryWikiImageProperties = (
 	& SchemaProperties.ImageObject
 	& {
-	url: string,
-	discussionUrl: string,
-	usageInfo: [string],
+		url: string,
+		discussionUrl: string,
+		usageInfo: [string],
 	}
 );
 

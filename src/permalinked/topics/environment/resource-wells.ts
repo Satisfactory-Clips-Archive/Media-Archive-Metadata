@@ -23,18 +23,19 @@ const Page = [
 				'https://archive.satisfactory.video/topics/features/buildings/resource-well-pressurizer/',
 				'https://archive.satisfactory.video/topics/features/gases/',
 			],
-		image: [
-			SatisfactoryWikiImage(
-				'https://satisfactory.wiki.gg/images/d/d4/Resource_wells.jpg',
-				608,
-				709,
-				'image/jpeg',
-				'Resource wells.jpg',
-				{
-					"name": "Screengrab of Resource Wells concept art.",
-				}
-			),
-		]
+			image: [
+				SatisfactoryWikiImage(
+					// eslint-disable-next-line @stylistic/max-len
+					'https://satisfactory.wiki.gg/images/d/d4/Resource_wells.jpg',
+					608,
+					709,
+					'image/jpeg',
+					'Resource wells.jpg',
+					{
+						"name": "Screengrab of Resource Wells concept art.",
+					},
+				),
+			],
 		}
 	)),
 ];

@@ -1,4 +1,5 @@
 {
+	"name": "@satisfactory-clips-archive/media-archive-metadata",
 	"type": "module",
 	"scripts": {
 		"compile": "tsc && node ./four-spaces-are-bullshit.js",

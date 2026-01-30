@@ -4,8 +4,7 @@ import type {
 	SchemaProperties,
 } from './SchemaTypes.ts';
 
-
-export function generate<
+function generate<
 	T1 extends string,
 	T2 extends object
 >(
@@ -17,7 +16,7 @@ export function generate<
 	}) as (SchemaObject<T1> & T2);
 }
 
-export function withContext<
+function withContext<
 	T1 extends SchemaObject<any>,
 	T2 extends string,
 >(
@@ -29,7 +28,7 @@ export function withContext<
 	});
 }
 
-export function withoutContext<T1 extends SchemaObject<any>>(
+function withoutContext<T1 extends SchemaObject<any>>(
 	data: T1 & {'@context': string}
 ) : T1 {
 	const cloned:T1 & {'@context'?: string} = Object.assign({}, data);
@@ -39,7 +38,7 @@ export function withoutContext<T1 extends SchemaObject<any>>(
 	return cloned;
 }
 
-export function QuantitativeValue(value: number): Schema.QuantitativeValue
+function QuantitativeValue(value: number): Schema.QuantitativeValue
 {
 	return generate<
 		'QuantitativeValue',
@@ -49,7 +48,7 @@ export function QuantitativeValue(value: number): Schema.QuantitativeValue
 	});
 }
 
-export function ImageObject<
+function ImageObject<
 	T extends Schema.ImageObject<SchemaProperties.ImageObject>,
 > (
 	contentUrl: string,
@@ -69,11 +68,11 @@ export function ImageObject<
 	);
 }
 
-export function WebSite<T1 extends SchemaProperties.WebSite>(data:T1) {
+function WebSite<T1 extends SchemaProperties.WebSite>(data:T1) {
 	return generate('WebSite', data);
 }
 
-export function WebPage<
+function WebPage<
 	T1 extends SchemaProperties.WebPage,
 >(
 	name: string,
@@ -87,7 +86,7 @@ export function WebPage<
 	);
 }
 
-export function Person<
+function Person<
 	T1 extends SchemaProperties.Person,
 >(
 	name: string,
@@ -104,17 +103,17 @@ export function Person<
 	);
 }
 
-export function Organization<
+function Organization<
 	T1 extends SchemaProperties.Organization,
 >(data: T1) {
 	return generate('Organization', data);
 }
 
-export function VoteAction<T1 extends SchemaProperties.VoteAction>(data:T1) {
+function VoteAction<T1 extends SchemaProperties.VoteAction>(data:T1) {
 	return generate('VoteAction', data);
 }
 
-export function SocialMediaPosting<
+function SocialMediaPosting<
 	T1 extends SchemaProperties.SocialMediaPosting,
 >(url:string, data:T1): Schema.SocialMediaPosting<T1> {
 	return generate<'SocialMediaPosting', T1>(
@@ -125,20 +124,37 @@ export function SocialMediaPosting<
 	);
 }
 
-export function VideoGame<T1 extends SchemaProperties.VideoGame> (
+function VideoGame<T1 extends SchemaProperties.VideoGame> (
 	data: T1,
 ): Schema.VideoGame<T1> {
 	return generate('VideoGame', data);
 }
 
-export function VideoGameSeries<T1 extends SchemaProperties.VideoGameSeries> (
+function VideoGameSeries<T1 extends SchemaProperties.VideoGameSeries> (
 	data:T1,
 ): Schema.VideoGameSeries<T1> {
 	return generate('VideoGameSeries', data);
 }
 
-export function Software<T1 extends SchemaProperties.Software> (
+function Software<T1 extends SchemaProperties.Software> (
 	data:T1,
 ): Schema.Software<T1> {
 	return generate('Software', data);
 }
+
+export {
+	generate,
+	withContext,
+	withoutContext,
+	QuantitativeValue,
+	ImageObject,
+	WebSite,
+	WebPage,
+	Person,
+	Organization,
+	VoteAction,
+	SocialMediaPosting,
+	VideoGame,
+	VideoGameSeries,
+	Software,
+};

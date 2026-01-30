@@ -27,7 +27,7 @@ declare type SatisfactoryWikiImageProperties = (
 	}
 );
 
-export function SatisfactoryWikiImage<
+function SatisfactoryWikiImage<
 	T extends SatisfactoryWikiImageProperties,
 > (
 	contentUrl: string,
@@ -59,7 +59,7 @@ export function SatisfactoryWikiImage<
 	);
 }
 
-export function	SatisfactoryWikiBuildingImage<
+function	SatisfactoryWikiBuildingImage<
 	T extends SatisfactoryWikiImageProperties,
 > (
 	contentUrl: string,
@@ -76,7 +76,7 @@ export function	SatisfactoryWikiBuildingImage<
 	);
 }
 
-export function SatisfactoryWikiItemImage<
+function SatisfactoryWikiItemImage<
 	T extends SatisfactoryWikiImageProperties,
 > (
 	contentUrl: string,
@@ -93,7 +93,7 @@ export function SatisfactoryWikiItemImage<
 	);
 }
 
-export function YouTubePlaylist<T extends (
+function YouTubePlaylist<T extends (
 	& SchemaProperties.CreativeWorkSeries
 	& {
 		url: string,
@@ -110,7 +110,7 @@ export function YouTubePlaylist<T extends (
 	);
 }
 
-export function YouTubeVideo<
+function YouTubeVideo<
 	T1 extends SchemaProperties.VideoObjectSpecifyUrlLater,
 > (
 	videoId: string,
@@ -126,7 +126,7 @@ export function YouTubeVideo<
 	);
 }
 
-export function YouTubeClip<
+function YouTubeClip<
 	T1 extends SchemaProperties.ClipObject,
 	T2 extends SchemaProperties.VideoObjectSpecifyUrlLater,
 > (
@@ -161,7 +161,7 @@ export function YouTubeClip<
 	);
 }
 
-export function WebPageRelatingToSatisfactoryWikiArticles<
+function WebPageRelatingToSatisfactoryWikiArticles<
 	T1 extends SchemaProperties.WebPage,
 >(
 	name:string,
@@ -183,7 +183,7 @@ export function WebPageRelatingToSatisfactoryWikiArticles<
 	}))
 }
 
-export function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
+function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
 	data:T1,
 ) : Schema.WebSite<
 	T1 & {about: [SchemaObject<'VideoGame'>, ...SchemaObject<any>[]]}
@@ -205,7 +205,7 @@ export function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
 	));
 }
 
-export function WebPageAboutSatisfactory<
+function WebPageAboutSatisfactory<
 	T1 extends SchemaProperties.WebPage,
 >(
 	name: string,
@@ -222,7 +222,7 @@ export function WebPageAboutSatisfactory<
 	)>(name, data);
 }
 
-export function CoffeeStainer<
+function CoffeeStainer<
 	T1 extends SchemaProperties.Person
 >(
 	name: string,
@@ -243,7 +243,7 @@ export function CoffeeStainer<
 	);
 }
 
-export function FormerCoffeeStainer<
+function FormerCoffeeStainer<
 	T1 extends SchemaProperties.Person,
 > (
 	name: string,
@@ -264,7 +264,7 @@ export function FormerCoffeeStainer<
 	);
 }
 
-export function SatisfactoryCommunityMember<
+function SatisfactoryCommunityMember<
 	T1 extends SchemaProperties.Person,
 > (
 	name: string,
@@ -278,7 +278,7 @@ export function SatisfactoryCommunityMember<
 	);
 }
 
-export function Tweet<
+function Tweet<
 	T1 extends SchemaProperties.SocialMediaPosting,
 >(from:string, id:string, data:T1): Schema.SocialMediaPosting<T1> & {
 	author: Schema.Person<any> & {url: string},
@@ -302,3 +302,19 @@ export function Tweet<
 		})
 	);
 }
+
+export {
+	SatisfactoryWikiImage,
+	SatisfactoryWikiBuildingImage,
+	SatisfactoryWikiItemImage,
+	YouTubePlaylist,
+	YouTubeVideo,
+	YouTubeClip,
+	WebPageRelatingToSatisfactoryWikiArticles,
+	WebSiteAboutSatisfactory,
+	WebPageAboutSatisfactory,
+	CoffeeStainer,
+	FormerCoffeeStainer,
+	SatisfactoryCommunityMember,
+	Tweet,
+};

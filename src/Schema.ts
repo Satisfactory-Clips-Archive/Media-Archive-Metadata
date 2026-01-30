@@ -4,58 +4,58 @@ import type {
 	SchemaProperties,
 } from './SchemaTypes.ts';
 
-export type QuantitativeValue = SchemaObject<'QuantitativeValue'> & {
+type QuantitativeValue = SchemaObject<'QuantitativeValue'> & {
 	value: number,
 };
 
-export type ImageObject<
+type ImageObject<
 	T extends SchemaProperties.ImageObject,
 > = SchemaObject<'ImageObject'> & T;
 
-export type has_image<T extends SchemaProperties.ImageObject> = {
+type has_image<T extends SchemaProperties.ImageObject> = {
 	image?: ImageObject<T>[]|ImageObject<T>,
 };
 
-export type SubjectOfSubtypes = (
+type SubjectOfSubtypes = (
 	| Schema.CreativeWorkSeries<any>
 	| Schema.VideoObject<any>
 	| Schema.ClipObject<any>
 	| Schema.SocialMediaPosting<any>
 );
 
-export type SubjectOf = {
+type SubjectOf = {
 	subjectOf?: SubjectOfSubtypes[]|SubjectOfSubtypes,
 };
 
-export type CreativeWorkSeries<
+type CreativeWorkSeries<
 	T extends SchemaProperties.CreativeWorkSeries,
 > = SchemaObject<'CreativeWorkSeries'> & T;
 
-export type VideoObject<
+type VideoObject<
 	T1 extends SchemaProperties.VideoObject,
 > = SchemaObject<'VideoObject'> & T1;
 
-export type ClipObject<
+type ClipObject<
 	T1 extends SchemaProperties.ClipObject,
 > = SchemaObject<'Clip'> & T1;
 
-export type SearchAction<
+type SearchAction<
 	T1 extends SchemaProperties.SearchAction,
 > = SchemaObject<'SearchAction'> & T1;
 
-export type WebSite<
+type WebSite<
 	T1 extends SchemaProperties.WebSite,
 > = SchemaObject<'WebSite'> & T1;
 
-export type WebPage<
+type WebPage<
 	T1 extends SchemaProperties.WebPage
 > = SchemaObject<'WebPage'> & T1 & SubjectOf & Schema.has_image<any>;
 
-export type Organization<
+type Organization<
 	T extends SchemaProperties.Organization,
 > = SchemaObject<'Organization'> & T;
 
-export type Person<
+type Person<
 	T1 extends SchemaProperties.Person,
 > = (
 	& SchemaObject<'Person'>
@@ -65,22 +65,43 @@ export type Person<
 	& Schema.has_image<any>
 );
 
-export type VoteAction<
+type VoteAction<
 	T1 extends SchemaProperties.VoteAction,
 > = SchemaObject<'VoteAction'> & T1;
 
-export type SocialMediaPosting<
+type SocialMediaPosting<
 	T1 extends SchemaProperties.SocialMediaPosting,
 > = SchemaObject<'SocialMediaPosting'> & T1;
 
-export type VideoGame<
+type VideoGame<
 	T1 extends SchemaProperties.VideoGame,
 > = SchemaObject<'VideoGame'> & T1;
 
-export type VideoGameSeries<
+type VideoGameSeries<
 	T1 extends SchemaProperties.VideoGameSeries,
 > = SchemaObject<'VideoGameSeries'> & T1;
 
-export type Software<
+type Software<
 	T1 extends SchemaProperties.Software,
 > = SchemaObject<'Software'> & T1;
+
+export type {
+	QuantitativeValue,
+	ImageObject,
+	has_image,
+	SubjectOfSubtypes,
+	SubjectOf,
+	CreativeWorkSeries,
+	VideoObject,
+	ClipObject,
+	SearchAction,
+	WebSite,
+	WebPage,
+	Organization,
+	Person,
+	VoteAction,
+	SocialMediaPosting,
+	VideoGame,
+	VideoGameSeries,
+	Software,
+};

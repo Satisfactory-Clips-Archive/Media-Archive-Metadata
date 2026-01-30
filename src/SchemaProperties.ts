@@ -3,7 +3,7 @@ import type {
 	SchemaObject,
 } from './SchemaTypes.ts';
 
-export type mime_type = (
+type mime_type = (
 	| 'image/png'
 	|'image/jpeg'
 	|'image/webp'
@@ -11,15 +11,15 @@ export type mime_type = (
 	|'image/svg+xml'
 );
 
-export type QuantitativeValue = {
+type QuantitativeValue = {
 	value: number,
 };
 
-export type has_url = {
+type has_url = {
 	url?: [string, ...string[]]|string,
 };
 
-export type ImageObjectOptional = has_url & {
+type ImageObjectOptional = has_url & {
 	name?: string,
 	description?: string,
 	exampleOfWork?: Schema.SocialMediaPosting<any>|Schema.ImageObject<any>,
@@ -28,44 +28,44 @@ export type ImageObjectOptional = has_url & {
 	relatedLink?: [string, ...string[]],
 };
 
-export type ImageObject = ImageObjectOptional & {
+type ImageObject = ImageObjectOptional & {
 	contentUrl: string,
 	encodingFormat: mime_type,
 	width: Schema.QuantitativeValue,
 	height: Schema.QuantitativeValue,
 };
 
-export type CreativeWorkSeries = has_url & {
+type CreativeWorkSeries = has_url & {
 	name: string,
 	description?: string,
 	startDate: string,
 	endDate?: string,
 };
 
-export type VideoObjectSpecifyUrlLater = Schema.has_image<any> & Exclude<{
+type VideoObjectSpecifyUrlLater = Schema.has_image<any> & Exclude<{
 	name: string,
 	uploadDate: string,
 	description?: string,
 	creditText?: string,
 }, {url: string}>;
 
-export type VideoObject = VideoObjectSpecifyUrlLater & {
+type VideoObject = VideoObjectSpecifyUrlLater & {
 	url: string,
 };
 
-export type ClipObject = VideoObjectSpecifyUrlLater & {
+type ClipObject = VideoObjectSpecifyUrlLater & {
 	startOffset: number,
 	endOffset: number,
 	embedUrl: string,
 	url: string,
 };
 
-export type SearchAction = {
+type SearchAction = {
 	target: string,
 	'query-input': string,
 };
 
-export type WebSite = {
+type WebSite = {
 	name: string,
 	url: string,
 	potentialAction?: Schema.SearchAction<any>,
@@ -73,7 +73,7 @@ export type WebSite = {
 	about?: [SchemaObject<any>, ...SchemaObject<any>[]],
 };
 
-export type WebPage = Schema.SubjectOf & Schema.has_image<any> & {
+type WebPage = Schema.SubjectOf & Schema.has_image<any> & {
 	alternateName?: [string, ...string[]]|string,
 	description?: string,
 	relatedLink?: [string, ...string[]]|string,
@@ -81,12 +81,12 @@ export type WebPage = Schema.SubjectOf & Schema.has_image<any> & {
 	url?: string,
 };
 
-export type Organization = {
+type Organization = {
 	name: string,
 	url: string,
 };
 
-export type Person = Schema.SubjectOf & Schema.has_image<any> & {
+type Person = Schema.SubjectOf & Schema.has_image<any> & {
 	alternateName?: [string, ...string[]]|string,
 	honorificPrefix?: string,
 	description?: string,
@@ -98,12 +98,12 @@ export type Person = Schema.SubjectOf & Schema.has_image<any> & {
 	url?: [string, ...string[]]|string,
 };
 
-export type VoteAction = {
+type VoteAction = {
 	actionOption: [string, ...string[]],
 	endTime: string,
 };
 
-export type SocialMediaPosting = Schema.has_image<any> & has_url & {
+type SocialMediaPosting = Schema.has_image<any> & has_url & {
 	headline: string,
 	datePublished: string,
 	keywords?: [string, ...string[]],
@@ -111,7 +111,7 @@ export type SocialMediaPosting = Schema.has_image<any> & has_url & {
 	author?: Schema.Person<any>[]|Schema.Person<any>,
 };
 
-export type VideoGame = Schema.SubjectOf & {
+type VideoGame = Schema.SubjectOf & {
 	name: string,
 	url: [string, ...string[]]|string,
 	author: Schema.Person<any>|Schema.Organization<any>,
@@ -120,13 +120,35 @@ export type VideoGame = Schema.SubjectOf & {
 	softwareVersion?: string,
 };
 
-export type VideoGameSeries = Schema.SubjectOf & Schema.has_image<any> & {
+type VideoGameSeries = Schema.SubjectOf & Schema.has_image<any> & {
 	name: string,
 };
 
-export type Software = Schema.SubjectOf & Schema.has_image<any> & {
+type Software = Schema.SubjectOf & Schema.has_image<any> & {
 	name: string,
 	url: [string, ...string[]]|string,
 	applicationCategory: [string, ...string[]],
 	author: Schema.Person<any>|Schema.Organization<any>,
+};
+
+export type {
+	mime_type,
+	QuantitativeValue,
+	has_url,
+	ImageObjectOptional,
+	ImageObject,
+	CreativeWorkSeries,
+	VideoObjectSpecifyUrlLater,
+	VideoObject,
+	ClipObject,
+	SearchAction,
+	WebSite,
+	WebPage,
+	Organization,
+	Person,
+	VoteAction,
+	SocialMediaPosting,
+	VideoGame,
+	VideoGameSeries,
+	Software,
 };

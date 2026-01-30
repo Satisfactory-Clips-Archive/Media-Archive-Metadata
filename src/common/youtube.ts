@@ -3,7 +3,7 @@ import {
 	YouTubePlaylist,
 } from '../utils.ts';
 
-export const yt_UT9iNA3WGT4 = YouTubeVideo('UT9iNA3WGT4', {
+const yt_UT9iNA3WGT4 = YouTubeVideo('UT9iNA3WGT4', {
 	'name': 'How Hannah, Anna, and Nathalie joined Coffee Stain',
 	'description': [
 		'Embracer Group made a cool video featuring',
@@ -14,7 +14,7 @@ export const yt_UT9iNA3WGT4 = YouTubeVideo('UT9iNA3WGT4', {
 	'uploadDate': '2020-11-16',
 });
 
-export const Simon_Saga = YouTubePlaylist(
+const Simon_Saga = YouTubePlaylist(
 	'PLzGEn7MzkWRsyTI-94PoqpuRh9a2YcKXK',
 	{
 		"name": "Simon Saga",
@@ -23,7 +23,7 @@ export const Simon_Saga = YouTubePlaylist(
 	},
 );
 
-export const yt_2_dash_JM_JP8RNc = YouTubeVideo(
+const yt_2_dash_JM_JP8RNc = YouTubeVideo(
 	'2-JM_JP8RNc',
 	{
 		name: 'Northern Forest rework coming in Update 5 // Before and After',
@@ -38,7 +38,7 @@ export const yt_2_dash_JM_JP8RNc = YouTubeVideo(
 	}
 );
 
-export const yt_ST6V_dash_a4u8Qs = YouTubeVideo('ST6V-a4u8Qs', {
+const yt_ST6V_dash_a4u8Qs = YouTubeVideo('ST6V-a4u8Qs', {
 	name: 'Satisfactory Update 7 Patch Notes // Jace\'s Dark Secret [CC]',
 	description: [
 		// eslint-disable-next-line @stylistic/max-len
@@ -52,3 +52,10 @@ export const yt_ST6V_dash_a4u8Qs = YouTubeVideo('ST6V-a4u8Qs', {
 		'Linus Sjöholm - on set camera & sound + b-roll capture',
 	].join('\n'),
 });
+
+export {
+	yt_UT9iNA3WGT4,
+	Simon_Saga,
+	yt_2_dash_JM_JP8RNc,
+	yt_ST6V_dash_a4u8Qs,
+};

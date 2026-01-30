@@ -19,4 +19,9 @@ export default  [
 		files: ['**/*.ts'],
 		ignores: ['**/*.d.ts', '**/*.js', '**/*.mjs'],
 	},
+	{
+		rules: {
+			'imports/no-default-export': "off",
+		},
+	},
 ];

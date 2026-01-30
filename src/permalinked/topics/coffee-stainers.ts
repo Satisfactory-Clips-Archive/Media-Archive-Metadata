@@ -1,12 +1,12 @@
 import {
 	default as coffee_stain
-} from '../../common/coffee-stain.js';
+} from '../../common/coffee-stain.ts';
 import {
 	WebPageRelatingToSatisfactoryWikiArticles,
-} from '../../utils.js';
+} from '../../utils.ts';
 import {
 	SchemaGenerators,
-} from '../../SchemaTypes.js';
+} from '../../SchemaTypes.ts';
 
 export default [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(

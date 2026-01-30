@@ -1,14 +1,14 @@
 import {
 	satisfactory,
-} from '../../../../common/satisfactory.js';
+} from '../../../../common/satisfactory.ts';
 import {
 	YouTubePlaylist,
-} from '../../../../utils.js';
+} from '../../../../utils.ts';
 import {
 	SchemaGenerators,
 	SchemaProperties,
 	Schema,
-} from '../../../../SchemaTypes.js';
+} from '../../../../SchemaTypes.ts';
 
 declare type Update4 = SchemaProperties.VideoGame & {
 	softwareVersion: string,

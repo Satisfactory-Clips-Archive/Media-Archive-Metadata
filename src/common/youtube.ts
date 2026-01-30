@@ -1,7 +1,7 @@
 import {
 	YouTubeVideo,
 	YouTubePlaylist,
-} from '../utils.js';
+} from '../utils.ts';
 
 export const yt_UT9iNA3WGT4 = YouTubeVideo('UT9iNA3WGT4', {
 	'name': 'How Hannah, Anna, and Nathalie joined Coffee Stain',

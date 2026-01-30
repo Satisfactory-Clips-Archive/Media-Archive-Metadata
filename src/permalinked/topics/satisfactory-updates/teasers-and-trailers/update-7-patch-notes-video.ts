@@ -1,14 +1,14 @@
 import {
 	YouTubePlaylist,
-} from '../../../../utils.js';
+} from '../../../../utils.ts';
 import {
 	yt_ST6V_dash_a4u8Qs,
-} from '../../../../common/youtube.js';
+} from '../../../../common/youtube.ts';
 
-import Update7 from '../released/satisfactory-update-7.js';
+import Update7 from '../released/satisfactory-update-7.ts';
 import {
 	SchemaGenerators,
-} from '../../../../SchemaTypes.js';
+} from '../../../../SchemaTypes.ts';
 
 export default [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage(

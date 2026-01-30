@@ -1,7 +1,7 @@
 import {
 	yt_ST6V_dash_a4u8Qs,
-} from '../../../../../common/youtube.js';
-import {SchemaGenerators} from "../../../../../SchemaTypes.js";
+} from '../../../../../common/youtube.ts';
+import {SchemaGenerators} from '../../../../../SchemaTypes.ts';
 
 export default [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage(

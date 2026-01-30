@@ -1,12 +1,12 @@
 import {
 	Tweet,
-} from '../../../../utils.js';
+} from '../../../../utils.ts';
 import {
 	default as Snutt,
-} from '../snutt.js';
+} from '../snutt.ts';
 import {
 	SchemaGenerators,
-} from '../../../../SchemaTypes.js';
+} from '../../../../SchemaTypes.ts';
 
 export default [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage('Snutt Burger Time', {

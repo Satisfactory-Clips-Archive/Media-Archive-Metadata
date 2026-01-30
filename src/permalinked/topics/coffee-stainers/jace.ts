@@ -2,18 +2,18 @@ import {
 	YouTubeVideo,
 	SatisfactoryWikiImage,
 	FormerCoffeeStainer,
-} from '../../../utils.js';
+} from '../../../utils.ts';
 import {
 	SchemaGenerators,
-} from '../../../SchemaTypes.js';
+} from '../../../SchemaTypes.ts';
 
 import {
 	default as JuiceVelvet,
-} from './jace/juice-velvet.js';
+} from './jace/juice-velvet.ts';
 
 import {
 	default as RoboJace,
-} from './jace/robo-jace.js';
+} from './jace/robo-jace.ts';
 
 export default [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Jace Varlet', {

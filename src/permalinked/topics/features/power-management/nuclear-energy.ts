@@ -1,13 +1,13 @@
 import {
 	SatisfactoryWikiBuildingImage,
 	WebPageAboutSatisfactory,
-} from '../../../../utils.js';
+} from '../../../../utils.ts';
 import {
 	Uranium_Waste,
-} from '../../../../common/wiki-images.js';
+} from '../../../../common/wiki-images.ts';
 import {
 	SchemaGenerators,
-} from '../../../../SchemaTypes.js';
+} from '../../../../SchemaTypes.ts';
 
 export default [
 	SchemaGenerators.withContext(WebPageAboutSatisfactory('Nuclear Energy', {

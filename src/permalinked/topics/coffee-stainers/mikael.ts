@@ -1,5 +1,5 @@
-import {SchemaGenerators} from "../../../SchemaTypes.js";
-import {CoffeeStainer, YouTubeVideo} from "../../../utils.js";
+import {SchemaGenerators} from '../../../SchemaTypes.ts';
+import {CoffeeStainer, YouTubeVideo} from '../../../utils.ts';
 
 export default [
 	SchemaGenerators.withContext(CoffeeStainer('Mikael Niazi', {

@@ -1,9 +1,9 @@
-import {default as coffee_stain} from './coffee-stain.js';
+import {default as coffee_stain} from './coffee-stain.ts';
 import {
 	SchemaGenerators,
 	SchemaObject,
 	SchemaProperties,
-} from '../SchemaTypes.js';
+} from '../SchemaTypes.ts';
 
 export type knowsAbout_satisfactory = {
 	knowsAbout: [SchemaObject<'VideoGame'>, ...SchemaObject<any>[]],

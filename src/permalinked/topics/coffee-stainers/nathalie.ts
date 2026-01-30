@@ -1,13 +1,13 @@
 import {
 	YouTubeVideo,
 	CoffeeStainer,
-} from '../../../utils.js';
+} from '../../../utils.ts';
 import {
 	yt_UT9iNA3WGT4,
-} from '../../../common/youtube.js';
+} from '../../../common/youtube.ts';
 import {
 	SchemaGenerators,
-} from '../../../SchemaTypes.js';
+} from '../../../SchemaTypes.ts';
 
 export default [
 	SchemaGenerators.withContext(CoffeeStainer('Nathalie Verweij', {

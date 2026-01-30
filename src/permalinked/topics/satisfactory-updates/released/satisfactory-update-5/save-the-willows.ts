@@ -2,10 +2,10 @@ import {
 	YouTubePlaylist,
 	Tweet,
 	YouTubeClip,
-} from '../../../../../utils.js';
+} from '../../../../../utils.ts';
 import {
 	SchemaGenerators,
-} from '../../../../../SchemaTypes.js';
+} from '../../../../../SchemaTypes.ts';
 
 const img = SchemaGenerators.ImageObject(
 	'https://pbs.twimg.com/media/E789bICX0AgK0Ph?format=webp&name=large',

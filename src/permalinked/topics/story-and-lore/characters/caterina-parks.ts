@@ -1,12 +1,12 @@
 import {
 	default as FICSIT,
-} from '../../../../common/ficsit.js';
+} from '../../../../common/ficsit.ts';
 import {
 	SatisfactoryWikiImage,
-} from '../../../../utils.js';
+} from '../../../../utils.ts';
 import {
 	SchemaGenerators,
-} from '../../../../SchemaTypes.js';
+} from '../../../../SchemaTypes.ts';
 
 export default [
 	SchemaGenerators.withContext(SchemaGenerators.Person('Caterina Parks', {

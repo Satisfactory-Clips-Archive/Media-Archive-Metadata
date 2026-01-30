@@ -1,7 +1,7 @@
 import {
 	SchemaProperties,
 	SchemaGenerators,
-} from '../SchemaTypes.js';
+} from '../SchemaTypes.ts';
 
 declare type FICSIT = SchemaProperties.Organization & {
 	url: string,

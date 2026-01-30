@@ -1,11 +1,11 @@
 import {
 	SatisfactoryWikiImage,
 	WebPageRelatingToSatisfactoryWikiArticles,
-} from '../../../../utils.js';
+} from '../../../../utils.ts';
 import {
 	yt_2_dash_JM_JP8RNc,
-} from '../../../../common/youtube.js';
-import {SchemaGenerators} from "../../../../SchemaTypes.js";
+} from '../../../../common/youtube.ts';
+import {SchemaGenerators} from '../../../../SchemaTypes.ts';
 
 export default [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(

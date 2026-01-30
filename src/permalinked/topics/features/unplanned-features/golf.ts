@@ -1,9 +1,9 @@
 import {
 	YouTubePlaylist,
-} from '../../../../utils.js';
+} from '../../../../utils.ts';
 import {
 	SchemaGenerators,
-} from '../../../../SchemaTypes.js';
+} from '../../../../SchemaTypes.ts';
 
 export default [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage('Golf', {

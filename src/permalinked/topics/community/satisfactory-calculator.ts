@@ -1,10 +1,10 @@
 import {
     SchemaGenerators,
-} from '../../../SchemaTypes.js';
+} from '../../../SchemaTypes.ts';
 import {
     WebSiteAboutSatisfactory,
     SatisfactoryCommunityMember,
-} from '../../../utils.js';
+} from '../../../utils.ts';
 
 export const Anthor = SatisfactoryCommunityMember('Anthor');
 

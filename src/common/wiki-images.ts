@@ -1,4 +1,4 @@
-import {SatisfactoryWikiItemImage} from '../utils.js';
+import {SatisfactoryWikiItemImage} from '../utils.ts';
 
 export const Uranium_Waste = SatisfactoryWikiItemImage(
 	'https://satisfactory.wiki.gg/images/7/7d/Uranium_Waste.png',

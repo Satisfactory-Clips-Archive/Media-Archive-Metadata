@@ -1,12 +1,12 @@
 import {
 	CoffeeStainer,
-} from '../../../utils.js';
+} from '../../../utils.ts';
 import {
 	Simon_Saga,
-} from '../../../common/youtube.js';
+} from '../../../common/youtube.ts';
 import {
 	SchemaGenerators,
-} from '../../../SchemaTypes.js';
+} from '../../../SchemaTypes.ts';
 
 export default [
 	SchemaGenerators.withContext(CoffeeStainer('Simon Begby', {

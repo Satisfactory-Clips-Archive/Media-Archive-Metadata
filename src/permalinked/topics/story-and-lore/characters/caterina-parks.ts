@@ -1,8 +1,7 @@
-import {
-	default as FICSIT,
 // eslint-disable-next-line @stylistic/max-len
 // eslint-disable-next-line imports/no-internal-modules, imports/no-relative-parent-imports
-} from '../../../../common/ficsit.ts';
+import FICSIT from '../../../../common/ficsit.ts';
+
 import {
 	SatisfactoryWikiImage,
 // eslint-disable-next-line imports/no-relative-parent-imports

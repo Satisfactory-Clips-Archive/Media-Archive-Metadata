@@ -1,8 +1,7 @@
-import {
-	default as coffee_stain
 // eslint-disable-next-line @stylistic/max-len
 // eslint-disable-next-line imports/no-internal-modules, imports/no-relative-parent-imports
-} from '../../common/coffee-stain.ts';
+import coffee_stain from '../../common/coffee-stain.ts';
+
 import {
 	WebPageRelatingToSatisfactoryWikiArticles,
 // eslint-disable-next-line imports/no-relative-parent-imports

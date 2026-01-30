@@ -8,10 +8,8 @@ import {
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../SchemaTypes.ts';
 
-import {
-	default as SnuttyMays,
 // eslint-disable-next-line imports/no-internal-modules
-} from './snutt/snutty-mays.ts';
+import SnuttyMays from './snutt/snutty-mays.ts';
 
 const Snutt = [
 	SchemaGenerators.withContext(CoffeeStainer('Snutt Treptow', {

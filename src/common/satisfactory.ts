@@ -1,4 +1,5 @@
-import {default as coffee_stain} from './coffee-stain.ts';
+import coffee_stain from './coffee-stain.ts';
+
 import type {
 	SchemaObject,
 	SchemaProperties,

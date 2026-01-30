@@ -9,15 +9,11 @@ import {
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../SchemaTypes.ts';
 
-import {
-	default as JuiceVelvet,
 // eslint-disable-next-line imports/no-internal-modules
-} from './jace/juice-velvet.ts';
+import JuiceVelvet from './jace/juice-velvet.ts';
 
-import {
-	default as RoboJace,
 // eslint-disable-next-line imports/no-internal-modules
-} from './jace/robo-jace.ts';
+import RoboJace from './jace/robo-jace.ts';
 
 const Jace = [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Jace Varlet', {

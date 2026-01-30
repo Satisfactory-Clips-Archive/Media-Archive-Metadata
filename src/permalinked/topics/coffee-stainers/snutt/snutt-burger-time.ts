@@ -2,10 +2,10 @@ import {
 	Tweet,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../utils.ts';
-import {
-	default as Snutt,
+
 // eslint-disable-next-line imports/no-relative-parent-imports
-} from '../snutt.ts';
+import Snutt from '../snutt.ts';
+
 import {
 	SchemaGenerators,
 // eslint-disable-next-line imports/no-relative-parent-imports

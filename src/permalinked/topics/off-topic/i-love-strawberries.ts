@@ -24,6 +24,7 @@ export default [
 		],
 		image: [
 			SchemaGenerators.ImageObject(
+				// eslint-disable-next-line @stylistic/max-len
 				'https://www.coffeestainstudios.com/media/1277/ils-square-module-2.jpg',
 				768,
 				768,
@@ -43,12 +44,14 @@ export default [
 			YouTubeVideo('zscDMIhwDKU', {
 				name: 'I Love Strawberries Gameplay Trailer',
 				description: [
+					// eslint-disable-next-line @stylistic/max-len
 					'Déjà vu? Our first ever developed game I Love Strawberries is relaunched for iPhone: https://itunes.apple.com/app/i-3-stra...',
 					'',
 					'Oh, we did a few additions/changes also:',
 					'',
 					'* iPhone5 screen support',
 					'* Constipation sound has been removed',
+					// eslint-disable-next-line @stylistic/max-len
 					'* Facebook Integration removed (no you can\'t annoy people there anymore..)',
 					'* Optimizations & some tweaks',
 					'',

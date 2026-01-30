@@ -14,11 +14,14 @@ export const yt_UT9iNA3WGT4 = YouTubeVideo('UT9iNA3WGT4', {
 	'uploadDate': '2020-11-16',
 });
 
-export const Simon_Saga = YouTubePlaylist('PLzGEn7MzkWRsyTI-94PoqpuRh9a2YcKXK', {
-	"name": "Simon Saga",
-	"startDate": "2018-10-17",
-	"endDate": "2019-03-04",
-});
+export const Simon_Saga = YouTubePlaylist(
+	'PLzGEn7MzkWRsyTI-94PoqpuRh9a2YcKXK',
+	{
+		"name": "Simon Saga",
+		"startDate": "2018-10-17",
+		"endDate": "2019-03-04",
+	},
+);
 
 export const yt_2_dash_JM_JP8RNc = YouTubeVideo(
 	'2-JM_JP8RNc',
@@ -38,6 +41,7 @@ export const yt_2_dash_JM_JP8RNc = YouTubeVideo(
 export const yt_ST6V_dash_a4u8Qs = YouTubeVideo('ST6V-a4u8Qs', {
 	name: 'Satisfactory Update 7 Patch Notes // Jace\'s Dark Secret [CC]',
 	description: [
+		// eslint-disable-next-line @stylistic/max-len
 		'Satisfactory Update 7 is finally here! For a full list of patch notes, please go to:',
 		'https://www.satisfactorygame.com/updates/update-7',
 	].join(' '),

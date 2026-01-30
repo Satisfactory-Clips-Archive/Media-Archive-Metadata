@@ -13,12 +13,14 @@ const img = SchemaGenerators.ImageObject(
 	1080,
 	'image/webp',
 	{
+		// eslint-disable-next-line @stylistic/max-len
 		description: 'Willow tree atop grassy cliff edge in left of frame, in front of a cloudy blue sky (3/4 of top of frame) and various rock formations (1/4 of bottom of frame, 5/6 of right of frame).'
 	}
 );
 
 export default [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage('#SaveTheWillows', {
+		// eslint-disable-next-line @stylistic/max-len
 		description: 'Satisfactory Livestream clips relating to the removal of willow trees in Update 5',
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEqNe4SQNEAvhKRLQX39g9Ix', {
@@ -60,6 +62,7 @@ export default [
 				],
 				image: [
 					SchemaGenerators.ImageObject(
+						// eslint-disable-next-line @stylistic/max-len
 						'https://pbs.twimg.com/media/E789bICX0AgK0Ph?format=jpg&name=large',
 						1920,
 						1080,

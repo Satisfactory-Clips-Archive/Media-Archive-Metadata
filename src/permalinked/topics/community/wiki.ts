@@ -7,7 +7,9 @@ import {
 } from '../../../SchemaTypes.ts';
 
 export default [
+	// eslint-disable-next-line @stylistic/max-len
 	SchemaGenerators.withContext(WebPageAboutSatisfactory('Satisfactory Wiki', {
+		// eslint-disable-next-line @stylistic/max-len
 		"description": "Satisfactory Livestream clips about the Satisfactory Wiki",
 		"image": [
 			SatisfactoryWikiImage(

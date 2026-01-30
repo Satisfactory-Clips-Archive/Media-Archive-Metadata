@@ -9,6 +9,7 @@ export default [
 		subjectOf: [
 			YouTubeVideo('ZdawVdgyG7k', {
 				name: 'We got a NEW Community Manager!',
+				// eslint-disable-next-line @stylistic/max-len
 				description: 'Say hello to Mikael, our new community manager for Coffee Stain Studios!',
 				uploadDate: '2023-12-08',
 			}),

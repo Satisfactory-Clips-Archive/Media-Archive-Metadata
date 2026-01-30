@@ -13,9 +13,11 @@ export default [
 	SchemaGenerators.withContext(WebPageAboutSatisfactory('Nuclear Energy', {
 		"image": [
 			SatisfactoryWikiBuildingImage(
+				// eslint-disable-next-line @stylistic/max-len
 				'https://satisfactory.wiki.gg/images/4/46/Nuclear_Power_Plant.png',
 				'Nuclear_Power_Plant.png',
 				{
+					// eslint-disable-next-line @stylistic/max-len
 					"name": "In-game building icon for the Nuclear Power Plant.",
 				}
 			),

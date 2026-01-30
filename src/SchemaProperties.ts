@@ -3,7 +3,13 @@ import type {
 	SchemaObject,
 } from './SchemaTypes.ts';
 
-export type mime_type = 'image/png'|'image/jpeg'|'image/webp'|'image/avif'|'image/svg+xml';
+export type mime_type = (
+	| 'image/png'
+	|'image/jpeg'
+	|'image/webp'
+	|'image/avif'
+	|'image/svg+xml'
+);
 
 export type QuantitativeValue = {
 	value: number,

@@ -23,6 +23,7 @@ export default [
 				'image/png',
 				'Juice_Velvet.png',
 				{
+					// eslint-disable-next-line @stylistic/max-len
 					name: 'Image of Jace Varlet, Community Manager at Coffee Stain, as his salesman persona Juice Velvet.',
 				}
 			),

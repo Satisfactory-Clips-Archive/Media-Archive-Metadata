@@ -14,13 +14,18 @@ import {
 	SchemaGenerators,
 } from './SchemaTypes.ts';
 
-declare type SatisfactoryWikiImageProperties = SchemaProperties.ImageObject & {
+declare type SatisfactoryWikiImageProperties = (
+	& SchemaProperties.ImageObject
+	& {
 	url: string,
 	discussionUrl: string,
 	usageInfo: [string],
-};
+	}
+);
 
-export function SatisfactoryWikiImage<T extends SatisfactoryWikiImageProperties> (
+export function SatisfactoryWikiImage<
+	T extends SatisfactoryWikiImageProperties,
+> (
 	contentUrl: string,
 	width: number,
 	height: number,
@@ -50,7 +55,9 @@ export function SatisfactoryWikiImage<T extends SatisfactoryWikiImageProperties>
 	);
 }
 
-export function	SatisfactoryWikiBuildingImage<T extends SatisfactoryWikiImageProperties> (
+export function	SatisfactoryWikiBuildingImage<
+	T extends SatisfactoryWikiImageProperties,
+> (
 	contentUrl: string,
 	wikiname: string,
 	data?: SchemaProperties.ImageObjectOptional,
@@ -65,7 +72,9 @@ export function	SatisfactoryWikiBuildingImage<T extends SatisfactoryWikiImagePro
 	);
 }
 
-export function SatisfactoryWikiItemImage<T extends SatisfactoryWikiImageProperties> (
+export function SatisfactoryWikiItemImage<
+	T extends SatisfactoryWikiImageProperties,
+> (
 	contentUrl: string,
 	wikiname: string,
 	data?: SchemaProperties.ImageObjectOptional,
@@ -80,9 +89,12 @@ export function SatisfactoryWikiItemImage<T extends SatisfactoryWikiImagePropert
 	);
 }
 
-export function YouTubePlaylist<T extends (SchemaProperties.CreativeWorkSeries & {
-	url: string,
-})> (
+export function YouTubePlaylist<T extends (
+	& SchemaProperties.CreativeWorkSeries
+	& {
+		url: string,
+	}
+)> (
 	playlistId:string,
 	data: SchemaProperties.CreativeWorkSeries,
 ) : Schema.CreativeWorkSeries<T> {
@@ -168,11 +180,19 @@ export function WebPageRelatingToSatisfactoryWikiArticles<
 }
 
 export function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
-	data:T1
+	data:T1,
 ) : Schema.WebSite<
 	T1 & {about: [SchemaObject<'VideoGame'>, ...SchemaObject<any>[]]}
 >{
-	return SchemaGenerators.WebSite<T1 & {about: [SchemaObject<'VideoGame'>, ...SchemaObject<any>[]]}>(Object.assign(
+	return SchemaGenerators.WebSite<(
+		& T1
+		& {
+			about: [
+				SchemaObject<'VideoGame'>,
+				...SchemaObject<any>[],
+			],
+		}
+	)>(Object.assign(
 		{},
 		data,
 		{
@@ -191,7 +211,11 @@ export function WebPageAboutSatisfactory<
 
 	data.about = [satisfactory, ...about];
 
-	return SchemaGenerators.WebPage<T1 & Schema.SubjectOf & Schema.has_image<any>>(name, data);
+	return SchemaGenerators.WebPage<(
+		& T1
+		& Schema.SubjectOf
+		& Schema.has_image<any>
+	)>(name, data);
 }
 
 export function CoffeeStainer<
@@ -216,7 +240,7 @@ export function CoffeeStainer<
 }
 
 export function FormerCoffeeStainer<
-	T1 extends SchemaProperties.Person
+	T1 extends SchemaProperties.Person,
 > (
 	name: string,
 	data?: T1,
@@ -236,13 +260,18 @@ export function FormerCoffeeStainer<
 	);
 }
 
-export function SatisfactoryCommunityMember<T1 extends SchemaProperties.Person> (
+export function SatisfactoryCommunityMember<
+	T1 extends SchemaProperties.Person,
+> (
 	name: string,
 	data?: T1
 ) : Schema.Person<T1 & knowsAbout_satisfactory> {
-	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory>(name, Object.assign({}, data, {
-		knowsAbout: [satisfactory].concat([...(data?.knowsAbout || [])]),
-	}));
+	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory>(
+		name,
+		Object.assign({}, data, {
+			knowsAbout: [satisfactory].concat([...(data?.knowsAbout || [])]),
+		}),
+	);
 }
 
 export function Tweet<
@@ -254,7 +283,15 @@ export function Tweet<
 		url: `https://twitter.com/${from}`,
 	});
 
-	return SchemaGenerators.SocialMediaPosting<T1 & {author: Schema.Person<SchemaProperties.Person & {url: string}>}>(
+	return SchemaGenerators.SocialMediaPosting<(
+		& T1
+		& {
+			author: Schema.Person<(
+				& SchemaProperties.Person
+				& {url: string}
+			)>,
+		}
+	)>(
 		`https://twittter.com/${from}/status/${id}`,
 		Object.assign({}, data, {
 			author,

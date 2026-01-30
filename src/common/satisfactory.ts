@@ -22,4 +22,7 @@ export const satisfactory:SchemaProperties.VideoGame = {
 	]
 };
 
-export default SchemaGenerators.VideoGame<any>(Object.assign({}, satisfactory));
+export default SchemaGenerators.VideoGame<any>(Object.assign(
+	{},
+	satisfactory,
+));

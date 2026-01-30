@@ -16,6 +16,7 @@ export default [
 		{
 		image: [
 			SatisfactoryWikiImage(
+				// eslint-disable-next-line @stylistic/max-len
 				'https://satisfactory.wiki.gg/images/5/54/Giant_Flying_Manta.png',
 				1200,
 				1200,

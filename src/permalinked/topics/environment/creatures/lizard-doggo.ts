@@ -25,6 +25,7 @@ export default [
 				'image/png',
 				'Lizard Doggo.png',
 				{
+					// eslint-disable-next-line @stylistic/max-len
 					"name": "Lizard Doggo, cropped from the GDC 2018 Teaser Trailer.",
 				}
 			),

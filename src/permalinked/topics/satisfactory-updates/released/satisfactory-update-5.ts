@@ -34,5 +34,7 @@ export const Update5:Update5 = Object.assign({}, satisfactory, {
 });
 
 export default [
-	SchemaGenerators.withContext(SchemaGenerators.VideoGame<Update5>(Object.assign({}, Update5))),
+	SchemaGenerators.withContext(
+		SchemaGenerators.VideoGame<Update5>(Object.assign({}, Update5)),
+	),
 ];

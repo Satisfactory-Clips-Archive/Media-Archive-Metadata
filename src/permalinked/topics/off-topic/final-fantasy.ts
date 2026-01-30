@@ -10,6 +10,7 @@ export default [
 		name: 'Final Fantasy',
 		image: [
 			SchemaGenerators.ImageObject(
+				// eslint-disable-next-line @stylistic/max-len
 				'https://i-img-archive.satisfactory.video/content/topics/off-topic/final-fantasy--bg.webp',
 				504,
 				284,

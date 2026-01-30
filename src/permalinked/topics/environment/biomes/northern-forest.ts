@@ -10,6 +10,7 @@ import {SchemaGenerators} from '../../../../SchemaTypes.ts';
 export default [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Northern_Forest',
+		// eslint-disable-next-line @stylistic/max-len
 		'Satisfactory Livestream clips about the Northern Forest biome in the playable area of MASSAGE-2(A-B)b',
 		[
 			'Northern_Forest',
@@ -20,12 +21,14 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
+				// eslint-disable-next-line @stylistic/max-len
 				'https://satisfactory.wiki.gg/images/7/75/Northern_Forest_Area.png',
 				808,
 				858,
 				'image/png',
 				'Northern_Forest_Area.png',
 				{
+					// eslint-disable-next-line @stylistic/max-len
 					name: 'Northern Forest Area from the starting location screen',
 				}
 			),

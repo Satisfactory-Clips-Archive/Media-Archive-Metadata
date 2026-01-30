@@ -15,7 +15,9 @@ export default [
 		],
 		{
 			relatedLink: [
+				// eslint-disable-next-line @stylistic/max-len
 				'https://archive.satisfactory.video/topics/features/buildings/resource-well-extractor/',
+				// eslint-disable-next-line @stylistic/max-len
 				'https://archive.satisfactory.video/topics/features/buildings/resource-well-pressurizer/',
 				'https://archive.satisfactory.video/topics/features/gases/',
 			],

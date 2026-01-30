@@ -14,6 +14,7 @@ export default [
 			YouTubeVideo('LDbnPHbnba0', {
 				'name': 'Developer Highlight - Sound Design',
 				'description': [
+					// eslint-disable-next-line @stylistic/max-len
 					'Joel Rydholm tells you all about making beeps and boops and stuff for Satisfactory.',
 					'btw sound design is not the same as graphic design'
 				].join("\n"),
@@ -22,12 +23,14 @@ export default [
 		],
 		image: [
 			SatisfactoryWikiImage(
+				// eslint-disable-next-line @stylistic/max-len
 				'https://satisfactory.wiki.gg/images/d/db/Joel_adjusting_collar.png',
 				1456,
 				966,
 				'image/png',
 				'Joel adjusting collar.png',
 				{
+					// eslint-disable-next-line @stylistic/max-len
 					name: 'Joel Rydholm, adjusting his collar while wearing an orange beanie.',
 				}
 			),

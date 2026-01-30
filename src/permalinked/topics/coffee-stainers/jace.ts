@@ -26,11 +26,13 @@ export default [
 			}),
 			YouTubeVideo('PTjtfAKNC9A', {
 				name: 'The ups and downs of a bipolar streamer',
+				// eslint-disable-next-line @stylistic/max-len
 				description: 'Content warning: This video contains discussions about mental health and suicide. Jace Varlet is a popular community manager at Coffee Stain Studios, reaching thousands each week in his streams. But once the camera is off, another reality awaits. Jace suffers from bipolar II disorder, a chronic mental illness, characterized by periods of severe depression and hypomania.',
 				uploadDate: '2021-07-08',
 			}),
 			YouTubeVideo('v2JdPmTvQKg', {
 				"name": "Game Dev Circle - Episode 1 - Jace Varlet",
+				// eslint-disable-next-line @stylistic/max-len
 				"description": "This is Jace Varlet, he's a community manager and colleague at Coffee Stain Studios. Follow Jace as he talks about his story leading up until this point, including his time in Japan where he started his game development career after having moved from his home country Australia.",
 				"uploadDate": "2019-07-26",
 			})

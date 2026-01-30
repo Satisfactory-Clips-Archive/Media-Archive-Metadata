@@ -18,6 +18,7 @@ export default [
 		}),
 		image: [
 			SchemaGenerators.ImageObject(
+				// eslint-disable-next-line @stylistic/max-len
 				'https://i-img-archive.satisfactory.video/content/topics/technology/vulkan--bg.webp',
 				504,
 				504,

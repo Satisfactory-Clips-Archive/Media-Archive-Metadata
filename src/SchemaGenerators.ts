@@ -41,12 +41,17 @@ export function withoutContext<T1 extends SchemaObject<any>>(
 
 export function QuantitativeValue(value: number): Schema.QuantitativeValue
 {
-	return generate<'QuantitativeValue', SchemaProperties.QuantitativeValue>('QuantitativeValue', {
+	return generate<
+		'QuantitativeValue',
+		SchemaProperties.QuantitativeValue
+	>('QuantitativeValue', {
 		value,
 	});
 }
 
-export function ImageObject<T extends Schema.ImageObject<SchemaProperties.ImageObject>> (
+export function ImageObject<
+	T extends Schema.ImageObject<SchemaProperties.ImageObject>,
+> (
 	contentUrl: string,
 	width: number,
 	height: number,
@@ -99,7 +104,9 @@ export function Person<
 	);
 }
 
-export function Organization<T1 extends SchemaProperties.Organization>(data: T1) {
+export function Organization<
+	T1 extends SchemaProperties.Organization,
+>(data: T1) {
 	return generate('Organization', data);
 }
 

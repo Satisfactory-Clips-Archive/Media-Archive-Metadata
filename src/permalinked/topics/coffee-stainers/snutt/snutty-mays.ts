@@ -23,6 +23,7 @@ export default [
 				'image/png',
 				'Snutty_Mays.png',
 				{
+					// eslint-disable-next-line @stylistic/max-len
 					name: 'Image of Snutt Treptow, Community Manager at Coffee Stain, as his salesman persona Snutty Mays.',
 				}
 			),

@@ -1,5 +1,6 @@
 import {
 	satisfactory,
+// eslint-disable-next-line imports/no-internal-modules
 } from '../../../../common/satisfactory.ts';
 import {
 	YouTubePlaylist,

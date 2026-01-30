@@ -3,9 +3,12 @@ import {
 } from '../../../../utils.ts';
 import {
 	yt_ST6V_dash_a4u8Qs,
+// eslint-disable-next-line imports/no-internal-modules
 } from '../../../../common/youtube.ts';
 
+// eslint-disable-next-line imports/no-internal-modules
 import Update7 from '../released/satisfactory-update-7.ts';
+
 import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';

@@ -8,6 +8,7 @@ import {
 
 import type {
 	SchemaObject,
+// eslint-disable-next-line imports/no-internal-modules
 } from './src/SchemaTypes.ts';
 
 const data: {

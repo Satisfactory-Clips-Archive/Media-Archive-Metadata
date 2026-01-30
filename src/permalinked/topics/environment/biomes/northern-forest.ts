@@ -4,6 +4,7 @@ import {
 } from '../../../../utils.ts';
 import {
 	yt_2_dash_JM_JP8RNc,
+// eslint-disable-next-line imports/no-internal-modules
 } from '../../../../common/youtube.ts';
 import {SchemaGenerators} from '../../../../SchemaTypes.ts';
 

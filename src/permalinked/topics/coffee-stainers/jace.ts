@@ -9,10 +9,12 @@ import {
 
 import {
 	default as JuiceVelvet,
+// eslint-disable-next-line imports/no-internal-modules
 } from './jace/juice-velvet.ts';
 
 import {
 	default as RoboJace,
+// eslint-disable-next-line imports/no-internal-modules
 } from './jace/robo-jace.ts';
 
 export default [

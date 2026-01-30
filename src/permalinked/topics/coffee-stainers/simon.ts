@@ -3,6 +3,7 @@ import {
 } from '../../../utils.ts';
 import {
 	Simon_Saga,
+// eslint-disable-next-line imports/no-internal-modules
 } from '../../../common/youtube.ts';
 import {
 	SchemaGenerators,

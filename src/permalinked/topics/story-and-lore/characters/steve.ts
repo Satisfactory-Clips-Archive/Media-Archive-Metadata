@@ -1,5 +1,6 @@
 import {
 	default as FICSIT,
+// eslint-disable-next-line imports/no-internal-modules
 } from '../../../../common/ficsit.ts';
 import {
 	SatisfactoryWikiImage,

@@ -1,8 +1,12 @@
 import type {
 	knowsAbout_satisfactory,
+// eslint-disable-next-line imports/no-internal-modules
 } from './common/satisfactory.ts';
+
+// eslint-disable-next-line imports/no-internal-modules
 import satisfactory from './common/satisfactory.ts';
 
+// eslint-disable-next-line imports/no-internal-modules
 import coffee_stain from './common/coffee-stain.ts';
 
 import type {

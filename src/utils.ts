@@ -1,13 +1,18 @@
-import {
-	default as satisfactory,
+import type {
 	knowsAbout_satisfactory,
-} from './common/satisfactory.js';
-import {default as coffee_stain} from './common/coffee-stain.js';
-import {
+} from './common/satisfactory.ts';
+import satisfactory from './common/satisfactory.ts';
+
+import coffee_stain from './common/coffee-stain.ts';
+
+import type {
 	SchemaProperties,
 	Schema,
-	SchemaGenerators, SchemaObject,
-} from './SchemaTypes.js';
+	SchemaObject,
+} from './SchemaTypes.ts';
+import {
+	SchemaGenerators,
+} from './SchemaTypes.ts';
 
 declare type SatisfactoryWikiImageProperties = SchemaProperties.ImageObject & {
 	url: string,

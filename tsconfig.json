@@ -1,19 +1,19 @@
 {
 	"compileOnSave": false,
 	"compilerOptions": {
+		"allowImportingTsExtensions": true,
+		"erasableSyntaxOnly": true,
+		"noEmit": true,
+		"noEmitHelpers": true,
+		"sourceMap": true,
+		"newLine": "lf",
+		"esModuleInterop": true,
 		"strict": true,
-		"module": "NodeNext",
-		"moduleResolution": "nodenext",
-		"target": "ESNext",
-		"sourceMap": false,
-		"removeComments": false,
-		"importHelpers": false,
-		"newLine": "lf"
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true
 	},
-	"include": [
-		"./src/**/*.ts"
-	],
-	"exclude": [
-		"./node_modules/"
-	]
+	"lib": ["esnext"]
 }

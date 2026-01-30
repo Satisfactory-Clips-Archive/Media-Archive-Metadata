@@ -1,8 +1,10 @@
 import {default as coffee_stain} from './coffee-stain.ts';
-import {
-	SchemaGenerators,
+import type {
 	SchemaObject,
 	SchemaProperties,
+} from '../SchemaTypes.ts';
+import {
+	SchemaGenerators,
 } from '../SchemaTypes.ts';
 
 export type knowsAbout_satisfactory = {

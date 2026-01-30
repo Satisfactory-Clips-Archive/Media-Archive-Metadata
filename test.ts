@@ -1,7 +1,6 @@
-import {default as schema} from './src/schema.js';
-import {default as data} from './index.js';
-import AjvModule from 'ajv';
-const {default:Ajv} = AjvModule;
+import schema from './src/schema.json' with {type: 'json'};
+import data from './index.ts';
+import Ajv from 'ajv';
 
 const validator = (new Ajv()).compile(schema);
 
@@ -16,7 +15,7 @@ Object.entries(data).forEach((entry) => {
 		if (validator(row)) {
 			console.log(`${permalink} item ${i} is valid!`);
 		} else {
-			validator.errors.forEach((err) => {
+			(validator.errors || []).forEach((err) => {
 				console.error('problem with ', JSON.stringify(row));
 				console.error(err);
 				console.error(

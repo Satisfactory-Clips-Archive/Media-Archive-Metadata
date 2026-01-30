@@ -1,5 +1,5 @@
 import {
-	default as coffee_stain
+	CSS as coffee_stain,
 // eslint-disable-next-line imports/no-internal-modules
 } from '../../common/coffee-stain.ts';
 import {

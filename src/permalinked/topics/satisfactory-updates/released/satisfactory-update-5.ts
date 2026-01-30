@@ -7,10 +7,13 @@ import {
 	YouTubePlaylist,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../utils.ts';
-import {
+import type {
 	Schema,
-	SchemaGenerators,
 	SchemaProperties,
+// eslint-disable-next-line imports/no-relative-parent-imports
+} from '../../../../SchemaTypes.ts';
+import {
+	SchemaGenerators,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../SchemaTypes.ts';
 

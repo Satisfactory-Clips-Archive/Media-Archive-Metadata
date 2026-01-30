@@ -1,19 +1,20 @@
+// eslint-disable-next-line imports/no-internal-modules
+import JuiceVelvet from './jace/juice-velvet.ts';
+
+// eslint-disable-next-line imports/no-internal-modules
+import RoboJace from './jace/robo-jace.ts';
+
 import {
 	YouTubeVideo,
 	SatisfactoryWikiImage,
 	FormerCoffeeStainer,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../utils.ts';
+
 import {
 	SchemaGenerators,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../SchemaTypes.ts';
-
-// eslint-disable-next-line imports/no-internal-modules
-import JuiceVelvet from './jace/juice-velvet.ts';
-
-// eslint-disable-next-line imports/no-internal-modules
-import RoboJace from './jace/robo-jace.ts';
 
 const Jace = [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Jace Varlet', {

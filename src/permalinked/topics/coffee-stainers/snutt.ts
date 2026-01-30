@@ -1,15 +1,16 @@
+// eslint-disable-next-line imports/no-internal-modules
+import SnuttyMays from './snutt/snutty-mays.ts';
+
 import {
 	YouTubeVideo,
 	CoffeeStainer,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../utils.ts';
+
 import {
 	SchemaGenerators,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../SchemaTypes.ts';
-
-// eslint-disable-next-line imports/no-internal-modules
-import SnuttyMays from './snutt/snutty-mays.ts';
 
 const Snutt = [
 	SchemaGenerators.withContext(CoffeeStainer('Snutt Treptow', {

@@ -1,8 +1,12 @@
 import {
 	yt_ST6V_dash_a4u8Qs,
-// eslint-disable-next-line imports/no-internal-modules
+// eslint-disable-next-line @stylistic/max-len
+// eslint-disable-next-line imports/no-internal-modules, imports/no-relative-parent-imports
 } from '../../../../../common/youtube.ts';
-import {SchemaGenerators} from '../../../../../SchemaTypes.ts';
+import {
+	SchemaGenerators,
+// eslint-disable-next-line imports/no-relative-parent-imports
+} from '../../../../../SchemaTypes.ts';
 
 const VideoPage = [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage(

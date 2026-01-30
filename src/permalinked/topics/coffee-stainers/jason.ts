@@ -1,5 +1,13 @@
-import {SchemaGenerators} from '../../../SchemaTypes.ts';
-import {CoffeeStainer, YouTubeVideo} from '../../../utils.ts';
+import {
+	SchemaGenerators,
+// eslint-disable-next-line imports/no-relative-parent-imports
+} from '../../../SchemaTypes.ts';
+
+import {
+	CoffeeStainer,
+	YouTubeVideo,
+// eslint-disable-next-line imports/no-relative-parent-imports
+} from '../../../utils.ts';
 
 const Jason = [
 	SchemaGenerators.withContext(CoffeeStainer('Jason Edwards', {

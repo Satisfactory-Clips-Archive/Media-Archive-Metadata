@@ -1,10 +1,12 @@
 import {
 	YouTubeVideo,
 	SatisfactoryWikiImage,
-	FormerCoffeeStainer
+	FormerCoffeeStainer,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../utils.ts';
 import {
 	SchemaGenerators,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../SchemaTypes.ts';
 
 const Jannik = [

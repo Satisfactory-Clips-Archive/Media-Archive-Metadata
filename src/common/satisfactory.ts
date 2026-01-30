@@ -2,9 +2,11 @@ import {default as coffee_stain} from './coffee-stain.ts';
 import type {
 	SchemaObject,
 	SchemaProperties,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../SchemaTypes.ts';
 import {
 	SchemaGenerators,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../SchemaTypes.ts';
 
 export type knowsAbout_satisfactory = {

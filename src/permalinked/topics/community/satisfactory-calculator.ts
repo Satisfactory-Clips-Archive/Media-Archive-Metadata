@@ -1,9 +1,11 @@
 import {
     SchemaGenerators,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../SchemaTypes.ts';
 import {
     WebSiteAboutSatisfactory,
     SatisfactoryCommunityMember,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../utils.ts';
 
 const Anthor = SatisfactoryCommunityMember('Anthor');

@@ -1,6 +1,7 @@
 import {
 	SchemaProperties,
 	SchemaGenerators,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../SchemaTypes.ts';
 
 declare type FICSIT = SchemaProperties.Organization & {

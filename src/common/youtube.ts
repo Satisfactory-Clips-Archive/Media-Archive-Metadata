@@ -1,6 +1,7 @@
 import {
 	YouTubeVideo,
 	YouTubePlaylist,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../utils.ts';
 
 const yt_UT9iNA3WGT4 = YouTubeVideo('UT9iNA3WGT4', {

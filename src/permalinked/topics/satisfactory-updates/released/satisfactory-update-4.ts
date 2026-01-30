@@ -1,14 +1,17 @@
 import {
 	satisfactory,
-// eslint-disable-next-line imports/no-internal-modules
+// eslint-disable-next-line @stylistic/max-len
+// eslint-disable-next-line imports/no-internal-modules, imports/no-relative-parent-imports
 } from '../../../../common/satisfactory.ts';
 import {
 	YouTubePlaylist,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../utils.ts';
 import {
 	SchemaGenerators,
 	SchemaProperties,
 	Schema,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../SchemaTypes.ts';
 
 declare type Update4 = SchemaProperties.VideoGame & {

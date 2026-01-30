@@ -1,12 +1,18 @@
 import {
 	SatisfactoryWikiImage,
 	WebPageRelatingToSatisfactoryWikiArticles,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../utils.ts';
 import {
 	yt_2_dash_JM_JP8RNc,
-// eslint-disable-next-line imports/no-internal-modules
+// eslint-disable-next-line @stylistic/max-len
+// eslint-disable-next-line imports/no-internal-modules, imports/no-relative-parent-imports
 } from '../../../../common/youtube.ts';
-import {SchemaGenerators} from '../../../../SchemaTypes.ts';
+
+import {
+	SchemaGenerators,
+// eslint-disable-next-line imports/no-relative-parent-imports
+} from '../../../../SchemaTypes.ts';
 
 const Northern_Forest = [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(

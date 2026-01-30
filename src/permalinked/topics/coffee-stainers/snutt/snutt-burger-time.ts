@@ -1,11 +1,14 @@
 import {
 	Tweet,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../utils.ts';
 import {
 	default as Snutt,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../snutt.ts';
 import {
 	SchemaGenerators,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../../SchemaTypes.ts';
 
 const burger_time = Tweet('BustaSnutt', '1430230082270937090', {

@@ -1,13 +1,16 @@
 import {
 	default as coffee_stain
-// eslint-disable-next-line imports/no-internal-modules
+// eslint-disable-next-line @stylistic/max-len
+// eslint-disable-next-line imports/no-internal-modules, imports/no-relative-parent-imports
 } from '../../../common/coffee-stain.ts';
 import {
 	YouTubePlaylist,
 	YouTubeVideo,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../utils.ts';
 import {
 	SchemaGenerators,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../SchemaTypes.ts';
 
 const I_Love_Strawberries = [

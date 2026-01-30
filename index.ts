@@ -1,38 +1,39 @@
 import {
 	glob,
-} from 'glob';
+} from 'node:fs/promises';
 
 import {
 	resolve,
 } from 'path';
 
-import {
-	pathToFileURL,
-} from 'url';
+import type {
+	SchemaObject,
+} from './src/SchemaTypes.ts';
 
-export default (await Promise.all(
-	glob.sync(
-		import.meta.dirname
-		+ '/src/permalinked/**/*.js'
-	).map(async (path) => {
-		return [
-			resolve(path).replace(
-				import.meta.dirname,
-			''
-			).replace(/[\/\\]/g, '/').replace(
-				/^\/src\/permalinked\//,
-				'/'
-			).replace(/\.js$/, '/'),
-			(await import(pathToFileURL(path))).default,
-		];
-	})
-)).reduce(
-	(out, current) => {
-		const [path, json] = current;
+const data: {
+	[key: string]: [
+		SchemaObject<string>,
+		...SchemaObject<string>[],
+	],
+} = {};
 
-		out[path] = json;
+for await (
+	const filepath of glob(`${import.meta.dirname}/src/permalinked/**/*.ts`)
+) {
+	data[
+		resolve(filepath)
+			.replace(import.meta.dirname, '')
+			.replace(/[/\\]/g, '/')
+			.replace(/^\/src\/permalinked\//, '/')
+			.replace(/\.js$/, '/')
+	] = (
+		(await import(filepath) as {
+			default: [
+				SchemaObject<string>,
+				...SchemaObject<string>[],
+			],
+		}).default
+	);
+}
 
-		return out;
-	},
-	{}
-);
+export default data;

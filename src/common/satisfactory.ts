@@ -21,8 +21,8 @@ export const satisfactory:SchemaProperties.VideoGame = {
 	"operatingSystem": "Windows",
 	"applicationCategory": [
 		"Game",
-		"Factory Construction"
-	]
+		"Factory Construction",
+	],
 };
 
 export default SchemaGenerators.VideoGame<any>(Object.assign(

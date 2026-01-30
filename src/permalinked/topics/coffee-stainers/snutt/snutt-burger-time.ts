@@ -22,9 +22,9 @@ const burger_time = Tweet('BustaSnutt', '1430230082270937090', {
 			'image/jpeg',
 			{
 				description: 'Photo of a burger and chips in a takeout carton',
-			}
+			},
 		),
-	]
+	],
 });
 
 const page = [
@@ -44,8 +44,8 @@ const page = [
 				'image/png',
 				{
 					exampleOfWork: burger_time,
-				}
-			)
+				},
+			),
 		],
 	})),
 ];

@@ -25,7 +25,7 @@ const Page = [
 				{
 					// eslint-disable-next-line @stylistic/max-len
 					"name": "In-game building icon for the Nuclear Power Plant.",
-				}
+				},
 			),
 			Uranium_Waste,
 		],

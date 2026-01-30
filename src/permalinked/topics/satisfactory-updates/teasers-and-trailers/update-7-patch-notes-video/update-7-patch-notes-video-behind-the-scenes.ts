@@ -17,7 +17,7 @@ const VideoPage = [
 			about: [
 				yt_ST6V_dash_a4u8Qs,
 			],
-		}
+		},
 	)),
 ];
 

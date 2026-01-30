@@ -14,7 +14,7 @@ const Snutty_Mays = [
 			YouTubePlaylist('PLbjDnnBIxiErPJIX0NWiekKXFIrs8d4mO', {
 				name: 'Snutty Mays',
 				startDate: '2021-10-26',
-				endDate: '2021-11-30,'
+				endDate: '2021-11-30,',
 			}),
 		],
 		image: [
@@ -27,7 +27,7 @@ const Snutty_Mays = [
 				{
 					// eslint-disable-next-line @stylistic/max-len
 					name: 'Image of Snutt Treptow, Community Manager at Coffee Stain, as his salesman persona Snutty Mays.',
-				}
+				},
 			),
 		],
 	})),

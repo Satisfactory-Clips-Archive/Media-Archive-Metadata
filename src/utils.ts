@@ -55,7 +55,7 @@ function SatisfactoryWikiImage<
 			discussionUrl: `https://satisfactory.wiki.gg/wiki/File_talk:${
 				wikiname
 			}`,
-		})
+		}),
 	);
 }
 
@@ -72,7 +72,7 @@ function	SatisfactoryWikiBuildingImage<
 		512,
 		'image/png',
 		wikiname,
-		data
+		data,
 	);
 }
 
@@ -89,7 +89,7 @@ function SatisfactoryWikiItemImage<
 		256,
 		'image/png',
 		wikiname,
-		data
+		data,
 	);
 }
 
@@ -106,7 +106,7 @@ function YouTubePlaylist<T extends (
 		'CreativeWorkSeries',
 		Object.assign({}, data, {
 			url: `https://www.youtube.com/playlist?list=${playlistId}`,
-		}) as T
+		}) as T,
 	);
 }
 
@@ -121,8 +121,8 @@ function YouTubeVideo<
 		Object.assign({}, data, {
 			thumbnailUrl: `https://i3.ytimg.com/vi/${videoId}/hqdefault.jpg`,
 			url: `https://www.youtube.com/watch?v=${videoId}`,
-			embedUrl: `https://www.youtube.com/embed/${videoId}`
-		})
+			embedUrl: `https://www.youtube.com/embed/${videoId}`,
+		}),
 	);
 }
 
@@ -157,7 +157,7 @@ function YouTubeClip<
 			}&end=${
 				Math.ceil(finish)
 			}`,
-		}) as T1&T2
+		}) as T1&T2,
 	);
 }
 
@@ -167,7 +167,7 @@ function WebPageRelatingToSatisfactoryWikiArticles<
 	name:string,
 	description: string,
 	related_articles: [string, ...string[]],
-	data?: T1
+	data?: T1,
 ) : Schema.WebPage<T1 & {
 	description: string,
 	relatedLink: [string, ...string[]],
@@ -201,7 +201,7 @@ function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
 		data,
 		{
 			about: [satisfactory].concat(...(data?.about || [])),
-		}
+		},
 	));
 }
 
@@ -223,7 +223,7 @@ function WebPageAboutSatisfactory<
 }
 
 function CoffeeStainer<
-	T1 extends SchemaProperties.Person
+	T1 extends SchemaProperties.Person,
 >(
 	name: string,
 	data?: T1,
@@ -268,7 +268,7 @@ function SatisfactoryCommunityMember<
 	T1 extends SchemaProperties.Person,
 > (
 	name: string,
-	data?: T1
+	data?: T1,
 ) : Schema.Person<T1 & knowsAbout_satisfactory> {
 	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory>(
 		name,
@@ -299,7 +299,7 @@ function Tweet<
 		`https://twittter.com/${from}/status/${id}`,
 		Object.assign({}, data, {
 			author,
-		})
+		}),
 	);
 }
 

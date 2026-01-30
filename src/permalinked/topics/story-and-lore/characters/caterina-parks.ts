@@ -27,7 +27,7 @@ const Caterina_Parks = [
 				'Caterina Parks.png',
 				{
 					'name': 'Concept Art for Caterina Parks',
-				}
+				},
 			),
 		],
 	})),

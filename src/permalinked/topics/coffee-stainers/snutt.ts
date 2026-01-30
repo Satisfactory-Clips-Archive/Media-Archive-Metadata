@@ -16,7 +16,7 @@ const Snutt = [
 	SchemaGenerators.withContext(CoffeeStainer('Snutt Treptow', {
 		"jobTitle": [
 			"Community Manager",
-			"Joshie Wrangler"
+			"Joshie Wrangler",
 		],
 		"subjectOf": [
 			YouTubeVideo('N1o3tK1h8cM', {
@@ -36,8 +36,8 @@ const Snutt = [
 			SchemaGenerators.withoutContext(SnuttyMays[0]),
 		],
 		"url": [
-			"https://twitter.com/BustaSnutt"
-		]
+			"https://twitter.com/BustaSnutt",
+		],
 	})),
 ];
 

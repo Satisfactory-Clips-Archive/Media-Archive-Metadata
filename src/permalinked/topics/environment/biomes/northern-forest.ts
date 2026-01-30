@@ -40,7 +40,7 @@ const Northern_Forest = [
 					},
 				),
 			],
-		}
+		},
 	)),
 ];
 

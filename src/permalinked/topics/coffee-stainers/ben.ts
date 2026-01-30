@@ -16,11 +16,11 @@ const Ben = [
 				"name": "Dev Vlog: Tech Art & Optimisation with Ben!",
 				"description": "save the frames",
 				"uploadDate": "2020-11-05",
-			})
+			}),
 		],
 		"url": [
-			"https://twitter.com/BenHullu"
-		]
+			"https://twitter.com/BenHullu",
+		],
 	})),
 ];
 

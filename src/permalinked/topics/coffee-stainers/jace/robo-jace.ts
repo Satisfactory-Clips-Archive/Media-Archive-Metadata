@@ -14,7 +14,7 @@ const Robo_Jace = [
 			YouTubePlaylist('PLbjDnnBIxiErdTAJdeOIHMN2m3pR245LA', {
 				name: 'Robo Jace',
 				startDate: '2022-03-01',
-				endDate: '2022-03-01,'
+				endDate: '2022-03-01,',
 			}),
 		],
 		image: [
@@ -44,9 +44,9 @@ const Robo_Jace = [
 								1080,
 								'image/jpeg',
 							),
-						]
+						],
 					}),
-				}
+				},
 			),
 		],
 	})),

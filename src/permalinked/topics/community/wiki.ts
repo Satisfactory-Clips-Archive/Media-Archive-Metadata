@@ -22,7 +22,7 @@ const Wiki = [
 				'Wiki.png',
 				{
 					"name": "Logo for the Satisfactory Wiki.",
-				}
+				},
 			),
 		],
 	})),

@@ -26,7 +26,7 @@ const Jannik = [
 				'Sleeper\'s Delight Soundcloud.jpg',
 				{
 					'name': 'Jannik Reuterberg',
-				}
+				},
 			),
 		],
 		subjectOf: [

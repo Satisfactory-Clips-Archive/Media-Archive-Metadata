@@ -26,7 +26,7 @@ const SatisPod = [
 				'image/webp',
 				{
 					name: 'Final Fantasy 7 Remake Podcast',
-				}
+				},
 			),
 		],
 	})),

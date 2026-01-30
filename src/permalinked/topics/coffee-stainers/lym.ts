@@ -11,7 +11,7 @@ import {
 const Tobias = [
 	SchemaGenerators.withContext(CoffeeStainer('Tobias Carlsson', {
 		alternateName: [
-			'Lym'
+			'Lym',
 		],
 		jobTitle: 'Programmer',
 		subjectOf: [

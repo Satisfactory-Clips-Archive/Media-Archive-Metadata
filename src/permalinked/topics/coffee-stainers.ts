@@ -20,7 +20,7 @@ const Page = [
 			about: [
 				coffee_stain,
 			],
-		}
+		},
 	)),
 ];
 

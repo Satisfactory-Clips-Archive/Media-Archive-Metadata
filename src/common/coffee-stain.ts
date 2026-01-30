@@ -1,7 +1,7 @@
 const CSS = {
 	"@type" : "Organization",
 	"name": "Coffee Stain Studios AB",
-	"url" : "https://www.coffeestainstudios.com/"
+	"url" : "https://www.coffeestainstudios.com/",
 };
 
 export default CSS;

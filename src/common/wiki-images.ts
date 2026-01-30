@@ -8,5 +8,5 @@ export const Uranium_Waste = SatisfactoryWikiItemImage(
 	'Uranium_Waste.png',
 	{
 		"name": "In-game item icon for Nuclear Waste.",
-	}
+	},
 );

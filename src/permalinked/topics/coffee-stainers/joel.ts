@@ -18,7 +18,7 @@ export const Joel = [
 				'description': [
 					// eslint-disable-next-line @stylistic/max-len
 					'Joel Rydholm tells you all about making beeps and boops and stuff for Satisfactory.',
-					'btw sound design is not the same as graphic design'
+					'btw sound design is not the same as graphic design',
 				].join("\n"),
 				'uploadDate': '2018-09-19',
 			}),
@@ -34,7 +34,7 @@ export const Joel = [
 				{
 					// eslint-disable-next-line @stylistic/max-len
 					name: 'Joel Rydholm, adjusting his collar while wearing an orange beanie.',
-				}
+				},
 			),
 		],
 	})),

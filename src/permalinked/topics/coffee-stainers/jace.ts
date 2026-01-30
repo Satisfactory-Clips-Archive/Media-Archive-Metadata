@@ -36,7 +36,7 @@ const Jace = [
 				// eslint-disable-next-line @stylistic/max-len
 				"description": "This is Jace Varlet, he's a community manager and colleague at Coffee Stain Studios. Follow Jace as he talks about his story leading up until this point, including his time in Japan where he started his game development career after having moved from his home country Australia.",
 				"uploadDate": "2019-07-26",
-			})
+			}),
 		],
 		"image": [
 			SatisfactoryWikiImage(
@@ -47,7 +47,7 @@ const Jace = [
 				'Jace.jpg',
 				{
 					"name": "our lord and savior Jace",
-				}
+				},
 			),
 		],
 		character: [
@@ -55,8 +55,8 @@ const Jace = [
 			SchemaGenerators.withoutContext(RoboJace[0]),
 		],
 		"url": [
-			"https://twitter.com/jembawls"
-		]
+			"https://twitter.com/jembawls",
+		],
 	})),
 ];
 

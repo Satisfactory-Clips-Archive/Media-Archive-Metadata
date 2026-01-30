@@ -26,12 +26,12 @@ const Melk = [
 					{
 						name: 'The giant Crab Boss from the E3 Trailer',
 						relatedLink: [
-							'https://youtu.be/W_lmP8jYVLs?t=119'
+							'https://youtu.be/W_lmP8jYVLs?t=119',
 						],
 					},
 				),
 			],
-		}
+		},
 	)),
 ];
 

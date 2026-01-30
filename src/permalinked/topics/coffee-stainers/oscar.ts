@@ -27,7 +27,7 @@ const Oscar = [
 				{
 					// eslint-disable-next-line @stylistic/max-len
 					name: 'Oscar Jilsén, deliberately staring into camera during the filming for a Developer Highlights episode.',
-				}
+				},
 			),
 		],
 		subjectOf: [

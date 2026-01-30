@@ -31,8 +31,8 @@ const Kristoffer = [
 						'image/jpeg',
 						{
 							description: 'Video poster for tweet',
-						}
-					)
+						},
+					),
 				],
 			}),
 		],

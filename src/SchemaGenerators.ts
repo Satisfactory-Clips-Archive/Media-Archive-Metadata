@@ -6,7 +6,7 @@ import type {
 
 function generate<
 	T1 extends string,
-	T2 extends object
+	T2 extends object,
 >(
 	type: T1,
 	data: T2,
@@ -29,7 +29,7 @@ function withContext<
 }
 
 function withoutContext<T1 extends SchemaObject<any>>(
-	data: T1 & {'@context': string}
+	data: T1 & {'@context': string},
 ) : T1 {
 	const cloned:T1 & {'@context'?: string} = Object.assign({}, data);
 
@@ -64,7 +64,7 @@ function ImageObject<
 			encodingFormat,
 			width: QuantitativeValue(width),
 			height: QuantitativeValue(height),
-		}) as T
+		}) as T,
 	);
 }
 
@@ -82,7 +82,7 @@ function WebPage<
 		'WebPage',
 		Object.assign({}, data, {
 			name,
-		})
+		}),
 	);
 }
 
@@ -99,7 +99,7 @@ function Person<
 		'Person',
 		Object.assign({}, data, {
 			name,
-		})
+		}),
 	);
 }
 
@@ -120,7 +120,7 @@ function SocialMediaPosting<
 		'SocialMediaPosting',
 		Object.assign({}, data, {
 			url,
-		})
+		}),
 	);
 }
 

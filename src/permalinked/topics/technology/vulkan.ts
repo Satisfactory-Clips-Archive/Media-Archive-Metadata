@@ -27,13 +27,13 @@ const Vulkan = [
 				'image/webp',
 				{
 					name: '🖖',
-				}
-			)
+				},
+			),
 		],
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEoYcnK5o9ipaJlkK58MApga', {
 				name: 'Vulkan',
-				startDate: '2021-02-04'
+				startDate: '2021-02-04',
 			}),
 		],
 	})),

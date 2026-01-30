@@ -24,7 +24,7 @@ const Birb = [
 					'Non Flying Bird.png',
 				),
 			],
-		}
+		},
 	)),
 ];
 

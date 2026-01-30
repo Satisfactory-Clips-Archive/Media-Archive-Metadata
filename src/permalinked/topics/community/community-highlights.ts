@@ -13,7 +13,7 @@ const Community_Highlights = [
 		// eslint-disable-next-line @stylistic/max-len
 		"description": "Satisfactory Livestream clips about the Satisfactory Community Highlights",
 		"relatedLink": [
-			"https://communityhighlights.satisfactory.video/"
+			"https://communityhighlights.satisfactory.video/",
 		],
 		"image": [
 			SchemaGenerators.ImageObject(
@@ -24,8 +24,8 @@ const Community_Highlights = [
 				'image/png',
 				{
 					// eslint-disable-next-line @stylistic/max-len
-					"name": "Logo for the Satisfactory Community Highlights Archive."
-				}
+					"name": "Logo for the Satisfactory Community Highlights Archive.",
+				},
 			),
 		],
 	})),

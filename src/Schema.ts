@@ -48,7 +48,7 @@ type WebSite<
 > = SchemaObject<'WebSite'> & T1;
 
 type WebPage<
-	T1 extends SchemaProperties.WebPage
+	T1 extends SchemaProperties.WebPage,
 > = SchemaObject<'WebPage'> & T1 & SubjectOf & Schema.has_image<any>;
 
 type Organization<

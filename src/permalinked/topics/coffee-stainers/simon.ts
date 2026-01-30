@@ -19,8 +19,8 @@ const Simon = [
 			Simon_Saga,
 		],
 		"url": [
-			"https://twitter.com/SBegby"
-		]
+			"https://twitter.com/SBegby",
+		],
 	})),
 ];
 

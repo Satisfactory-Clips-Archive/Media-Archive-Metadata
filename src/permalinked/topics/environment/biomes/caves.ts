@@ -33,7 +33,7 @@ const Caves = [
 						// eslint-disable-next-line @stylistic/max-len
 						'Taken from https://www.youtube.com/watch?v=MxvGbCCc6DI at time index 00.07.47.300',
 					].join("\n\n"),
-				}
+				},
 			),
 		],
 	})),

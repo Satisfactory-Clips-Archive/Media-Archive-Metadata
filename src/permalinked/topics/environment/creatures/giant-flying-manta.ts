@@ -26,7 +26,7 @@ const Manta = [
 					'Giant Flying Manta.png',
 				),
 			],
-		}
+		},
 	)),
 ];
 

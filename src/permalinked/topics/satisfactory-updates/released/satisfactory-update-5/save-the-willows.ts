@@ -16,8 +16,8 @@ const img = SchemaGenerators.ImageObject(
 	'image/webp',
 	{
 		// eslint-disable-next-line @stylistic/max-len
-		description: 'Willow tree atop grassy cliff edge in left of frame, in front of a cloudy blue sky (3/4 of top of frame) and various rock formations (1/4 of bottom of frame, 5/6 of right of frame).'
-	}
+		description: 'Willow tree atop grassy cliff edge in left of frame, in front of a cloudy blue sky (3/4 of top of frame) and various rock formations (1/4 of bottom of frame, 5/6 of right of frame).',
+	},
 );
 
 const SaveTheWillows = [
@@ -37,7 +37,7 @@ const SaveTheWillows = [
 				{
 					name: 'Jace Talk: Northern Forest feedback',
 					uploadDate: '2021-08-06',
-				}
+				},
 			),
 			Tweet('SignpostMarv', '1422928134194741251', {
 				headline: 'Choose wisely',

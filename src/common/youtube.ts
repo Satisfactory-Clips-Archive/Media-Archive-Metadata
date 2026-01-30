@@ -10,7 +10,7 @@ const yt_UT9iNA3WGT4 = YouTubeVideo('UT9iNA3WGT4', {
 		'Embracer Group made a cool video featuring',
 		'3 Coffee Stainers\' journey into game dev. You can check',
 		'out their Youtube channel for more stories at',
-		'https://www.youtube.com/channel/UCFq1IPfyTFFeyKOnsdI40ew'
+		'https://www.youtube.com/channel/UCFq1IPfyTFFeyKOnsdI40ew',
 	].join(' '),
 	'uploadDate': '2020-11-16',
 });
@@ -36,7 +36,7 @@ const yt_2_dash_JM_JP8RNc = YouTubeVideo(
 			'More information on these changes will be released next week!',
 		].join(' '),
 		uploadDate: '2021-07-30',
-	}
+	},
 );
 
 const yt_ST6V_dash_a4u8Qs = YouTubeVideo('ST6V-a4u8Qs', {

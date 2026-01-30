@@ -25,7 +25,7 @@ Object.entries(data).forEach((entry) => {
 
 					'params' in err,
 					'allowedParams' in err.params,
-					(err.params.allowedParams instanceof Array)
+					(err.params.allowedParams instanceof Array),
 				);
 
 				if (
@@ -38,7 +38,7 @@ Object.entries(data).forEach((entry) => {
 							permalink
 						} item ${
 							i
-						} has an invalid item that must be one of:`
+						} has an invalid item that must be one of:`,
 					);
 
 					err.params.allowedValues.forEach((allowed) => {

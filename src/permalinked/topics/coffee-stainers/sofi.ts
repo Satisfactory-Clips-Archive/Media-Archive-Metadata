@@ -23,7 +23,7 @@ const Sofi = [
 				{
 					// eslint-disable-next-line @stylistic/max-len
 					name: 'Sofi Sprangers, laughing on camera during the filming for a Developer Highlights episode.',
-				}
+				},
 			),
 		],
 		subjectOf: [

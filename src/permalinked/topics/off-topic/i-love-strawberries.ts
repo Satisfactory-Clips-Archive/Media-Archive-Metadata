@@ -34,7 +34,7 @@ const I_Love_Strawberries = [
 				'image/jpeg',
 				{
 					name: 'I <3 Strawberries logo',
-				}
+				},
 			),
 		],
 		subjectOf: [

@@ -11,7 +11,7 @@ const Stefan = [
 	SchemaGenerators.withContext(CoffeeStainer('Stefan Hanna', {
 		jobTitle: [
 			'CEO',
-			'Co-founder'
+			'Co-founder',
 		],
 		url: [
 			'https://twitter.com/stefan_hanna',

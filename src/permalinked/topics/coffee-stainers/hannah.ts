@@ -26,7 +26,7 @@ const Hannah = [
 			yt_UT9iNA3WGT4,
 		],
 		url: [
-			'https://twitter.com/HannahBeuger'
+			'https://twitter.com/HannahBeuger',
 		],
 	})),
 ];

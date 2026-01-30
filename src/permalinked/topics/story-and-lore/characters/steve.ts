@@ -27,7 +27,7 @@ const Steve = [
 				'Steve.png',
 				{
 					'name': 'Concept Art for Steve',
-				}
+				},
 			),
 		],
 	})),

@@ -19,8 +19,8 @@ const FF = [
 				'image/webp',
 				{
 					name: 'Final Fantasy 7 Remake Podcast',
-				}
-			)
+				},
+			),
 		],
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEoun-5sdS3OekZiIK9hdQkd', {

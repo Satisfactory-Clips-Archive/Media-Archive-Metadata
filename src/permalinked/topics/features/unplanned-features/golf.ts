@@ -29,7 +29,7 @@ const Golf = [
 				504,
 				'image/webp',
 			),
-		]
+		],
 	})),
 ];
 

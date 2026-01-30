@@ -20,9 +20,9 @@ const Tim = [
 				{
 					// eslint-disable-next-line @stylistic/max-len
 					"name": "Tim's only known sighting whilst working at Coffee Stain.",
-				}
+				},
 			),
-		]
+		],
 	})),
 ];
 

@@ -25,7 +25,7 @@ const Flannel = [
 				{
 					name: 'Q&A: Can we get your shirts in-game?',
 					uploadDate: '2019-02-06',
-				}
+				},
 			),
 			YouTubePlaylist('PLbjDnnBIxiEoFLmKQaDWq_Rl7qd-H_GIA', {
 				name: 'Flannel',
@@ -56,12 +56,12 @@ const Flannel = [
 								// eslint-disable-next-line @stylistic/max-len
 								url: 'https://www.flickr.com/photos/emberstudio/',
 							}),
-						}
+						},
 					),
-				}
+				},
 			),
-		]
-	}))
+		],
+	})),
 ];
 
 export default Flannel;

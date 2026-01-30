@@ -6,9 +6,9 @@ import {
     SatisfactoryCommunityMember,
 } from '../../../utils.ts';
 
-export const Anthor = SatisfactoryCommunityMember('Anthor');
+const Anthor = SatisfactoryCommunityMember('Anthor');
 
-export default [
+const SCIM = [
     SchemaGenerators.withContext(WebSiteAboutSatisfactory( {
         name: 'Satisfactory Calculator',
         url: 'https://satisfactory-calculator.com/',
@@ -16,3 +16,10 @@ export default [
         alternateName: 'SCIM',
     })),
 ];
+
+export {
+	Anthor,
+	SCIM,
+};
+
+export default SCIM;

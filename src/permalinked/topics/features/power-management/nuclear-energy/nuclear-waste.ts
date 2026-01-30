@@ -10,10 +10,12 @@ import {
 	SchemaGenerators,
 } from '../../../../../SchemaTypes.ts';
 
-export default [
+const Page = [
 	SchemaGenerators.withContext(WebPageAboutSatisfactory('Nuclear Waste', {
 		"image": [
 			Uranium_Waste,
 		],
 	})),
 ];
+
+export default Page;

@@ -6,6 +6,8 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+const with_context = [
 	SchemaGenerators.withContext(Simon_Saga),
 ];
+
+export default with_context;

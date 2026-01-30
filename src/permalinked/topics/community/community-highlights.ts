@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+const Community_Highlights = [
 	// eslint-disable-next-line @stylistic/max-len
 	SchemaGenerators.withContext(WebPageAboutSatisfactory('Community Highlights', {
 		// eslint-disable-next-line @stylistic/max-len
@@ -28,3 +28,5 @@ export default [
 		],
 	})),
 ];
+
+export default Community_Highlights;

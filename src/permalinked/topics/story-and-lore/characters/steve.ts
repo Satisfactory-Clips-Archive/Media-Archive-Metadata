@@ -9,7 +9,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+const Steve = [
 	SchemaGenerators.withContext(SchemaGenerators.Person('Steve', {
 		jobTitle: 'Personal Assistant',
 		worksFor: FICSIT,
@@ -30,3 +30,5 @@ export default [
 		],
 	})),
 ];
+
+export default Steve;

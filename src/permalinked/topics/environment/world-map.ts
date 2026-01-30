@@ -5,10 +5,12 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+const Page = [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'World Map',
 		'Satisfactory clips about the Satisfactory World Map',
 		['Map']
 	)),
 ];
+
+export default Page;

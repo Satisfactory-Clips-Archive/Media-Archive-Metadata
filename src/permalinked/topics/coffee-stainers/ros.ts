@@ -5,6 +5,8 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+const Ros = [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Ros')),
 ];
+
+export default Ros;

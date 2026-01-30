@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+const Page = [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Resource Wells',
 		'Satisfactory Livestream clips about Resource Wells',
@@ -36,3 +36,5 @@ export default [
 		}
 	)),
 ];
+
+export default Page;

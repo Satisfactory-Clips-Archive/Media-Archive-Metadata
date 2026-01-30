@@ -20,7 +20,7 @@ declare type Update5 = SchemaProperties.VideoGame & {
 	],
 };
 
-export const Update5:Update5 = Object.assign({}, satisfactory, {
+const Update5:Update5 = Object.assign({}, satisfactory, {
 	softwareVersion: 'Update 5',
 	subjectOf: [
 		YouTubePlaylist('PLzGEn7MzkWRtpdC8k8j0bknq-Je4LyNvk', {
@@ -34,8 +34,14 @@ export const Update5:Update5 = Object.assign({}, satisfactory, {
 	],
 });
 
-export default [
+const Update = [
 	SchemaGenerators.withContext(
 		SchemaGenerators.VideoGame<Update5>(Object.assign({}, Update5)),
 	),
 ];
+
+export {
+	Update5,
+};
+
+export default Update;

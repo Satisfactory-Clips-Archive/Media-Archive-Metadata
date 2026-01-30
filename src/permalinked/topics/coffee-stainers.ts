@@ -9,7 +9,7 @@ import {
 	SchemaGenerators,
 } from '../../SchemaTypes.ts';
 
-export default [
+const Page = [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Coffee Stainers',
 		'Satisfactory clips about past & present employees of Coffee Stain',
@@ -21,3 +21,5 @@ export default [
 		}
 	)),
 ];
+
+export default Page;

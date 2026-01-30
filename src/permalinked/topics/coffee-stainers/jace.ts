@@ -17,7 +17,7 @@ import {
 // eslint-disable-next-line imports/no-internal-modules
 } from './jace/robo-jace.ts';
 
-export default [
+const Jace = [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Jace Varlet', {
 		"jobTitle": "Community Manager",
 		"subjectOf": [
@@ -60,3 +60,5 @@ export default [
 		]
 	})),
 ];
+
+export default Jace;

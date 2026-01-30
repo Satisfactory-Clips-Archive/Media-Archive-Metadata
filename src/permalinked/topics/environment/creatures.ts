@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+const Creatures = [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Creatures',
 		'Satisfactory Livestream clips about Creatures',
@@ -14,3 +14,5 @@ export default [
 		],
 	)),
 ];
+
+export default Creatures;

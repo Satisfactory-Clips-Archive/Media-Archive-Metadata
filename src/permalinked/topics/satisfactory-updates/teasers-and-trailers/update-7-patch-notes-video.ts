@@ -13,7 +13,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+const VideoPage = [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage(
 		'Update 7 Patch Notes Video - Behind the Scenes',
 		{
@@ -34,3 +34,5 @@ export default [
 		],
 	})),
 ];
+
+export default VideoPage;

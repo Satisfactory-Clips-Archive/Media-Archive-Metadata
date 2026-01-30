@@ -24,7 +24,7 @@ const burger_time = Tweet('BustaSnutt', '1430230082270937090', {
 	]
 });
 
-export default [
+const page = [
 	// eslint-disable-next-line @stylistic/max-len
 	SchemaGenerators.withContext(SchemaGenerators.WebPage('Snutt Burger Time', {
 		// eslint-disable-next-line @stylistic/max-len
@@ -46,3 +46,5 @@ export default [
 		],
 	})),
 ];
+
+export default page;

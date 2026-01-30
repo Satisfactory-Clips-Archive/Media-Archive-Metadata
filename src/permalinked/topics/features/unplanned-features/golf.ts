@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+const Golf = [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage('Golf', {
 		// eslint-disable-next-line @stylistic/max-len
 		description: 'Satisfactory Livestream clips relating to the Golf feature request created during the April 27th, 2021 Livestream',
@@ -30,3 +30,5 @@ export default [
 		]
 	})),
 ];
+
+export default Golf;

@@ -10,7 +10,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+const I_Love_Strawberries = [
 	SchemaGenerators.withContext(SchemaGenerators.VideoGame<any>({
 		name: 'I <3 Strawberries',
 		alternateName: [
@@ -64,3 +64,5 @@ export default [
 		],
 	})),
 ];
+
+export default I_Love_Strawberries;

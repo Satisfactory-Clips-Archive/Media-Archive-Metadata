@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+const Melk = [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Crab Boss',
 		'Satisfactory Livestream clips about the Crab Boss',
@@ -32,3 +32,5 @@ export default [
 		}
 	)),
 ];
+
+export default Melk;

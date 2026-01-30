@@ -18,7 +18,7 @@ const img = SchemaGenerators.ImageObject(
 	}
 );
 
-export default [
+const SaveTheWillows = [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage('#SaveTheWillows', {
 		// eslint-disable-next-line @stylistic/max-len
 		description: 'Satisfactory Livestream clips relating to the removal of willow trees in Update 5',
@@ -76,3 +76,5 @@ export default [
 		],
 	})),
 ];
+
+export default SaveTheWillows;

@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+const Bean = [
 	SchemaGenerators.withContext(WebPageRelatingToSatisfactoryWikiArticles(
 		'Space Giraffe-Tick-Penguin-Whale Thing',
 		// eslint-disable-next-line @stylistic/max-len
@@ -37,3 +37,5 @@ export default [
 		}
 	)),
 ];
+
+export default Bean;

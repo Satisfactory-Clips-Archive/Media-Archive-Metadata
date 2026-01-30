@@ -7,7 +7,7 @@ import {
 	SchemaProperties,
 } from '../../../SchemaTypes.ts';
 
-export default [
+const Flannel = [
 	SchemaGenerators.withContext(SchemaGenerators.WebPage('Flannel', {
 		// eslint-disable-next-line @stylistic/max-len
 		description: 'Satisfactory Livestream clips about Coffee Stainers wearing Flannel shirts.',
@@ -58,3 +58,5 @@ export default [
 		]
 	}))
 ];
+
+export default Flannel;

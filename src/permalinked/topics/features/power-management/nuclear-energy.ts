@@ -12,7 +12,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+const Page = [
 	SchemaGenerators.withContext(WebPageAboutSatisfactory('Nuclear Energy', {
 		"image": [
 			SatisfactoryWikiBuildingImage(
@@ -28,3 +28,5 @@ export default [
 		],
 	})),
 ];
+
+export default Page;

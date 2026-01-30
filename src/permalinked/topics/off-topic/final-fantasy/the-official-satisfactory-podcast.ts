@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+const SatisPod = [
 	SchemaGenerators.withContext(YouTubeVideo('', {
 		name: 'The Official Satisfactory PODCAST Episode 001',
 		description: [
@@ -29,3 +29,5 @@ export default [
 		],
 	})),
 ];
+
+export default SatisPod;

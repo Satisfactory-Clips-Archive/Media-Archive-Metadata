@@ -5,7 +5,7 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+const FF = [
 	SchemaGenerators.withContext(SchemaGenerators.VideoGameSeries<any>({
 		name: 'Final Fantasy',
 		image: [
@@ -28,3 +28,5 @@ export default [
 		],
 	})),
 ];
+
+export default FF;

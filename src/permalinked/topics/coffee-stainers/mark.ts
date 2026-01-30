@@ -5,8 +5,10 @@ import {
 	SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export default [
+const Mark = [
 	SchemaGenerators.withContext(CoffeeStainer('Mark Hofma', {
 		jobTitle: 'Game Designer',
 	})),
 ];
+
+export default Mark;

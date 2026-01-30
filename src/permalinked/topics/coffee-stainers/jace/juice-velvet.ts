@@ -6,7 +6,7 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
-export default [
+const Juice_Velvet = [
 	SchemaGenerators.withContext(SchemaGenerators.Person('Juice Velvet', {
 		subjectOf: [
 			YouTubePlaylist('PLbjDnnBIxiEosygjoYTHIREXy9ZtlTDfQ', {
@@ -30,3 +30,5 @@ export default [
 		],
 	})),
 ];
+
+export default Juice_Velvet;

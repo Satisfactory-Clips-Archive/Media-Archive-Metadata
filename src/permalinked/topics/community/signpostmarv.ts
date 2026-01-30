@@ -5,7 +5,7 @@ import {
     SchemaGenerators,
 } from '../../../SchemaTypes.ts';
 
-export const SignpostMarv = SatisfactoryCommunityMember('Marv', {
+const SignpostMarv = SatisfactoryCommunityMember('Marv', {
     alternateName: ['SignpostMarv'],
     honorificPrefix: 'Signpost',
     url: [
@@ -20,6 +20,12 @@ export const SignpostMarv = SatisfactoryCommunityMember('Marv', {
     ],
 });
 
-export default [
+const Page = [
     SchemaGenerators.withContext(Object.assign({}, SignpostMarv)),
 ];
+
+export {
+	SignpostMarv,
+};
+
+export default Page;

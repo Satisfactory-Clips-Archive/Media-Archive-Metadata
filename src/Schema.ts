@@ -17,10 +17,10 @@ type has_image<T extends SchemaProperties.ImageObject> = {
 };
 
 type SubjectOfSubtypes = (
-	| Schema.CreativeWorkSeries<any>
-	| Schema.VideoObject<any>
-	| Schema.ClipObject<any>
-	| Schema.SocialMediaPosting<any>
+	| Schema.CreativeWorkSeries<SchemaProperties.CreativeWorkSeries>
+	| Schema.VideoObject<SchemaProperties.VideoObject>
+	| Schema.ClipObject<SchemaProperties.ClipObject>
+	| Schema.SocialMediaPosting<SchemaProperties.SocialMediaPosting>
 );
 
 type SubjectOf = {

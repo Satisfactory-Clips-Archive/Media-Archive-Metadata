@@ -1,6 +1,7 @@
 import type {
 	Schema,
 	SchemaObject,
+	SchemaProperties,
 } from './SchemaTypes.ts';
 
 type mime_type = (
@@ -22,7 +23,10 @@ type has_url = {
 type ImageObjectOptional = has_url & {
 	name?: string,
 	description?: string,
-	exampleOfWork?: Schema.SocialMediaPosting<any>|Schema.ImageObject<any>,
+	exampleOfWork?: (
+		| Schema.SocialMediaPosting<SchemaProperties.SocialMediaPosting>
+		| Schema.ImageObject<SchemaProperties.ImageObject>
+	),
 	license?: string,
 	author?: Schema.Person<any>,
 	relatedLink?: [string, ...string[]],
@@ -114,7 +118,10 @@ type SocialMediaPosting = Schema.has_image<any> & has_url & {
 type VideoGame = Schema.SubjectOf & {
 	name: string,
 	url: [string, ...string[]]|string,
-	author: Schema.Person<any>|Schema.Organization<any>,
+	author: (
+		| Schema.Person<SchemaProperties.Person>
+		| Schema.Organization<SchemaProperties.Organization>
+	),
 	operatingSystem: string,
 	applicationCategory: [string, ...string[]],
 	softwareVersion?: string,
@@ -128,7 +135,10 @@ type Software = Schema.SubjectOf & Schema.has_image<any> & {
 	name: string,
 	url: [string, ...string[]]|string,
 	applicationCategory: [string, ...string[]],
-	author: Schema.Person<any>|Schema.Organization<any>,
+	author: (
+		| Schema.Person<SchemaProperties.Person>
+		| Schema.Organization<SchemaProperties.Organization>
+	),
 };
 
 export type {

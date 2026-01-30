@@ -13,7 +13,6 @@ const burger_time = Tweet('BustaSnutt', '1430230082270937090', {
 	datePublished: '2021-08-24T19:06ZGMT',
 	image: [
 		SchemaGenerators.ImageObject(
-			// eslint-disable-next-line @stylistic/max-len
 			'https://pbs.twimg.com/media/E9kyrhsXsAQskjT?format=jpg',
 			1024,
 			461,

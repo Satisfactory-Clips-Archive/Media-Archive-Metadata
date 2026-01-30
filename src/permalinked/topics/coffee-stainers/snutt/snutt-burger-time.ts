@@ -8,6 +8,23 @@ import {
 	SchemaGenerators,
 } from '../../../../SchemaTypes.ts';
 
+const burger_time = Tweet('BustaSnutt', '1430230082270937090', {
+	headline: 'BURGER TIME!',
+	datePublished: '2021-08-24T19:06ZGMT',
+	image: [
+		SchemaGenerators.ImageObject(
+			// eslint-disable-next-line @stylistic/max-len
+			'https://pbs.twimg.com/media/E9kyrhsXsAQskjT?format=jpg',
+			1024,
+			461,
+			'image/jpeg',
+			{
+				description: 'Photo of a burger and chips in a takeout carton',
+			}
+		),
+	]
+});
+
 export default [
 	// eslint-disable-next-line @stylistic/max-len
 	SchemaGenerators.withContext(SchemaGenerators.WebPage('Snutt Burger Time', {
@@ -30,20 +47,3 @@ export default [
 		],
 	})),
 ];
-
-const burger_time = Tweet('BustaSnutt', '1430230082270937090', {
-	headline: 'BURGER TIME!',
-	datePublished: '2021-08-24T19:06ZGMT',
-	image: [
-		SchemaGenerators.ImageObject(
-			// eslint-disable-next-line @stylistic/max-len
-			'https://pbs.twimg.com/media/E9kyrhsXsAQskjT?format=jpg',
-			1024,
-			461,
-			'image/jpeg',
-			{
-				description: 'Photo of a burger and chips in a takeout carton',
-			}
-		),
-	]
-});

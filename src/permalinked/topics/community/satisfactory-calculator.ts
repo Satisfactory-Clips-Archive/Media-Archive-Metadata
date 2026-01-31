@@ -11,7 +11,7 @@ import {
 const Anthor = SatisfactoryCommunityMember('Anthor');
 
 const SCIM = [
-	SchemaGenerators.withContext(WebSiteAboutSatisfactory( {
+	SchemaGenerators.withContext(WebSiteAboutSatisfactory({
 		name: 'Satisfactory Calculator',
 		url: 'https://satisfactory-calculator.com/',
 		author: Anthor,

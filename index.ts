@@ -26,7 +26,7 @@ for await (
 			.replace(import.meta.dirname, '')
 			.replace(/[/\\]/g, '/')
 			.replace(/^\/src\/permalinked\//, '/')
-			.replace(/\.js$/, '/')
+			.replace(/\.ts$/, '/')
 	] = (
 		(await import(filepath) as {
 			default: [

@@ -6,32 +6,40 @@ import type {
 
 function generate<
 	T1 extends string,
-	T2 extends object,
+	T2 extends {[key: string]: unknown},
 >(
 	type: T1,
 	data: T2,
-): SchemaObject<T1> & T2 {
-	return Object.assign({}, data, {
+): SchemaObject<T1, T2> & T2 {
+	return {
+		...data,
 		'@type': type,
-	}) as (SchemaObject<T1> & T2);
+	};
 }
 
 function withContext<
-	T1 extends SchemaObject<string>,
+	T1 extends string,
 	T2 extends string,
+	T3 extends Exclude<SchemaObject<T1>, {'@context': string}>,
 >(
-	data: Exclude<T1, {'@context': string}>,
+	data: T3,
 	context: T2 = 'https://schema.org' as T2,
-): T1 & {'@context': T2} {
-	return Object.assign({}, data, {
+): SchemaObject<T1, (
+	& T3
+	& {'@context': T2}
+)> {
+	return {
+		...data,
 		'@context': context,
-	});
+	};
 }
 
-function withoutContext<T1 extends SchemaObject<string>>(
-	data: T1 & {'@context': string},
-): T1 {
-	const cloned: T1 & {'@context'?: string} = Object.assign({}, data);
+function withoutContext<
+	T1 extends string,
+>(
+	data: SchemaObject<T1, {'@context'?: string}>,
+): SchemaObject<T1, Omit<typeof data, '@context'>> {
+	const cloned = {...data};
 
 	delete cloned['@context'];
 

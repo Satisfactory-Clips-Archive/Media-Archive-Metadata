@@ -10,7 +10,7 @@ type QuantitativeValue = SchemaObject<'QuantitativeValue'> & {
 
 type ImageObject<
 	T extends SchemaProperties.ImageObject,
-> = SchemaObject<'ImageObject'> & T;
+> = SchemaObject<'ImageObject', T>;
 
 type has_image<T extends SchemaProperties.ImageObject> = {
 	image?: ImageObject<T>[]|ImageObject<T>,
@@ -29,66 +29,64 @@ type SubjectOf = {
 
 type CreativeWorkSeries<
 	T extends SchemaProperties.CreativeWorkSeries,
-> = SchemaObject<'CreativeWorkSeries'> & T;
+> = SchemaObject<'CreativeWorkSeries', T>;
 
 type VideoObject<
 	T1 extends SchemaProperties.VideoObject,
-> = SchemaObject<'VideoObject'> & T1;
+> = SchemaObject<'VideoObject', T1>;
 
 type ClipObject<
 	T1 extends SchemaProperties.ClipObject,
-> = SchemaObject<'Clip'> & T1;
+> = SchemaObject<'Clip', T1>;
 
 type SearchAction<
 	T1 extends SchemaProperties.SearchAction,
-> = SchemaObject<'SearchAction'> & T1;
+> = SchemaObject<'SearchAction', T1>;
 
 type WebSite<
 	T1 extends SchemaProperties.WebSite,
-> = SchemaObject<'WebSite'> & T1;
+> = SchemaObject<'WebSite', T1>;
 
 type WebPage<
 	T1 extends SchemaProperties.WebPage,
-> = (
-	& SchemaObject<'WebPage'>
+> = SchemaObject<'WebPage', (
 	& T1
 	& SubjectOf
 	& Schema.has_image<SchemaProperties.ImageObject>
-);
+)>;
 
 type Organization<
 	T extends SchemaProperties.Organization,
-> = SchemaObject<'Organization'> & T;
+> = SchemaObject<'Organization', T>;
 
 type Person<
 	T1 extends SchemaProperties.Person,
-> = (
-	& SchemaObject<'Person'>
+> = SchemaObject<'Person', (
 	& T1
 	& SubjectOf
 	& SchemaProperties.has_url
 	& Schema.has_image<SchemaProperties.ImageObject>
-);
+)>;
 
 type VoteAction<
 	T1 extends SchemaProperties.VoteAction,
-> = SchemaObject<'VoteAction'> & T1;
+> = SchemaObject<'VoteAction', T1>;
 
 type SocialMediaPosting<
 	T1 extends SchemaProperties.SocialMediaPosting,
-> = SchemaObject<'SocialMediaPosting'> & T1;
+> = SchemaObject<'SocialMediaPosting', T1>;
 
 type VideoGame<
 	T1 extends SchemaProperties.VideoGame,
-> = SchemaObject<'VideoGame'> & T1;
+> = SchemaObject<'VideoGame', T1>;
 
 type VideoGameSeries<
 	T1 extends SchemaProperties.VideoGameSeries,
-> = SchemaObject<'VideoGameSeries'> & T1;
+> = SchemaObject<'VideoGameSeries', T1>;
 
 type Software<
 	T1 extends SchemaProperties.Software,
-> = SchemaObject<'Software'> & T1;
+> = SchemaObject<'Software', T1>;
 
 export type {
 	QuantitativeValue,

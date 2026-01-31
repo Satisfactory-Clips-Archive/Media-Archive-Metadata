@@ -33,7 +33,9 @@ const Snutt = [
 			}),
 		],
 		character: [
-			SchemaGenerators.withoutContext(SnuttyMays[0]),
+			SchemaGenerators.withoutContext<
+				typeof SnuttyMays[0]['@type']
+			>(SnuttyMays[0]),
 		],
 		url: [
 			'https://twitter.com/BustaSnutt',

@@ -51,8 +51,16 @@ const Jace = [
 			),
 		],
 		character: [
-			SchemaGenerators.withoutContext(JuiceVelvet[0]),
-			SchemaGenerators.withoutContext(RoboJace[0]),
+			SchemaGenerators.withoutContext<
+				typeof JuiceVelvet[0]['@type']
+			>(
+				JuiceVelvet[0],
+			),
+			SchemaGenerators.withoutContext<
+				typeof RoboJace[0]['@type']
+			>(
+				RoboJace[0],
+			),
 		],
 		url: [
 			'https://twitter.com/jembawls',

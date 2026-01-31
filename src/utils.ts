@@ -59,7 +59,7 @@ function SatisfactoryWikiImage<
 	);
 }
 
-function	SatisfactoryWikiBuildingImage<
+function SatisfactoryWikiBuildingImage<
 	T extends SatisfactoryWikiImageProperties,
 >(
 	contentUrl: string,

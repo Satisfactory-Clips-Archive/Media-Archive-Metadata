@@ -28,7 +28,7 @@ type ImageObjectOptional = has_url & {
 		| Schema.ImageObject<SchemaProperties.ImageObject>
 	),
 	license?: string,
-	author?: Schema.Person<any>,
+	author?: Schema.Person<SchemaProperties.Person>,
 	relatedLink?: [string, ...string[]],
 };
 
@@ -46,12 +46,17 @@ type CreativeWorkSeries = has_url & {
 	endDate?: string,
 };
 
-type VideoObjectSpecifyUrlLater = Schema.has_image<any> & Exclude<{
+type VideoObjectSpecifyUrlLater = (
+	& Schema.has_image<SchemaProperties.ImageObject>
+	& Exclude<{
 	name: string,
 	uploadDate: string,
 	description?: string,
 	creditText?: string,
-}, {url: string}>;
+		},
+		{url: string}
+	>
+);
 
 type VideoObject = VideoObjectSpecifyUrlLater & {
 	url: string,
@@ -72,48 +77,72 @@ type SearchAction = {
 type WebSite = {
 	name: string,
 	url: string,
-	potentialAction?: Schema.SearchAction<any>,
-	author?: Schema.Person<any>,
-	about?: [SchemaObject<any>, ...SchemaObject<any>[]],
+	potentialAction?: Schema.SearchAction<SchemaProperties.SearchAction>,
+	author?: Schema.Person<SchemaProperties.Person>,
+	about?: [SchemaObject<string>, ...SchemaObject<string>[]],
 };
 
-type WebPage = Schema.SubjectOf & Schema.has_image<any> & {
+type WebPage = (
+	& Schema.SubjectOf
+	& Schema.has_image<SchemaProperties.ImageObject>
+	& {
 	alternateName?: [string, ...string[]]|string,
 	description?: string,
 	relatedLink?: [string, ...string[]]|string,
 	about?: SchemaObject<string>[],
 	url?: string,
-};
+	}
+);
 
 type Organization = {
 	name: string,
 	url: string,
 };
 
-type Person = Schema.SubjectOf & Schema.has_image<any> & {
+type Person = (
+	& Schema.SubjectOf
+	& Schema.has_image<SchemaProperties.ImageObject>
+	& {
 	alternateName?: [string, ...string[]]|string,
 	honorificPrefix?: string,
 	description?: string,
 	jobTitle?: [string, ...string[]]|string,
-	worksFor?: Schema.Organization<any>[]|Schema.Organization<any>,
-	character?: Schema.Person<any>[]|Schema.Person<any>,
-	knowsAbout?: [SchemaObject<any>, ...SchemaObject<any>[]],
-	alumni?: [Schema.Organization<any>, ...Schema.Organization<any>[]],
+		worksFor?: (
+			| Schema.Organization<SchemaProperties.Organization>[]
+			| Schema.Organization<SchemaProperties.Organization>
+		),
+		character?: (
+			| Schema.Person<SchemaProperties.Person>[]
+			| Schema.Person<SchemaProperties.Person>
+		),
+		knowsAbout?: [SchemaObject<string>, ...SchemaObject<string>[]],
+		alumni?: [
+			Schema.Organization<SchemaProperties.Organization>,
+			...Schema.Organization<SchemaProperties.Organization>[],
+		],
 	url?: [string, ...string[]]|string,
-};
+	}
+);
 
 type VoteAction = {
 	actionOption: [string, ...string[]],
 	endTime: string,
 };
 
-type SocialMediaPosting = Schema.has_image<any> & has_url & {
+type SocialMediaPosting = (
+	& Schema.has_image<SchemaProperties.ImageObject>
+	& has_url
+	& {
 	headline: string,
 	datePublished: string,
 	keywords?: [string, ...string[]],
-	potentialAction?: Schema.VoteAction<any>[],
-	author?: Schema.Person<any>[]|Schema.Person<any>,
-};
+	potentialAction?: Schema.VoteAction<SchemaProperties.VoteAction>[],
+	author?: (
+		| Schema.Person<SchemaProperties.Person>[]
+		| Schema.Person<SchemaProperties.Person>
+	),
+	}
+);
 
 type VideoGame = Schema.SubjectOf & {
 	name: string,
@@ -127,11 +156,18 @@ type VideoGame = Schema.SubjectOf & {
 	softwareVersion?: string,
 };
 
-type VideoGameSeries = Schema.SubjectOf & Schema.has_image<any> & {
+type VideoGameSeries = (
+	& Schema.SubjectOf
+	& Schema.has_image<SchemaProperties.ImageObject>
+	& {
 	name: string,
-};
+	}
+);
 
-type Software = Schema.SubjectOf & Schema.has_image<any> & {
+type Software = (
+	& Schema.SubjectOf
+	& Schema.has_image<SchemaProperties.ImageObject>
+	& {
 	name: string,
 	url: [string, ...string[]]|string,
 	applicationCategory: [string, ...string[]],
@@ -139,7 +175,8 @@ type Software = Schema.SubjectOf & Schema.has_image<any> & {
 		| Schema.Person<SchemaProperties.Person>
 		| Schema.Organization<SchemaProperties.Organization>
 	),
-};
+	}
+);
 
 export type {
 	mime_type,

@@ -186,14 +186,14 @@ function WebPageRelatingToSatisfactoryWikiArticles<
 function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
 	data:T1,
 ) : Schema.WebSite<
-	T1 & {about: [SchemaObject<'VideoGame'>, ...SchemaObject<any>[]]}
+	T1 & {about: [SchemaObject<'VideoGame'>, ...SchemaObject<string>[]]}
 >{
 	return SchemaGenerators.WebSite<(
 		& T1
 		& {
 			about: [
 				SchemaObject<'VideoGame'>,
-				...SchemaObject<any>[],
+				...SchemaObject<string>[],
 			],
 		}
 	)>(Object.assign(
@@ -209,8 +209,12 @@ function WebPageAboutSatisfactory<
 	T1 extends SchemaProperties.WebPage,
 >(
 	name: string,
-	data: T1 & Schema.SubjectOf & Schema.has_image<any>,
-) : Schema.WebPage<T1 & Schema.SubjectOf & Schema.has_image<any>> {
+	data: (
+		& T1
+		& Schema.SubjectOf
+		& Schema.has_image<SchemaProperties.ImageObject>
+	),
+) : Schema.WebPage<typeof data> {
 	const about = [...(data.about || [])];
 
 	data.about = [satisfactory, ...about];
@@ -218,7 +222,7 @@ function WebPageAboutSatisfactory<
 	return SchemaGenerators.WebPage<(
 		& T1
 		& Schema.SubjectOf
-		& Schema.has_image<any>
+		& Schema.has_image<SchemaProperties.ImageObject>
 	)>(name, data);
 }
 
@@ -229,11 +233,11 @@ function CoffeeStainer<
 	data?: T1,
 ) : Schema.Person<
 	T1 & knowsAbout_satisfactory & {
-		worksFor: Schema.Organization<any>,
+		worksFor: Schema.Organization<SchemaProperties.Organization>,
 	}
 > {
 	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory & {
-		worksFor: Schema.Organization<any>,
+		worksFor: Schema.Organization<SchemaProperties.Organization>,
 	}>(
 		name,
 		Object.assign({}, data, {
@@ -250,11 +254,17 @@ function FormerCoffeeStainer<
 	data?: T1,
 ) : Schema.Person<
 	T1 & knowsAbout_satisfactory & {
-		alumni: [Schema.Organization<any>, ...Schema.Organization<any>[]],
+		alumni: [
+			Schema.Organization<SchemaProperties.Organization>,
+			...Schema.Organization<SchemaProperties.Organization>[],
+		],
 	}
 > {
 	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory & {
-		alumni: [Schema.Organization<any>, ...Schema.Organization<any>[]],
+		alumni: [
+			Schema.Organization<SchemaProperties.Organization>,
+			...Schema.Organization<SchemaProperties.Organization>[],
+		],
 	}>(
 		name,
 		Object.assign({}, data, {
@@ -281,9 +291,12 @@ function SatisfactoryCommunityMember<
 function Tweet<
 	T1 extends SchemaProperties.SocialMediaPosting,
 >(from:string, id:string, data:T1): Schema.SocialMediaPosting<T1> & {
-	author: Schema.Person<any> & {url: string},
+	author: Schema.Person<SchemaProperties.Person> & {url: string},
 } {
-	const author = SchemaGenerators.Person<any & {url: string}>(from, {
+	const author = SchemaGenerators.Person<(
+		& SchemaProperties.Person
+		& {url: string}
+	)>(from, {
 		url: `https://twitter.com/${from}`,
 	});
 

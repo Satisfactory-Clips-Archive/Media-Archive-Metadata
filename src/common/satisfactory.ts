@@ -11,7 +11,7 @@ import {
 } from '../SchemaTypes.ts';
 
 export type knowsAbout_satisfactory = {
-	knowsAbout: [SchemaObject<'VideoGame'>, ...SchemaObject<any>[]],
+	knowsAbout: [SchemaObject<'VideoGame'>, ...SchemaObject<string>[]],
 };
 
 export const satisfactory:SchemaProperties.VideoGame = {
@@ -25,7 +25,9 @@ export const satisfactory:SchemaProperties.VideoGame = {
 	],
 };
 
-export default SchemaGenerators.VideoGame<any>(Object.assign(
+export default SchemaGenerators.VideoGame<
+	SchemaProperties.VideoGame
+>(Object.assign(
 	{},
 	satisfactory,
 ));

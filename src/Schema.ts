@@ -49,7 +49,12 @@ type WebSite<
 
 type WebPage<
 	T1 extends SchemaProperties.WebPage,
-> = SchemaObject<'WebPage'> & T1 & SubjectOf & Schema.has_image<any>;
+> = (
+	& SchemaObject<'WebPage'>
+	& T1
+	& SubjectOf
+	& Schema.has_image<SchemaProperties.ImageObject>
+);
 
 type Organization<
 	T extends SchemaProperties.Organization,
@@ -62,7 +67,7 @@ type Person<
 	& T1
 	& SubjectOf
 	& SchemaProperties.has_url
-	& Schema.has_image<any>
+	& Schema.has_image<SchemaProperties.ImageObject>
 );
 
 type VoteAction<

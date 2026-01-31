@@ -20,8 +20,8 @@ import {
 declare type Update7 = SchemaProperties.VideoGame & {
 	softwareVersion: string,
 	subjectOf: [
-		Schema.CreativeWorkSeries<any>,
-		Schema.CreativeWorkSeries<any>,
+		Schema.CreativeWorkSeries<SchemaProperties.CreativeWorkSeries>,
+		Schema.CreativeWorkSeries<SchemaProperties.CreativeWorkSeries>,
 		...Schema.SubjectOfSubtypes[],
 	],
 };

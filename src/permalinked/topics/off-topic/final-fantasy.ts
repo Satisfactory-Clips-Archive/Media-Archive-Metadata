@@ -2,13 +2,20 @@ import {
 	YouTubePlaylist,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../utils.ts';
+
+import type {
+	SchemaProperties,
+// eslint-disable-next-line imports/no-relative-parent-imports
+} from '../../../SchemaTypes.ts';
 import {
 	SchemaGenerators,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../SchemaTypes.ts';
 
 const FF = [
-	SchemaGenerators.withContext(SchemaGenerators.VideoGameSeries<any>({
+	SchemaGenerators.withContext(SchemaGenerators.VideoGameSeries<
+		SchemaProperties.VideoGameSeries
+	>({
 		name: 'Final Fantasy',
 		image: [
 			SchemaGenerators.ImageObject(

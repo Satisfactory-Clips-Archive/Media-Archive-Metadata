@@ -17,7 +17,7 @@ function generate<
 }
 
 function withContext<
-	T1 extends SchemaObject<any>,
+	T1 extends SchemaObject<string>,
 	T2 extends string,
 >(
 	data:Exclude<T1, {'@context': string}>,
@@ -28,7 +28,7 @@ function withContext<
 	});
 }
 
-function withoutContext<T1 extends SchemaObject<any>>(
+function withoutContext<T1 extends SchemaObject<string>>(
 	data: T1 & {'@context': string},
 ) : T1 {
 	const cloned:T1 & {'@context'?: string} = Object.assign({}, data);
@@ -76,9 +76,13 @@ function WebPage<
 	T1 extends SchemaProperties.WebPage,
 >(
 	name: string,
-	data: T1 & Schema.SubjectOf & Schema.has_image<any>,
-) : Schema.WebPage<T1> {
-	return generate<'WebPage', T1 & Schema.SubjectOf & Schema.has_image<any>>(
+	data: (
+		& T1
+		& Schema.SubjectOf
+		& Schema.has_image<SchemaProperties.ImageObject>
+	),
+) : Schema.WebPage<typeof data> {
+	return generate<'WebPage', typeof data>(
 		'WebPage',
 		Object.assign({}, data, {
 			name,

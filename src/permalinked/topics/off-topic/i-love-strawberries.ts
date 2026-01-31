@@ -7,13 +7,20 @@ import {
 	YouTubeVideo,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../utils.ts';
+
+import type {
+	SchemaProperties,
+// eslint-disable-next-line imports/no-relative-parent-imports
+} from '../../../SchemaTypes.ts';
 import {
 	SchemaGenerators,
 // eslint-disable-next-line imports/no-relative-parent-imports
 } from '../../../SchemaTypes.ts';
 
 const I_Love_Strawberries = [
-	SchemaGenerators.withContext(SchemaGenerators.VideoGame<any>({
+	SchemaGenerators.withContext(SchemaGenerators.VideoGame<
+		SchemaProperties.VideoGame
+	>({
 		name: 'I <3 Strawberries',
 		alternateName: [
 			'I Love Strawberries',

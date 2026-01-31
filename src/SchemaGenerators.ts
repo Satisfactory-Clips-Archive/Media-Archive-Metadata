@@ -20,9 +20,9 @@ function withContext<
 	T1 extends SchemaObject<string>,
 	T2 extends string,
 >(
-	data:Exclude<T1, {'@context': string}>,
-	context:T2 = 'https://schema.org' as T2,
-) : T1 & {'@context': T2} {
+	data: Exclude<T1, {'@context': string}>,
+	context: T2 = 'https://schema.org' as T2,
+): T1 & {'@context': T2} {
 	return Object.assign({}, data, {
 		'@context': context,
 	});
@@ -30,8 +30,8 @@ function withContext<
 
 function withoutContext<T1 extends SchemaObject<string>>(
 	data: T1 & {'@context': string},
-) : T1 {
-	const cloned:T1 & {'@context'?: string} = Object.assign({}, data);
+): T1 {
+	const cloned: T1 & {'@context'?: string} = Object.assign({}, data);
 
 	delete cloned['@context'];
 
@@ -55,7 +55,7 @@ function ImageObject<
 	height: number,
 	encodingFormat: SchemaProperties.mime_type,
 	data?: SchemaProperties.ImageObjectOptional,
-) : T {
+): T {
 	return generate<'ImageObject', T>(
 		'ImageObject',
 		Object.assign({}, data, {
@@ -67,7 +67,7 @@ function ImageObject<
 	);
 }
 
-function WebSite<T1 extends SchemaProperties.WebSite>(data:T1) {
+function WebSite<T1 extends SchemaProperties.WebSite>(data: T1) {
 	return generate('WebSite', data);
 }
 
@@ -80,7 +80,7 @@ function WebPage<
 		& Schema.SubjectOf
 		& Schema.has_image<SchemaProperties.ImageObject>
 	),
-) : Schema.WebPage<typeof data> {
+): Schema.WebPage<typeof data> {
 	return generate<'WebPage', typeof data>(
 		'WebPage',
 		Object.assign({}, data, {
@@ -94,7 +94,7 @@ function Person<
 >(
 	name: string,
 	data: T1,
-) : Schema.Person<T1> {
+): Schema.Person<T1> {
 	return generate<
 		'Person',
 		T1
@@ -112,13 +112,13 @@ function Organization<
 	return generate('Organization', data);
 }
 
-function VoteAction<T1 extends SchemaProperties.VoteAction>(data:T1) {
+function VoteAction<T1 extends SchemaProperties.VoteAction>(data: T1) {
 	return generate('VoteAction', data);
 }
 
 function SocialMediaPosting<
 	T1 extends SchemaProperties.SocialMediaPosting,
->(url:string, data:T1): Schema.SocialMediaPosting<T1> {
+>(url: string, data: T1): Schema.SocialMediaPosting<T1> {
 	return generate<'SocialMediaPosting', T1>(
 		'SocialMediaPosting',
 		Object.assign({}, data, {
@@ -134,13 +134,13 @@ function VideoGame<T1 extends SchemaProperties.VideoGame>(
 }
 
 function VideoGameSeries<T1 extends SchemaProperties.VideoGameSeries>(
-	data:T1,
+	data: T1,
 ): Schema.VideoGameSeries<T1> {
 	return generate('VideoGameSeries', data);
 }
 
 function Software<T1 extends SchemaProperties.Software>(
-	data:T1,
+	data: T1,
 ): Schema.Software<T1> {
 	return generate('Software', data);
 }

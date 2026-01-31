@@ -26,7 +26,7 @@ declare type Update4 = SchemaProperties.VideoGame & {
 	],
 };
 
-const Update4:Update4 = Object.assign({}, satisfactory, {
+const Update4: Update4 = Object.assign({}, satisfactory, {
 	softwareVersion: 'Update 4',
 	subjectOf: [
 		YouTubePlaylist('PLzGEn7MzkWRura6DGohnzk1cwWS4HIoDr', {

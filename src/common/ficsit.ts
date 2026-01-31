@@ -11,7 +11,7 @@ declare type FICSIT = SchemaProperties.Organization & {
 	url: string,
 };
 
-export const FICSIT:FICSIT = {
+export const FICSIT: FICSIT = {
 	'name': 'FICSIT Incorporated',
 	'url': 'https://satisfactory.wiki.gg/wiki/FICSIT_Inc.',
 };

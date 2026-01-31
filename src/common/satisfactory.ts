@@ -14,7 +14,7 @@ export type knowsAbout_satisfactory = {
 	knowsAbout: [SchemaObject<'VideoGame'>, ...SchemaObject<string>[]],
 };
 
-export const satisfactory:SchemaProperties.VideoGame = {
+export const satisfactory: SchemaProperties.VideoGame = {
 	"name": "Satisfactory",
 	'url': 'https://satisfactorygame.com/',
 	"author": coffee_stain,

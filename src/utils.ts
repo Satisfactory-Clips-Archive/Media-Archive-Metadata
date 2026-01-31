@@ -37,7 +37,7 @@ function SatisfactoryWikiImage<
 	wikiname: string,
 	data?: SchemaProperties.ImageObjectOptional,
 	licensetemplate: string = 'Copyright_first-party',
-) : Schema.ImageObject<T> {
+): Schema.ImageObject<T> {
 	return SchemaGenerators.ImageObject<Schema.ImageObject<T>>(
 		contentUrl,
 		width,
@@ -65,7 +65,7 @@ function	SatisfactoryWikiBuildingImage<
 	contentUrl: string,
 	wikiname: string,
 	data?: SchemaProperties.ImageObjectOptional,
-) : Schema.ImageObject<T> {
+): Schema.ImageObject<T> {
 	return SatisfactoryWikiImage<T>(
 		contentUrl,
 		512,
@@ -82,7 +82,7 @@ function SatisfactoryWikiItemImage<
 	contentUrl: string,
 	wikiname: string,
 	data?: SchemaProperties.ImageObjectOptional,
-) : Schema.ImageObject<T> {
+): Schema.ImageObject<T> {
 	return SatisfactoryWikiImage<T>(
 		contentUrl,
 		256,
@@ -99,9 +99,9 @@ function YouTubePlaylist<T extends (
 		url: string,
 	}
 )>(
-	playlistId:string,
+	playlistId: string,
 	data: SchemaProperties.CreativeWorkSeries,
-) : Schema.CreativeWorkSeries<T> {
+): Schema.CreativeWorkSeries<T> {
 	return SchemaGenerators.generate<'CreativeWorkSeries', T>(
 		'CreativeWorkSeries',
 		Object.assign({}, data, {
@@ -115,7 +115,7 @@ function YouTubeVideo<
 >(
 	videoId: string,
 	data: T1,
-) : Schema.VideoObject<T1 & {url: string}> {
+): Schema.VideoObject<T1 & {url: string}> {
 	return SchemaGenerators.generate<'VideoObject', T1 & {url: string}>(
 		'VideoObject',
 		Object.assign({}, data, {
@@ -130,13 +130,13 @@ function YouTubeClip<
 	T1 extends SchemaProperties.ClipObject,
 	T2 extends SchemaProperties.VideoObjectSpecifyUrlLater,
 >(
-	videoId:string,
-	clipId:string|undefined,
-	start:number,
-	finish:number,
+	videoId: string,
+	clipId: string|undefined,
+	start: number,
+	finish: number,
 	data: T2,
-) : Schema.ClipObject<T1> {
-	const video:T2 = YouTubeVideo<T2>(videoId, data);
+): Schema.ClipObject<T1> {
+	const video: T2 = YouTubeVideo<T2>(videoId, data);
 
 	return SchemaGenerators.generate<'Clip', T1>(
 		'Clip',
@@ -164,11 +164,11 @@ function YouTubeClip<
 function WebPageRelatingToSatisfactoryWikiArticles<
 	T1 extends SchemaProperties.WebPage,
 >(
-	name:string,
+	name: string,
 	description: string,
 	related_articles: [string, ...string[]],
 	data?: T1,
-) : Schema.WebPage<T1 & {
+): Schema.WebPage<T1 & {
 	description: string,
 	relatedLink: [string, ...string[]],
 }> {
@@ -184,8 +184,8 @@ function WebPageRelatingToSatisfactoryWikiArticles<
 }
 
 function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
-	data:T1,
-) : Schema.WebSite<
+	data: T1,
+): Schema.WebSite<
 	T1 & {about: [SchemaObject<'VideoGame'>, ...SchemaObject<string>[]]}
 >{
 	return SchemaGenerators.WebSite<(
@@ -214,7 +214,7 @@ function WebPageAboutSatisfactory<
 		& Schema.SubjectOf
 		& Schema.has_image<SchemaProperties.ImageObject>
 	),
-) : Schema.WebPage<typeof data> {
+): Schema.WebPage<typeof data> {
 	const about = [...(data.about || [])];
 
 	data.about = [satisfactory, ...about];
@@ -231,7 +231,7 @@ function CoffeeStainer<
 >(
 	name: string,
 	data?: T1,
-) : Schema.Person<
+): Schema.Person<
 	T1 & knowsAbout_satisfactory & {
 		worksFor: Schema.Organization<SchemaProperties.Organization>,
 	}
@@ -252,7 +252,7 @@ function FormerCoffeeStainer<
 >(
 	name: string,
 	data?: T1,
-) : Schema.Person<
+): Schema.Person<
 	T1 & knowsAbout_satisfactory & {
 		alumni: [
 			Schema.Organization<SchemaProperties.Organization>,
@@ -279,7 +279,7 @@ function SatisfactoryCommunityMember<
 >(
 	name: string,
 	data?: T1,
-) : Schema.Person<T1 & knowsAbout_satisfactory> {
+): Schema.Person<T1 & knowsAbout_satisfactory> {
 	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory>(
 		name,
 		Object.assign({}, data, {
@@ -290,7 +290,7 @@ function SatisfactoryCommunityMember<
 
 function Tweet<
 	T1 extends SchemaProperties.SocialMediaPosting,
->(from:string, id:string, data:T1): Schema.SocialMediaPosting<T1> & {
+>(from: string, id: string, data: T1): Schema.SocialMediaPosting<T1> & {
 	author: Schema.Person<SchemaProperties.Person> & {url: string},
 } {
 	const author = SchemaGenerators.Person<(

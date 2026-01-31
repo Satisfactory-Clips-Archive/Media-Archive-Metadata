@@ -20,6 +20,6 @@ const İlayda = [
 			}),
 		],
 	})),
-]
+];
 
 export default İlayda;

@@ -180,7 +180,7 @@ function WebPageRelatingToSatisfactoryWikiArticles<
 		relatedLink: related_articles.map((wiki_name) => {
 			return `https://satisfactory.wiki.gg/wiki/${wiki_name}`;
 		}).concat(...data?.relatedLink || []) as [string, ...string[]],
-	}))
+	}));
 }
 
 function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(

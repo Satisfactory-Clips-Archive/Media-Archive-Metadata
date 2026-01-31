@@ -37,6 +37,6 @@ const Caves = [
 			),
 		],
 	})),
-]
+];
 
 export default Caves;

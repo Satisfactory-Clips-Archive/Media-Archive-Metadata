@@ -165,6 +165,7 @@ type SocialMediaPosting = (
 type VideoGame = (
 	& has_name
 	& Schema.SubjectOf
+	& Schema.has_image<SchemaProperties.ImageObject>
 	& {
 		url: [string, ...string[]]|string,
 		author: (
@@ -174,6 +175,10 @@ type VideoGame = (
 		operatingSystem: string,
 		applicationCategory: [string, ...string[]],
 		softwareVersion?: string,
+		trailer?: [
+			SchemaProperties.VideoObject,
+			...SchemaProperties.VideoObject[],
+		],
 	}
 );
 

@@ -58,7 +58,7 @@ const SaveTheWillows = [
 					'It holds a vigil',
 					'dropping branches as it mourns',
 					'the deaths of far kin',
-				].join("\n"),
+				].join('\n'),
 				keywords: [
 					'#SaveTheWillows',
 				],

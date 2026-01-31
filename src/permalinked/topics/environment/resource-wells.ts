@@ -32,7 +32,7 @@ const Page = [
 					'image/jpeg',
 					'Resource wells.jpg',
 					{
-						name: "Screengrab of Resource Wells concept art.",
+						name: 'Screengrab of Resource Wells concept art.',
 					},
 				),
 			],

@@ -23,7 +23,7 @@ const Page = [
 				'https://satisfactory.wiki.gg/images/4/46/Nuclear_Power_Plant.png',
 				'Nuclear_Power_Plant.png',
 				{
-					name: "In-game building icon for the Nuclear Power Plant.",
+					name: 'In-game building icon for the Nuclear Power Plant.',
 				},
 			),
 			Uranium_Waste,

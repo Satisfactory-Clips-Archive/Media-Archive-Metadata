@@ -1,6 +1,7 @@
 import type {
 	Schema,
 	SchemaProperties,
+// eslint-disable-next-line imports/no-relative-parent-imports
 } from '../SchemaTypes.ts';
 
 const CSS: Schema.Organization<SchemaProperties.Organization> = {

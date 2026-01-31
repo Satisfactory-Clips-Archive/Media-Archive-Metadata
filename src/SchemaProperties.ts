@@ -51,9 +51,9 @@ type CreativeWorkSeries = (
 	& has_name
 	& has_url
 	& {
-	description?: string,
-	startDate: string,
-	endDate?: string,
+		description?: string,
+		startDate: string,
+		endDate?: string,
 	}
 );
 
@@ -63,9 +63,9 @@ type VideoObjectSpecifyUrlLater = (
 		(
 			& has_name
 			& {
-			uploadDate: string,
-			description?: string,
-			creditText?: string,
+				uploadDate: string,
+				description?: string,
+				creditText?: string,
 			}
 		),
 		{url: string}
@@ -91,10 +91,10 @@ type SearchAction = {
 type WebSite = (
 	& has_name
 	& {
-	url: string,
-	potentialAction?: Schema.SearchAction<SchemaProperties.SearchAction>,
-	author?: Schema.Person<SchemaProperties.Person>,
-	about?: [SchemaObject<string>, ...SchemaObject<string>[]],
+		url: string,
+		potentialAction?: Schema.SearchAction<SchemaProperties.SearchAction>,
+		author?: Schema.Person<SchemaProperties.Person>,
+		about?: [SchemaObject<string>, ...SchemaObject<string>[]],
 	}
 );
 
@@ -113,7 +113,7 @@ type WebPage = (
 type Organization = (
 	& has_name
 	& {
-	url: string,
+		url: string,
 	}
 );
 
@@ -166,14 +166,14 @@ type VideoGame = (
 	& has_name
 	& Schema.SubjectOf
 	& {
-	url: [string, ...string[]]|string,
-	author: (
-		| Schema.Person<SchemaProperties.Person>
-		| Schema.Organization<SchemaProperties.Organization>
-	),
-	operatingSystem: string,
-	applicationCategory: [string, ...string[]],
-	softwareVersion?: string,
+		url: [string, ...string[]]|string,
+		author: (
+			| Schema.Person<SchemaProperties.Person>
+			| Schema.Organization<SchemaProperties.Organization>
+		),
+		operatingSystem: string,
+		applicationCategory: [string, ...string[]],
+		softwareVersion?: string,
 	}
 );
 

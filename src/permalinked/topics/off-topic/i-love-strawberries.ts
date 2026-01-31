@@ -35,7 +35,7 @@ const I_Love_Strawberries = [
 		image: [
 			SchemaGenerators.ImageObject(
 				// eslint-disable-next-line @stylistic/max-len
-				'https://www.coffeestainstudios.com/media/1277/ils-square-module-2.jpg',
+				'https://i-img-archive.satisfactory.video/content/topics/off-topic/i-love-strawberries/ils-square-module-2.jpg',
 				768,
 				768,
 				'image/jpeg',

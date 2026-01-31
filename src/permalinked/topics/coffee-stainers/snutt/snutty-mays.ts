@@ -19,7 +19,7 @@ const Snutty_Mays = [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				'https://satisfactory.wiki.gg/images/6/60/Snutty_Mays.png',
+				'https://satisfactory.wiki.gg/images/Snutty_Mays.png',
 				354,
 				360,
 				'image/png',

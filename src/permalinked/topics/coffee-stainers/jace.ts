@@ -40,7 +40,7 @@ const Jace = [
 		],
 		image: [
 			SatisfactoryWikiImage(
-				'https://satisfactory.wiki.gg/images/5/51/Jace.jpg',
+				'https://satisfactory.wiki.gg/images/Jace.jpg',
 				1080,
 				809,
 				'image/jpeg',

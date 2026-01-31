@@ -187,7 +187,7 @@ function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
 	data: T1,
 ): Schema.WebSite<
 	T1 & {about: [SchemaObject<'VideoGame'>, ...SchemaObject<string>[]]}
->{
+> {
 	return SchemaGenerators.WebSite<(
 		& T1
 		& {

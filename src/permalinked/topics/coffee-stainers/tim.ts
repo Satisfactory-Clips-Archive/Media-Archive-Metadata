@@ -10,7 +10,7 @@ import {
 
 const Tim = [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Tim Badylak', {
-		"image": [
+		image: [
 			SatisfactoryWikiImage(
 				'https://satisfactory.wiki.gg/images/a/a7/Tim_Badylak.png',
 				726,
@@ -19,7 +19,7 @@ const Tim = [
 				'Tim_Badylak.png',
 				{
 					// eslint-disable-next-line @stylistic/max-len
-					"name": "Tim's only known sighting whilst working at Coffee Stain.",
+					name: 'Tim\'s only known sighting whilst working at Coffee Stain.',
 				},
 			),
 		],

@@ -10,16 +10,16 @@ import {
 
 const Ben = [
 	SchemaGenerators.withContext(CoffeeStainer('Ben de Hullu', {
-		"jobTitle": "Tech Artist",
-		"subjectOf": [
+		jobTitle: 'Tech Artist',
+		subjectOf: [
 			YouTubeVideo('omjFqZQV9fI', {
-				"name": "Dev Vlog: Tech Art & Optimisation with Ben!",
-				"description": "save the frames",
-				"uploadDate": "2020-11-05",
+				name: 'Dev Vlog: Tech Art & Optimisation with Ben!',
+				description: 'save the frames',
+				uploadDate: '2020-11-05',
 			}),
 		],
-		"url": [
-			"https://twitter.com/BenHullu",
+		url: [
+			'https://twitter.com/BenHullu',
 		],
 	})),
 ];

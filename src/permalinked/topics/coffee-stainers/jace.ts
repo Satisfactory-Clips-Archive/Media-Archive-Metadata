@@ -18,8 +18,8 @@ import {
 
 const Jace = [
 	SchemaGenerators.withContext(FormerCoffeeStainer('Jace Varlet', {
-		"jobTitle": "Community Manager",
-		"subjectOf": [
+		jobTitle: 'Community Manager',
+		subjectOf: [
 			YouTubeVideo('6HZzPbgw3pg', {
 				name: 'Community Manager Introduction - Coffee Stain Studios',
 				description: '',
@@ -32,13 +32,13 @@ const Jace = [
 				uploadDate: '2021-07-08',
 			}),
 			YouTubeVideo('v2JdPmTvQKg', {
-				"name": "Game Dev Circle - Episode 1 - Jace Varlet",
+				name: 'Game Dev Circle - Episode 1 - Jace Varlet',
 				// eslint-disable-next-line @stylistic/max-len
-				"description": "This is Jace Varlet, he's a community manager and colleague at Coffee Stain Studios. Follow Jace as he talks about his story leading up until this point, including his time in Japan where he started his game development career after having moved from his home country Australia.",
-				"uploadDate": "2019-07-26",
+				description: 'This is Jace Varlet, he\'s a community manager and colleague at Coffee Stain Studios. Follow Jace as he talks about his story leading up until this point, including his time in Japan where he started his game development career after having moved from his home country Australia.',
+				uploadDate: '2019-07-26',
 			}),
 		],
-		"image": [
+		image: [
 			SatisfactoryWikiImage(
 				'https://satisfactory.wiki.gg/images/5/51/Jace.jpg',
 				1080,
@@ -46,7 +46,7 @@ const Jace = [
 				'image/jpeg',
 				'Jace.jpg',
 				{
-					"name": "our lord and savior Jace",
+					name: 'our lord and savior Jace',
 				},
 			),
 		],
@@ -54,8 +54,8 @@ const Jace = [
 			SchemaGenerators.withoutContext(JuiceVelvet[0]),
 			SchemaGenerators.withoutContext(RoboJace[0]),
 		],
-		"url": [
-			"https://twitter.com/jembawls",
+		url: [
+			'https://twitter.com/jembawls',
 		],
 	})),
 ];

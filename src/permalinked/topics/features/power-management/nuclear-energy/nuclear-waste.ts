@@ -15,7 +15,7 @@ import {
 
 const Page = [
 	SchemaGenerators.withContext(WebPageAboutSatisfactory('Nuclear Waste', {
-		"image": [
+		image: [
 			Uranium_Waste,
 		],
 	})),

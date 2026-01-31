@@ -14,11 +14,11 @@ import {
 
 const Snutt = [
 	SchemaGenerators.withContext(CoffeeStainer('Snutt Treptow', {
-		"jobTitle": [
-			"Community Manager",
-			"Joshie Wrangler",
+		jobTitle: [
+			'Community Manager',
+			'Joshie Wrangler',
 		],
-		"subjectOf": [
+		subjectOf: [
 			YouTubeVideo('N1o3tK1h8cM', {
 				name: 'New Community Manager - REVEALED',
 				// eslint-disable-next-line @stylistic/max-len
@@ -26,17 +26,17 @@ const Snutt = [
 				uploadDate: '2019-12-13',
 			}),
 			YouTubeVideo('N6yki_HwBNQ', {
-				"name": "I was a SPEAKER at a GAME DEV CONFERENCE",
+				name: 'I was a SPEAKER at a GAME DEV CONFERENCE',
 				// eslint-disable-next-line @stylistic/max-len
-				"description": "They invited me to speak at a game developer conference! Weird. Here's a video about that!",
-				"uploadDate": "2020-03-02",
+				description: 'They invited me to speak at a game developer conference! Weird. Here\'s a video about that!',
+				uploadDate: '2020-03-02',
 			}),
 		],
 		character: [
 			SchemaGenerators.withoutContext(SnuttyMays[0]),
 		],
-		"url": [
-			"https://twitter.com/BustaSnutt",
+		url: [
+			'https://twitter.com/BustaSnutt',
 		],
 	})),
 ];

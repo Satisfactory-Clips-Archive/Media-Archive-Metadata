@@ -32,10 +32,10 @@ const Oscar = [
 		],
 		subjectOf: [
 			YouTubeVideo('vUW3pockA5Y', {
-				'name': 'Developer Highlight - Game Design',
+				name: 'Developer Highlight - Game Design',
 				// eslint-disable-next-line @stylistic/max-len
-				'description': 'Oscar Jilsén talks about his experience with Game Design on Satisfactory.',
-				'uploadDate': '2018-07-04',
+				description: 'Oscar Jilsén talks about his experience with Game Design on Satisfactory.',
+				uploadDate: '2018-07-04',
 			}),
 		],
 	})),

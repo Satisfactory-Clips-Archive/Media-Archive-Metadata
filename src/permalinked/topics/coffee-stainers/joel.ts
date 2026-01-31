@@ -14,13 +14,13 @@ export const Joel = [
 		jobTitle: 'Producer',
 		subjectOf: [
 			YouTubeVideo('LDbnPHbnba0', {
-				'name': 'Developer Highlight - Sound Design',
-				'description': [
+				name: 'Developer Highlight - Sound Design',
+				description: [
 					// eslint-disable-next-line @stylistic/max-len
 					'Joel Rydholm tells you all about making beeps and boops and stuff for Satisfactory.',
 					'btw sound design is not the same as graphic design',
 				].join("\n"),
-				'uploadDate': '2018-09-19',
+				uploadDate: '2018-09-19',
 			}),
 		],
 		image: [

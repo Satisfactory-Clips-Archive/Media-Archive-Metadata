@@ -18,10 +18,10 @@ const Hannah = [
 		jobTitle: 'Level Designer',
 		subjectOf: [
 			YouTubeVideo('8WYNwGDLYNE', {
-				'name': 'Developer Highlight - Level Design',
+				name: 'Developer Highlight - Level Design',
 				// eslint-disable-next-line @stylistic/max-len
-				'description': 'Come hang out with Hannah-banana as she tells you about her role as a Level Designer.',
-				'uploadDate': '2019-10-24',
+				description: 'Come hang out with Hannah-banana as she tells you about her role as a Level Designer.',
+				uploadDate: '2019-10-24',
 			}),
 			yt_UT9iNA3WGT4,
 		],

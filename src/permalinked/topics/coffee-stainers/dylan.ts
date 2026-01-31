@@ -9,9 +9,9 @@ import {
 
 const Dylan = [
 	SchemaGenerators.withContext(CoffeeStainer('Dylan Kelly', {
-		"jobTitle": "Programmer",
-		"url": [
-			"https://twitter.com/SnyggLich",
+		jobTitle: 'Programmer',
+		url: [
+			'https://twitter.com/SnyggLich',
 		],
 	})),
 ];

@@ -47,7 +47,7 @@ function SatisfactoryWikiImage<
 			url: `https://satisfactory.wiki.gg/wiki/File:${
 				wikiname
 			}`,
-			'usageInfo': [
+			usageInfo: [
 				`https://satisfactory.wiki.gg/wiki/Template:${
 					licensetemplate
 				}`,

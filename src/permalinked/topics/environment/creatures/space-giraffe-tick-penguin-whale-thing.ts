@@ -32,7 +32,7 @@ const Bean = [
 					'File:Space Giraffe-Tick-Penguin-Whale Thing.png',
 					{
 						// eslint-disable-next-line @stylistic/max-len
-						"name": "The Space Giraffe-Tick-Penguin-Whale Thing (sometimes referred to as Land Whale, chonky boy, mr. Bean, etc.) is a passive land creature found throughout the world.",
+						name: "The Space Giraffe-Tick-Penguin-Whale Thing (sometimes referred to as Land Whale, chonky boy, mr. Bean, etc.) is a passive land creature found throughout the world.",
 					},
 				),
 			],

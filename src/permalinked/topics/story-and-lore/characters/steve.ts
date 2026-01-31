@@ -26,7 +26,7 @@ const Steve = [
 				'image/png',
 				'Steve.png',
 				{
-					'name': 'Concept Art for Steve',
+					name: 'Concept Art for Steve',
 				},
 			),
 		],

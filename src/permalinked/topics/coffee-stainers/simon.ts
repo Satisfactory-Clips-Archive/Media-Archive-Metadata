@@ -14,12 +14,12 @@ import {
 
 const Simon = [
 	SchemaGenerators.withContext(CoffeeStainer('Simon Begby', {
-		"jobTitle": "VFX Artist",
-		"subjectOf": [
+		jobTitle: 'VFX Artist',
+		subjectOf: [
 			Simon_Saga,
 		],
-		"url": [
-			"https://twitter.com/SBegby",
+		url: [
+			'https://twitter.com/SBegby',
 		],
 	})),
 ];

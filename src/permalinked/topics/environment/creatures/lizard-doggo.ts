@@ -29,7 +29,7 @@ const Lizard_Doggo = [
 					'Lizard Doggo.png',
 					{
 						// eslint-disable-next-line @stylistic/max-len
-						"name": "Lizard Doggo, cropped from the GDC 2018 Teaser Trailer.",
+						name: "Lizard Doggo, cropped from the GDC 2018 Teaser Trailer.",
 					},
 				),
 			],

@@ -15,13 +15,13 @@ export type knowsAbout_satisfactory = {
 };
 
 export const satisfactory: SchemaProperties.VideoGame = {
-	"name": "Satisfactory",
-	'url': 'https://satisfactorygame.com/',
-	"author": coffee_stain,
-	"operatingSystem": "Windows",
-	"applicationCategory": [
-		"Game",
-		"Factory Construction",
+	name: 'Satisfactory',
+	url: 'https://satisfactorygame.com/',
+	author: coffee_stain,
+	operatingSystem: 'Windows',
+	applicationCategory: [
+		'Game',
+		'Factory Construction',
 	],
 };
 

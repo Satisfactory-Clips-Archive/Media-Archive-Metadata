@@ -28,10 +28,10 @@ const Sofi = [
 		],
 		subjectOf: [
 			YouTubeVideo('PkozY8_q-LE', {
-				'name': 'Developer Highlight - Concept Art',
+				name: 'Developer Highlight - Concept Art',
 				// eslint-disable-next-line @stylistic/max-len
-				'description': 'Sofi Sprangers talks about her time at Coffee Stain as a concept artist for Satisfactory.',
-				'uploadDate': '2018-08-15',
+				description: 'Sofi Sprangers talks about her time at Coffee Stain as a concept artist for Satisfactory.',
+				uploadDate: '2018-08-15',
 			}),
 		],
 	})),

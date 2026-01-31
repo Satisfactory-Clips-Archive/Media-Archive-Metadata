@@ -15,7 +15,7 @@ const Vulkan = [
 			'Graphics API',
 		],
 		author: SchemaGenerators.Organization({
-			'name': 'Khronos Group',
+			name: 'Khronos Group',
 			url: 'https://www.khronos.org/',
 		}),
 		image: [

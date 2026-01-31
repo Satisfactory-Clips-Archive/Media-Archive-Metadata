@@ -200,7 +200,10 @@ function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
 		{},
 		data,
 		{
-			about: [satisfactory].concat(...(data?.about || [])),
+			about: [
+				satisfactory,
+				...(data?.about || []),
+			],
 		},
 	));
 }
@@ -242,7 +245,10 @@ function CoffeeStainer<
 		name,
 		Object.assign({}, data, {
 			worksFor: coffee_stain,
-			knowsAbout: [satisfactory].concat([...(data?.knowsAbout || [])]),
+			knowsAbout: [
+				satisfactory,
+				...(data?.knowsAbout || []),
+			],
 		}),
 	);
 }
@@ -268,8 +274,14 @@ function FormerCoffeeStainer<
 	}>(
 		name,
 		Object.assign({}, data, {
-			knowsAbout: [satisfactory].concat([...(data?.knowsAbout || [])]),
-			alumni: [coffee_stain].concat([...data?.alumni || []]),
+			knowsAbout: [
+				satisfactory,
+				...(data?.knowsAbout || []),
+			],
+			alumni: [
+				coffee_stain,
+				...(data?.alumni || []),
+			],
 		}),
 	);
 }
@@ -283,7 +295,10 @@ function SatisfactoryCommunityMember<
 	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory>(
 		name,
 		Object.assign({}, data, {
-			knowsAbout: [satisfactory].concat([...(data?.knowsAbout || [])]),
+			knowsAbout: [
+				satisfactory,
+				...(data?.knowsAbout || []),
+			],
 		}),
 	);
 }

@@ -29,7 +29,7 @@ declare type SatisfactoryWikiImageProperties = (
 
 function SatisfactoryWikiImage<
 	T extends SatisfactoryWikiImageProperties,
-> (
+>(
 	contentUrl: string,
 	width: number,
 	height: number,
@@ -61,7 +61,7 @@ function SatisfactoryWikiImage<
 
 function	SatisfactoryWikiBuildingImage<
 	T extends SatisfactoryWikiImageProperties,
-> (
+>(
 	contentUrl: string,
 	wikiname: string,
 	data?: SchemaProperties.ImageObjectOptional,
@@ -78,7 +78,7 @@ function	SatisfactoryWikiBuildingImage<
 
 function SatisfactoryWikiItemImage<
 	T extends SatisfactoryWikiImageProperties,
-> (
+>(
 	contentUrl: string,
 	wikiname: string,
 	data?: SchemaProperties.ImageObjectOptional,
@@ -98,7 +98,7 @@ function YouTubePlaylist<T extends (
 	& {
 		url: string,
 	}
-)> (
+)>(
 	playlistId:string,
 	data: SchemaProperties.CreativeWorkSeries,
 ) : Schema.CreativeWorkSeries<T> {
@@ -112,7 +112,7 @@ function YouTubePlaylist<T extends (
 
 function YouTubeVideo<
 	T1 extends SchemaProperties.VideoObjectSpecifyUrlLater,
-> (
+>(
 	videoId: string,
 	data: T1,
 ) : Schema.VideoObject<T1 & {url: string}> {
@@ -129,7 +129,7 @@ function YouTubeVideo<
 function YouTubeClip<
 	T1 extends SchemaProperties.ClipObject,
 	T2 extends SchemaProperties.VideoObjectSpecifyUrlLater,
-> (
+>(
 	videoId:string,
 	clipId:string|undefined,
 	start:number,
@@ -249,7 +249,7 @@ function CoffeeStainer<
 
 function FormerCoffeeStainer<
 	T1 extends SchemaProperties.Person,
-> (
+>(
 	name: string,
 	data?: T1,
 ) : Schema.Person<
@@ -276,7 +276,7 @@ function FormerCoffeeStainer<
 
 function SatisfactoryCommunityMember<
 	T1 extends SchemaProperties.Person,
-> (
+>(
 	name: string,
 	data?: T1,
 ) : Schema.Person<T1 & knowsAbout_satisfactory> {

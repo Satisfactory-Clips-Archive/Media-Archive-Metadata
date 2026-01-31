@@ -49,7 +49,7 @@ function QuantitativeValue(value: number): Schema.QuantitativeValue {
 
 function ImageObject<
 	T extends Schema.ImageObject<SchemaProperties.ImageObject>,
-> (
+>(
 	contentUrl: string,
 	width: number,
 	height: number,
@@ -127,19 +127,19 @@ function SocialMediaPosting<
 	);
 }
 
-function VideoGame<T1 extends SchemaProperties.VideoGame> (
+function VideoGame<T1 extends SchemaProperties.VideoGame>(
 	data: T1,
 ): Schema.VideoGame<T1> {
 	return generate('VideoGame', data);
 }
 
-function VideoGameSeries<T1 extends SchemaProperties.VideoGameSeries> (
+function VideoGameSeries<T1 extends SchemaProperties.VideoGameSeries>(
 	data:T1,
 ): Schema.VideoGameSeries<T1> {
 	return generate('VideoGameSeries', data);
 }
 
-function Software<T1 extends SchemaProperties.Software> (
+function Software<T1 extends SchemaProperties.Software>(
 	data:T1,
 ): Schema.Software<T1> {
 	return generate('Software', data);

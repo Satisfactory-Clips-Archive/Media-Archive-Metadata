@@ -197,11 +197,11 @@ function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
 			],
 		}
 	)>({
-			...data,
-			about: [
-				satisfactory,
-				...(data?.about || []),
-			],
+		...data,
+		about: [
+			satisfactory,
+			...(data?.about || []),
+		],
 	});
 }
 

@@ -98,7 +98,7 @@ function Person<
 	return generate<
 		'Person',
 		T1
-	> (
+	>(
 		'Person',
 		Object.assign({}, data, {
 			name,

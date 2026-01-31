@@ -26,7 +26,8 @@ declare type Update7 = SchemaProperties.VideoGame & {
 	],
 };
 
-const Update7: Update7 = Object.assign({}, satisfactory, {
+const Update7: Update7 = {
+	...satisfactory,
 	softwareVersion: 'Update 7',
 	subjectOf: [
 		YouTubePlaylist('PLzGEn7MzkWRvEuI1nzAGDk1Jy7Y4kXA9i', {
@@ -39,7 +40,7 @@ const Update7: Update7 = Object.assign({}, satisfactory, {
 			startDate: '2022-03-09',
 		}),
 	],
-});
+};
 
 const Update = [
 	SchemaGenerators.withContext(

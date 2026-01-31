@@ -196,16 +196,13 @@ function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
 				...SchemaObject<string>[],
 			],
 		}
-	)>(Object.assign(
-		{},
-		data,
-		{
+	)>({
+			...data,
 			about: [
 				satisfactory,
 				...(data?.about || []),
 			],
-		},
-	));
+	});
 }
 
 function WebPageAboutSatisfactory<
@@ -243,13 +240,14 @@ function CoffeeStainer<
 		worksFor: Schema.Organization<SchemaProperties.Organization>,
 	}>(
 		name,
-		Object.assign({}, data, {
+		{
+			...(data || ({} as T1)),
 			worksFor: coffee_stain,
 			knowsAbout: [
 				satisfactory,
 				...(data?.knowsAbout || []),
 			],
-		}),
+		},
 	);
 }
 
@@ -273,7 +271,8 @@ function FormerCoffeeStainer<
 		],
 	}>(
 		name,
-		Object.assign({}, data, {
+		{
+			...(data || ({} as T1)),
 			knowsAbout: [
 				satisfactory,
 				...(data?.knowsAbout || []),
@@ -282,7 +281,7 @@ function FormerCoffeeStainer<
 				coffee_stain,
 				...(data?.alumni || []),
 			],
-		}),
+		},
 	);
 }
 
@@ -291,15 +290,16 @@ function SatisfactoryCommunityMember<
 >(
 	name: string,
 	data?: T1,
-): Schema.Person<T1 & knowsAbout_satisfactory> {
-	return SchemaGenerators.Person<T1 & knowsAbout_satisfactory>(
+): Schema.Person<typeof data & knowsAbout_satisfactory> {
+	return SchemaGenerators.Person<typeof data & knowsAbout_satisfactory>(
 		name,
-		Object.assign({}, data, {
+		{
+			...(data || ({} as T1)),
 			knowsAbout: [
 				satisfactory,
 				...(data?.knowsAbout || []),
 			],
-		}),
+		},
 	);
 }
 

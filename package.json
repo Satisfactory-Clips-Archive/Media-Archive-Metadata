@@ -2,7 +2,6 @@
 	"name": "@satisfactory-clips-archive/media-archive-metadata",
 	"type": "module",
 	"scripts": {
-		"lint": "eslint --config=./eslint.config.mjs --ignore-pattern='*.mjs'",
 		"test": "node test.ts"
 	},
 	"devDependencies": {

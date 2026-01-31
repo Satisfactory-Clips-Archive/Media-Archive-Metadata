@@ -39,22 +39,35 @@ type ImageObject = ImageObjectOptional & {
 	height: Schema.QuantitativeValue,
 };
 
-type CreativeWorkSeries = has_url & {
+type has_name = {
 	name: string,
+	alternateName?: (
+		| string
+		| ([string, ...string[]])
+	),
+};
+
+type CreativeWorkSeries = (
+	& has_name
+	& has_url
+	& {
 	description?: string,
 	startDate: string,
 	endDate?: string,
-};
+	}
+);
 
 type VideoObjectSpecifyUrlLater = (
 	& Schema.has_image<SchemaProperties.ImageObject>
 	& Exclude<
-		{
-			name: string,
+		(
+			& has_name
+			& {
 			uploadDate: string,
 			description?: string,
 			creditText?: string,
-		},
+			}
+		),
 		{url: string}
 	>
 );
@@ -75,13 +88,15 @@ type SearchAction = {
 	'query-input': string,
 };
 
-type WebSite = {
-	name: string,
+type WebSite = (
+	& has_name
+	& {
 	url: string,
 	potentialAction?: Schema.SearchAction<SchemaProperties.SearchAction>,
 	author?: Schema.Person<SchemaProperties.Person>,
 	about?: [SchemaObject<string>, ...SchemaObject<string>[]],
-};
+	}
+);
 
 type WebPage = (
 	& Schema.SubjectOf
@@ -95,10 +110,12 @@ type WebPage = (
 	}
 );
 
-type Organization = {
-	name: string,
+type Organization = (
+	& has_name
+	& {
 	url: string,
-};
+	}
+);
 
 type Person = (
 	& Schema.SubjectOf
@@ -145,8 +162,10 @@ type SocialMediaPosting = (
 	}
 );
 
-type VideoGame = Schema.SubjectOf & {
-	name: string,
+type VideoGame = (
+	& has_name
+	& Schema.SubjectOf
+	& {
 	url: [string, ...string[]]|string,
 	author: (
 		| Schema.Person<SchemaProperties.Person>
@@ -155,21 +174,20 @@ type VideoGame = Schema.SubjectOf & {
 	operatingSystem: string,
 	applicationCategory: [string, ...string[]],
 	softwareVersion?: string,
-};
+	}
+);
 
 type VideoGameSeries = (
+	& has_name
 	& Schema.SubjectOf
 	& Schema.has_image<SchemaProperties.ImageObject>
-	& {
-		name: string,
-	}
 );
 
 type Software = (
 	& Schema.SubjectOf
 	& Schema.has_image<SchemaProperties.ImageObject>
+	& has_name
 	& {
-		name: string,
 		url: [string, ...string[]]|string,
 		applicationCategory: [string, ...string[]],
 		author: (

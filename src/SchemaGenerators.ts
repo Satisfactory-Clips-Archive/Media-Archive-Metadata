@@ -38,8 +38,7 @@ function withoutContext<T1 extends SchemaObject<string>>(
 	return cloned;
 }
 
-function QuantitativeValue(value: number): Schema.QuantitativeValue
-{
+function QuantitativeValue(value: number): Schema.QuantitativeValue {
 	return generate<
 		'QuantitativeValue',
 		SchemaProperties.QuantitativeValue

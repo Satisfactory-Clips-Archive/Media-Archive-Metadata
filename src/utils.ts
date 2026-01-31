@@ -18,6 +18,10 @@ import {
 	SchemaGenerators,
 } from './SchemaTypes.ts';
 
+import type {
+	definitely_has_url,
+} from './SchemaProperties.ts';
+
 declare type SatisfactoryWikiImageProperties = (
 	& SchemaProperties.ImageObject
 	& {
@@ -35,15 +39,28 @@ function SatisfactoryWikiImage<
 	height: number,
 	encodingFormat: SchemaProperties.mime_type,
 	wikiname: string,
-	data?: SchemaProperties.ImageObjectOptional,
+	data?: (
+		& Omit<T, (
+			| 'url'
+			| 'usageInfo'
+			| 'discussionUrl'
+			| 'contentUrl'
+			| 'width'
+			| 'height'
+			| 'encodingFormat'
+			| 'wikiname'
+		)>
+		& SchemaProperties.ImageObjectOptional
+	),
 	licensetemplate: string = 'Copyright_first-party',
-): Schema.ImageObject<T> {
-	return SchemaGenerators.ImageObject<Schema.ImageObject<T>>(
+) {
+	return SchemaGenerators.ImageObject(
 		contentUrl,
 		width,
 		height,
 		encodingFormat,
-		Object.assign({}, data, {
+		{
+			...data,
 			url: `https://satisfactory.wiki.gg/wiki/File:${
 				wikiname
 			}`,
@@ -55,7 +72,7 @@ function SatisfactoryWikiImage<
 			discussionUrl: `https://satisfactory.wiki.gg/wiki/File_talk:${
 				wikiname
 			}`,
-		}),
+		},
 	);
 }
 
@@ -64,9 +81,21 @@ function SatisfactoryWikiBuildingImage<
 >(
 	contentUrl: string,
 	wikiname: string,
-	data?: SchemaProperties.ImageObjectOptional,
-): Schema.ImageObject<T> {
-	return SatisfactoryWikiImage<T>(
+	data?: (
+		& Omit<T, (
+			| 'url'
+			| 'usageInfo'
+			| 'discussionUrl'
+			| 'contentUrl'
+			| 'width'
+			| 'height'
+			| 'encodingFormat'
+			| 'wikiname'
+		)>
+		& SchemaProperties.ImageObjectOptional
+	),
+) {
+	return SatisfactoryWikiImage(
 		contentUrl,
 		512,
 		512,
@@ -81,8 +110,20 @@ function SatisfactoryWikiItemImage<
 >(
 	contentUrl: string,
 	wikiname: string,
-	data?: SchemaProperties.ImageObjectOptional,
-): Schema.ImageObject<T> {
+	data?: (
+		& Omit<T, (
+			| 'url'
+			| 'usageInfo'
+			| 'discussionUrl'
+			| 'contentUrl'
+			| 'width'
+			| 'height'
+			| 'encodingFormat'
+			| 'wikiname'
+		)>
+		& SchemaProperties.ImageObjectOptional
+	),
+) {
 	return SatisfactoryWikiImage<T>(
 		contentUrl,
 		256,
@@ -93,20 +134,28 @@ function SatisfactoryWikiItemImage<
 	);
 }
 
-function YouTubePlaylist<T extends (
-	& SchemaProperties.CreativeWorkSeries
-	& {
-		url: string,
-	}
-)>(
+function YouTubePlaylist<T extends SchemaProperties.CreativeWorkSeries>(
 	playlistId: string,
-	data: SchemaProperties.CreativeWorkSeries,
-): Schema.CreativeWorkSeries<T> {
-	return SchemaGenerators.generate<'CreativeWorkSeries', T>(
+	data: T,
+): SchemaObject<
+	'CreativeWorkSeries',
+	(
+		& typeof data
+		& definitely_has_url
+	)
+> {
+	return SchemaGenerators.generate<
 		'CreativeWorkSeries',
-		Object.assign({}, data, {
+		(
+			& typeof data
+			& definitely_has_url
+		)
+	>(
+		'CreativeWorkSeries',
+		{
+			...data,
 			url: `https://www.youtube.com/playlist?list=${playlistId}`,
-		}) as T,
+		},
 	);
 }
 
@@ -118,11 +167,12 @@ function YouTubeVideo<
 ): Schema.VideoObject<T1 & {url: string}> {
 	return SchemaGenerators.generate<'VideoObject', T1 & {url: string}>(
 		'VideoObject',
-		Object.assign({}, data, {
+		{
+			...data,
 			thumbnailUrl: `https://i3.ytimg.com/vi/${videoId}/hqdefault.jpg`,
 			url: `https://www.youtube.com/watch?v=${videoId}`,
 			embedUrl: `https://www.youtube.com/embed/${videoId}`,
-		}),
+		},
 	);
 }
 
@@ -134,13 +184,19 @@ function YouTubeClip<
 	clipId: string|undefined,
 	start: number,
 	finish: number,
-	data: T2,
-): Schema.ClipObject<T1> {
-	const video: T2 = YouTubeVideo<T2>(videoId, data);
+	data: T2 & Omit<T1, (
+		| 'startOffset'
+		| 'endOffset'
+		| 'embedUrl'
+		| 'url'
+	)>,
+): Schema.ClipObject<T1 & T2> {
+	const video = YouTubeVideo(videoId, data);
 
-	return SchemaGenerators.generate<'Clip', T1>(
+	return SchemaGenerators.generate(
 		'Clip',
-		Object.assign(video, {
+		{
+			...video,
 			startOffset: start,
 			endOffset: finish,
 			url: (
@@ -157,7 +213,7 @@ function YouTubeClip<
 			}&end=${
 				Math.ceil(finish)
 			}`,
-		}) as T1&T2,
+		},
 	);
 }
 
@@ -168,19 +224,20 @@ function WebPageRelatingToSatisfactoryWikiArticles<
 	description: string,
 	related_articles: [string, ...string[]],
 	data?: T1,
-): Schema.WebPage<T1 & {
+): Schema.WebPage<typeof data & {
 	description: string,
 	relatedLink: [string, ...string[]],
 }> {
-	return SchemaGenerators.WebPage<T1 & {
+	return SchemaGenerators.WebPage<typeof data & {
 		description: string,
 		relatedLink: [string, ...string[]],
-	}>(name, Object.assign({}, data, {
+	}>(name, {
+		...(data || ({} as T1)),
 		description,
 		relatedLink: related_articles.map((wiki_name) => {
 			return `https://satisfactory.wiki.gg/wiki/${wiki_name}`;
 		}).concat(...data?.relatedLink || []) as [string, ...string[]],
-	}));
+	});
 }
 
 function WebSiteAboutSatisfactory<T1 extends SchemaProperties.WebSite>(
@@ -325,9 +382,10 @@ function Tweet<
 		}
 	)>(
 		`https://twittter.com/${from}/status/${id}`,
-		Object.assign({}, data, {
+		{
+			...data,
 			author,
-		}),
+		},
 	);
 }
 

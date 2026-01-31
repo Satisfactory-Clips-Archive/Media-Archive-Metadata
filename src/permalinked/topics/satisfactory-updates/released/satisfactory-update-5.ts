@@ -43,7 +43,7 @@ const Update5: Update5 = {
 
 const Update = [
 	SchemaGenerators.withContext(
-		SchemaGenerators.VideoGame<Update5>(Object.assign({}, Update5)),
+		SchemaGenerators.VideoGame<Update5>({...Update5}),
 	),
 ];
 

@@ -20,6 +20,8 @@ type has_url = {
 	url?: [string, ...string[]]|string,
 };
 
+type definitely_has_url = Required<has_url>;
+
 type ImageObjectOptional = has_url & {
 	name?: string,
 	description?: string,
@@ -206,6 +208,7 @@ export type {
 	mime_type,
 	QuantitativeValue,
 	has_url,
+	definitely_has_url,
 	ImageObjectOptional,
 	ImageObject,
 	CreativeWorkSeries,

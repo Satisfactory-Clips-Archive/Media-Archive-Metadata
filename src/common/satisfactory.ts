@@ -27,7 +27,4 @@ export const satisfactory: SchemaProperties.VideoGame = {
 
 export default SchemaGenerators.VideoGame<
 	SchemaProperties.VideoGame
->(Object.assign(
-	{},
-	satisfactory,
-));
+>({...satisfactory});

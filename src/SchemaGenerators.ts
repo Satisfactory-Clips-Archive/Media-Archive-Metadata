@@ -10,7 +10,7 @@ function generate<
 >(
 	type: T1,
 	data: T2,
-): SchemaObject<T1, T2> & T2 {
+): SchemaObject<T1, T2> {
 	return {
 		...data,
 		'@type': type,
@@ -56,22 +56,45 @@ function QuantitativeValue(value: number): Schema.QuantitativeValue {
 }
 
 function ImageObject<
-	T extends Schema.ImageObject<SchemaProperties.ImageObject>,
+	T1 extends Omit<
+		SchemaProperties.ImageObjectOptional,
+		(
+			| 'contentUrl'
+			| 'width'
+			| 'height'
+			| 'encodingFormat'
+		)
+	> = Omit<
+		SchemaProperties.ImageObjectOptional,
+		(
+			| 'contentUrl'
+			| 'width'
+			| 'height'
+			| 'encodingFormat'
+		)
+	>,
 >(
 	contentUrl: string,
 	width: number,
 	height: number,
 	encodingFormat: SchemaProperties.mime_type,
-	data?: SchemaProperties.ImageObjectOptional,
-): T {
-	return generate<'ImageObject', T>(
+	data?: T1,
+) {
+	return generate<
 		'ImageObject',
-		Object.assign({}, data, {
+		(
+			& SchemaProperties.ImageObject
+			& typeof data
+		)
+	>(
+		'ImageObject',
+		{
+			...(data || ({} as T1)),
 			contentUrl,
 			encodingFormat,
 			width: QuantitativeValue(width),
 			height: QuantitativeValue(height),
-		}) as T,
+		},
 	);
 }
 
@@ -91,9 +114,10 @@ function WebPage<
 ): Schema.WebPage<typeof data> {
 	return generate<'WebPage', typeof data>(
 		'WebPage',
-		Object.assign({}, data, {
+		{
+			...data,
 			name,
-		}),
+		},
 	);
 }
 
@@ -108,9 +132,10 @@ function Person<
 		T1
 	>(
 		'Person',
-		Object.assign({}, data, {
+		{
+			...data,
 			name,
-		}),
+		},
 	);
 }
 
@@ -129,9 +154,10 @@ function SocialMediaPosting<
 >(url: string, data: T1): Schema.SocialMediaPosting<T1> {
 	return generate<'SocialMediaPosting', T1>(
 		'SocialMediaPosting',
-		Object.assign({}, data, {
+		{
+			...data,
 			url,
-		}),
+		},
 	);
 }
 

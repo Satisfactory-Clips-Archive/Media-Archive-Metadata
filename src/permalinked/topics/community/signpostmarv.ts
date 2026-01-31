@@ -24,7 +24,7 @@ const SignpostMarv = SatisfactoryCommunityMember('Marv', {
 });
 
 const Page = [
-	SchemaGenerators.withContext(Object.assign({}, SignpostMarv)),
+	SchemaGenerators.withContext({...SignpostMarv}),
 ];
 
 export {

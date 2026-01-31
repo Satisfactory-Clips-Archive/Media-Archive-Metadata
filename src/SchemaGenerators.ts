@@ -12,7 +12,7 @@ function generate<
 	data: T2,
 ): SchemaObject<T1> & T2 {
 	return Object.assign({}, data, {
-		'@type': type as T1,
+		'@type': type,
 	}) as (SchemaObject<T1> & T2);
 }
 

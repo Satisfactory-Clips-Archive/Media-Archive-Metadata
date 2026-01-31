@@ -48,11 +48,12 @@ type CreativeWorkSeries = has_url & {
 
 type VideoObjectSpecifyUrlLater = (
 	& Schema.has_image<SchemaProperties.ImageObject>
-	& Exclude<{
-	name: string,
-	uploadDate: string,
-	description?: string,
-	creditText?: string,
+	& Exclude<
+		{
+			name: string,
+			uploadDate: string,
+			description?: string,
+			creditText?: string,
 		},
 		{url: string}
 	>
@@ -86,11 +87,11 @@ type WebPage = (
 	& Schema.SubjectOf
 	& Schema.has_image<SchemaProperties.ImageObject>
 	& {
-	alternateName?: [string, ...string[]]|string,
-	description?: string,
-	relatedLink?: [string, ...string[]]|string,
-	about?: SchemaObject<string>[],
-	url?: string,
+		alternateName?: [string, ...string[]]|string,
+		description?: string,
+		relatedLink?: [string, ...string[]]|string,
+		about?: SchemaObject<string>[],
+		url?: string,
 	}
 );
 
@@ -103,10 +104,10 @@ type Person = (
 	& Schema.SubjectOf
 	& Schema.has_image<SchemaProperties.ImageObject>
 	& {
-	alternateName?: [string, ...string[]]|string,
-	honorificPrefix?: string,
-	description?: string,
-	jobTitle?: [string, ...string[]]|string,
+		alternateName?: [string, ...string[]]|string,
+		honorificPrefix?: string,
+		description?: string,
+		jobTitle?: [string, ...string[]]|string,
 		worksFor?: (
 			| Schema.Organization<SchemaProperties.Organization>[]
 			| Schema.Organization<SchemaProperties.Organization>
@@ -120,7 +121,7 @@ type Person = (
 			Schema.Organization<SchemaProperties.Organization>,
 			...Schema.Organization<SchemaProperties.Organization>[],
 		],
-	url?: [string, ...string[]]|string,
+		url?: [string, ...string[]]|string,
 	}
 );
 
@@ -133,14 +134,14 @@ type SocialMediaPosting = (
 	& Schema.has_image<SchemaProperties.ImageObject>
 	& has_url
 	& {
-	headline: string,
-	datePublished: string,
-	keywords?: [string, ...string[]],
-	potentialAction?: Schema.VoteAction<SchemaProperties.VoteAction>[],
-	author?: (
-		| Schema.Person<SchemaProperties.Person>[]
-		| Schema.Person<SchemaProperties.Person>
-	),
+		headline: string,
+		datePublished: string,
+		keywords?: [string, ...string[]],
+		potentialAction?: Schema.VoteAction<SchemaProperties.VoteAction>[],
+		author?: (
+			| Schema.Person<SchemaProperties.Person>[]
+			| Schema.Person<SchemaProperties.Person>
+		),
 	}
 );
 
@@ -160,7 +161,7 @@ type VideoGameSeries = (
 	& Schema.SubjectOf
 	& Schema.has_image<SchemaProperties.ImageObject>
 	& {
-	name: string,
+		name: string,
 	}
 );
 
@@ -168,13 +169,13 @@ type Software = (
 	& Schema.SubjectOf
 	& Schema.has_image<SchemaProperties.ImageObject>
 	& {
-	name: string,
-	url: [string, ...string[]]|string,
-	applicationCategory: [string, ...string[]],
-	author: (
-		| Schema.Person<SchemaProperties.Person>
-		| Schema.Organization<SchemaProperties.Organization>
-	),
+		name: string,
+		url: [string, ...string[]]|string,
+		applicationCategory: [string, ...string[]],
+		author: (
+			| Schema.Person<SchemaProperties.Person>
+			| Schema.Organization<SchemaProperties.Organization>
+		),
 	}
 );
 

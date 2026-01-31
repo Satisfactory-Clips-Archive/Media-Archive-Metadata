@@ -10,7 +10,7 @@ const validator = (new Ajv()).compile(schema);
 Object.entries(data).forEach((entry) => {
 	const [permalink, rows] = entry;
 
-	if (! (rows instanceof Array)) {
+	if (!(rows instanceof Array)) {
 		throw new Error(`${permalink} has invalid data!`);
 	}
 
